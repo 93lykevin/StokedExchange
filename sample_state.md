@@ -30,7 +30,7 @@
         selling_list: ,
       }
     },
-    cart: {
+    carts: {
       10: {
         userId: 11,
         itemId: 1,
@@ -44,7 +44,43 @@
         itemId: 3,
       },
     }
+    items: {
+      10: {
+        
+      },
+      11: {
+        
+      },
+      12: {
+        
+      },
+    }
+    following_list: {
+      10: {
+        
+      },
+      11: {
+        
+      },
+      12: {
+        
+      },
+    }
+    selling_list: {
+      10: {
+        
+      },
+      11: {
+        
+      },
+      12: {
+        
+      },
+    }
   },
+
+
+
   ui: {
     loading: true/false
   },
