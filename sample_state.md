@@ -86,7 +86,8 @@
   },
   errors: {
     login: ["Incorrect username/password combination"],
-    chirpForm: ["Chirp body cannot be blank"],
+    register: ["Username cannot be blank", "Password must be at least 6 characters],
+    productForm: ["Cannot be blank!"]
   },
   session: { currentUserId: 25 }
 }

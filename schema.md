@@ -13,11 +13,10 @@
 + index on `username, unique: true`
 + index on `email, unique: true`
 + index on `session_token, unique: true`
-+ user has_one `cart`
-+ user has_one `following_list`
-+ user has_one `selling_list`
++ user has_one `wish_list` via wish_list_id (somewhat much like a shopping cart)
++ user has_many `products` via seller_id
 
-## 'cart' (this will be my joins table linking users --> carts --> items)
+## 'Wish List' (this will be my joins table linking users --> wish list --> items)
 | column name       | data type | details                   |
 |:------------------|:---------:|:--------------------------|
 | `id`              | integer   | not null, primary key     |
@@ -25,24 +24,36 @@
 | `created_at`      | datetime  | not null                  |
 | `updated_at`      | datetime  | not null                  |
 
-+ `cart` belongs_to `user` via user_id
-+ `cart` has_many `items` via cart_id
++ `wish list` belongs_to `user` via user_id
++ `wish list` has_many `items` via wish_list_id
 + index on `user_id`
 
-## 'item' 
+
+## 'Wish List Items' (this will be my joins table linking users --> sell list --> items)
 | column name       | data type | details                   |
 |:------------------|:---------:|:--------------------------|
 | `id`              | integer   | not null, primary key     |
-| `cart_id`         | integer   | not null, foreign key     |
-| `seller_id`       | integer   | not null, foreign key     |
-| `title`           | integer   | not null,                 |
-| `description`     | integer   | not null,                 |
-| `price`           | integer   | not null,                 |
+| `user_id`         | integer   | not null, foreign key     |
+| `wishlist_id`     | integer   | not null, foreign key     |
 | `created_at`      | datetime  | not null                  |
 | `updated_at`      | datetime  | not null                  |
 
++ `wish list items` belongs_to `user` via user_id
++ `wish list items` has_many `items` via sell_list_id
++ index on `user_id`
 
-+ `item` belongs_to `cart` via cart_id
-+ `item` belongs_to `seller` via seller_id
-+ index on `cart_id`
+
+## 'Product' 
+| column name       | data type | details                   |
+|:------------------|:---------:|:--------------------------|
+| `id`              | integer   | not null, primary key     |
+| `seller_id`       | integer   | not null, foreign key     | 
+| `title`           | integer   | not null,                 |
+| `description`     | integer   | not null,                 |
+| `price`           | integer   | not null,                 |
+| `image_url`       | integer   | not null,                 |
+| `created_at`      | datetime  | not null                  |
+| `updated_at`      | datetime  | not null                  |
+
++ `product` belongs_to `seller` via seller_id 
 + index on `seller_id`
