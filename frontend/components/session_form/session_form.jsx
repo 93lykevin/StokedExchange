@@ -34,30 +34,39 @@ class SessionForm extends React.Component {
         );
     }
 
+    handleToggle(e) {
+        e.preventDefault()
+
+    }
+
     render() {
         return(
             <div className="login-form-container">
                 <form onSubmit={this.handleSubmit} className="login-form-box">
                     Welcome to StreetX!
                     <br/>
-                    Please {this.props.formType} or {this.props.navLink}
+                    
+                    <div className="access-toggle">
+                        <div className="toggle-option" onClick={this.handleToggle}>Login</div>
+                        <div className="toggle-option" onClick={this.handleToggle}>Sign Up</div>
+                        Please {this.props.formType} or {this.props.navLink}
+                    </div>
+                    
                     {this.renderErrors()}
                     <div className="login-form">
-                        <label>Username:
                             <input type="text"
-                                value={this.state.username}
+                                // value={this.state.username}
+                                placeholder="Username"
                                 onChange={this.update('username')}
                                 className="login-input"
                             />
-                        </label>
                         <br/>
-                        <label>Password:
                             <input type="password"
-                                value={this.state.password}
+                                // value={this.state.password}
+                                placeholder="Password"
                                 onChange={this.update('password')}
                                 className="login-input"
                             />
-                        </label>
                         <br/>
                         <input className="session-submit" type="submit" value={this.props.formType} />
                     </div>

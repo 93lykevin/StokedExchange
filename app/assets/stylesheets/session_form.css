@@ -1,0 +1,48 @@
+.login-form-container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+}
+
+.login-form-box {
+    height: 45%;
+    max-width: 33%;
+    min-width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+
+}
+
+.login-input {
+    height: 40px;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    display: block;
+    border: 1px solid lavender;
+    margin-right: 0px;
+    font-size: 16px;
+}
+
+.access-toggle{
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.toggle-option {
+    width: 50%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px;
+}
