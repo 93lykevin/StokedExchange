@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class SessionForm extends React.Component {
     constructor(props) {
@@ -7,8 +8,18 @@ class SessionForm extends React.Component {
             username: '',
             password: ''
         };
+
+        this.demoUser = {
+            username: 'demo',
+            password: 'user',
+        };
+
+        this.message = this.props.formType === 'login' ? (
+            "Welcome Back" ) : ( "Let's get jiggy wid it!" )
+
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleToggle = this.handleToggle.bind(this);
+        this.handleDemoLogin = this.handleDemoLogin.bind(this);
     }
 
     update(field) {
@@ -21,6 +32,11 @@ class SessionForm extends React.Component {
         e.preventDefault();
         const user = Object.assign({}, this.state);
         this.props.processForm(user);
+    }
+
+    handleDemoLogin(e) {
+        e.preventDefault();
+        this.props.processForm(this.demoUser);
     }
 
     renderErrors() {
@@ -47,13 +63,14 @@ class SessionForm extends React.Component {
                     <br/>
                     
                     <div className="access-toggle">
-                        <div className="toggle-option" onClick={this.handleToggle}>Login</div>
-                        <div className="toggle-option" onClick={this.handleToggle}>Sign Up</div>
-                        Please {this.props.formType} or {this.props.navLink}
+                        <div className="toggle-option" onClick={this.handleToggle}><Link to="/login">Login</Link></div>
+                        <div className="toggle-option" onClick={this.handleToggle}><Link to="/signup">Sign Up</Link></div>
+                        
                     </div>
                     
                     {this.renderErrors()}
                     <div className="login-form">
+                        <div className="welcome-message">{this.message}</div>
                             <input type="text"
                                 placeholder="Username"
                                 onChange={this.update('username')}
@@ -67,6 +84,7 @@ class SessionForm extends React.Component {
                             />
                         <br/>
                         <input className="session-submit" type="submit" value={this.props.formType} />
+                        <button className="demo-login" onClick={this.handleDemoLogin}>Demo</button>
                     </div>
                 </form>
             </div>

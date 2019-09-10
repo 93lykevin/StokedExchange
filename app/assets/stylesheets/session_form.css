@@ -6,6 +6,7 @@
     justify-content: center;
     position: absolute;
     align-items: center;
+    background-color: rgb(250, 248, 248)
 }
 
 .login-form-box {
@@ -14,6 +15,7 @@
     min-width: 500px;
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
 }
 
 .login-form {
@@ -39,6 +41,7 @@
     align-items: center;
     text-align: center;
     margin: 10px;
+    display: flex;
 }
 
 .access-toggle:hover{
@@ -49,5 +52,19 @@
     width: 50%;
     font-size: 16px;
     font-weight: 600;
-    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.demo-login {
+    height: 38px;
+    width: 60px
+}
+
+.welcome-message{
+    width:100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
