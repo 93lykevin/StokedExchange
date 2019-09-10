@@ -260,6 +260,8 @@ var Greeting = function Greeting(_ref) {
   var currentUser = _ref.currentUser,
       logout = _ref.logout;
 
+  // const navBar = () => (
+  // );
   var sessionLinks = function sessionLinks() {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
       className: "login-signup"
@@ -278,7 +280,24 @@ var Greeting = function Greeting(_ref) {
     }, "Hi, ", currentUser.username, "! "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
       className: "header-button",
       onClick: logout
-    }, "Log Out"));
+    }, "Log Out"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "nav-bar-container"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: "/assets/StreetX.png",
+      className: "street-x-logo"
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+      className: "nav-bar"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "#"
+    }, "Browse")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "#"
+    }, "Portfolio")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "#"
+    }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "#"
+    }, "FAQ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "#"
+    }, "Account"))))));
   };
 
   return currentUser ? personalGreeting() : sessionLinks();

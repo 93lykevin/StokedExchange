@@ -1,0 +1,23 @@
+.header-group {
+    display: block;
+    margin: auto;
+    width: 80%;
+    background-color: rgb(241, 138, 124)
+}
+
+.nav-bar-container {
+    display: flex;
+    /* width: 100%; */
+    justify-content: flex-start;
+    align-items: center;
+    float: left;
+};
+
+.street-x-logo {
+    float: left;
+    justify-content: flex-start;
+}
+
+.nav-bar li{
+    float: right;
+}
