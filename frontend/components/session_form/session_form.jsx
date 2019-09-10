@@ -8,6 +8,7 @@ class SessionForm extends React.Component {
             password: ''
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleToggle = this.handleToggle.bind(this);
     }
 
     update(field) {
@@ -32,11 +33,10 @@ class SessionForm extends React.Component {
                 ))}
             </ul>
         );
-    }
+    } 
 
     handleToggle(e) {
-        e.preventDefault()
-
+        this.props.clearErrors();
     }
 
     render() {
@@ -55,14 +55,12 @@ class SessionForm extends React.Component {
                     {this.renderErrors()}
                     <div className="login-form">
                             <input type="text"
-                                // value={this.state.username}
                                 placeholder="Username"
                                 onChange={this.update('username')}
                                 className="login-input"
                             />
                         <br/>
                             <input type="password"
-                                // value={this.state.password}
                                 placeholder="Password"
                                 onChange={this.update('password')}
                                 className="login-input"
