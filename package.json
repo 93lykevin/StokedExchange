@@ -29,6 +29,10 @@
     "postinstall": "webpack",
     "webpack": "webpack --watch --mode=development"
   },
+  "engines": {
+    "node": "10.13.0",
+    "npm": "6.11.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/93lykevin/StreetX.git"
