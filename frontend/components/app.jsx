@@ -8,7 +8,6 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 const App = () => (
     <div>
         <header>
-            <h1>!!!STREETX!!!</h1>
             <GreetingContainer />
         </header>
         <Switch>
