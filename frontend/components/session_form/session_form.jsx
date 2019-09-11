@@ -15,7 +15,8 @@ class SessionForm extends React.Component {
         };
 
         this.message = this.props.formType === 'login' ? (
-            "Welcome Back" ) : ( "Let's get jiggy wid it!" )
+            "Welcome Back" ) : ( "Let's get jiggy wid it!" 
+        )
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleToggle = this.handleToggle.bind(this);
@@ -38,10 +39,15 @@ class SessionForm extends React.Component {
         e.preventDefault();
         this.props.processForm(this.demoUser);
     }
+    
+    handleToggle(e) {
+        this.props.clearErrors();
+        // (e.currentTarget).classList.toggle('toggle-option-active')
+    }
 
     renderErrors() {
         return(
-            <ul>
+            <ul className="errors-list">
                 {this.props.errors.map((error, i) => (
                     <li key={`error-${i}`}>
                         {error}
@@ -51,11 +57,9 @@ class SessionForm extends React.Component {
         );
     } 
 
-    handleToggle(e) {
-        this.props.clearErrors();
-    }
-
     render() {
+        const loginClassName = this.props.formType === 'login' ? 'toggle-option-active' : 'toggle-option';
+        const signupClassName = this.props.formType === 'signup' ? 'toggle-option-active' : 'toggle-option';
         return(
             <div className="login-form-container">
                 <form onSubmit={this.handleSubmit} className="login-form-box">
@@ -63,9 +67,8 @@ class SessionForm extends React.Component {
                     <br/>
                     
                     <div className="access-toggle">
-                        <div className="toggle-option" onClick={this.handleToggle}><Link to="/login">Login</Link></div>
-                        <div className="toggle-option" onClick={this.handleToggle}><Link to="/signup">Sign Up</Link></div>
-                        
+                        <Link to="/login" className={loginClassName} onClick={this.handleToggle}>Login</Link>
+                        <Link to="/signup"className={signupClassName} onClick={this.handleToggle}>Sign Up</Link>
                     </div>
                     
                     {this.renderErrors()}
@@ -83,8 +86,7 @@ class SessionForm extends React.Component {
                                 className="login-input"
                             />
                         <br/>
-                        <input className="session-submit" type="submit" value={this.props.formType} />
-                        <button className="demo-login" onClick={this.handleDemoLogin}>Demo</button>
+                        <input className="session-submit" type="submit" value=""/>
                     </div>
                 </form>
             </div>

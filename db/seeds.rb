@@ -9,3 +9,9 @@
 User.delete_all
 
 const demoUser = User.create!(username: "demo", password: "user");
+
+const jordan = Product.create!(title: "", description: "", brand: "", release_date: "", retail_price: 100.00 )
+const jordan = Product.create!(title: "", description: "", brand: "", release_date: "", retail_price: 100.00 )
+const jordan = Product.create!(title: "", description: "", brand: "", release_date: "", retail_price: 100.00 )
+const jordan = Product.create!(title: "", description: "", brand: "", release_date: "", retail_price: 100.00 )
+const jordan = Product.create!(title: "", description: "", brand: "", release_date: "", retail_price: 100.00 )

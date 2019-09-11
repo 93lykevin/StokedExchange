@@ -1,20 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// const Greeting = ({ currentUser, logout }) => {
     
 class Greeting extends React.Component {
     constructor(props){
         super(props);
-        // currentUser= this.props.currentUser
-        // logout= this.props.logout
+
+        this.demoUser = {
+            username: 'demo',
+            password: 'user',
+        };
+
+        this.handleDemoLogin = this.handleDemoLogin.bind(this);
+    }
+
+    handleDemoLogin(e) {
+        e.preventDefault();
+        this.props.processForm(this.demoUser);
     }
 
     navBar() {
         return(
         <div className="nav-bar-container">
-            <Link to="/">
-                <img src={window.streetxURL} alt="logo" className="logo"  />
-            </Link>
+            <Link to="/"><img src={window.streetxURL} alt="logo" className="logo"  /></Link>
             {this.Welcome()}
         </div>
        )
@@ -30,7 +37,7 @@ class Greeting extends React.Component {
                     <li><a href="#">FAQ</a></li>
                     <li><Link to="/login">Login</Link></li>
                     <li><Link to="/signup">Sign Up</Link></li>
-
+                    <li><button onClick={this.handleDemoLogin}>Demo</button></li>
                 </ul>
             </nav>
         );

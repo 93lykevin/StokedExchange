@@ -4,7 +4,6 @@ import configureStore from './store/store';
 import { login , logout } from './actions/session_actions'
 import Root from './components/root';
 
-
 document.addEventListener("DOMContentLoaded", () => {
     let store;
     if (window.currentUser) {
