@@ -21,8 +21,10 @@ class Greeting extends React.Component {
     navBar() {
         return(
         <div className="nav-bar-container">
-            <Link to="/"><img src={window.streetxURL} alt="logo" className="logo"  /></Link>
-            {this.Welcome()}
+            <div className='nav-bar-main'>
+                <Link to="/"><img src={window.streetxURL} alt="logo" className="logo"  /></Link>
+                {this.Welcome()}
+            </div>
         </div>
        )
     };
@@ -34,7 +36,6 @@ class Greeting extends React.Component {
                     <li><a href="#">Browse</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">FAQ</a></li>
                     <li><Link to="/login">Login</Link></li>
                     <li><Link to="/signup">Sign Up</Link></li>
                     <li><button onClick={this.handleDemoLogin}>Demo</button></li>
@@ -50,7 +51,6 @@ class Greeting extends React.Component {
                     <li><a href="#">Browse</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">FAQ</a></li>
                     <li><a href="#">Account</a></li>
                     <li><a href="#">Sell</a></li>
                     <li><button className="header-button" onClick={this.props.logout}>Log Out</button></li>

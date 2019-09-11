@@ -1,4 +1,4 @@
-import * as ProductAPIUtil from '../util/session_api_util';
+import * as ProductAPIUtil from '../util/product_api_util';
 export const RECEIVE_ALL_PRODUCTS = 'RECEIVE_ALL_PRODUCTS';
 export const RECEIVE_PRODUCT = 'RECEIVE_PRODUCT';
 export const CREATE_PRODUCT = 'CREATE_PRODUCT';
@@ -12,7 +12,7 @@ const receiveAllProducts = (products) => ({
 })
 
 const receiveProduct = (product) => ({
-    type: RECEIVE_ALL_PRODUCTS,
+    type: RECEIVE_PRODUCT,
     product
 })
 
@@ -23,11 +23,11 @@ const removeProduct = (productId) => ({
 
 
 //THUNK ACTION CREATORS
-export const fetchProducts = () => dispatch => {
+export const requestProducts = () => dispatch => {
     ProductAPIUtil.fetchProducts().then(products => dispatch(receiveAllProducts(products)))
 }
 
-export const fetchProduct = (id) => dispatch => {
+export const requestProduct = (id) => dispatch => {
     ProductAPIUtil.fetchProduct(id).then(product => dispatch(receiveProduct(product)))
 }
 
@@ -40,5 +40,5 @@ export const updateProduct = (product) => dispatch => {
 }
 
 export const deleteProduct = (id) => dispatch => {
-    ProductAPIUtil.deleteProducts(id).then(productId => dispatch(removeProduct(productId)))
+    ProductAPIUtil.deleteProduct(id).then(productId => dispatch(removeProduct(productId)))
 }

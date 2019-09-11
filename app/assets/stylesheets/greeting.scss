@@ -25,11 +25,20 @@ header{
     color: beige;
 };
 
+.nav-bar-main {
+    height: 100px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
 .logo {
     // float: left;
     top: 10px;
     left: 10px;
-    height: 25%;
+    height: 100%;
     opacity: 0.95;
 }
 

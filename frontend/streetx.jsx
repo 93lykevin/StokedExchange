@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import configureStore from './store/store';
-import { login , logout } from './actions/session_actions'
+import { login , logout } from './actions/session_actions';
+import { requestProducts } from './actions/product_actions';
 import Root from './components/root';
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -19,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         store = configureStore();
     }
 
+    window.requestProducts = requestProducts;
     window.login = login;
     window.store = store;
     window.getState = store.getState;
