@@ -7,6 +7,7 @@ class ProductIndexItem extends React.Component {
     }
 
     render() {
+        
         return(
             <div className="product-item">
                 <div className="product-item-layer">

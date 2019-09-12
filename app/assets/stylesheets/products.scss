@@ -6,15 +6,12 @@
     width: 100%;
     flex-flow: row wrap;
     justify-content: flex-start;
-
 }
 
 .product-item {
     position: relative;
     width: 18%;
     padding: 0 8px 16px;
-    
-
 }
 
 .product-item-layer {
@@ -38,5 +35,53 @@
     background-color: rgb(250, 250, 250);
     text-align: left;
     padding: 16px;
-    
+}
+
+.ticker {
+    height: 50px;	
+    width:100%;
+    overflow: hidden;
+    position: fixed;
+    background: #252525;
+    bottom: 0;
+    left: 0;
+}
+.ticker h3 {
+    font-size: 3em;
+    color: rgb(241, 47, 216);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: ticker 25s linear infinite;
+    -webkit-animation: ticker 25s linear infinite;
+    animation: ticker 25s linear infinite;
+    }
+    /* Move it (define the animation) */
+    @-moz-keyframes ticker {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+    }
+    @-webkit-keyframes ticker {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+    }
+    @keyframes ticker {
+    0%   { 
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); 
+ }
 }

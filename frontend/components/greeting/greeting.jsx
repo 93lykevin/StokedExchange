@@ -22,8 +22,12 @@ class Greeting extends React.Component {
         return(
         <div className="nav-bar-container">
             <div className='nav-bar-main'>
-                <Link to="/"><img src={window.streetxURL} alt="logo" className="logo"/></Link>
-                {this.Welcome()}
+                <div className="logo-nav">
+                    <Link to="/"><img src={window.streetxURL} alt="logo" className="logo"/></Link>
+                </div>
+                <div className="nav-bar-list-div">
+                    {this.Welcome()}
+                </div>
             </div>
         </div>
        )

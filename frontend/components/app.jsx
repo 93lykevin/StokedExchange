@@ -7,17 +7,22 @@ import SignupFormContainer from './session_form/signup_form_container';
 import ProductIndexContainer from './product/product_index_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 const App = () => (
-    <div>
-        <header>
-            <GreetingContainer />
-        </header>
-        <div className="container">
+    <div className="app-container">
+        <div className="site-header">
+            <span></span>
+            <div className="">
+                <GreetingContainer />
+            </div>
+        </div>
+
+        <div className="main-container">
             <Switch>
                 <AuthRoute exact path="/login" component={LoginFormContainer}/>
                 <AuthRoute exact path="/signup" component={SignupFormContainer}/>
                 <Route exact path="/index" component={ProductIndexContainer} />
                 <Redirect to="/" />
             </Switch>
+            
         </div>
     </div>
 )
