@@ -15,15 +15,11 @@ class ProductIndex extends React.Component {
         let products = this.props.products;
         return(
             <div className="browse-grid">
-                <div className="product-item">
-                    <ul>
-                        {products.map(product => (
-                            <ProductIndexItem 
-                            key={product.id}
-                            product={product} />
-                        ))}
-                    </ul>
-                </div>
+                {products.map(product => (
+                    <ProductIndexItem 
+                    key={product.id}
+                    product={product} />
+                ))}
             </div>
         )
     }

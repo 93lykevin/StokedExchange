@@ -63,15 +63,19 @@ class SessionForm extends React.Component {
         return(
             <div className="login-form-container">
                 <form onSubmit={this.handleSubmit} className="login-form-box">
-                    Welcome to StreetX!
-                    <br/>
-                    
+                    <div className="welcome-to-streetx">
+                        <h3>Welcome to StreetX!</h3>
+                    </div>
+
                     <div className="access-toggle">
                         <Link to="/login" className={loginClassName} onClick={this.handleToggle}>Login</Link>
                         <Link to="/signup"className={signupClassName} onClick={this.handleToggle}>Sign Up</Link>
                     </div>
-                    
+
+
+                    <div className="render-errors-div">
                     {this.renderErrors()}
+                    </div>
                     <div className="login-form">
                         <div className="welcome-message">{this.message}</div>
                             <input type="text"

@@ -9,6 +9,7 @@ class ProductIndexItem extends React.Component {
     render() {
         return(
             <div className="product-item">
+                <div className="product-item-layer">
                 <Link to={`product/${this.props.product.id}`}>
                     <div className="product-image-div">
                         <img src={window.supremeURL} className="product-image"/>
@@ -18,6 +19,7 @@ class ProductIndexItem extends React.Component {
                         <div className="product-price">{this.props.product.retail_price}</div>
                     </div>
                 </Link>
+                </div>
             </div>
         )
     }
