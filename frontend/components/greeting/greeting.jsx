@@ -22,7 +22,7 @@ class Greeting extends React.Component {
         return(
         <div className="nav-bar-container">
             <div className='nav-bar-main'>
-                <Link to="/"><img src={window.streetxURL} alt="logo" className="logo"  /></Link>
+                <Link to="/"><img src={window.streetxURL} alt="logo" className="logo"/></Link>
                 {this.Welcome()}
             </div>
         </div>
