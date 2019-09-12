@@ -12,17 +12,18 @@ class ProductIndex extends React.Component {
     }
 
     render() {
+        let products = this.props.products;
         return(
             <div className="browse-grid">
-                <ul>
-                    <div>
-                        {this.props.products.map(product => {
+                <div className="product-item">
+                    <ul>
+                        {products.map(product => (
                             <ProductIndexItem 
                             key={product.id}
                             product={product} />
-                        })}
-                    </div>
-                </ul>
+                        ))}
+                    </ul>
+                </div>
             </div>
         )
     }

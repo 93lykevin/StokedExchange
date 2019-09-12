@@ -33,7 +33,7 @@ class Greeting extends React.Component {
         return (
             <nav className="nav-bar-list" >
                 <ul>
-                    <li><a href="#">Browse</a></li>
+                    <li><Link to="/index">Browse</Link></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">About</a></li>
                     <li><Link to="/login">Login</Link></li>
@@ -48,7 +48,7 @@ class Greeting extends React.Component {
         return (
             <nav className="nav-bar-list" >
                 <ul>
-                    <li><a href="#">Browse</a></li>
+                    <li><Link to="/index">Browse</Link></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Account</a></li>
