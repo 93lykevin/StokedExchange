@@ -20,7 +20,6 @@ class SessionForm extends React.Component {
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleToggle = this.handleToggle.bind(this);
-        this.handleDemoLogin = this.handleDemoLogin.bind(this);
     }
 
     update(field) {
@@ -32,12 +31,8 @@ class SessionForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
+        debugger;
         this.props.processForm(user);
-    }
-
-    handleDemoLogin(e) {
-        e.preventDefault();
-        this.props.processForm(this.demoUser);
     }
     
     handleToggle(e) {

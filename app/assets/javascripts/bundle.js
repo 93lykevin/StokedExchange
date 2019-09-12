@@ -542,14 +542,40 @@ function (_React$Component) {
         className: "product-index-container-div"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "title-container"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "title-left"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "title-left-text"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "STREETWARE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Supreme, BAPE, Kith, Palace, Fear of God, KAWS, OFF-WHITE, & more. No lines, no bots, and always authentic. Shop all the best streetwear right here on StockX."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "title-right"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "products-index-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "side-nav-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "side-nav"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: ""
+      }, "SUPREME"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: ""
+      }, "BAPE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: ""
+      }, "KITH"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: ""
+      }, "PALACE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: ""
+      }, "FEAR OF GOD"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: ""
+      }, "OFF-WHITE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: ""
+      }, "NIKE"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "browse-grid"
       }, products.map(function (product) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_product_index_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
           key: product.id,
           product: product
         });
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "ticker"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Kevin & Mary & Mohit")));
     }
@@ -663,9 +689,9 @@ function (_React$Component) {
         className: "product-body-div"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "product-title"
-      }, this.props.product.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.props.product.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Retail Price"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "product-price"
-      }, this.props.product.retail_price)))));
+      }, "$", this.props.product.retail_price)))));
     }
   }]);
 
@@ -810,7 +836,6 @@ function (_React$Component) {
     _this.message = _this.props.formType === 'login' ? "Welcome Back" : "Let's get jiggy wid it!";
     _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
     _this.handleToggle = _this.handleToggle.bind(_assertThisInitialized(_this));
-    _this.handleDemoLogin = _this.handleDemoLogin.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -828,13 +853,8 @@ function (_React$Component) {
     value: function handleSubmit(e) {
       e.preventDefault();
       var user = Object.assign({}, this.state);
+      debugger;
       this.props.processForm(user);
-    }
-  }, {
-    key: "handleDemoLogin",
-    value: function handleDemoLogin(e) {
-      e.preventDefault();
-      this.props.processForm(this.demoUser);
     }
   }, {
     key: "handleToggle",
@@ -34742,7 +34762,7 @@ function warning(message) {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
