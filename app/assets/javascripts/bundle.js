@@ -1340,7 +1340,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _actions_session_actions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./actions/session_actions */ "./frontend/actions/session_actions.js");
 /* harmony import */ var _actions_product_actions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./actions/product_actions */ "./frontend/actions/product_actions.js");
 /* harmony import */ var _components_root__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/root */ "./frontend/components/root.jsx");
+/* harmony import */ var _util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./util/stockx_api_util */ "./frontend/util/stockx_api_util.js");
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
@@ -1366,6 +1368,7 @@ document.addEventListener("DOMContentLoaded", function () {
     store = Object(_store_store__WEBPACK_IMPORTED_MODULE_2__["default"])();
   }
 
+  window.postStockx = _util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"];
   window.requestProducts = _actions_product_actions__WEBPACK_IMPORTED_MODULE_4__["requestProducts"];
   window.login = _actions_session_actions__WEBPACK_IMPORTED_MODULE_3__["login"];
   window.store = store;
@@ -1531,6 +1534,17 @@ var logout = function logout() {
     url: 'api/session'
   });
 };
+
+/***/ }),
+
+/***/ "./frontend/util/stockx_api_util.js":
+/*!******************************************!*\
+  !*** ./frontend/util/stockx_api_util.js ***!
+  \******************************************/
+/*! exports provided: postStockx */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/frontend/util/stockx_api_util.js: Unexpected token, expected \";\" (10:6)\n\n\u001b[0m \u001b[90m  8 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 | \u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 | \u001b[39mexpot \u001b[36mconst\u001b[39m seedDbStockx \u001b[33m=\u001b[39m (search) \u001b[33m=>\u001b[39m (\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 | \u001b[39m    $\u001b[33m.\u001b[39majax({\u001b[0m\n\u001b[0m \u001b[90m 12 | \u001b[39m        method\u001b[33m:\u001b[39m \u001b[32m'POST'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 | \u001b[39m        url\u001b[33m:\u001b[39m \u001b[32m'http://kevtly.pythonanywhere.com/'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n    at Object.raise (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:6387:17)\n    at Object.unexpected (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:7704:16)\n    at Object.semicolon (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:7686:40)\n    at Object.parseExpressionStatement (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:10435:10)\n    at Object.parseStatementContent (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:10034:19)\n    at Object.parseStatement (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:9900:17)\n    at Object.parseBlockOrModuleBlockBody (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:10476:25)\n    at Object.parseBlockBody (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:10463:10)\n    at Object.parseTopLevel (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:9829:10)\n    at Object.parse (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:11341:17)\n    at parse (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:11377:38)\n    at parser (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/core/lib/transformation/normalize-file.js:166:34)\n    at normalizeFile (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/core/lib/transformation/normalize-file.js:100:11)\n    at runSync (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/core/lib/transformation/index.js:44:43)\n    at runAsync (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/core/lib/transformation/index.js:35:14)\n    at process.nextTick (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/core/lib/transform.js:34:34)\n    at process._tickCallback (internal/process/next_tick.js:61:11)");
 
 /***/ }),
 
