@@ -390,7 +390,9 @@ function (_React$Component) {
     value: function sessionLinks() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
         className: "nav-bar-list"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "nav-bar-list-ul"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/index"
       }, "Browse")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#"
@@ -402,7 +404,11 @@ function (_React$Component) {
         to: "/signup"
       }, "Sign Up")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: this.handleDemoLogin
-      }, "Demo"))));
+      }, "Demo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "sell-button"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/sell"
+      }, "Sell"))));
     }
   }, {
     key: "personalGreeting",
@@ -417,9 +423,11 @@ function (_React$Component) {
         href: "#"
       }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#"
-      }, "Account")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, "Account")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "sell-button"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#"
-      }, "Sell")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "Sell"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "header-button",
         onClick: this.props.logout
       }, "Log Out"))));
@@ -546,7 +554,7 @@ function (_React$Component) {
         className: "title-left"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "title-left-text"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "STREETWARE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Supreme, BAPE, Kith, Palace, Fear of God, KAWS, OFF-WHITE, & more. No lines, no bots, and always authentic. Shop all the best streetwear right here on StockX."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "STREETWEAR"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Supreme, BAPE, Kith, Palace, Fear of God, KAWS, OFF-WHITE, & more. No lines, no bots, and always authentic. Shop all the best streetwear right here on StockX."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "title-right"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "products-index-container"

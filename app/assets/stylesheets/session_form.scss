@@ -94,7 +94,7 @@
 .render-errors-div {
     height: 30px;
     display: flex;
-    margin: 2px 0;
+    margin: 5px 0;
 }
 
 .errors-list {
@@ -115,14 +115,14 @@
     height: 40;
     background-color: rgb(236, 31, 24);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     border-radius: 5px;
-    margin-right: 25px
 }
 
 .submit-buttons{
     display: flex;
     color: #FFF;
+    justify-content: space-around;
 }
 
 .session-submit:hover {

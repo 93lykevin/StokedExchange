@@ -18,7 +18,7 @@ class ProductIndex extends React.Component {
                 <div className="title-container">
                     <div className="title-left">
                         <div className="title-left-text">
-                            <h1>STREETWARE</h1>
+                            <h1>STREETWEAR</h1>
                             <h4>Supreme, BAPE, Kith, Palace, Fear of God, KAWS, OFF-WHITE, & more. No lines, no bots, and always authentic. 
                                 Shop all the best streetwear right here on StockX.</h4>
                         </div>

@@ -51,19 +51,48 @@
 }
 
 .nav-bar-list-div {
+    height: 45px;
 }
 
 .nav-bar-list{
     float: right;
-    height: 15px;
-    padding-right: 25px;
+    height: 100%;
+    padding-right: 30px;
+    margin: 0 3px;
     color: black;
     
 }
 
-.nav-bar-list li{
-    float: left;
-    padding-left: 20px;
-    padding-right: 5px;
+.nav-bar-list-ul {
+    height: 100%;
+    
 }
 
+.nav-bar-list-ul > li {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    margin: 3px;
+}
+
+.nav-bar-list li{
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sell-button {
+    border-radius: 20px;
+    border: 1px solid #ff5a5f;
+    color: #ff5a5f;
+    
+    :hover {
+        color: #861317;
+        opacity: 0.9;
+    }
+
+    .sell-button-link {
+        height: 100%;
+        width: 100%;
+    }
+}

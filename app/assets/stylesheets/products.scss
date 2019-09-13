@@ -46,8 +46,6 @@
 
 }
 
-
-
 .side-nav-container {
     width: 16.6667%;
 }
@@ -55,7 +53,7 @@
 .side-nav {
     height: 100%;
     display: flex;
-
+    flex-direction: column;
 }
 
 .ticker {
