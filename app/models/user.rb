@@ -1,8 +1,11 @@
 class User < ApplicationRecord
     # SPIRE
-    validates :username, presence: true, uniqueness: true
+    validates :username, presence: {message: 'error'}, uniqueness: true
     validates :password_digest, presence: { message: 'Password can\'t be blank'}
-    validates :password, length: {minimum: 1, allow_nil: true}
+    validates :first_name, presence: {message: 'error'};
+    validates :last_name, presence: {message: 'error'}
+    validates :email, presence: {message: 'error'}
+    validates :password, length: {minimum: 6, allow_nil: true, message: 'error'}
     validates :session_token, presence: true, uniqueness: true
 
     after_initialize :ensure_session_token

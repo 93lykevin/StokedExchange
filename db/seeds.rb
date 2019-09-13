@@ -9,7 +9,8 @@
 User.delete_all
 Product.delete_all
 
-User.create(username: "demo", password: "user");
+User.create(username: "mohito", password: "burrito", first_name: "Carne", last_name: "Asada", email: "california@lolitas.com");
+User.create(username: "m", password: "b", first_name: "c", last_name: "a", email: "c@lolitas.com");
 
 Product.create(title: "1", description: "a", brand: "v", release_date: "9", retail_price: 100.00 )
 Product.create(title: "2", description: "b", brand: "w", release_date: "8", retail_price: 101.00 )

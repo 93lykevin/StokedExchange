@@ -6,8 +6,8 @@ class Greeting extends React.Component {
         super(props);
 
         this.demoUser = {
-            username: 'demo',
-            password: 'user',
+            username: 'mohito',
+            password: 'burrito',
         };
 
         this.handleDemoLogin = this.handleDemoLogin.bind(this);

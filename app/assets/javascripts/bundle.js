@@ -353,8 +353,8 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Greeting).call(this, props));
     _this.demoUser = {
-      username: 'demo',
-      password: 'user'
+      username: 'mohito',
+      password: 'burrito'
     };
     _this.handleDemoLogin = _this.handleDemoLogin.bind(_assertThisInitialized(_this));
     return _this;
@@ -826,16 +826,20 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(SessionForm).call(this, props));
     _this.state = {
+      first_name: '',
+      last_name: '',
       username: '',
-      password: ''
+      password: '',
+      email: ''
     };
     _this.demoUser = {
-      username: 'demo',
-      password: 'user'
+      username: 'mohito',
+      password: 'burrito'
     };
     _this.message = _this.props.formType === 'login' ? "Welcome Back" : "Let's get jiggy wid it!";
     _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
     _this.handleToggle = _this.handleToggle.bind(_assertThisInitialized(_this));
+    _this.handleDemoLogin = _this.handleDemoLogin.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -849,27 +853,79 @@ function (_React$Component) {
       };
     }
   }, {
+    key: "handleDemoLogin",
+    value: function handleDemoLogin(e) {
+      e.preventDefault();
+      this.props.processForm(this.demoUser);
+    }
+  }, {
     key: "handleSubmit",
     value: function handleSubmit(e) {
       e.preventDefault();
       var user = Object.assign({}, this.state);
-      debugger;
       this.props.processForm(user);
     }
   }, {
     key: "handleToggle",
     value: function handleToggle(e) {
-      this.props.clearErrors(); // (e.currentTarget).classList.toggle('toggle-option-active')
+      this.props.clearErrors();
     }
   }, {
     key: "renderErrors",
     value: function renderErrors() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-        className: "errors-list"
-      }, this.props.errors.map(function (error, i) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-          key: "error-".concat(i)
-        }, error);
+      if (this.props.errors.length > 0) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "errors-list"
+        }, this.props.errors[0]);
+      }
+    }
+  }, {
+    key: "signUp",
+    value: function signUp() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "signup-form"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "text",
+        placeholder: "First Name",
+        onChange: this.update('first_name'),
+        className: "login-input"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "text",
+        placeholder: "Last Name",
+        onChange: this.update('last_name'),
+        className: "login-input"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "text",
+        placeholder: "Username",
+        onChange: this.update('username'),
+        className: "login-input"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "password",
+        placeholder: "Password",
+        onChange: this.update('password'),
+        className: "login-input"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "text",
+        placeholder: "Email",
+        onChange: this.update('email'),
+        className: "login-input"
+      }));
+    }
+  }, {
+    key: "login",
+    value: function login() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "login-form"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "text",
+        placeholder: "Username",
+        onChange: this.update('username'),
+        className: "login-input"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "password",
+        placeholder: "Password",
+        onChange: this.update('password'),
+        className: "login-input"
       }));
     }
   }, {
@@ -877,6 +933,7 @@ function (_React$Component) {
     value: function render() {
       var loginClassName = this.props.formType === 'login' ? 'toggle-option-active' : 'toggle-option';
       var signupClassName = this.props.formType === 'signup' ? 'toggle-option-active' : 'toggle-option';
+      var buttonText = this.props.formType === 'login' ? 'Login' : 'Sign Up';
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "login-form-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
@@ -897,22 +954,17 @@ function (_React$Component) {
       }, "Sign Up")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "render-errors-div"
       }, this.renderErrors()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "login-form"
+        className: "login-or-signup"
+      }, this.props.formType === 'login' ? this.login() : this.signUp()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "submit-buttons"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "text",
-        placeholder: "Username",
-        onChange: this.update('username'),
-        className: "login-input"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "password",
-        placeholder: "Password",
-        onChange: this.update('password'),
-        className: "login-input"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         className: "session-submit",
         type: "submit",
-        value: ""
-      }))));
+        value: buttonText
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "session-submit",
+        onClick: this.handleDemoLogin
+      }, "Demo"))));
     }
   }]);
 

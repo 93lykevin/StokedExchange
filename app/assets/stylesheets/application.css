@@ -41,16 +41,12 @@
 
 .main-container {
     position: relative;
-    min-height: 100vh;
-    padding-top: 90px;
+    height: 91vh;
+    margin-top: 90px;
     box-sizing: border-box;
 }
 
 .header-container {
     box-sizing: border-box;
     height: 0px
-}
-
-.header-container {
-
 }
