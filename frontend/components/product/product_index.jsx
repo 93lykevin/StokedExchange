@@ -13,6 +13,8 @@ class ProductIndex extends React.Component {
 
     render() {
         let products = this.props.products;
+        let brand = this.props.match.path.slice(1);
+        // debugger;
         return(
             <div className="product-index-container-div">
                 <div className="title-container">
@@ -29,14 +31,15 @@ class ProductIndex extends React.Component {
 
                     <div className="side-nav-container">
                         <div className="side-nav">
-                            
-                            <a href="">SUPREME</a>
-                            <a href="">BAPE</a>
-                            <a href="">KITH</a>
-                            <a href="">PALACE</a>
-                            <a href="">FEAR OF GOD</a>
-                            <a href="">OFF-WHITE</a>
-                            <a href="">NIKE</a>
+                            <ul>
+                            <li><Link to="/supreme">SUPREME</Link></li>
+                            <li><Link to="/bape">BAPE</Link></li>
+                            <li><Link to="/kith">KITH</Link></li>
+                            <li><Link to="/palace">PALACE</Link></li>
+                            <li><Link to="/fearofgod">FEAR OF GOD</Link></li>
+                            <li><Link to="offwhite">OFF-WHITE</Link></li>
+                            <li><Link to="nike">NIKE</Link></li>
+                            </ul>
                         </div>
 
                     </div>

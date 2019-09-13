@@ -52,13 +52,13 @@ class Greeting extends React.Component {
     personalGreeting() {
         return (
             <nav className="nav-bar-list" >
-                <ul>
+                <ul className="nav-bar-list-ul">
                     <li><Link to="/index">Browse</Link></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Account</a></li>
-                    <li className='sell-button'><div ><a href="#">Sell</a></div></li>
                     <li><button className="header-button" onClick={this.props.logout}>Log Out</button></li>
+                    <li className='sell-button'><Link to="/sell">Sell</Link></li>
                 </ul>
             </nav>
         );

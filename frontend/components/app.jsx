@@ -20,6 +20,13 @@ const App = () => (
                 <AuthRoute exact path="/login" component={LoginFormContainer}/>
                 <AuthRoute exact path="/signup" component={SignupFormContainer}/>
                 <Route exact path="/index" component={ProductIndexContainer} />
+                <Route exact path="/supreme" component={ProductIndexContainer}/>
+                <Route exact path="/bape" component={ProductIndexContainer}/>
+                <Route exact path="/kith" component={ProductIndexContainer}/>
+                <Route exact path="/palace" component={ProductIndexContainer}/>
+                <Route exact path="/fearofgod" component={ProductIndexContainer}/>
+                <Route exact path="/offwhite" component={ProductIndexContainer}/>
+                <Route exact path="/nike" component={ProductIndexContainer}/>
                 <Redirect to="/" />
             </Switch>
             
