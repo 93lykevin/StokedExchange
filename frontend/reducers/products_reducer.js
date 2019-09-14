@@ -14,7 +14,7 @@ const productsReducer = (state={}, action) => {
             newState = action.products
             return newState
         case RECEIVE_PRODUCT:
-            const newProduct = { [action.product.id]: action.product }
+            const newProduct = { [action.product.object_identifier]: action.product }
             newState = merge(newState, newProduct)
             return newState;
         case DELETE_PRODUCT:

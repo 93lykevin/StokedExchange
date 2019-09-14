@@ -1132,7 +1132,7 @@ var productsReducer = function productsReducer() {
       return newState;
 
     case _actions_product_actions__WEBPACK_IMPORTED_MODULE_0__["RECEIVE_PRODUCT"]:
-      var newProduct = _defineProperty({}, action.product.id, action.product);
+      var newProduct = _defineProperty({}, action.product.object_identifier, action.product);
 
       newState = lodash_merge__WEBPACK_IMPORTED_MODULE_1___default()(newState, newProduct);
       return newState;
@@ -1369,6 +1369,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   window.postStockx = _util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"];
+  window.filterSearch = _util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["filterSearch"];
   window.requestProducts = _actions_product_actions__WEBPACK_IMPORTED_MODULE_4__["requestProducts"];
   window.login = _actions_session_actions__WEBPACK_IMPORTED_MODULE_3__["login"];
   window.store = store;
@@ -1409,6 +1410,7 @@ var fetchProduct = function fetchProduct(id) {
   });
 };
 var createProduct = function createProduct(product) {
+  // debugger
   return $.ajax({
     method: 'POST',
     url: "api/products",
@@ -1541,10 +1543,106 @@ var logout = function logout() {
 /*!******************************************!*\
   !*** ./frontend/util/stockx_api_util.js ***!
   \******************************************/
-/*! exports provided: postStockx */
-/***/ (function(module, exports) {
+/*! exports provided: postStockx, filterSearch */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/frontend/util/stockx_api_util.js: Unexpected token, expected \";\" (10:6)\n\n\u001b[0m \u001b[90m  8 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 | \u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 | \u001b[39mexpot \u001b[36mconst\u001b[39m seedDbStockx \u001b[33m=\u001b[39m (search) \u001b[33m=>\u001b[39m (\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 | \u001b[39m    $\u001b[33m.\u001b[39majax({\u001b[0m\n\u001b[0m \u001b[90m 12 | \u001b[39m        method\u001b[33m:\u001b[39m \u001b[32m'POST'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 | \u001b[39m        url\u001b[33m:\u001b[39m \u001b[32m'http://kevtly.pythonanywhere.com/'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n    at Object.raise (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:6387:17)\n    at Object.unexpected (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:7704:16)\n    at Object.semicolon (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:7686:40)\n    at Object.parseExpressionStatement (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:10435:10)\n    at Object.parseStatementContent (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:10034:19)\n    at Object.parseStatement (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:9900:17)\n    at Object.parseBlockOrModuleBlockBody (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:10476:25)\n    at Object.parseBlockBody (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:10463:10)\n    at Object.parseTopLevel (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:9829:10)\n    at Object.parse (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:11341:17)\n    at parse (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/parser/lib/index.js:11377:38)\n    at parser (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/core/lib/transformation/normalize-file.js:166:34)\n    at normalizeFile (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/core/lib/transformation/normalize-file.js:100:11)\n    at runSync (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/core/lib/transformation/index.js:44:43)\n    at runAsync (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/core/lib/transformation/index.js:35:14)\n    at process.nextTick (/Users/kevintly1/Desktop/App Academy/StreetX - Full Stack Project/node_modules/@babel/core/lib/transform.js:34:34)\n    at process._tickCallback (internal/process/next_tick.js:61:11)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "postStockx", function() { return postStockx; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "filterSearch", function() { return filterSearch; });
+/* harmony import */ var _product_api_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./product_api_util */ "./frontend/util/product_api_util.js");
+/* harmony import */ var _components_product_product_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/product/product_index */ "./frontend/components/product/product_index.jsx");
+
+
+var postStockx = function postStockx(search) {
+  return $.ajax({
+    method: 'POST',
+    url: 'http://kevtly.pythonanywhere.com/',
+    data: {
+      search: search
+    }
+  }).then(function (searchRes) {
+    return filterSearch(searchRes);
+  });
+};
+var filterSearch = function filterSearch(searchRes) {
+  //{{},{},{},{},{}}
+  // let search_res = search_json['responseJSON']; //ARRAY [{},{},{},{},{}]
+  // let filteredSearchResult = [];
+  for (var i = 0; i < searchRes.length; i++) {
+    var item = searchRes[i];
+    var get_retail_price = item['searchable_traits'];
+    var filtered_item = {
+      'title': item['name'],
+      'description': item['description'],
+      'brand': item['brand'],
+      'release_date': item['release_date'],
+      'retail_price': Object.values(get_retail_price)[2],
+      'colorway': item['colorway'],
+      'gender': item['gender'],
+      'make': item['make'],
+      'model': item['model'],
+      'object_identifier': item['objectID'],
+      'style_identifier': item['style_id'],
+      'product_category': item['product_category'],
+      'highest_bid': item['highest_bid'],
+      'last_sale': item['last_sale'],
+      'lowest_ask': item['lowest_ask'],
+      'sales_last_72': item['sales_last_72'],
+      'new_release': item['new_release']
+    };
+    Object(_product_api_util__WEBPACK_IMPORTED_MODULE_0__["createProduct"])(filtered_item).then(function (product) {
+      return console.log(product);
+    });
+  }
+}; // export const seedCreate = (search) => {
+//     postStockx(search).then(searchRes => {
+//         filterSearch(searchRes).then(filterArr => {
+//             for(let i=0; i<filterArr.length; i++) {
+//                 createProduct(filterArr[i])
+//                 console.log(filterArr[i])
+//             }
+//         })
+//     })
+// }
+//brand: string
+//categories: array
+//colorway: string
+//gender: string
+//highest_bid: int
+//last_sale: int
+//lowest_ask: int
+//make: string
+//model: string
+//name: string
+//new_release: boolean
+//object_itentifier: string
+//////////////////price://////
+//product_category: string
+//release_date: string
+//sales_last_72: int
+//searchable_traits: Retail Price: int
+//short_description: string
+//style_itentifier: string
+// {
+//     brand: "Nike"
+//     colorway: "Varsity Red/Varsity Red-White-Black"
+//     description: null
+//     gender: "men"
+//     highest_bid: 511
+//     last_sale: 670
+//     lowest_ask: 175
+//     make: "Nike SB Dunk Low"
+//     model: "Supreme Jewel Swoosh Red"
+//     new_release: 1
+//     object_identifier: "5fd70f8d-4a1f-4284-82f7-0fafabb541fa"
+//     product_category: "sneakers"
+//     release_date: "2019-09-14"
+//     retail_price: 110
+//     sales_last_72: 677
+//     style_identifier: "CK3480-600"
+//     title: "Nike SB Dunk Low Supreme Jewel Swoosh Red"
+// }
 
 /***/ }),
 
@@ -34868,7 +34966,7 @@ function warning(message) {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
+/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

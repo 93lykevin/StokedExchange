@@ -4,7 +4,7 @@ import configureStore from './store/store';
 import { login , logout } from './actions/session_actions';
 import { requestProducts } from './actions/product_actions';
 import Root from './components/root';
-import {postStockx} from './util/stockx_api_util';
+import {postStockx, filterSearch } from './util/stockx_api_util';
 
 document.addEventListener("DOMContentLoaded", () => {
     let store;
@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     window.postStockx = postStockx;
+    window.filterSearch = filterSearch;
     window.requestProducts = requestProducts;
     window.login = login;
     window.store = store;

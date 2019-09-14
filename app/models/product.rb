@@ -1,3 +1,7 @@
 class Product < ApplicationRecord
-    validates :title, :description, :brand, :release_date, :retail_price, presence: true
+    validates :colorway, presence: true
+    validates :make, presence: true
+    validates :model, presence: true
+    validates :object_identifier, presence: true, uniqueness: true
+    validates :product_category, presence: true
 end
