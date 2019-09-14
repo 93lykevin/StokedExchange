@@ -576,8 +576,7 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       var products = this.props.products;
-      var brand = this.props.match.path.slice(1); // debugger;
-
+      var brand = this.props.match.path.slice(1);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "product-index-container-div"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -729,9 +728,9 @@ function (_React$Component) {
         className: "product-body-div"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "product-title"
-      }, this.props.product.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Retail Price"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.props.product.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lowest Ask"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "product-price"
-      }, "$", this.props.product.retail_price)))));
+      }, "$", this.props.product.lowest_ask)))));
     }
   }]);
 
@@ -1350,6 +1349,19 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
+var seedDb = function seedDb() {
+  Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"])("Supreme");
+  Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"])("Adidas");
+  Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"])("Off White");
+  Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"])("Fear of God");
+  Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"])("Nike");
+  Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"])("Jordan");
+  Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"])("Palace");
+  Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"])("Bape");
+  Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"])("Kith");
+};
+
 document.addEventListener("DOMContentLoaded", function () {
   var store;
 
@@ -1368,8 +1380,8 @@ document.addEventListener("DOMContentLoaded", function () {
     store = Object(_store_store__WEBPACK_IMPORTED_MODULE_2__["default"])();
   }
 
+  window.seedDb = seedDb;
   window.postStockx = _util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"];
-  window.filterSearch = _util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["filterSearch"];
   window.requestProducts = _actions_product_actions__WEBPACK_IMPORTED_MODULE_4__["requestProducts"];
   window.login = _actions_session_actions__WEBPACK_IMPORTED_MODULE_3__["login"];
   window.store = store;
@@ -1543,13 +1555,12 @@ var logout = function logout() {
 /*!******************************************!*\
   !*** ./frontend/util/stockx_api_util.js ***!
   \******************************************/
-/*! exports provided: postStockx, filterSearch */
+/*! exports provided: postStockx */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "postStockx", function() { return postStockx; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "filterSearch", function() { return filterSearch; });
 /* harmony import */ var _product_api_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./product_api_util */ "./frontend/util/product_api_util.js");
 /* harmony import */ var _components_product_product_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/product/product_index */ "./frontend/components/product/product_index.jsx");
 
@@ -1564,20 +1575,22 @@ var postStockx = function postStockx(search) {
   }).then(function (searchRes) {
     return filterSearch(searchRes);
   });
-};
+}; //filter & create helper method
+
 var filterSearch = function filterSearch(searchRes) {
   //{{},{},{},{},{}}
   // let search_res = search_json['responseJSON']; //ARRAY [{},{},{},{},{}]
   // let filteredSearchResult = [];
   for (var i = 0; i < searchRes.length; i++) {
     var item = searchRes[i];
-    var get_retail_price = item['searchable_traits'];
-    var filtered_item = {
+    var getRetailPrice = item['searchable_traits']; // debugger;
+
+    var filteredItem = {
       'title': item['name'],
       'description': item['description'],
       'brand': item['brand'],
       'release_date': item['release_date'],
-      'retail_price': Object.values(get_retail_price)[2],
+      'retail_price': Object.values(getRetailPrice)[2],
       'colorway': item['colorway'],
       'gender': item['gender'],
       'make': item['make'],
@@ -1589,11 +1602,10 @@ var filterSearch = function filterSearch(searchRes) {
       'last_sale': item['last_sale'],
       'lowest_ask': item['lowest_ask'],
       'sales_last_72': item['sales_last_72'],
-      'new_release': item['new_release']
+      'new_release': item['new_release'] // 'categories': item['categories']
+
     };
-    Object(_product_api_util__WEBPACK_IMPORTED_MODULE_0__["createProduct"])(filtered_item).then(function (product) {
-      return console.log(product);
-    });
+    Object(_product_api_util__WEBPACK_IMPORTED_MODULE_0__["createProduct"])(filteredItem);
   }
 }; // export const seedCreate = (search) => {
 //     postStockx(search).then(searchRes => {
@@ -34966,7 +34978,7 @@ function warning(message) {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

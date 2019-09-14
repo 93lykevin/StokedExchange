@@ -14,7 +14,6 @@ class ProductIndex extends React.Component {
     render() {
         let products = this.props.products;
         let brand = this.props.match.path.slice(1);
-        // debugger;
         return(
             <div className="product-index-container-div">
                 <div className="title-container">

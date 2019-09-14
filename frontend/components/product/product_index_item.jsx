@@ -17,8 +17,8 @@ class ProductIndexItem extends React.Component {
                     </div>
                     <div className="product-body-div">
                         <div className="product-title">{this.props.product.title}</div>
-                        <p>Retail Price</p>
-                        <div className="product-price">${this.props.product.retail_price}</div>
+                        <p>Lowest Ask</p>
+                        <div className="product-price">${this.props.product.lowest_ask}</div>
                     </div>
                 </Link>
                 </div>

@@ -9,19 +9,20 @@ export const postStockx = (search) => (
     }).then(searchRes => filterSearch(searchRes))
 );
 
-export const filterSearch = (searchRes) => {      //{{},{},{},{},{}}
+//filter & create helper method
+const filterSearch = (searchRes) => {      //{{},{},{},{},{}}
     // let search_res = search_json['responseJSON']; //ARRAY [{},{},{},{},{}]
     // let filteredSearchResult = [];
     for(let i=0; i < searchRes.length; i++) {
         let item = searchRes[i];
-        let get_retail_price = item['searchable_traits'];
-        
-        let filtered_item = ({
+        let getRetailPrice = item['searchable_traits'];
+        // debugger;
+        let filteredItem = ({
             'title': item['name'],
             'description': item['description'],
             'brand': item['brand'],
             'release_date': item['release_date'],
-            'retail_price': Object.values(get_retail_price)[2],
+            'retail_price': Object.values(getRetailPrice)[2],
             'colorway': item['colorway'],
             'gender': item['gender'],
             'make': item['make'],
@@ -33,9 +34,10 @@ export const filterSearch = (searchRes) => {      //{{},{},{},{},{}}
             'last_sale': item['last_sale'],
             'lowest_ask': item['lowest_ask'],
             'sales_last_72': item['sales_last_72'],
-            'new_release': item['new_release']
+            'new_release': item['new_release'],
+            // 'categories': item['categories']
         })
-        createProduct(filtered_item).then((product) => console.log(product));
+        createProduct(filteredItem)
     }
 }
 

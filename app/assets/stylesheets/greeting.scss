@@ -52,6 +52,7 @@
 
 .nav-bar-list-div {
     height: 45px;
+    min-width: 600px;
 }
 
 .nav-bar-list{
@@ -65,15 +66,16 @@
 
 .nav-bar-list-ul {
     height: 100%;
+    position: relative;
     
+    li {
+        height: 70%;
+        display: flex;
+        align-items: center;
+        margin: 3px;
+    }
 }
 
-.nav-bar-list-ul > li {
-    height: 70%;
-    display: flex;
-    align-items: center;
-    margin: 3px;
-}
 
 .nav-bar-list li{
     float: left;
