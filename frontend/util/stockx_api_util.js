@@ -41,6 +41,24 @@ const filterSearch = (searchRes) => {      //{{},{},{},{},{}}
     }
 }
 
+export const seedDb = () => {
+    postStockx("Supreme")
+    postStockx("Adidas")
+    postStockx("Off White")
+    postStockx("Fear of God")
+    postStockx("Nike")
+    postStockx("Jordan")
+    postStockx("Palace")
+    postStockx("Bape")
+    postStockx("Kith")
+    postStockx("Awake")
+    postStockx("Artist Merch")
+    postStockx("Kaws")
+    postStockx("GOLF")
+    postStockx("Polo")
+    postStockx("Miscellaneous")
+}
+
 // export const seedCreate = (search) => {
 //     postStockx(search).then(searchRes => {
 //         filterSearch(searchRes).then(filterArr => {

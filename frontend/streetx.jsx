@@ -6,17 +6,7 @@ import { requestProducts } from './actions/product_actions';
 import Root from './components/root';
 import { postStockx } from './util/stockx_api_util';
 
-const seedDb = () => {
-    postStockx("Supreme")
-    postStockx("Adidas")
-    postStockx("Off White")
-    postStockx("Fear of God")
-    postStockx("Nike")
-    postStockx("Jordan")
-    postStockx("Palace")
-    postStockx("Bape")
-    postStockx("Kith")
-}
+
 
 document.addEventListener("DOMContentLoaded", () => {
     let store;
@@ -33,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
         store = configureStore();
     }
 
-    window.seedDb = seedDb;
     window.postStockx = postStockx;
     window.requestProducts = requestProducts;
     window.login = login;

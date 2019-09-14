@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import ProductIndexItem from "./product_index_item";
+import {seedDb}  from '../../util/stockx_api_util';
 
 class ProductIndex extends React.Component {
     constructor(props){
@@ -8,6 +9,7 @@ class ProductIndex extends React.Component {
     }
 
     componentDidMount() {
+        seedDb();
         this.props.requestProducts();
     }
 

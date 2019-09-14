@@ -549,6 +549,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _product_index_item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./product_index_item */ "./frontend/components/product/product_index_item.jsx");
+/* harmony import */ var _util_stockx_api_util__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../util/stockx_api_util */ "./frontend/util/stockx_api_util.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -571,6 +572,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var ProductIndex =
 /*#__PURE__*/
 function (_React$Component) {
@@ -585,6 +587,7 @@ function (_React$Component) {
   _createClass(ProductIndex, [{
     key: "componentDidMount",
     value: function componentDidMount() {
+      Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_3__["seedDb"])();
       this.props.requestProducts();
     }
   }, {
@@ -1364,19 +1367,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
-
-var seedDb = function seedDb() {
-  Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"])("Supreme");
-  Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"])("Adidas");
-  Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"])("Off White");
-  Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"])("Fear of God");
-  Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"])("Nike");
-  Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"])("Jordan");
-  Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"])("Palace");
-  Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"])("Bape");
-  Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"])("Kith");
-};
-
 document.addEventListener("DOMContentLoaded", function () {
   var store;
 
@@ -1395,7 +1385,6 @@ document.addEventListener("DOMContentLoaded", function () {
     store = Object(_store_store__WEBPACK_IMPORTED_MODULE_2__["default"])();
   }
 
-  window.seedDb = seedDb;
   window.postStockx = _util_stockx_api_util__WEBPACK_IMPORTED_MODULE_6__["postStockx"];
   window.requestProducts = _actions_product_actions__WEBPACK_IMPORTED_MODULE_4__["requestProducts"];
   window.login = _actions_session_actions__WEBPACK_IMPORTED_MODULE_3__["login"];
@@ -1570,12 +1559,13 @@ var logout = function logout() {
 /*!******************************************!*\
   !*** ./frontend/util/stockx_api_util.js ***!
   \******************************************/
-/*! exports provided: postStockx */
+/*! exports provided: postStockx, seedDb */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "postStockx", function() { return postStockx; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "seedDb", function() { return seedDb; });
 /* harmony import */ var _product_api_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./product_api_util */ "./frontend/util/product_api_util.js");
 /* harmony import */ var _components_product_product_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/product/product_index */ "./frontend/components/product/product_index.jsx");
 
@@ -1622,6 +1612,24 @@ var filterSearch = function filterSearch(searchRes) {
     };
     Object(_product_api_util__WEBPACK_IMPORTED_MODULE_0__["createProduct"])(filteredItem);
   }
+};
+
+var seedDb = function seedDb() {
+  postStockx("Supreme");
+  postStockx("Adidas");
+  postStockx("Off White");
+  postStockx("Fear of God");
+  postStockx("Nike");
+  postStockx("Jordan");
+  postStockx("Palace");
+  postStockx("Bape");
+  postStockx("Kith");
+  postStockx("Awake");
+  postStockx("Artist Merch");
+  postStockx("Kaws");
+  postStockx("GOLF");
+  postStockx("Polo");
+  postStockx("Miscellaneous");
 }; // export const seedCreate = (search) => {
 //     postStockx(search).then(searchRes => {
 //         filterSearch(searchRes).then(filterArr => {
