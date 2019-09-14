@@ -8,5 +8,4 @@
 
 User.delete_all
 
-User.create(username: "mohito", password: "burrito", first_name: "Carne", last_name: "Asada", email: "california@lolitas.com");
-User.create(username: "m", password: "b", first_name: "c", last_name: "a", email: "c@lolitas.com");
+User.create!(username: "mohito", password: "burrito", first_name: "Carne", last_name: "Asada", email: "california@lolitas.com")

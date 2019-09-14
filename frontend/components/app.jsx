@@ -19,6 +19,7 @@ const App = () => (
             <Switch>
                 <AuthRoute exact path="/login" component={LoginFormContainer}/>
                 <AuthRoute exact path="/signup" component={SignupFormContainer}/>
+                <AuthRoute exact path="/sell" component={SignupFormContainer}/>
                 <Route exact path="/index" component={ProductIndexContainer} />
                 <Route exact path="/supreme" component={ProductIndexContainer}/>
                 <Route exact path="/bape" component={ProductIndexContainer}/>
@@ -29,7 +30,6 @@ const App = () => (
                 <Route exact path="/nike" component={ProductIndexContainer}/>
                 <Redirect to="/" />
             </Switch>
-            
         </div>
     </div>
 )

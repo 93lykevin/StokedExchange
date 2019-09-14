@@ -10,12 +10,17 @@ class Greeting extends React.Component {
             password: 'burrito',
         };
 
+        this.handleToggle = this.handleToggle.bind(this);
         this.handleDemoLogin = this.handleDemoLogin.bind(this);
     }
 
     handleDemoLogin(e) {
         e.preventDefault();
         this.props.processForm(this.demoUser);
+    }
+
+    handleToggle(e) {
+        this.props.clearErrors();
     }
 
     navBar() {
@@ -40,8 +45,8 @@ class Greeting extends React.Component {
                     <li><Link to="/index">Browse</Link></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">About</a></li>
-                    <li><Link to="/login">Login</Link></li>
-                    <li><Link to="/signup">Sign Up</Link></li>
+                    <li><Link to="/login" onClick={this.handleToggle}>Login</Link></li>
+                    <li><Link to="/signup" onClick={this.handleToggle}>Sign Up</Link></li>
                     <li><button onClick={this.handleDemoLogin}>Demo</button></li>
                     <li className='sell-button'><Link to="/sell">Sell</Link></li>
                 </ul>
