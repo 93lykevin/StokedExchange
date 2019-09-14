@@ -1,0 +1,7033 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2019-09-09 04:23:00.33223'
+    - '2019-09-09 04:23:00.33223'
+
+---
+products:
+  columns:
+  - id
+  - title
+  - description
+  - brand
+  - release_date
+  - retail_price
+  - created_at
+  - updated_at
+  - colorway
+  - gender
+  - make
+  - model
+  - object_identifier
+  - product_category
+  - highest_bid
+  - last_sale
+  - lowest_ask
+  - sales_last_72
+  - new_release
+  - categories
+  - track_prices
+  records: 
+  - - 1556
+    - adidas Yeezy Boost 700 Magnet
+    - "Yeezy expands its 700 color pallette once again with the adidas Yeezy Boost
+      \ 700 “Magnet”, now available on StockX. Despite an existing line of Yeezy 700s
+      assorted in six colorways, the Magnet is the first time this colorway has been
+      used. \n<br>\n<br>\nThis 700 features a grey upper with suede overlays and orange
+      accents on the midsole. Its chunky midsole is inspired by the Adidas KB3 atop
+      a gum outsole completes the design. These sneakers released in September of
+      2019 and retailed for $300."
+    - adidas
+    - '2019-09-09'
+    - 300.0
+    - '2019-09-14 09:07:13.236469'
+    - '2019-09-14 09:07:13.236469'
+    - Magnet/Magnet/Magnet
+    - men
+    - adidas Yeezy Boost 700
+    - Magnet
+    - 6e8e0344-1084-43b5-9e1b-b4dd553b443b
+    - sneakers
+    - 418
+    - 337
+    - 310
+    - 613
+    - 1
+    - "{}"
+    - "{}"
+  - - 1557
+    - adidas Yeezy 500 Bone White
+    - "Yeezy expands its 500 color pallette once again with the adidas Yeezy 500 “Bone
+      White”, now available on StockX. Despite an existing long line of Yeezy 500s
+      assorted in five colorways, the “Bone White” colorway is the first 500 to release
+      in 2019. \n<br>\n<br>\nThis 500 features a bone white mesh upper with suede
+      overlays. Its chunky midsole is inspired by the Adidas KB3 atop a tonal-cream
+      outsole completes the design. These sneakers released in August of 2019 and
+      retailed for $200."
+    - adidas
+    - '2019-08-24'
+    - 200.0
+    - '2019-09-14 09:07:13.238559'
+    - '2019-09-14 09:07:13.238559'
+    - Bone White/Bone White/Bone White
+    - men
+    - adidas Yeezy 500
+    - Bone White
+    - 965c989c-5412-4c0b-ae68-3ee101726c3b
+    - sneakers
+    - 428
+    - 215
+    - 210
+    - 412
+    - 
+    - "{}"
+    - "{}"
+  - - 1558
+    - adidas Yeezy Boost 350 V2 Cream/Triple White
+    - Does cash rule everything around you? If so, then it would be wise to cop the
+      adidas Yeezy Boost 350 Cream White. Returning for round two with a huge restock,
+      the luminous colored Yeezy Boost 350 has a cream white upper, core white midsole,
+      and a camouflaged “SPLY-350” branding across the stripe on the sides. These
+      originally released in late April of 2017 with a retail price of $220 and restocked
+      in September of 2018. Place a Bid or Ask for these Adidas Yeezy Boost 350 Cream
+      White on StockX today.
+    - adidas
+    - '2017-04-29'
+    - 220.0
+    - '2019-09-14 09:07:13.265926'
+    - '2019-09-14 09:07:13.265926'
+    - Cream White/Cream White
+    - men
+    - adidas Yeezy Boost 350 V2
+    - Cream/Triple White
+    - 49c52f79-b1c5-4200-9792-b9d55f67a76f
+    - sneakers
+    - 478
+    - 291
+    - 257
+    - 225
+    - 
+    - "{}"
+    - "{}"
+  - - 1559
+    - adidas Yeezy Boost 350 V2 Lundmark (Non Reflective)
+    - |-
+      Like newer 350 V2 models, the adidas Yeezy Boost 350 V2 Lundmark sports a subtle summer color with the back heel tab removed. Replacing the SPLY-350 boost stripe that was traditionally found on the original 350s is a transparent stripe that reveals a more cream colored inner. A boost midsole is covered by a light tan rubber outsole that features a pink middle stripe. Adding to the exclusivity of these is the fact this colorway is a North and Latin America exclusive.
+      <br><br>The Lundmark Yeezy Boost 350 V2 released on July 11, 2019 at a retail price of $220.
+    - adidas
+    - '2019-07-13'
+    - 220.0
+    - '2019-09-14 09:07:13.279849'
+    - '2019-09-14 09:07:13.279849'
+    - Lundmark/Lundmark/Lundmark
+    - men
+    - adidas Yeezy Boost 350 V2
+    - Lundmark (Non Reflective)
+    - e48d453e-373c-4777-bf9b-6c541ad97d48
+    - sneakers
+    - 416
+    - 295
+    - 216
+    - 349
+    - 
+    - "{}"
+    - "{}"
+  - - 1560
+    - adidas NMD Hu Pharrell Solar Pack Mother
+    - Part one of three of Pharrell William's Human Race "Solar Pack," these come
+      in a pink, bright blue and yellow colorway. Sporting a pink-based Primeknit
+      upper, tribal graphic detailing, the phrase “MOTH3R” embroidered down the middle
+      of the sneaker, a Boost cushioned midsole and yellow outsole. Their release
+      date was on August of 2018, where they were available at select adidas Originals
+      retailers worldwide for $250.
+    - adidas
+    - '2018-08-18'
+    - 250.0
+    - '2019-09-14 09:07:13.292756'
+    - '2019-09-14 09:07:13.292756'
+    - White/Pink/Yellow
+    - men
+    - adidas NMD Hu
+    - Pharrell Solar Pack Mother
+    - 1035585c-6a73-4429-ae4b-0f72400b692a
+    - sneakers
+    - 200
+    - 150
+    - 150
+    - 184
+    - 
+    - "{}"
+    - "{}"
+  - - 1561
+    - adidas Yeezy Boost 350 V2 Sesame
+    - 'We don’t know if Kanye loves Sesame seeds but we do know that he’s released
+      the adidas Yeezy Boost 350 V2 Sesame. This major silhouette comes with a sesame
+      upper, sesame midsole, and a gum sole. These sneakers released in November 2018
+      and retailed for $220.  While getting your grub on stay fresh and cop these
+      on StockX today. '
+    - adidas
+    - '2018-11-23'
+    - 220.0
+    - '2019-09-14 09:07:13.298415'
+    - '2019-09-14 09:07:13.298415'
+    - Sesame/Sesame/Sesame
+    - men
+    - adidas Yeezy Boost 350 V2
+    - Sesame
+    - 3774e829-99f4-46d6-bb94-f9e19ad55ad3
+    - sneakers
+    - 451
+    - 269
+    - 259
+    - 175
+    - 
+    - "{}"
+    - "{}"
+  - - 1562
+    - adidas Yeezy Boost 350 V2 Semi Frozen Yellow
+    - The Semi Frozen Yellow adidas Yeezy Boost 350 V2 was rumored as early as May
+      of 2017-some blogs even claimed they would be mostly glow-in-the-dark-but it
+      was when photos of Kanye West wearing them first surfaced on the web later in
+      the year that confirmed the release. This colorway steps outside of the comfort
+      zone of previous 350 Yeezy sneaker releases, which have remained subtle and
+      mostly neutral primary colors and bright accents.  The official colorway of
+      the 'Frozen Yellow Yeezys' is actually Semi Frozen Yellow, Raw Steel and Red
+      and features both of adidas pinnacle technologies, Boost cushioning and Primeknit
+      sock-like upper. The hype for the yellow colored Yeezys was pushed to the roof
+      before launch as Kanye West appeared with Kid Cudi and Takashi Murakami as 'Ye
+      and Cudi toured the iconic artist's studio on a trip to Tokyo. In addition,
+      the rumors throughout the sneaker world suggested the Frozen Yellow Yeezy would
+      be an extremely hard to get release. As expected, the Semi Frozen Yellow was
+      announced officially on November 13th, 2017 and released in limited quantities
+      on November 18th, 2017. Sizes of the adidas Yeezy Boost 350 V2 Semi Frozen Yellow
+      are available now.
+    - adidas
+    - '2017-11-18'
+    - 220.0
+    - '2019-09-14 09:07:13.300997'
+    - '2019-09-14 09:07:13.300997'
+    - Semi Frozen Yellow/Raw Steel/Red
+    - men
+    - adidas Yeezy Boost 350 V2
+    - Semi Frozen Yellow
+    - d16d221d-f7f0-4f00-895c-0f4009abc223
+    - sneakers
+    - 453
+    - 270
+    - 255
+    - 157
+    - 
+    - "{}"
+    - "{}"
+  - - 1563
+    - adidas Yeezy Boost 700 V2 Inertia
+    - ''
+    - adidas
+    - '2019-09-07'
+    - 300.0
+    - '2019-09-14 09:07:13.376594'
+    - '2019-09-14 09:07:13.376594'
+    - Inertia/Inertia/Inertia
+    - men
+    - adidas Yeezy Boost 700 V2
+    - Inertia
+    - b4820395-ad19-4507-8c64-4e120b3a5d93
+    - sneakers
+    - 375
+    - 290
+    - 300
+    - 144
+    - 1
+    - "{}"
+    - "{}"
+  - - 1564
+    - adidas Yeezy Boost 350 V2 Clay
+    - If you're searching for a new sneaker with major drip, then cop the adidas Yeezy
+      Boost 350 V2 Clay. This Yeezy Boost 350 comes with a clay upper with orange
+      accents, translucent stripe with orange accents, clay midsole, and clay sole.
+      These sneakers released in March 2019 and retailed for $220. Add another swaggy
+      350 V2 to the rotation and buy them on StockX today.
+    - adidas
+    - '2019-03-30'
+    - 220.0
+    - '2019-09-14 09:07:13.380254'
+    - '2019-09-14 09:07:13.380254'
+    - Clay/Clay/Clay
+    - men
+    - adidas Yeezy Boost 350 V2
+    - Clay
+    - 53b933ec-9b64-43a2-9d08-2a8bec05e364
+    - sneakers
+    - 455
+    - 330
+    - 219
+    - 150
+    - 
+    - "{}"
+    - "{}"
+  - - 1565
+    - adidas Yeezy Boost 350 V2 Beluga 2.0
+    - The Yeezy Beluga 2.0 takes Kanye West's famous adidas sneakers full circle by
+      returning to the colors of the first adidas Yeezy Boost 350 V2. While the original
+      colorway featured a bright orange (officially Solar Red) stripe across the side,
+      the 2017 release of the Yeezy Beluga colorway is much more subtle. This colorway
+      utilizes the same Zebra-like stripes as the original but the SPLY-350 branding
+      is the only part of the upper with a contrasted color-this time called Bold
+      Orange. The Yeezy Beluga 2.0 nickname comes from the similarities to the earlier
+      colorway but the official colorway of this adidas Yeezy release is Grey, Bold
+      Orange, and Dark Grey. The toned down color combo made it an appealing shoe
+      for the masses compared to some previous Yeezy colorways. Despite rumors suggesting
+      an October drop, the official release date for the Beluga 2.0 was November 25th,
+      2017. Since then it has been one of the most active sneakers on StockX, continually
+      selling well above its retail price. You can get the Yeezy Beluga 2.0 on StockX
+      now by placing a Bid or choosing to Buy Now.
+    - adidas
+    - '2017-11-25'
+    - 220.0
+    - '2019-09-14 09:07:13.404123'
+    - '2019-09-14 09:07:13.404123'
+    - Grey/Bold Orange/Dark Grey
+    - men
+    - adidas Yeezy Boost 350 V2
+    - Beluga 2.0
+    - 7f8f68d3-d834-400e-beb1-0f4b5c004682
+    - sneakers
+    - 607
+    - 426
+    - 421
+    - 118
+    - 
+    - "{}"
+    - "{}"
+  - - 1566
+    - adidas Yeezy Boost 700 V2 Vanta
+    - Make a statement with the adidas Yeezy Boost 700 V2 Vanta on your feet. This
+      Yeezy Boost 700 V2 comes with a black upper, black midsole, and a black sole.
+      These sneakers released in June 2019 and retailed for $300. Provide the world
+      with some Yeezy vibes after grabbing these on StockX.
+    - adidas
+    - '2019-06-06'
+    - 300.0
+    - '2019-09-14 09:07:13.417557'
+    - '2019-09-14 09:07:13.417557'
+    - Vanta/Vanta/Vanta
+    - men
+    - adidas Yeezy Boost 700 V2
+    - Vanta
+    - 85a121a6-1870-4445-903c-5a9a4dec4348
+    - sneakers
+    - 401
+    - 375
+    - 349
+    - 97
+    - 
+    - "{}"
+    - "{}"
+  - - 1567
+    - adidas Yeezy Boost 350 V2 Static (Non-Reflective)
+    - 'Electrify your sneaker rotation with the adidas Yeezy Boost 350 V2 Static.
+      This Yeezy 350 V2 comes with a grey and white upper and a white sole. These
+      sneakers released in December 2018 and retailed for $220. You can see what socks
+      you’re wearing in this shoe…so please Buy them now on StockX. '
+    - adidas
+    - '2018-12-27'
+    - 220.0
+    - '2019-09-14 09:07:13.422617'
+    - '2019-09-14 09:07:13.422617'
+    - Static/Static/Static
+    - men
+    - adidas Yeezy Boost 350 V2
+    - Static (Non-Reflective)
+    - fcdd291b-cd65-4e82-b57f-4ca2b478e153
+    - sneakers
+    - 527
+    - 357
+    - 310
+    - 96
+    - 
+    - "{}"
+    - "{}"
+  - - 1568
+    - adidas Yeezy 500 Utility Black
+    - 'Kanye is back, this time with a brand new colorway of the Yeezy 500. Keeping
+      it monochromatic, this pair is covered entirely in one color: utility black.
+      Like other Yeezy 500s, this pair features a suede upper with mesh paneling.
+      In addition, the midsole utilizes adidas’ Adiprene cushioning technology. Releasing
+      in July, 2018 this pair retailed for $200 and is now available to cop on StockX
+      today.'
+    - adidas
+    - '2018-07-07'
+    - 200.0
+    - '2019-09-14 09:07:13.448591'
+    - '2019-09-14 09:07:13.448591'
+    - Utility Black/Utility Black/Utility Black
+    - men
+    - adidas Yeezy 500
+    - Utility Black
+    - 2331dbb6-81d0-409c-840c-3d813cc94194
+    - sneakers
+    - 517
+    - 388
+    - 269
+    - 82
+    - 
+    - "{}"
+    - "{}"
+  - - 1569
+    - adidas Yeezy Boost 700 V2 Geode
+    - Take your swag to a hundred, a thousand, maybe even a trillion after copping
+      the adidas Yeezy Boost 700 V2 Geode. This 700 V2 comes with a brown upper plus
+      grey accents, grey midsole, and a gum sole. These sneakers released in March
+      2019 and retailed for $300. Try getting these 700’s before Yandhi drops and
+      cop them today on StockX ASAP.
+    - adidas
+    - '2019-03-23'
+    - 300.0
+    - '2019-09-14 09:07:13.479046'
+    - '2019-09-14 09:07:13.479046'
+    - Geode/Geode/Geode
+    - men
+    - adidas Yeezy Boost 700 V2
+    - Geode
+    - 8d22e3b1-220d-48da-96e8-1a1d31e575b1
+    - sneakers
+    - 300
+    - 285
+    - 258
+    - 79
+    - 
+    - "{}"
+    - "{}"
+  - - 1570
+    - adidas Yeezy 500 Salt
+    - Don’t be salty, get out of your feelings, and cop a pair of the adidas Yeezy
+      500 Salt. With the potential of being the best Yeezy 500 colorway, these come
+      with a salt upper, a salt midsole, and a salt sole.
+    - adidas
+    - '2018-11-30'
+    - 200.0
+    - '2019-09-14 09:07:13.484348'
+    - '2019-09-14 09:07:13.484348'
+    - Salt/Salt/Salt
+    - men
+    - adidas Yeezy 500
+    - Salt
+    - d9ec8449-4606-4e10-81bc-351ee32748cf
+    - sneakers
+    - 440
+    - 240
+    - 230
+    - 75
+    - 
+    - "{}"
+    - "{}"
+  - - 1571
+    - adidas Ultra Boost 4.0 Running White
+    - The best-selling model from adidas is back and better than ever on its fourth
+      iteration. Featured in a running white colorway, the adidas Ultra Boost 4.0
+      does not disappoint. Keeping things clean, this pair dons running white on the
+      revamped primeknit upper, Three Stripes cage, laces, and boost midsole. Finishing
+      things off is a black Continental rubber outsole. The adidas Ultra Boost has  become
+      a fan favorite, both for its superior performance as well as its seamless lifestyle
+      aesthetic. This pair dropped in November 2017 for $180.
+    - adidas
+    - '2017-11-30'
+    - 180.0
+    - '2019-09-14 09:07:13.485415'
+    - '2019-09-14 09:07:13.485415'
+    - Running White/Running White/Running White
+    - men
+    - adidas Ultra Boost 4.0
+    - Running White
+    - 6963143c-a53a-4235-ae3d-aa20231a43c1
+    - sneakers
+    - 150
+    - 130
+    - 124
+    - 76
+    - 
+    - "{}"
+    - "{}"
+  - - 1572
+    - adidas Yeezy Boost 700 Inertia
+    - Add heavy pressure on your favorite sneakerhead and cop the adidas Yeezy Boost
+      700 Inertia. This Yeezy Boost 700 comes with a grey upper, grey midsole with
+      orange accents, and a white sole. These sneakers released in March 2019 and
+      retailed for $300. Grab a pair of these fire sneakers on StockX ASAP.
+    - adidas
+    - '2019-03-09'
+    - 300.0
+    - '2019-09-14 09:07:13.508775'
+    - '2019-09-14 09:07:13.508775'
+    - Grey/Grey/Inertia
+    - men
+    - adidas Yeezy Boost 700
+    - Inertia
+    - a1f70377-2836-4ba7-b0a1-1ae2bba76bbb
+    - sneakers
+    - 385
+    - 310
+    - 310
+    - 77
+    - 
+    - "{}"
+    - "{}"
+  - - 1573
+    - adidas Yeezy Boost 350 V2 Glow
+    - Hit the function and glow while wearing the adidas Yeezy Boost 350 V2 Glow.
+      This Yeezy Boost 350 comes with a green upper, green midsole, and a green sole.
+      These sneakers released in May 2019 and retailed for $250. Glow crazy and buy
+      these on StockX today.
+    - adidas
+    - '2019-05-25'
+    - 250.0
+    - '2019-09-14 09:07:13.513687'
+    - '2019-09-14 09:07:13.513687'
+    - Glow/Glow/Glow
+    - men
+    - adidas Yeezy Boost 350 V2
+    - Glow
+    - efbae46f-340b-4d77-88af-aa8dba033e71
+    - sneakers
+    - 620
+    - 540
+    - 394
+    - 73
+    - 
+    - "{}"
+    - "{}"
+  - - 1574
+    - adidas Yeezy Boost 350 V2 Zebra
+    - PLEASE NOTE SOLE COLOR MAY VARY<b><br><br> Adidas is back with their latest
+      Yeezy Boost 350 V2. Fresh off the heels of NBA All-Star Weekend, these Yeezy's
+      are nicknamed the "Zebras," and come in a classic white, black and red color
+      scheme. Sporting a white-based Primeknit upper with black accents giving off
+      a Zebra stripe vibe, “SPLY-350” displayed across the sides in red finished off
+      by a translucent BOOST cushioned sole. To date they are the most limited adidas
+      Yeezy release and have instantly become one of the most popular colorways. Their
+      release date is set for February 25th, 2017. Retail is set at $220 and they
+      will only be available in men’s sizing, no love for infants from Yeezus this
+      time around. On June 24th, adidas will re-release the coveted “Zebras,” giving
+      fans worldwide one more shot at obtaining one of 2017s most popular kicks. If
+      you got lucky with the first release, already have a pair on lock from the re-release
+      or don’t want to risk taking the “L,” check out the marketplace where you can
+      buy and sell the “Zebra” adidas Yeezy 350 Boost V2 online now. Rock, stock or
+      flip, the choice is yours and yours alone.
+    - adidas
+    - '2017-02-25'
+    - 220.0
+    - '2019-09-14 09:07:13.555948'
+    - '2019-09-14 09:07:13.555948'
+    - White/Core Black/Red
+    - men
+    - adidas Yeezy Boost 350 V2
+    - Zebra
+    - e90e1888-61f0-4681-8379-a4706e491235
+    - sneakers
+    - 575
+    - 399
+    - 400
+    - 72
+    - 
+    - "{}"
+    - "{}"
+  - - 1575
+    - Nike Zoom Fly Off-White Black Silver
+    - 'Would the Nike Zoom Fly Off-White Black Silver be the new colorway Drake speaks
+      of in “Never Recover”? This sneaker is sporting a translucent upper with black
+      accents, white Nike “Swoosh”, black midsole, and a black sole. The inventive
+      shoe released October 2018 and retailed for $160. '
+    - Nike
+    - '2018-10-13'
+    - 170.0
+    - '2019-09-14 09:07:13.583457'
+    - '2019-09-14 09:07:13.583457'
+    - Black/White-Cone
+    - men
+    - Nike Zoom Fly
+    - Off-White Black Silver
+    - 35174911-1fb1-48d0-b512-f746799d3346
+    - sneakers
+    - 417
+    - 419
+    - 385
+    - 20
+    - 
+    - "{}"
+    - "{}"
+  - - 1576
+    - Nike Zoom Terra Kiger 5 Off-White Black (W)
+    - ''
+    - Nike
+    - '2019-06-24'
+    - 180.0
+    - '2019-09-14 09:07:13.584302'
+    - '2019-09-14 09:07:13.584302'
+    - Black/Metallic Silver-White-Pink Blast
+    - women
+    - Nike Zoom Terra Kiger 5
+    - Off-White Black (W)
+    - 875fb3df-eb58-4192-bfe6-c89203aa80f7
+    - sneakers
+    - 316
+    - 275
+    - 200
+    - 110
+    - 
+    - "{}"
+    - "{}"
+  - - 1577
+    - Nike Zoom Terra Kiger 5 Off-White White (W)
+    - ''
+    - Nike
+    - '2019-06-24'
+    - 180.0
+    - '2019-09-14 09:07:13.58552'
+    - '2019-09-14 09:07:13.58552'
+    - White/Metallic Silver-Sail-Safety Orange
+    - women
+    - Nike Zoom Terra Kiger 5
+    - Off-White White (W)
+    - 73f1e050-4484-4553-95fc-f136274caea2
+    - sneakers
+    - 373
+    - 335
+    - 200
+    - 78
+    - 
+    - "{}"
+    - "{}"
+  - - 1578
+    - Jordan 1 Retro High Off-White University Blue
+    - 'Time for some Tobacco Road vibes with these Jordan 1 Retro Off-Whites. Also
+      known as the “UNC” editions, these Jordan 1s are the third colorway designed
+      by Virgil Abloh and made in collaboration with his Off-White label. The sneakers
+      come in a white, dark powder blue and cone colorway, with a white and blue deconstructed
+      leather upper and Off-White detailing throughout. If you’re a fan of Virgil
+      Abloh’s work and want to rep Off-White, this pair is another must-have. '
+    - Jordan
+    - '2018-06-23'
+    - 190.0
+    - '2019-09-14 09:07:13.604949'
+    - '2019-09-14 09:07:13.604949'
+    - White/Dark Powder Blue-Cone
+    - men
+    - Jordan 1 Retro High
+    - Off-White University Blue
+    - 0b8a6d84-639c-47ce-957a-ed9f86079c06
+    - sneakers
+    - 1886
+    - 1299
+    - 1050
+    - 39
+    - 
+    - "{}"
+    - "{}"
+  - - 1579
+    - Air Presto Off-White White (2018)
+    - After the release of his critically-acclaimed "The Ten" project with Nike, Virgil
+      Abloh is back again with another iteration of the Nike Air Presto Off-White.
+      Continuing with the deconstructed and industrial vibe, this pair features a
+      monochromatic white colorway. In addition, there is a grey Nike Swoosh (with
+      orange detailing) stitched onto the side panel, "AIR" written on the lateral
+      side of the heel in black, and a white Nike tag on the tongue. Sure to be one
+      of the hottest shoes of 2018, this pair dropped in June 2018 for a retail price
+      of $160.
+    - Nike
+    - '2018-08-03'
+    - 160.0
+    - '2019-09-14 09:07:13.628683'
+    - '2019-09-14 09:07:13.628683'
+    - White/Black-Cone
+    - men
+    - Air Presto
+    - Off-White White (2018)
+    - d8ea6693-f042-4d94-b53d-8b17ea505dbd
+    - sneakers
+    - 706
+    - 675
+    - 600
+    - 18
+    - 
+    - "{}"
+    - "{}"
+  - - 1580
+    - Jordan 1 Retro High Off-White Chicago
+    - 'The Off-White x Air Jordan 1 Retro High OG was one of the most highly anticipated
+      footwear collaborations of 2017. It marked the first time Virgil Abloh, founder
+      of the Milan-based fashion labled and Jordan Brand had teamed up. Nicknamed
+      "The 10" edition, this pair comes in the original Chicago-themed white, black
+      and varsity red colorway. Featuring a white, red and black-based deconstructed
+      leather upper with a Swooshless medial side branded with "Off-White for Nike
+      Air Jordan 1, Beaverton, Oregon, USA © 1985." Other details include: floppy
+      ankle collars with hidden “85” written on the inside, an oversized off-centered
+      Swoosh on the lateral sides, "Air" written on the midsole and the word "Shoelaces"
+      on the laces with no branding on the tongue. Their release date is set for 2017
+      where they retailed for $190 in men''s sizes only. As if the hype wasn''t enough,
+      the limited availability made these Off-White x Air Jordan 1 Retro High OG''s
+      highly sought after, way before their official release. Those of you in need
+      of a pair can hit up the marketplace to buy them. If you got a pair and want
+      to see what they''re going for, check online and then decide if it''s time to
+      sell or wait.'
+    - Jordan
+    - '2017-09-09'
+    - 190.0
+    - '2019-09-14 09:07:13.654358'
+    - '2019-09-14 09:07:13.654358'
+    - White/Black-Varsity Red
+    - men
+    - Jordan 1 Retro High
+    - Off-White Chicago
+    - 7f9c67ff-2cd4-4e27-8b64-518900a1bc0b
+    - sneakers
+    - 5200
+    - 3500
+    - 3000
+    - 18
+    - 
+    - "{}"
+    - "{}"
+  - - 1581
+    - Air Force 1 Low Off-White Black White
+    - The force is within you, as Nike uses their very own and release the Air Force
+      1 Low Off-White Black White. This AF1 comes with a black upper, white Nike “Swoosh”,
+      black midsole, and a black sole. These sneakers were released December 2018
+      and retailed for $170. Thrive with the force and place a Bid on StockX today.
+    - Nike
+    - '2018-12-19'
+    - 170.0
+    - '2019-09-14 09:07:13.659597'
+    - '2019-09-14 09:07:13.659597'
+    - Black/White-Cone-Black
+    - men
+    - Air Force 1 Low
+    - Off-White Black White
+    - 0ed15c95-2536-4031-a2f7-7e7ee05e7e4d
+    - sneakers
+    - 1092
+    - 1009
+    - 805
+    - 15
+    - 
+    - "{}"
+    - "{}"
+  - - 1582
+    - Converse Chuck Taylor All-Star 70s Hi Off-White
+    - Virgil is back at it again with the Converse Chuck Taylor All-Star 70s Hi Off-White.
+      These legendary sneakers come with an all-white upper, stripped midsole, and
+      orange sole. The Off-White Chucks released in October 2018 and retailed for
+      $130. Add some versatile heat to your sneaker collection and buy these on StockX.
+    - Converse
+    - '2018-10-08'
+    - 130.0
+    - '2019-09-14 09:07:13.676124'
+    - '2019-09-14 09:07:13.676124'
+    - White/Bold Orange-Black
+    - men
+    - Converse Chuck Taylor All-Star
+    - 70s Hi Off-White
+    - 24453042-3907-4c9c-9a2c-ca7e2ce7ed1a
+    - sneakers
+    - 536
+    - 625
+    - 382
+    - 15
+    - 
+    - "{}"
+    - "{}"
+  - - 1583
+    - Air Force 1 Low Off-White Volt
+    - 'Be more lit than a lightning bolt while wearing Nike and Virgil’s Air Force
+      1 Low Off-White Volt. This AF1 comes with a volt upper, black Nike “Swoosh”,
+      volt midsole, and volt sole. These sneakers released in December 2018 and retailed
+      for $170. Demand that sneaker attention and cop these on StockX today. '
+    - Nike
+    - '2018-12-19'
+    - 170.0
+    - '2019-09-14 09:07:13.677539'
+    - '2019-09-14 09:07:13.677539'
+    - Volt/Hyper Jade-Cone-Black
+    - men
+    - Air Force 1 Low
+    - Off-White Volt
+    - 32220f91-b7dc-4da0-9e2e-99a8dad59ddc
+    - sneakers
+    - 1005
+    - 965
+    - 800
+    - 14
+    - 
+    - "{}"
+    - "{}"
+  - - 1584
+    - Nike Zoom Fly Off-White Pink
+    - Virgil looks to continue his 2018 Off-White and Nike collab tour with the Nike
+      Zoom Fly Off-White Pink. This sneaker comes with a translucent upper featuring
+      pink accents, a pink Nike “Swoosh”, pink midsole, and a pink sole. The electrifying
+      shoe released in October 2018 and retailed for $170. This Zoom Fly is expecting
+      to resale for big numbers, so place a Bid now on StockX.
+    - Nike
+    - '2018-11-28'
+    - 170.0
+    - '2019-09-14 09:07:13.694538'
+    - '2019-09-14 09:07:13.694538'
+    - Tulip Pink/Racer Pink
+    - men
+    - Nike Zoom Fly
+    - Off-White Pink
+    - 677fcc66-0b3c-4cdc-8890-d2cf2dd16a31
+    - sneakers
+    - 390
+    - 350
+    - 319
+    - 13
+    - 
+    - "{}"
+    - "{}"
+  - - 1585
+    - Air Presto Off-White Black (2018)
+    - 'After an absolute frenzy over Virgil Abloh''s first iteration, the Nike Air
+      Presto Off White is back-- in black. In a Richard Lewis-approved colorway (word
+      to LD), this shoe is dressed in a monochromatic black. In addition, it features
+      a white Nike Swoosh sewn onto the lateral side. Finally, "AIR" is written in
+      classic Virgil fashion on the side heel, completing this deconstructed, utilitarian
+      #vibe. This pair released in July 2018 for $160.'
+    - Nike
+    - '2018-07-27'
+    - 160.0
+    - '2019-09-14 09:07:13.731569'
+    - '2019-09-14 09:07:13.731569'
+    - Black/White-Cone
+    - men
+    - Air Presto
+    - Off-White Black (2018)
+    - 95e59268-f3a3-4aa5-a91d-d52984c037fe
+    - sneakers
+    - 892
+    - 852
+    - 725
+    - 12
+    - 
+    - "{}"
+    - "{}"
+  - - 1586
+    - Air Vapormax Off White 2018
+    - The clean white Off-White Nike Air VaporMaxs are pure, deconstructed “hype.”
+      Coming after the second black version of the Off-White VaporMax, these feature
+      cutting-edge technology with its Flyknit upper, dynamic Flywire lacing system,
+      and state-of-the-art Air VaporMax unit, providing insane comfort while also
+      stuntin on every other shoe on the street. These dropped in April of 2018 and
+      are a must Bid for any Virgil Abloh fan.
+    - Nike
+    - '2018-04-14'
+    - 250.0
+    - '2019-09-14 09:07:13.733747'
+    - '2019-09-14 09:07:13.733747'
+    - White/Total Orange-Black
+    - men
+    - Air Vapormax
+    - Off White 2018
+    - c8e469e8-a44e-4adf-a445-b1899873cc9e
+    - sneakers
+    - 830
+    - 775
+    - 628
+    - 10
+    - 
+    - "{}"
+    - "{}"
+  - - 1587
+    - Travis Scott x Virgil Abloh By A Thread Tee (Cactus Jack Version) White
+    - ''
+    - Travis Scott
+    - ''
+    - 0.0
+    - '2019-09-14 09:07:13.734918'
+    - '2019-09-14 09:07:13.734918'
+    - White
+    - men
+    - Travis Scott x Virgil Abloh By A Thread
+    - Tee (Cactus Jack Version) White
+    - 3079d695-2ab7-4fc7-86f6-114604f4ccca
+    - streetwear
+    - 170
+    - 195
+    - 180
+    - 11
+    - 
+    - "{}"
+    - "{}"
+  - - 1588
+    - Air VaporMax Off-White Black
+    - Following up from “The Ten” collection in 2017, the Nike VaporMax Off-White
+      Black are certainly “popular.” Designed by Virgil Abloh, these shoes are an
+      extension of the original VaporMaxs featured in “The Ten” drop, the main difference
+      being a black tongue and a Swoosh atop the clear outsole. The shoes dropped
+      in March of 2018 for a retail price of $250. If you're looking to build that
+      Off-White collection, hit that Bid button up top.
+    - Nike
+    - '2018-03-30'
+    - 250.0
+    - '2019-09-14 09:07:13.752008'
+    - '2019-09-14 09:07:13.752008'
+    - Black/Total Crimson-Clear
+    - men
+    - Air VaporMax
+    - Off-White Black
+    - c7b1f1fa-9232-44c9-9407-68172efd1ff6
+    - sneakers
+    - 800
+    - 786
+    - 619
+    - 8
+    - 
+    - "{}"
+    - "{}"
+  - - 1589
+    - Air Presto Off-White
+    - ''
+    - Nike
+    - '2017-09-09'
+    - 160.0
+    - '2019-09-14 09:07:13.773003'
+    - '2019-09-14 09:07:13.773003'
+    - Black/Black-Muslin
+    - men
+    - Air Presto
+    - Off-White
+    - 873d2d1b-a8bd-48cd-ae21-ffb532764a6b
+    - sneakers
+    - 2600
+    - 2600
+    - 1900
+    - 4
+    - 
+    - "{}"
+    - "{}"
+  - - 1590
+    - Supreme Classic Logo Corduroy 6-Panel OffWhite
+    - ''
+    - Supreme
+    - '2019-09-12'
+    - 54.0
+    - '2019-09-14 09:07:13.801895'
+    - '2019-09-14 09:07:13.801895'
+    - OffWhite
+    - unisex
+    - Supreme Classic Logo Corduroy
+    - 6-Panel OffWhite
+    - eb1a87cd-bc03-49c4-b38d-1269ce42aaad
+    - streetwear
+    - 60
+    - 66
+    - 69
+    - 3
+    - 1
+    - "{}"
+    - "{}"
+  - - 1591
+    - Air Max 97 Off-White
+    - Virgil Abloh put his unique twist on the Nike Air Max 97. Made in collaboration
+      with Off-White, they were a part of "The 10" Collection, and dropped in the
+      second set from the two brands, the "Ghosting" Pack. They come in a white, cone
+      and ice blue colorway. Sporting a reconstructed translucent upper, featuring
+      a semi-revealing material to tie-in with the theme. Various materials are found
+      throughout, as well as a red zip-tie and branding on the tongue, black branding
+      throughout the rest of the shoe, green lace tips and a translucent outsole.
+      Their release date was November 1st, 2017 where they were available alongside
+      the rest of the Off-White x Nike "Ghosting" Collection. Retail for "The 10"
+      Nike Air Max 97 was $190 and they were available in men's sizing at select retailers
+      worldwide. If you're a fan of the Nike Air Max 97 and Off-White, this is another
+      must-have pair. Those looking for them can buy one online. If you have one to
+      sell, hit up the marketplace and see what they are going for.
+    - Nike
+    - '2017-11-01'
+    - 190.0
+    - '2019-09-14 09:07:13.807719'
+    - '2019-09-14 09:07:13.807719'
+    - White/Cone-Ice Blue
+    - men
+    - Air Max 97
+    - Off-White
+    - f1261aed-e378-40dd-b958-822078dbe500
+    - sneakers
+    - 1550
+    - 1362
+    - 1195
+    - 2
+    - 
+    - "{}"
+    - "{}"
+  - - 1592
+    - Air VaporMax Off-White
+    - ''
+    - Nike
+    - '2017-09-09'
+    - 250.0
+    - '2019-09-14 09:07:13.821759'
+    - '2019-09-14 09:07:13.821759'
+    - Black/White-Clear
+    - men
+    - Air VaporMax
+    - Off-White
+    - c3ad7bd7-2ccb-4c2f-b467-a624ac7bb776
+    - sneakers
+    - 1505
+    - 1130
+    - 900
+    - 2
+    - 
+    - "{}"
+    - "{}"
+  - - 1593
+    - Air Max 90 OFF-WHITE
+    - ''
+    - Nike
+    - '2017-09-09'
+    - 160.0
+    - '2019-09-14 09:07:13.831797'
+    - '2019-09-14 09:07:13.831797'
+    - Sail/White-Muslin
+    - men
+    - Air Max 90
+    - OFF-WHITE
+    - abc7a34e-4f88-4e96-babc-8310a5902869
+    - sneakers
+    - 1320
+    - 1389
+    - 1315
+    - 3
+    - 
+    - "{}"
+    - "{}"
+  - - 1594
+    - Nike SB Dunk Low Supreme Jewel Swoosh Silver
+    - ''
+    - Nike
+    - '2019-09-14'
+    - 110.0
+    - '2019-09-14 09:07:13.865394'
+    - '2019-09-14 09:07:13.865394'
+    - Metallic Silver/Metallic Silver-Black
+    - men
+    - Nike SB Dunk Low
+    - Supreme Jewel Swoosh Silver
+    - af8d8a1e-ee8d-44e5-aff1-44434cb4d6d2
+    - sneakers
+    - 460
+    - 234
+    - 174
+    - 704
+    - 1
+    - "{}"
+    - "{}"
+  - - 1595
+    - Nike Zoom Fly Off-White
+    - The Nike Zoom Fly, one of the latest runners from the Swoosh's 2017 catalog
+      was remixed by Virgil Abloh and his Off-White imprint. They were a part of the
+      "Ghosting" Pack and were the second collection released by the two brands. Coming
+      in white and muslin, they sport a reconstructed translucent upper, featuring
+      a semi-revealing material to tie-in with the theme. Various materials are found
+      throughout, as well as a red zip-tie and branding on the tongue, black branding
+      throughout the rest of the shoe and a translucent outsole. Their release date
+      was November 1st, 2017 where they were available alongside the rest of the Off-White
+      x Nike "Ghosting" Collection. Retail for "The 10" Nike Zoom Fly was $170 and
+      they were available in men's sizing at select retailers worldwide. If you're
+      a fan of the Nike Zoom Fly and Off-White, this is another must-have pair. Those
+      looking for them can buy one online. If you have one to sell, hit up the marketplace
+      and see what they are going for.
+    - Nike
+    - '2017-11-01'
+    - 170.0
+    - '2019-09-14 09:07:13.86753'
+    - '2019-09-14 09:07:13.86753'
+    - White/White-Muslin
+    - men
+    - Nike Zoom Fly
+    - Off-White
+    - 8660da21-b0cc-44e9-897c-ed37699e52f2
+    - sneakers
+    - 830
+    - 830
+    - 726
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1596
+    - Nike SB Dunk Low Supreme Jewel Swoosh Red
+    - ''
+    - Nike
+    - '2019-09-14'
+    - 110.0
+    - '2019-09-14 09:07:13.869902'
+    - '2019-09-14 09:07:13.869902'
+    - Varsity Red/Varsity Red-White-Black
+    - men
+    - Nike SB Dunk Low
+    - Supreme Jewel Swoosh Red
+    - 5fd70f8d-4a1f-4284-82f7-0fafabb541fa
+    - sneakers
+    - 500
+    - 260
+    - 190
+    - 738
+    - 1
+    - "{}"
+    - "{}"
+  - - 1597
+    - Nike Blazer High sacai Snow Beach
+    - Hit your nearest beach in style while rocking the Nike Blazer High sacai Snow
+      Beach. This Blazer High comes with a yellow upper plus blue accents, red Nike
+      “Swoosh”, blue Nike “Swoosh”, white midsole, and white sole. These sneakers
+      released in May 2019 and retailed for $140. Add these instant legends to your
+      collection now with a Bid on StockX today.
+    - Nike
+    - '2019-05-30'
+    - 140.0
+    - '2019-09-14 09:07:13.955199'
+    - '2019-09-14 09:07:13.955199'
+    - White/Obsidian-University Red-Varsity Maize
+    - men
+    - Nike Blazer High
+    - sacai Snow Beach
+    - c56a40f6-6d15-414c-90e8-a23d5b204abd
+    - sneakers
+    - 621
+    - 255
+    - 208
+    - 49
+    - 
+    - "{}"
+    - "{}"
+  - - 1598
+    - Nike SB Dunk Low Parra
+    - ''
+    - Nike
+    - '2019-07-27'
+    - 100.0
+    - '2019-09-14 09:07:13.968045'
+    - '2019-09-14 09:07:13.968045'
+    - White/Red-Pink
+    - men
+    - Nike SB Dunk Low
+    - Parra
+    - 797a01e1-f0e1-4783-8b39-498310c6b570
+    - sneakers
+    - 466
+    - 370
+    - 207
+    - 36
+    - 
+    - "{}"
+    - "{}"
+  - - 1599
+    - Nike Daybreak Undercover Black
+    - Stay undercover while rocking the Nike Daybreak Undercover Black. This Daybreak
+      comes with a black upper, white Nike “Swoosh”, white midsole plus black accents,
+      and a black sole. These sneakers released in June 2019 and retailed for $160.
+      Gain some clout after buying these on StockX today.
+    - Nike
+    - '2019-06-07'
+    - 160.0
+    - '2019-09-14 09:07:13.973085'
+    - '2019-09-14 09:07:13.973085'
+    - Black/White
+    - men
+    - Nike Daybreak
+    - Undercover Black
+    - 6dd162f2-5782-4bc4-b21d-c5f2700a65cb
+    - sneakers
+    - 293
+    - 220
+    - 138
+    - 40
+    - 
+    - "{}"
+    - "{}"
+  - - 1600
+    - Nike LD Waffle Sacai Blue Multi
+    - "<b>Please note: extra black laces may or may not be included.<b> Might need
+      more drip than syrup after copping the Nike LD Waffle Sacai Blue Multi. This
+      Nike LD comes with a red upper plus blue accents, yellow Nike “Swoosh”, Silver
+      Nike “Swoosh”, white midsole, and a black sole. These sneakers released in May
+      2019 and retailed for $155. Step outside in some new kicks and place a Bid today
+      on Stockx."
+    - Nike
+    - '2019-05-30'
+    - 155.0
+    - '2019-09-14 09:07:13.975737'
+    - '2019-09-14 09:07:13.975737'
+    - Blue/Multi
+    - men
+    - Nike LD Waffle
+    - Sacai Blue Multi
+    - 9109a3ef-1ed8-4a98-ab10-e57add1ea682
+    - sneakers
+    - 725
+    - 660
+    - 545
+    - 55
+    - 
+    - "{}"
+    - "{}"
+  - - 1601
+    - Nike Daybreak Undercover Blue Jay
+    - Take a break from destroying the sneaker community and buy the Nike Daybreak
+      Undercover Blue Jay. This Nike Daybreak comes with a blue upper plus white and
+      black accents, white Nike “Swoosh”, grey midsole, and a black sole. These sneakers
+      released in June 2019 and retailed for $160. Grab these on StockX today.
+    - Nike
+    - '2019-06-07'
+    - 160.0
+    - '2019-09-14 09:07:13.989987'
+    - '2019-09-14 09:07:13.989987'
+    - Blue Jay/Summit White-Black
+    - men
+    - Nike Daybreak
+    - Undercover Blue Jay
+    - 936e5cb9-327a-434c-9356-1db7e116a97c
+    - sneakers
+    - 185
+    - 126
+    - 118
+    - 32
+    - 
+    - "{}"
+    - "{}"
+  - - 1602
+    - Nike Classic Cortez Stranger Things Sail Upside Down Pack
+    - |
+      <b>Please Note: Stranger things pin pack must be included.<b> Nike welcomes a third installment of their ongoing Stranger Things collaboration with the Nike Stranger Things Cortez “Upside Down”, now available on StockX. This collaboration made its debut in the summer of 2019 with the release of Cortez, Tailwind, and Blazer Mid models sporting Hawkins High and Independence Day colorways. Although the silhouettes are recurring, this installment differs from the first two by unveiling a new interactive design.
+      <br>
+      <br>
+      This Cortez features a sail woven-like textured upper that reveals hidden Upside Down layer underneath when removed. Printed insoles with graphics of plans and sketches, red branding on the tongue labels and embroidered heel, and white outsoles complete the design. The packaging includes two sets of laces and a set of collaborative pins.These sneakers released in August of 2019 and retailed for $120.
+      <br>
+      <br>
+      ***These shoes are flammable. The material used on the upper can be burned to reveal the under layer, but there is no uniformity or guarantee regarding results. We will not accept shoes that show signs of burn marks or use***
+    - Nike
+    - '2019-08-13'
+    - 120.0
+    - '2019-09-14 09:07:14.061693'
+    - '2019-09-14 09:07:14.061693'
+    - Sail/Navy
+    - men
+    - Nike Classic Cortez
+    - Stranger Things Sail Upside Down Pack
+    - d991fb78-71c7-4b71-9ca2-86d3d02e01dd
+    - sneakers
+    - 101
+    - 107
+    - 100
+    - 28
+    - 
+    - "{}"
+    - "{}"
+  - - 1603
+    - Nike Adapt BB Mag (US Charger)
+    - ''
+    - Nike
+    - '2019-05-29'
+    - 350.0
+    - '2019-09-14 09:07:14.069841'
+    - '2019-09-14 09:07:14.069841'
+    - Wolf Grey/Reflect Silver
+    - men
+    - Nike Adapt BB
+    - Mag (US Charger)
+    - 36dddffe-a7a4-4a17-87f5-0b58a1bc69ac
+    - sneakers
+    - 582
+    - 610
+    - 420
+    - 22
+    - 
+    - "{}"
+    - "{}"
+  - - 1604
+    - Nike Tailwind 79 Stranger Things Independence Day Pack
+    - "<b>Please Note: Stranger things pin pack must be included.<b>"
+    - Nike
+    - '2019-07-12'
+    - 120.0
+    - '2019-09-14 09:07:14.080448'
+    - '2019-09-14 09:07:14.080448'
+    - White/Red-Blue
+    - men
+    - Nike Tailwind 79
+    - Stranger Things Independence Day Pack
+    - 949203b1-973d-4b6c-bfdf-f902500c3c8c
+    - sneakers
+    - 220
+    - 175
+    - 166
+    - 16
+    - 
+    - "{}"
+    - "{}"
+  - - 1605
+    - Nike Adapt BB Black Pure Platinum (US Charger)
+    - 'Please note: self-lacing technology is tested as part of our authentication
+      process. This technology may be affected depending on your mobile device’s operating
+      system and specific software updates. Nike has taken over the future of basketball
+      with the release of the Nike Adapt BB Black Pure Platinum. The ultra innovative
+      Adapt BB comes with a black upper, two silver Nike “Swooshes”, white midsole,
+      and a translucent sole. These sneakers released in February 2019 and retailed
+      for $350. Before you insert a step back in your offensive arsenal, buy these
+      now on StockX.'
+    - Nike
+    - '2019-02-17'
+    - 350.0
+    - '2019-09-14 09:07:14.097957'
+    - '2019-09-14 09:07:14.097957'
+    - Black/White-Pure Platinum
+    - men
+    - Nike Adapt BB
+    - Black Pure Platinum (US Charger)
+    - 94c73e84-4698-4152-9f32-b1a305241b08
+    - sneakers
+    - 420
+    - 337
+    - 374
+    - 24
+    - 
+    - "{}"
+    - "{}"
+  - - 1606
+    - Supreme Nike Hooded Sport Jacket Silver
+    - After releasing a collaborative Nike Air Max Tailwind 4 early in their 2019
+      season, Supreme and Nike have returned for a second release in SS19, this time
+      featuring apparel. Despite being released in May, the collection mostly featured
+      items you'd see in a fall/winter release, including sweaters, hoodies, and sport
+      jackets, all of the vintage looking variety. The water resistant Supreme x Nike
+      Hooded Sport Jacket released in three colorways and feature a quilted inner
+      lining as well as a removable hood. The green, purple, and silver jackets dropped
+      on Thursday, May 23rd, 2019 and retailed at $248 USD.
+    - Supreme
+    - '2019-05-23'
+    - 248.0
+    - '2019-09-14 09:07:14.133222'
+    - '2019-09-14 09:07:14.133222'
+    - Silver
+    - men
+    - Supreme Nike Hooded Sport
+    - Jacket Silver
+    - df299b85-2ffc-491b-aa1e-27d98010fa5a
+    - streetwear
+    - 321
+    - 320
+    - 300
+    - 14
+    - 
+    - "{}"
+    - "{}"
+  - - 1607
+    - Nike PG 2.5 Playstation Wolf Grey
+    - 'Please note: the light up tongues on the PG2s aren’t replaceable or rechargeable
+      (and thus may not light up) and we cannot guarantee that the PlayStation DLC
+      code is unused on these shoes. <br> Always remember to never hate the player
+      but hate the game while wearing the smooth Nike PG 2.5 Playstation Wolf Grey.
+      These PG 2.5’s comes with a grey upper plus green accents, grey midsole with
+      red accents, and a translucent sole. Plus the tounge lights up! This sneaker
+      released in December 2018 and retailed for a cool $110. Match your MyPlayer
+      on NBA 2K and Buy these gamer grails on StockX now.'
+    - Nike
+    - '2018-12-01'
+    - 110.0
+    - '2019-09-14 09:07:14.138587'
+    - '2019-09-14 09:07:14.138587'
+    - Wolf Grey/Multi-Color
+    - men
+    - Nike PG 2.5
+    - Playstation Wolf Grey
+    - b69ac1fd-9211-4c6f-8b74-151d70d54c0e
+    - sneakers
+    - 140
+    - 149
+    - 140
+    - 14
+    - 
+    - "{}"
+    - "{}"
+  - - 1608
+    - Supreme Nike Hooded Sport Jacket Purple
+    - After releasing a collaborative Nike Air Max Tailwind 4 early in their 2019
+      season, Supreme and Nike have returned for a second release in SS19, this time
+      featuring apparel. Despite being released in May, the collection mostly featured
+      items you'd see in a fall/winter release, including sweaters, hoodies, and sport
+      jackets, all of the vintage looking variety. The water resistant Supreme x Nike
+      Hooded Sport Jacket released in three colorways and feature a quilted inner
+      lining as well as a removable hood. The green, purple, and silver jackets dropped
+      on Thursday, May 23rd, 2019 and retailed at $248 USD.
+    - Supreme
+    - '2019-05-23'
+    - 248.0
+    - '2019-09-14 09:07:14.168223'
+    - '2019-09-14 09:07:14.168223'
+    - Purple
+    - men
+    - Supreme Nike Hooded Sport
+    - Jacket Purple
+    - ba844059-26fc-4ead-94ec-aa5c1c5760fb
+    - streetwear
+    - 286
+    - 315
+    - 300
+    - 13
+    - 
+    - "{}"
+    - "{}"
+  - - 1609
+    - Supreme Nike Vapor Jet 4.0 Football Gloves Red
+    - 'Near the end of their FW18 season Supreme and Nike came together to collaborate
+      on a pair of football gloves. Nike’s Vapor Jet 4.0 Football Gloves are a solid
+      option for both wide receivers and defensive backs looking to reel in a pass
+      or pull down an interception. Featuring flexible, breathable materials and sticky
+      silicone palms, these red gloves are both stylish and functional so don’t be
+      surprised if your favorite receiver is now flashing Supreme on his palms after
+      a touchdown. The gloves released on Thursday, December 27th, 2018 and retailed
+      at $60 USD. Place a bid today to secure your pair. '
+    - Supreme
+    - '2018-12-27'
+    - 60.0
+    - '2019-09-14 09:07:14.198708'
+    - '2019-09-14 09:07:14.198708'
+    - Red
+    - unisex
+    - Supreme Nike Vapor Jet 4.0 Football
+    - Gloves Red
+    - 610de859-3dc6-48e2-b9f6-2ada2843b51e
+    - streetwear
+    - 75
+    - 170
+    - 58
+    - 11
+    - 
+    - "{}"
+    - "{}"
+  - - 1610
+    - Nike SB Dunk Low Concepts Purple Lobster
+    - 'NOTE: Due to limited availability during the release, we cannot guarantee that
+      the blue laces will be included. It''s not often that people find purple lobsters,
+      it''s also not often that people wear the rare Nike SB Dunk Low Concepts Purple
+      Lobster. This Nike SB Dunk low comes with a purple upper with a white accent,
+      purple Nike "Swoosh", black midsole, and purple sole. These sneakers released
+      in December 2018 and retailed for $100. Add some rare heat to the sneaker collection
+      and Buy these now on StockX.'
+    - Nike
+    - '2018-12-14'
+    - 130.0
+    - '2019-09-14 09:07:14.20434'
+    - '2019-09-14 09:07:14.20434'
+    - Voltage Purple/Voltage Purple
+    - men
+    - Nike SB Dunk Low
+    - Concepts Purple Lobster
+    - d8a703a0-c144-47cf-b97f-4596a9d793a4
+    - sneakers
+    - 767
+    - 795
+    - 470
+    - 10
+    - 
+    - "{}"
+    - "{}"
+  - - 1611
+    - Air Fear Of God 1 Orange Pulse
+    - 'Note: Only select retailers included a dust bag with the Air Fear of God 1s
+      during their initial release. As such we can not guarantee one will be included
+      with your purchase.'
+    - Nike
+    - '2019-06-01'
+    - 350.0
+    - '2019-09-14 09:07:14.222317'
+    - '2019-09-14 09:07:14.222317'
+    - Orange Pulse/Orange Pulse-Orange Pulse
+    - men
+    - Air Fear Of God 1
+    - Orange Pulse
+    - 9abbf009-18c7-478e-ac09-f8a614c6a29d
+    - sneakers
+    - 583
+    - 555
+    - 460
+    - 15
+    - 
+    - "{}"
+    - "{}"
+  - - 1612
+    - Air Fear Of God 1 Frosted Spruce
+    - 'Note: Only select retailers included a dust bag with the Air Fear of God 1s
+      during their initial release. As such we can not guarantee one will be included
+      with your purchase.'
+    - Nike
+    - '2019-06-01'
+    - 350.0
+    - '2019-09-14 09:07:14.233147'
+    - '2019-09-14 09:07:14.233147'
+    - Frosted Spruce/Frosted Spruce-Frosted Spruce
+    - men
+    - Air Fear Of God 1
+    - Frosted Spruce
+    - b16c44b3-cfdb-404a-9746-4b2ab5cb226e
+    - sneakers
+    - 672
+    - 500
+    - 500
+    - 9
+    - 
+    - "{}"
+    - "{}"
+  - - 1613
+    - Air Fear Of God Moccasin Black
+    - Fog up the scene and buy the Air Fear Of God Moccasin Black. This FOG Moccasin
+      comes with a black upper, black Nike “Swoosh”, sail midsole, and a translucent
+      sole. These released in April 2019 and retailed for $170. Make Jerry proud and
+      buy these now on StockX.
+    - Nike
+    - '2019-05-17'
+    - 170.0
+    - '2019-09-14 09:07:14.240856'
+    - '2019-09-14 09:07:14.240856'
+    - Black/Black-Fossil
+    - men
+    - Air Fear Of God Moccasin
+    - Black
+    - b5da902f-5dda-4415-af9d-274ea80f5915
+    - sneakers
+    - 130
+    - 142
+    - 95
+    - 14
+    - 
+    - "{}"
+    - "{}"
+  - - 1614
+    - Air Fear Of God 1 Black
+    - 'Note: Only select retailers included a dust bag with the Air Fear of God 1s
+      during their initial release. As such we can not guarantee one will be included
+      with your purchase.<br> Jerry Lorenzo takes a stroll down Nike avenue and cooks
+      up the Air Fear Of God 1 Black. This FOG1 comes with a black upper, black Nike
+      “Swoosh”, white midsole, and a translucent sole. These sneakers released in
+      2018 and retailed for $325. Please be part of sneaker history and place a Bid
+      on StockX today.'
+    - Nike
+    - '2018-12-15'
+    - 395.0
+    - '2019-09-14 09:07:14.250138'
+    - '2019-09-14 09:07:14.250138'
+    - Black/Black
+    - men
+    - Air Fear Of God 1
+    - Black
+    - d3c7f86c-050c-4607-95f7-15dc4efd32ec
+    - sneakers
+    - 921
+    - 811
+    - 750
+    - 7
+    - 
+    - "{}"
+    - "{}"
+  - - 1615
+    - FEAR OF GOD FOG Essentials Drawstring Shorts White
+    - ''
+    - FEAR OF GOD
+    - ''
+    - 0.0
+    - '2019-09-14 09:07:14.265794'
+    - '2019-09-14 09:07:14.265794'
+    - White
+    - men
+    - FEAR OF GOD FOG Essentials Drawstring
+    - Shorts White
+    - 1d35d8f6-baac-482d-897d-877f782bdea7
+    - streetwear
+    - 90
+    - 83
+    - 55
+    - 8
+    - 
+    - "{}"
+    - "{}"
+  - - 1616
+    - FEAR OF GOD FOG Essentials Drawstring Pants Chinchilla
+    - ''
+    - FEAR OF GOD
+    - ''
+    - 0.0
+    - '2019-09-14 09:07:14.313035'
+    - '2019-09-14 09:07:14.313035'
+    - Chinchilla
+    - men
+    - FEAR OF GOD FOG Essentials Drawstring
+    - Pants Chinchilla
+    - cd01153d-74d3-44f9-9d47-6c9ea7a9698e
+    - streetwear
+    - 80
+    - 93
+    - 94
+    - 6
+    - 
+    - "{}"
+    - "{}"
+  - - 1617
+    - Vans Sk8-Hi Fear of God
+    - ''
+    - Vans
+    - '2016-08-30'
+    - 100.0
+    - '2019-09-14 09:07:14.335271'
+    - '2019-09-14 09:07:14.335271'
+    - Black/Birch
+    - men
+    - Vans Sk8-Hi
+    - Fear of God
+    - cfdccc4f-ea29-448c-a2b5-0221e42db6b5
+    - sneakers
+    - 500
+    - 230
+    - 398
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1618
+    - FEAR OF GOD FOG Essentials Drawstring Pants Grey
+    - ''
+    - FEAR OF GOD
+    - ''
+    - 0.0
+    - '2019-09-14 09:07:14.339109'
+    - '2019-09-14 09:07:14.339109'
+    - Grey
+    - men
+    - FEAR OF GOD FOG Essentials Drawstring
+    - Pants Grey
+    - e2e7c0ca-ccf4-41c4-af41-eefd2ffe8df5
+    - streetwear
+    - 90
+    - 75
+    - 95
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1619
+    - Converse Chuck Taylor All-Star 70s Hi Fear of God Black
+    - If you're a fan of wearing all black than you should grab the Converse Chuck
+      Taylor All-Star 70s Hi Fear of God Black. These Converse come with a all black
+      upper, cream midsole, and cream sole. This sneaker released in November 2018
+      and retailed for $110. Place a Bid on these on StockX today and kill the sneaker
+      game with kindness.
+    - Converse
+    - '2018-11-04'
+    - 164529.0
+    - '2019-09-14 09:07:14.34276'
+    - '2019-09-14 09:07:14.34276'
+    - Black/Black
+    - men
+    - Converse Chuck Taylor All-Star
+    - 70s Hi Fear of God Black
+    - a5d53c02-19e1-4129-9816-71461b1f4fca
+    - sneakers
+    - 310
+    - 359
+    - 259
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1620
+    - Vans Era 95 Fear of God
+    - ''
+    - Vans
+    - '2016-10-05'
+    - 100.0
+    - '2019-09-14 09:07:14.34905'
+    - '2019-09-14 09:07:14.34905'
+    - Marshmallow
+    - men
+    - Vans Era 95
+    - Fear of God
+    - 88a97005-b129-429b-bb80-76ae031cfc4d
+    - sneakers
+    - 1350
+    - 1000
+    - 1400
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1621
+    - Fear Of God Military Sneaker Canapa
+    - ''
+    - FEAR OF GOD
+    - '2016-11-26'
+    - 1195.0
+    - '2019-09-14 09:07:14.381277'
+    - '2019-09-14 09:07:14.381277'
+    - Canapa
+    - men
+    - Fear Of God Military Sneaker
+    - Canapa
+    - 0ae2b43f-aa82-4ee8-83e7-1904c56123df
+    - sneakers
+    - 700
+    - 509
+    - 710
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1622
+    - Fear Of God Military Sneaker Kith Blue
+    - ''
+    - FEAR OF GOD
+    - '2017-03-08'
+    - 1195.0
+    - '2019-09-14 09:07:14.405795'
+    - '2019-09-14 09:07:14.405795'
+    - New York Blue
+    - men
+    - Fear Of God Military Sneaker
+    - Kith Blue
+    - 05a42002-fcbf-480b-8d02-7e36ec588b4c
+    - sneakers
+    - 400
+    - 360
+    - 400
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1623
+    - Air Skylon 2 Fear of God Light Bone
+    - ''
+    - Nike
+    - '2019-07-20'
+    - 150.0
+    - '2019-09-14 09:07:14.40933'
+    - '2019-09-14 09:07:14.40933'
+    - Summit White/Clear-Vast Grey-Pearl White
+    - men
+    - Air Skylon 2
+    - Fear of God Light Bone
+    - fe227e10-87aa-4e89-ae60-edbd37d99c74
+    - sneakers
+    - 160
+    - 114
+    - 98
+    - 48
+    - 
+    - "{}"
+    - "{}"
+  - - 1624
+    - Air Fear Of God Raid Black
+    - Start your FOG collection by grabbing the Air Fear Of God Raid Black. This FOG
+      Raid comes with a black upper, black Nike “Swoosh”, sail midsole, and a translucent
+      sole. These sneakers released in May 2019 and retailed for $190. Become a sneaker
+      legend after buying these now on StockX.
+    - Nike
+    - '2019-05-17'
+    - 190.0
+    - '2019-09-14 09:07:14.415365'
+    - '2019-09-14 09:07:14.415365'
+    - Black/Black-Fossil
+    - men
+    - Air Fear Of God Raid
+    - Black
+    - 13eb47ae-9715-48e5-9fa5-d0b4b9875f71
+    - sneakers
+    - 285
+    - 240
+    - 175
+    - 39
+    - 
+    - "{}"
+    - "{}"
+  - - 1625
+    - Air Fear of God Raid Light Bone
+    - Rock some light heat after buying the Air Fear of God Raid Light Bone. This
+      FOG Raid comes with a light bone upper, black Nike “Swoosh”, light bone midsole,
+      and a translucent sole. These sneakers released in April 2019 and retailed for
+      $190. Before you buy these on 2K19, try placing Bid on StockX today.
+    - Nike
+    - '2019-04-27'
+    - 190.0
+    - '2019-09-14 09:07:14.423491'
+    - '2019-09-14 09:07:14.423491'
+    - Light Bone/Black-White
+    - men
+    - Air Fear of God Raid
+    - Light Bone
+    - a71b54ab-ad20-4729-8ad8-9fb337041e54
+    - sneakers
+    - 297
+    - 201
+    - 225
+    - 41
+    - 
+    - "{}"
+    - "{}"
+  - - 1626
+    - FEAR OF GOD ESSENTIALS Photo T-shirt Black
+    - ''
+    - FEAR OF GOD
+    - '2019-08-16'
+    - 45.0
+    - '2019-09-14 09:07:14.443053'
+    - '2019-09-14 09:07:14.443053'
+    - Black
+    - unisex
+    - FEAR OF GOD ESSENTIALS Photo
+    - T-shirt Black
+    - c78f926d-d7ea-46aa-b05c-9cecea2a120b
+    - streetwear
+    - 75
+    - 74
+    - 63
+    - 33
+    - 
+    - "{}"
+    - "{}"
+  - - 1627
+    - FEAR OF GOD ESSENTIALS 3M Logo Pullover Hoodie Black
+    - Jerry Lorenzo's Fear of God line has been dominating the sneaker and streetwear
+      scene lately, with drops selling out almost instantly whenever the LA-based
+      designer comes out with new product. His recent Fear of God Essentials drop
+      was no different. The collection released on July 19th, 2019 and featured a
+      wide variety of gear including tees, shorts, pants, hoodies, bags, and more.
+      This FEAR OF GOD ESSENTIALS 3M Logo Pullover Hoodie in Black released as a part
+      of this Essentials drop, and retailed for $90. Bid today to secure yours.
+    - FEAR OF GOD
+    - '2019-07-19'
+    - 90.0
+    - '2019-09-14 09:07:14.471963'
+    - '2019-09-14 09:07:14.471963'
+    - Black
+    - men
+    - FEAR OF GOD ESSENTIALS 3M Logo Pullover
+    - Hoodie Black
+    - 9a379603-3e89-4892-898c-1ebcccb30e77
+    - streetwear
+    - 150
+    - 144
+    - 123
+    - 30
+    - 
+    - "{}"
+    - "{}"
+  - - 1628
+    - Air Fear Of God 1 Sail Black
+    - 'Note: Only select retailers included a dust bag with the Air Fear of God 1s
+      during their initial release. As such we can not guarantee one will be included
+      with your purchase. Sail away while wearing the Air Fear Of God 1 Sail Black.
+      This Air FOG 1 comes with a sail upper, black Nike “Swoosh”, sail midsole, and
+      translucent sole. These sneakers released in June 2019 and retailed for $350.
+      Place a Bid for these FOGs on StockX today.'
+    - Nike
+    - '2019-06-08'
+    - 350.0
+    - '2019-09-14 09:07:14.473585'
+    - '2019-09-14 09:07:14.473585'
+    - Sail/Black
+    - men
+    - Air Fear Of God 1
+    - Sail Black
+    - 7865051b-15d2-40ed-b9b1-842b7592383c
+    - sneakers
+    - 715
+    - 469
+    - 440
+    - 29
+    - 
+    - "{}"
+    - "{}"
+  - - 1629
+    - FEAR OF GOD ESSENTIALS 3M Logo Boxy T-shirt Black
+    - 'Jerry Lorenzo''s Fear of God line has been dominating the sneaker and streetwear
+      scene lately, with drops selling out almost instantly whenever the LA-based
+      designer comes out with new product. His recent Fear of God Essentials drop
+      was no different. The collection released on July 19th, 2019 and featured a
+      wide variety of gear including tees, shorts, pants, hoodies, bags, and more.
+      This FEAR OF GOD ESSENTIALS 3M Logo Boxy T-shirt in Black released as a part
+      of this Essentials drop, and retailed for $40. Bid today to secure yours. '
+    - FEAR OF GOD
+    - '2019-07-19'
+    - 40.0
+    - '2019-09-14 09:07:14.482675'
+    - '2019-09-14 09:07:14.482675'
+    - Black
+    - men
+    - FEAR OF GOD ESSENTIALS 3M Logo Boxy
+    - T-shirt Black
+    - 0b2a7d47-3aa1-48f6-92e1-a69c8f1eb123
+    - streetwear
+    - 62
+    - 57
+    - 57
+    - 27
+    - 
+    - "{}"
+    - "{}"
+  - - 1630
+    - FEAR OF GOD ESSENTIALS Photo Pullover Hoodie (FW19) Black
+    - ''
+    - FEAR OF GOD
+    - '2019-08-16'
+    - 100.0
+    - '2019-09-14 09:07:14.493629'
+    - '2019-09-14 09:07:14.493629'
+    - Black
+    - unisex
+    - FEAR OF GOD ESSENTIALS Photo Pullover
+    - Hoodie (FW19) Black
+    - fb274bb7-2f70-4991-8aff-a4e3c6192103
+    - streetwear
+    - 150
+    - 148
+    - 147
+    - 25
+    - 
+    - "{}"
+    - "{}"
+  - - 1631
+    - Jordan 1 Retro High Obsidian UNC
+    - |-
+      Jordan Brand adds a new colorway to it’s hot streak of Jordan 1 releases with the Air Jordan 1 “Obsidian / University Blue”, now available on StockX. Since its debut in 1985, the Air Jordan 1 has been a cultural monument, breaking barriers between the court and the streets. Jordan Brand has continued to shed new light on this timeless silhouette and does so with this release.
+      <br><br>
+      This AJ 1 features a similar design to the “UNC Patent” 1s that released in February of 2019, only this time the colorway receives a full leather treatment. This sneaker released in August of 2019 and retails for $160.
+    - Jordan
+    - '2019-08-31'
+    - 160.0
+    - '2019-09-14 09:07:14.511753'
+    - '2019-09-14 09:07:14.511753'
+    - Sail/Obsidian-University Blue
+    - men
+    - Jordan 1 Retro High
+    - Obsidian UNC
+    - 2d4313be-189e-491e-9dfa-4404693882f3
+    - sneakers
+    - 440
+    - 267
+    - 150
+    - 1001
+    - 
+    - "{}"
+    - "{}"
+  - - 1632
+    - Jordan 12 Retro Fiba (2019)
+    - |-
+      Jordan Brand welcomes with 2019 FIBA Basketball World Cup with the Air Jordan 12 “FIBA”, now available on StockX. FIBA (Originally known as the Fédération Internationale de Basketball Amateur) is an association of national organizations which governs the sport of basketball worldwide. Every four years, nations that are members of this organization compete for the World Cup. In 2017, Nike partnered with FIBA to become the official sponsor of the organization so it is fitting that Jordan pays tribute with this colorway.
+      <br>
+      <br>
+      This AJ 12 is reminiscent of the existing “Rising Sun” colorway except it differs by displaying red detailing with gold accents. This design features a white leather upper detailed with different symbols from flags. Chinese text on the heel tab and the signature “TWO 3” embroidery on the tongue completes the design. These sneakers released in August of 2019 and retailed for $190.
+    - Jordan
+    - '2019-08-24'
+    - 190.0
+    - '2019-09-14 09:07:14.550838'
+    - '2019-09-14 09:07:14.550838'
+    - White/University Red-Metallic Gold
+    - men
+    - Jordan 12 Retro
+    - Fiba (2019)
+    - 8527d1bd-1f0f-4f50-934e-b62a1ba0399e
+    - sneakers
+    - 189
+    - 178
+    - 165
+    - 144
+    - 
+    - "{}"
+    - "{}"
+  - - 1633
+    - Jordan 4 Retro Cool Grey (2019)
+    - |
+      Jordan Brand brings back a mid-2000’s classic with the Air Jordan 4 “Cool Grey”, now available on StockX. After originally releasing in 2004, the Cool Grey 4 has not since been retroed until 2019. The “Cool Grey” color garnered attention when it was featured on a pair of Air Jordan 11 Retros in 2001. It seemed only fitting for Jordan to carry this tremendous colorway to a very notable design with the Air Jordan 4.
+      <br>
+      <br>
+      These AJ 4s are very similar to the 2004 release, featuring a cool gey upper, chrome hardware, and a dark charcoal interior. In classic Jordan 4 fashion, a heel tab is present sporting a Jumpman logo. A white midsole, dark charcoal outsole, and yellow detail embroidery on the tongue complete the design. These sneakers released in August of 2019 and retailed for $190.
+    - Jordan
+    - '2019-08-01'
+    - 190.0
+    - '2019-09-14 09:07:14.552104'
+    - '2019-09-14 09:07:14.552104'
+    - Cool Grey/Chrome-Dark Charcoal-Varsity Maize
+    - men
+    - Jordan 4 Retro
+    - Cool Grey (2019)
+    - 021d9aab-f5a0-47be-8777-4791a4af9968
+    - sneakers
+    - 200
+    - 183
+    - 167
+    - 197
+    - 
+    - "{}"
+    - "{}"
+  - - 1634
+    - Jordan 1 Retro High Satin Black Toe (W)
+    - |-
+      Jordan Brand adds a twist to a classic with the Air Jordan 1 WMNS Satin “Black Toe”, now available on StockX. Jordan is no stranger to adding satin to the Jordan 1. In May of 2018, they released a satin rendition of the “Shattered Backboard” 1 in a similar fashion, revealing that the release would be in women’s sizing.
+      <br>
+      <br>
+      This AJ 1 features classic “Black Toe” color scheme. This design is constructed in a mix of leather and satin construction providing a luxury feel. A metal Wings logo on the heel completes the design. These sneakers released in August of 2019 and retailed for $160.
+    - Jordan
+    - '2019-08-17'
+    - 160.0
+    - '2019-09-14 09:07:14.558662'
+    - '2019-09-14 09:07:14.558662'
+    - Black/White-University Red
+    - women
+    - Jordan 1 Retro High
+    - Satin Black Toe (W)
+    - b5250116-e4e3-4ecc-a7c0-b730e40d9e79
+    - sneakers
+    - 1301
+    - 940
+    - 535
+    - 341
+    - 
+    - "{}"
+    - "{}"
+  - - 1635
+    - Jordan 4 Retro Bred (2019)
+    - Looking for a classic sneaker to add to your collection? Then you need to buy
+      the latest and greatest Jordan 4 Retro Bred (2019). This AJ 4, also known as
+      “Black Cement 4,” comes with a black upper plus grey accents, white midsole
+      plus black, white and grey accents, and a red sole. These sneakers released
+      in May 2019 and retailed for $200. Thrive in one of Jordan’s most iconic sneakers
+      ever, so make sure you have a pair of your own. Buy them today on StockX.
+    - Jordan
+    - '2019-05-04'
+    - 200.0
+    - '2019-09-14 09:07:14.568758'
+    - '2019-09-14 09:07:14.568758'
+    - Black/Fire Red-Cement Grey-Summit White
+    - men
+    - Jordan 4 Retro
+    - Bred (2019)
+    - f5712f8a-a2e2-497c-8ab7-299365c2a754
+    - sneakers
+    - 255
+    - 247
+    - 229
+    - 132
+    - 
+    - "{}"
+    - "{}"
+  - - 1636
+    - Jordan 1 Retro High Travis Scott
+    - Grab a pack of coffee beans to match the Jordan 1 Retro High Travis Scott. This
+      AJ1 comes with a brown upper plus white accents, black Nike "Swoosh", sail midsole,
+      and a brown sole. These sneakers released in May 2019 and retailed for $175.
+      Mess the club up in these after buying them on StockX.
+    - Jordan
+    - '2019-05-11'
+    - 175.0
+    - '2019-09-14 09:07:14.595947'
+    - '2019-09-14 09:07:14.595947'
+    - Sail/Black-Dark Mocha-University Red
+    - men
+    - Jordan 1 Retro High
+    - Travis Scott
+    - 6486f442-0250-45c8-8d18-0dd2ff6eea5f
+    - sneakers
+    - 2116
+    - 1237
+    - 737
+    - 100
+    - 
+    - "{}"
+    - "{}"
+  - - 1637
+    - Jordan 11 Retro Concord (2018)
+    - 'Jordan Brand is reaching harder than MJ on Space Jam for the sneaker of the
+      year crown by releasing the Jordan 11 Retro Concord (2018). This Iconic Jordan
+      11 colorway is showcasing a white upper with black accents, white midsole, and
+      a freezing cold translucent sole. These sneakers released in December 2018 and
+      retailed for $220. Revisit the dominant legacy MJ left behind and grab a pair
+      on StockX today. '
+    - Jordan
+    - '2018-12-08'
+    - 220.0
+    - '2019-09-14 09:07:14.616483'
+    - '2019-09-14 09:07:14.616483'
+    - White/Black-Concord
+    - men
+    - Jordan 11 Retro
+    - Concord (2018)
+    - b1496e22-50e2-4b21-9270-0b61c8c89f79
+    - sneakers
+    - 376
+    - 276
+    - 245
+    - 92
+    - 
+    - "{}"
+    - "{}"
+  - - 1638
+    - Jordan 1 Retro High Turbo Green
+    - 'Shift your sneaker collection to another gear and cop the Jordan 1 Retro High
+      Turbo Green. This AJ 1 sports a white upper with green accents, green Nike “Swoosh”,
+      white midsole, and green sole. These sneakers released in February 2019 and
+      retailed for $160. Looking for the right sneakers to burn rubber in? Well buy
+      these now on StockX. '
+    - Jordan
+    - '2019-02-15'
+    - 160.0
+    - '2019-09-14 09:07:14.627351'
+    - '2019-09-14 09:07:14.627351'
+    - Turbo Green/Sail-White-Light Smoke Grey
+    - men
+    - Jordan 1 Retro High
+    - Turbo Green
+    - 507c1fbc-6386-444a-9112-67174a3fa820
+    - sneakers
+    - 341
+    - 227
+    - 190
+    - 70
+    - 
+    - "{}"
+    - "{}"
+  - - 1639
+    - Jordan 13 Retro Lakers
+    - ''
+    - Jordan
+    - '2019-07-20'
+    - 190.0
+    - '2019-09-14 09:07:14.628544'
+    - '2019-09-14 09:07:14.628544'
+    - White/Black-Court Purple-University Gold
+    - men
+    - Jordan 13 Retro
+    - Lakers
+    - 376c01bb-0167-40af-bfd3-a38767a07c6a
+    - sneakers
+    - 153
+    - 171
+    - 139
+    - 89
+    - 
+    - "{}"
+    - "{}"
+  - - 1640
+    - Jordan 1 Retro Low OG SP Travis Scott
+    - 'Building off the success of their previous collaborations, Travis Scott adds
+      yet another new design to his collaborative relationship with Jumpman via the
+      Air Jordan 1 Low Travis Scott, now available on StockX. Travis teased the release
+      of this shoe while on his Astroworld tour, leaving fans of both his music and
+      the Jordan Brand alike with one question: When are these shoes dropping? On
+      the Friday night of July 19, 2019, Travis answered the masses by making them
+      available on his website, with a release on the SNKRS app following the next
+      day. <br><br>This AJ 1 Low features a black upper with dark brown overlays and
+      red accents on the branding. Much like the Air Jordan 1 High Travis Scott, La
+      Flame added his signature backwards Swoosh logo on the lateral side. “Cactus
+      Jack” insignias on the heel and inner upper atopa  sail midsole and dark brown
+      outsole completes the design. These sneakers released in July of 2019 and retailed
+      for $130.'
+    - Jordan
+    - '2019-07-20'
+    - 130.0
+    - '2019-09-14 09:07:14.642422'
+    - '2019-09-14 09:07:14.642422'
+    - Black/Dark Mocha-University Red-Sail
+    - men
+    - Jordan 1 Retro Low OG SP
+    - Travis Scott
+    - 0765b874-fa67-4315-9f73-60b5b53850d4
+    - sneakers
+    - 1400
+    - 1154
+    - 480
+    - 90
+    - 
+    - "{}"
+    - "{}"
+  - - 1641
+    - Jordan 3 Retro Tinker Black Cement Gold
+    - "Jordan Brand pays homage to designer Tinker Hatfield with the Air Jordan 3
+      Tinker “Black Cement”, now available on StockX. Ever since Tinker Hatfield stepped
+      into Nike headquarters his impact has been felt across the world. This shoe
+      is a celebration of not only the first Jordan model that Tinker designed, but
+      also the first shoe he designed for Nike which is the Air Max 1. \n<br>\n<br>\nThis
+      Jordan 3 is a spin off of the classic “Black Cement” that has been a street
+      favorite since its release in 1988. A black suede upper with a familiar elephant
+      print mudguard is featured, but instead of the elephant print sporting grey
+      tones, it is black. A grey Swoosh overlays the upper, drawing inspiration from
+      Tinkers first projects for Nike. A white midsole, grey outsole, and gold hardware
+      completes the design. These sneakers released in July of 2019 and retailed for
+      $200."
+    - Jordan
+    - '2019-07-27'
+    - 200.0
+    - '2019-09-14 09:07:14.647864'
+    - '2019-09-14 09:07:14.647864'
+    - Black/Cement Grey-Metallic Gold
+    - men
+    - Jordan 3 Retro
+    - Tinker Black Cement Gold
+    - 70b71ee5-fe9a-4df5-9dca-7f9418045d2a
+    - sneakers
+    - 180
+    - 139
+    - 137
+    - 70
+    - 
+    - "{}"
+    - "{}"
+  - - 1642
+    - Jordan 6 Retro Black Infrared (2019)
+    - 'Make sure your head isn’t in the beam while trying to grab the Jordan 6 Retro
+      Black Infrared (2019). This AJ6 come with a black upper, black midsole plus
+      red accents, and a translucent sole. These sneakers released in February 2019
+      and retailed for $200. This silhouette is a must cop, so purchase them on StockX
+      now. '
+    - Jordan
+    - '2019-02-16'
+    - 200.0
+    - '2019-09-14 09:07:14.681265'
+    - '2019-09-14 09:07:14.681265'
+    - Black/Infrared
+    - men
+    - Jordan 6 Retro
+    - Black Infrared (2019)
+    - 58abc774-fa8d-408d-a9f0-d400bc56dc05
+    - sneakers
+    - 250
+    - 188
+    - 200
+    - 69
+    - 
+    - "{}"
+    - "{}"
+  - - 1643
+    - Jordan 1 Retro High Defiant White Black Gym Red
+    - ''
+    - Jordan
+    - '2019-07-27'
+    - 175.0
+    - '2019-09-14 09:07:14.68643'
+    - '2019-09-14 09:07:14.68643'
+    - Black/University Gold-White
+    - men
+    - Jordan 1 Retro High
+    - Defiant White Black Gym Red
+    - 95539fa1-d09d-4285-a163-59eb087e9767
+    - sneakers
+    - 290
+    - 238
+    - 125
+    - 68
+    - 
+    - "{}"
+    - "{}"
+  - - 1644
+    - Jordan 1 Low SB UNC
+    - |-
+      Legendary skateboarder and sneakerhead Eric Koston delivers UNC nostalgia with the Nike SB Air Jordan 1 Low “UNC”, now available on StockX. This shoe draws inspiration from a classic Air Jordan 1 High model that originally released in 1985. The original design incorporated University Blue overlays, a color that has been made famous by Jordan’s alma mater, the University of North Carolina. This historic colorway combined with a long history of the skateboard communities love for the Jordan 1 made this a no brainer collaboration.
+      <br>
+      <br>
+      Just like many basketball shoes turned SB, this AJ 1 features improved technology including Nike SB heel Zoom sockliner for skating comfort. This low top sports a white leather upper with dark powder blue overlays and Swoosh. A white midsole, blue outsole, and Nike SB branding on the tongue and insoles completes the design. These sneakers released in August of 2019 and retailed for $110.
+    - Jordan
+    - '2019-08-12'
+    - 110.0
+    - '2019-09-14 09:07:14.709393'
+    - '2019-09-14 09:07:14.709393'
+    - Dark Powder Blue/White
+    - men
+    - Jordan 1 Low SB
+    - UNC
+    - d9a0dab3-b277-470e-9666-f3992d9456d6
+    - sneakers
+    - 370
+    - 210
+    - 190
+    - 63
+    - 
+    - "{}"
+    - "{}"
+  - - 1645
+    - Jordan 6 Retro PSG Paris Saint-Germain
+    - ''
+    - Jordan
+    - '2019-08-10'
+    - 225.0
+    - '2019-09-14 09:07:14.724392'
+    - '2019-09-14 09:07:14.724392'
+    - Iron Grey/Infrared 23-Black
+    - men
+    - Jordan 6 Retro
+    - PSG Paris Saint-Germain
+    - 1d7edbed-9e23-40a4-93f5-dbfdd511f5f6
+    - sneakers
+    - 275
+    - 256
+    - 170
+    - 69
+    - 
+    - "{}"
+    - "{}"
+  - - 1646
+    - Jordan 1 Retro High Phantom Gym Red
+    - Jordan Brand is bringing another super dope Jordan 1 to the sneaker game with
+      the release of the Jordan 1 Retro High Phantom Gym Red. This AJ 1 sports a white
+      upper with red accents, white Nike “Swoosh”, white midsole, and a white sole.
+      These sneakers released in March 2019 and retailed for $160. Because of the
+      colorway, be sure to cop multiple pairs on StockX today.
+    - Jordan
+    - '2019-03-30'
+    - 160.0
+    - '2019-09-14 09:07:14.72613'
+    - '2019-09-14 09:07:14.72613'
+    - Sail/Black-Phantom-Gym Red-University Red
+    - men
+    - Jordan 1 Retro High
+    - Phantom Gym Red
+    - 9abf2477-cac8-4a91-99ec-d9eccbfa23ec
+    - sneakers
+    - 315
+    - 143
+    - 115
+    - 59
+    - 
+    - "{}"
+    - "{}"
+  - - 1647
+    - Jordan 11 Retro Low Snake Navy (2019)
+    - Let those ankles breathe a little by copping the Jordan 11 Retro Low Snake Navy
+      (2019). This AJ 11 Low comes with a white upper plus navy accents, white midsole,
+      and a translucent sole. These sneakers released in April 2019 and retailed for
+      $185. Bring in the summer early and place a Bid for these on StockX ASAP.
+    - Jordan
+    - '2019-04-19'
+    - 185.0
+    - '2019-09-14 09:07:14.729031'
+    - '2019-09-14 09:07:14.729031'
+    - White/Black-Navy
+    - men
+    - Jordan 11 Retro Low
+    - Snake Navy (2019)
+    - f3ddede1-3753-485d-9dc2-b9a7b466ddb8
+    - sneakers
+    - 183
+    - 168
+    - 140
+    - 57
+    - 
+    - "{}"
+    - "{}"
+  - - 1648
+    - Jordan 1 Low Gold Toe
+    - ''
+    - Jordan
+    - '2019-07-01'
+    - 95.0
+    - '2019-09-14 09:07:14.773968'
+    - '2019-09-14 09:07:14.773968'
+    - Metallic Gold/Black-White
+    - men
+    - Jordan 1 Low
+    - Gold Toe
+    - 54f797a2-be23-43ae-962d-c729dd6c230b
+    - sneakers
+    - 141
+    - 99
+    - 84
+    - 50
+    - 
+    - "{}"
+    - "{}"
+  - - 1649
+    - Jordan 1 Retro High Black Crimson Tint
+    - Blast Travis Scott’s 5% Tint while rocking the Jordan 1 Retro High Black Crimson
+      Tint. This AJ 1 comes with a black upper plus pink accents, pink Nike “Swoosh”,
+      white midsole, and a pink sole. These sneakers released in April 2019 and retailed
+      for $160. Save up the hard earned paychecks and buy these now on StockX.
+    - Jordan
+    - '2019-04-12'
+    - 160.0
+    - '2019-09-14 09:07:14.776155'
+    - '2019-09-14 09:07:14.776155'
+    - Black/Crimson Tint-White-Hyper Pink-Mystic Green
+    - men
+    - Jordan 1 Retro High
+    - Black Crimson Tint
+    - 2aa4b028-9729-45b7-b18b-cacda1573bbe
+    - sneakers
+    - 225
+    - 240
+    - 109
+    - 55
+    - 
+    - "{}"
+    - "{}"
+  - - 1650
+    - Jordan 3 Retro Tinker White University Red
+    - Jordan Brand is bringing more fire kicks to the sneaker scene with the release
+      of the Jordan 3 Retro Tinker White University Red. This AJ 3 comes with a white
+      upper plus red accents, white Nike “Swoosh”, white midsole, and a white sole.
+      These sneakers released in March 2019 and retailed for $225. Make Tinker proud
+      and grab these on StockX today.
+    - Jordan
+    - '2019-03-30'
+    - 225.0
+    - '2019-09-14 09:07:14.777482'
+    - '2019-09-14 09:07:14.777482'
+    - White/University Red-Neutral Grey
+    - men
+    - Jordan 3 Retro
+    - Tinker White University Red
+    - 0e57437c-0ac5-4a91-8538-149dd5b2ed34
+    - sneakers
+    - 220
+    - 127
+    - 124
+    - 45
+    - 
+    - "{}"
+    - "{}"
+  - - 1651
+    - Supreme Hanes Boxer (4 Pack) Briefs Black
+    - 'Looking for a new subtle flex? Supreme has been collaborating with Hanes on
+      branded basics for years, delivering boxer briefs, tagless tee shirts, and socks
+      for anyone looking to upgrade their basics. The black boxer briefs are a classic
+      pair of Hanes boxer briefs with Supreme’s classic heavy futura oblique font
+      on the waistband. This 4-pack retailed for $36 and has released numerous times
+      throughout the years. Place a bid today to take your basics to the next level. '
+    - Supreme
+    - '2017-08-24'
+    - 36.0
+    - '2019-09-14 09:07:14.842082'
+    - '2019-09-14 09:07:14.842082'
+    - Black
+    - men
+    - Supreme Hanes Boxer (4 Pack)
+    - Briefs Black
+    - eadd2461-f6c4-45eb-86f8-83869bb034b3
+    - streetwear
+    - 41
+    - 45
+    - 44
+    - 51
+    - 
+    - "{}"
+    - "{}"
+  - - 1652
+    - Supreme Timex Digital Watch Silver
+    - 'Potentially the most anticipated and hyped collaborative effort made and released
+      by Supreme as a part of their FW19 Week one drop is the Supreme x Timex Digital
+      Watch. The watches released in two colorways, gold and silver, features a printed
+      logo digital screen, and is water resistant up to 99 feet. The Supreme Timex
+      Digital Watch released on August 22nd, 2019 and retailed for $68 USD. '
+    - Supreme
+    - '2019-08-22'
+    - 68.0
+    - '2019-09-14 09:07:14.86247'
+    - '2019-09-14 09:07:14.86247'
+    - Silver
+    - unisex
+    - Supreme Timex Digital
+    - Watch Silver
+    - 249abdeb-a133-46df-adda-6e4728059328
+    - streetwear
+    - 196
+    - 202
+    - 205
+    - 38
+    - 
+    - "{}"
+    - "{}"
+  - - 1653
+    - Supreme Reversible Bandana Fleece Jacket Black
+    - Released just nine days before fall officially started, Supreme's Reversible
+      Bandana Fleece Jackets added to the mounting fleece hype as temperatures begin
+      to change. The fleeces dropped in four colors and feature a GORE-TEX WINDSTOPPER
+      lining to keep the wearer nice and warm as the seasons start to change. The
+      Supreme Reversible Bandana Fleece Jacket released on September 12th, 2019 and
+      retailed for $228 USD.
+    - Supreme
+    - '2019-09-12'
+    - 228.0
+    - '2019-09-14 09:07:14.865129'
+    - '2019-09-14 09:07:14.865129'
+    - Black
+    - men
+    - Supreme Reversible Bandana
+    - Fleece Jacket Black
+    - c42b052b-a22b-46d0-ae50-7fb5955ef7f2
+    - streetwear
+    - 515
+    - 525
+    - 524
+    - 48
+    - 1
+    - "{}"
+    - "{}"
+  - - 1654
+    - Supreme Butterfly Table Tennis Racket Set Checkerboard
+    - Supreme's FW19 Season was jam packed with eye-catching accessories and Week
+      3's addition to the accessory lineup is no joke as Supreme released their Table
+      Tennis Racket Set with Butterfly. The set features a shakehand table tennis
+      racket, a 3-pack of Butterfly A40+ Balls, and both a racket and ball case. The
+      Supreme Butterfly Table Tennis Racket Set released on September 12th, 2019 and
+      retailed for $198 USD.
+    - Supreme
+    - '2019-09-12'
+    - 198.0
+    - '2019-09-14 09:07:14.866069'
+    - '2019-09-14 09:07:14.866069'
+    - Checkerboard
+    - unisex
+    - Supreme Butterfly Table Tennis
+    - Racket Set Checkerboard
+    - d6c9b337-0c8c-4133-8d0b-5ad73810a29c
+    - streetwear
+    - 215
+    - 220
+    - 225
+    - 47
+    - 1
+    - "{}"
+    - "{}"
+  - - 1655
+    - Supreme Waist Bag (FW19) Real Tree Camo
+    - Like the sun comes up every morning, Supreme drops bags on Week One of each
+      season and FW19 was no exception. FW19's waistbags released in four different
+      colorways and feature Supreme branding on a water resistant 6L 630D HT Cordura
+      Nylon bag. The Supreme Waist Bag (FW19) released on August 22nd, 2019 and retailed
+      for $88 USD.
+    - Supreme
+    - '2019-08-22'
+    - 88.0
+    - '2019-09-14 09:07:14.873921'
+    - '2019-09-14 09:07:14.873921'
+    - Real Tree Camo
+    - unisex
+    - Supreme Waist
+    - Bag (FW19) Real Tree Camo
+    - 3f254055-efa9-4b24-8454-0a4e69e3419b
+    - streetwear
+    - 107
+    - 110
+    - 111
+    - 33
+    - 
+    - "{}"
+    - "{}"
+  - - 1656
+    - Supreme Reversible Bandana Fleece Jacket Red
+    - Released just nine days before fall officially started, Supreme's Reversible
+      Bandana Fleece Jackets added to the mounting fleece hype as temperatures begin
+      to change. The fleeces dropped in four colors and feature a GORE-TEX WINDSTOPPER
+      lining to keep the wearer nice and warm as the seasons start to change. The
+      Supreme Reversible Bandana Fleece Jacket released on September 12th, 2019 and
+      retailed for $228 USD.
+    - Supreme
+    - '2019-09-12'
+    - 228.0
+    - '2019-09-14 09:07:14.939633'
+    - '2019-09-14 09:07:14.939633'
+    - Red
+    - men
+    - Supreme Reversible Bandana
+    - Fleece Jacket Red
+    - 1d9e8633-71ee-4c99-a17e-087002e4d4d0
+    - streetwear
+    - 511
+    - 430
+    - 438
+    - 31
+    - 1
+    - "{}"
+    - "{}"
+  - - 1657
+    - Supreme Ben Davis Chore Coat Black
+    - ''
+    - Supreme
+    - '2019-09-12'
+    - 188.0
+    - '2019-09-14 09:07:14.948388'
+    - '2019-09-14 09:07:14.948388'
+    - Black
+    - men
+    - Supreme Ben Davis
+    - Chore Coat Black
+    - 1f869714-8d8e-4b59-b338-f0fb08e3e891
+    - streetwear
+    - 320
+    - 295
+    - 249
+    - 31
+    - 1
+    - "{}"
+    - "{}"
+  - - 1658
+    - Supreme Reversible Bandana Fleece Jacket Tan
+    - Released just nine days before fall officially started, Supreme's Reversible
+      Bandana Fleece Jackets added to the mounting fleece hype as temperatures begin
+      to change. The fleeces dropped in four colors and feature a GORE-TEX WINDSTOPPER
+      lining to keep the wearer nice and warm as the seasons start to change. The
+      Supreme Reversible Bandana Fleece Jacket released on September 12th, 2019 and
+      retailed for $228 USD.
+    - Supreme
+    - '2019-09-12'
+    - 228.0
+    - '2019-09-14 09:07:14.955573'
+    - '2019-09-14 09:07:14.955573'
+    - Tan
+    - men
+    - Supreme Reversible Bandana
+    - Fleece Jacket Tan
+    - af8e3f31-f882-4feb-af76-033d64635013
+    - streetwear
+    - 515
+    - 580
+    - 443
+    - 28
+    - 1
+    - "{}"
+    - "{}"
+  - - 1659
+    - Supreme S Logo Hooded Sweatshirt (FW19) Black
+    - Supreme's ever-popular S Logo apparel is back for their Fall/Winter 2019 season.
+      This time, the heavyweight cotton crossgrain fleece hooded sweatshirts feature
+      a variety of colors along with contrasting chenille applique logos on the upper
+      left chest. This hoodie retailed for $168 and released on September 5th, 2019.
+      Place that Bid now and stay cozy this Fall.
+    - Supreme
+    - '2019-09-05'
+    - 168.0
+    - '2019-09-14 09:07:14.95643'
+    - '2019-09-14 09:07:14.95643'
+    - Black
+    - men
+    - Supreme S Logo
+    - Hooded Sweatshirt (FW19) Black
+    - fd42310b-b24f-4920-9824-dafe7614c51a
+    - streetwear
+    - 200
+    - 195
+    - 180
+    - 27
+    - 1
+    - "{}"
+    - "{}"
+  - - 1660
+    - Supreme Waist Bag (SS19) Black
+    - SS19 may have come late this year, but Supreme’s waist bag lineup came correct.
+      Featuring an all-over jacquard logo pattern, a small box logo, and two pockets,
+      this black cordura nylon waist bag has a capacity of 1.5 liters. The bag released
+      in 4 colors on February 21st, 2019 and retailed at $88 USD.
+    - Supreme
+    - '2019-02-21'
+    - 88.0
+    - '2019-09-14 09:07:14.963164'
+    - '2019-09-14 09:07:14.963164'
+    - Black
+    - men
+    - Supreme Waist
+    - Bag (SS19) Black
+    - fbfc492c-ec5e-4a33-aed0-0a3c957158bc
+    - streetwear
+    - 162
+    - 175
+    - 175
+    - 27
+    - 
+    - "{}"
+    - "{}"
+  - - 1661
+    - Supreme Pyrex 2-Cup Measuring Cup Clear
+    - Amongst the host of accessories released as a part of Supreme's FW19 Week One
+      Drop was the Supreme/Pyrex 2-Cup Measuring Cup. The glass measuring cup features
+      three instances of Supreme branding mixed with the traditional Pyrex branding.
+      The Supreme/Pyrex 2-Cup Measuring Cup was released on August 22nd, 2019 and
+      retailed for $24 USD.
+    - Supreme
+    - '2019-08-22'
+    - 24.0
+    - '2019-09-14 09:07:14.995261'
+    - '2019-09-14 09:07:14.995261'
+    - Clear
+    - unisex
+    - Supreme Pyrex 2-Cup
+    - Measuring Cup Clear
+    - 731cafd7-61dc-4b38-bb17-fc33e4f1713e
+    - streetwear
+    - 35
+    - 36
+    - 37
+    - 27
+    - 
+    - "{}"
+    - "{}"
+  - - 1662
+    - Supreme Banner Tee Heather Grey
+    - Released as a part of Supreme's Fall/ Winter 2019 Week 1 drop, the Supreme Banner
+      tee sold out in a near instant. The tees dropped in nine different colorways
+      and all feature the same graphic image, a landscape photograph of Supreme's
+      original store banner. The Supreme Banner Tee released on August 22nd, 2019
+      and retailed for $38 USD.
+    - Supreme
+    - '2019-08-22'
+    - 38.0
+    - '2019-09-14 09:07:14.999109'
+    - '2019-09-14 09:07:14.999109'
+    - Heather Grey
+    - men
+    - Supreme Banner
+    - Tee Heather Grey
+    - 8316e2f2-18bc-4c23-bae0-1a36f7248f46
+    - streetwear
+    - 100
+    - 65
+    - 65
+    - 27
+    - 
+    - "{}"
+    - "{}"
+  - - 1663
+    - Supreme Ben Davis Beanie Black
+    - ''
+    - Supreme
+    - '2019-09-12'
+    - 38.0
+    - '2019-09-14 09:07:15.002735'
+    - '2019-09-14 09:07:15.002735'
+    - Black
+    - unisex
+    - Supreme Ben Davis
+    - Beanie Black
+    - abb8c026-ee0b-4ae4-b124-725ef945cc38
+    - streetwear
+    - 47
+    - 50
+    - 51
+    - 23
+    - 1
+    - "{}"
+    - "{}"
+  - - 1664
+    - adidas Yeezy Boost 700 Wave Runner Solid Grey
+    - 'A new set of waves are rolling in as the adidas Yeezy Wave Runner 700s get
+      ready for their first restock on March 10th, 2018. First releasing in November
+      of 2017, the Yeezy Boost 700’s represented what was a significant shift in Kanye’s
+      design aesthetic, moving from the minimalistic silhouettes of early Yeezy seasons
+      to this chunky runner model. It once again showed how Kanye stays ahead of the
+      curve, as chunkier sneakers became more en vogue in 2018. The shoe features
+      an upper with grey and black suede overlays, premium leather with blue mesh
+      underlays, neon green laces, and its signature chunky midsole with encapsulated
+      Boost technology. Translation: these may look bold but are still comfy as hell.
+      The Yeezy Wave Runners will stay at the same retail cost of $300 for the upcoming
+      restock, but have averaged a sale price well above retail on StockX since their
+      initial drop. So if you’re looking to add these to your Yeezy collection, remember
+      that fortune favors the bold bidders.'
+    - adidas
+    - '2017-11-01'
+    - 300.0
+    - '2019-09-14 09:07:15.072199'
+    - '2019-09-14 09:07:15.072199'
+    - Solid Grey/Chalk White/Core Black
+    - men
+    - adidas Yeezy Boost 700 Wave Runner
+    - Solid Grey
+    - 76beb63d-a3b1-4951-a44a-24eee806026e
+    - sneakers
+    - 600
+    - 450
+    - 400
+    - 180
+    - 
+    - "{}"
+    - "{}"
+  - - 1665
+    - Supreme Jean Paul Gaultier Tee White
+    - For their Week 7 drop, Supreme's reached into their luxury rolodex to call out
+      a name as shocking as can be. Coming off a several year ready-to-wear hiatus,
+      Jean Paul Gaultier's worked with Supreme on a collaborative collection in reference
+      to the designer's "F*** Racism" campaign from the early 90's. Released in two
+      colors, black and white, the tee from this collection will likely be subject
+      to questions and criticism pertaining to it's validity as a proper box logo
+      tee. Featuring the box logo over an illustration, the logo rests on the stomach
+      and not the chest, mixing up the classic design. Retailing at $54 dollars, the
+      collaboration holds far more attainable price points than some of Supreme's
+      other luxury collaboration counterparts. The JPG collaboration and this tee
+      released on Thursday April 11th, 2019.
+    - Supreme
+    - '2019-04-11'
+    - 54.0
+    - '2019-09-14 09:07:15.073941'
+    - '2019-09-14 09:07:15.073941'
+    - White
+    - men
+    - Supreme Jean Paul Gaultier
+    - Tee White
+    - 3da0ec59-846c-4f4c-8cdd-7326a749dab7
+    - streetwear
+    - 190
+    - 139
+    - 141
+    - 19
+    - 
+    - "{}"
+    - "{}"
+  - - 1666
+    - Supreme Reversible Bandana Fleece Jacket Light Blue
+    - Released just nine days before fall officially started, Supreme's Reversible
+      Bandana Fleece Jackets added to the mounting fleece hype as temperatures begin
+      to change. The fleeces dropped in four colors and feature a GORE-TEX WINDSTOPPER
+      lining to keep the wearer nice and warm as the seasons start to change. The
+      Supreme Reversible Bandana Fleece Jacket released on September 12th, 2019 and
+      retailed for $228 USD.
+    - Supreme
+    - '2019-09-12'
+    - 228.0
+    - '2019-09-14 09:07:15.074862'
+    - '2019-09-14 09:07:15.074862'
+    - Light Blue
+    - men
+    - Supreme Reversible Bandana
+    - Fleece Jacket Light Blue
+    - 372e8e3c-a3ec-4028-a56f-100f4d1d976f
+    - streetwear
+    - 552
+    - 482
+    - 482
+    - 23
+    - 1
+    - "{}"
+    - "{}"
+  - - 1667
+    - Supreme Text Rib Hooded Sweatshirt Black
+    - ''
+    - Supreme
+    - '2019-09-12'
+    - 158.0
+    - '2019-09-14 09:07:15.080005'
+    - '2019-09-14 09:07:15.080005'
+    - Black
+    - men
+    - Supreme Text Rib
+    - Hooded Sweatshirt Black
+    - 77246736-ce52-4c52-8082-6491aa92b4c4
+    - streetwear
+    - 204
+    - 225
+    - 190
+    - 17
+    - 1
+    - "{}"
+    - "{}"
+  - - 1668
+    - Supreme Shoulder Bag (FW18) Black
+    - Arguably the most popular item of every Supreme season, this FW18 version of
+      Supreme's classic shoulder bag represents a stray from their normal style. This
+      all black bag is constructed with a Dimension-Polyant VX21-RS 4-layer fabric
+      and includes a reflective 3M printed logo on the front panel. This bag released
+      on August 16th, 2018 for a retail price of $74. Each bag has a capacity of 1.7L
+      and features a double-zippered main compartment and single-zippered front pocket,
+      making it the perfect size for functionality, with the fly form you've come
+      to expect from Supreme.
+    - Supreme
+    - '2018-08-20'
+    - 74.0
+    - '2019-09-14 09:07:15.080897'
+    - '2019-09-14 09:07:15.080897'
+    - Black
+    - unisex
+    - Supreme Shoulder
+    - Bag (FW18) Black
+    - 3aabd491-f9b8-4edb-bd76-1313e92c6c2b
+    - streetwear
+    - 90
+    - 99
+    - 100
+    - 16
+    - 
+    - "{}"
+    - "{}"
+  - - 1669
+    - Palace Ripped T-Shirt White
+    - ''
+    - Palace
+    - '2019-09-13'
+    - 48.0
+    - '2019-09-14 09:07:15.143366'
+    - '2019-09-14 09:07:15.143366'
+    - White
+    - men
+    - Palace Ripped
+    - T-Shirt White
+    - 889b6621-3d6d-49de-b0a5-4821c8b70c76
+    - streetwear
+    - 86
+    - 94
+    - 76
+    - 20
+    - 1
+    - "{}"
+    - "{}"
+  - - 1670
+    - Palace Ripped T-Shirt Black
+    - ''
+    - Palace
+    - '2019-09-13'
+    - 48.0
+    - '2019-09-14 09:07:15.144152'
+    - '2019-09-14 09:07:15.144152'
+    - Black
+    - men
+    - Palace Ripped
+    - T-Shirt Black
+    - faa79a8e-209c-48a8-b7e3-0f2f3d296d57
+    - streetwear
+    - 110
+    - 95
+    - 97
+    - 48
+    - 1
+    - "{}"
+    - "{}"
+  - - 1671
+    - Palace Ripped T-Shirt Dark Red
+    - ''
+    - Palace
+    - '2019-09-13'
+    - 48.0
+    - '2019-09-14 09:07:15.170154'
+    - '2019-09-14 09:07:15.170154'
+    - Dark Red
+    - men
+    - Palace Ripped
+    - T-Shirt Dark Red
+    - 5c32375a-853e-4f22-bebc-5b96fbbde054
+    - streetwear
+    - 95
+    - 115
+    - 112
+    - 5
+    - 1
+    - "{}"
+    - "{}"
+  - - 1672
+    - Palace Ripped T-Shirt Grey Marl
+    - ''
+    - Palace
+    - '2019-09-13'
+    - 48.0
+    - '2019-09-14 09:07:15.171265'
+    - '2019-09-14 09:07:15.171265'
+    - Grey Marl
+    - men
+    - Palace Ripped
+    - T-Shirt Grey Marl
+    - a419bbb4-d3bc-4421-9b0a-91c7da1db5f1
+    - streetwear
+    - 77
+    - 89
+    - 84
+    - 10
+    - 1
+    - "{}"
+    - "{}"
+  - - 1673
+    - Palace Ripped T-Shirt Navy
+    - ''
+    - Palace
+    - '2019-09-13'
+    - 48.0
+    - '2019-09-14 09:07:15.177566'
+    - '2019-09-14 09:07:15.177566'
+    - Navy
+    - men
+    - Palace Ripped
+    - T-Shirt Navy
+    - dc62792a-d57e-4b06-a92c-9523529cd4c0
+    - streetwear
+    - 82
+    - 90
+    - 91
+    - 9
+    - 1
+    - "{}"
+    - "{}"
+  - - 1674
+    - Palace Rolls P3 T-Shirt Black
+    - ''
+    - Palace
+    - '2019-08-09'
+    - 48.0
+    - '2019-09-14 09:07:15.194608'
+    - '2019-09-14 09:07:15.194608'
+    - Black
+    - men
+    - Palace Rolls P3
+    - T-Shirt Black
+    - be1ba5ee-d1fa-48f4-8f99-7f63f5cf5188
+    - streetwear
+    - 91
+    - 83
+    - 82
+    - 5
+    - 
+    - "{}"
+    - "{}"
+  - - 1675
+    - Palace Ripped T-Shirt Yellow
+    - ''
+    - Palace
+    - '2019-09-13'
+    - 48.0
+    - '2019-09-14 09:07:15.224417'
+    - '2019-09-14 09:07:15.224417'
+    - Yellow
+    - men
+    - Palace Ripped
+    - T-Shirt Yellow
+    - 79246efc-5e17-43df-85e4-58f51fa3b3ff
+    - streetwear
+    - 86
+    - 95
+    - 94
+    - 4
+    - 1
+    - "{}"
+    - "{}"
+  - - 1676
+    - Palace Rolls P3 T-Shirt White
+    - ''
+    - Palace
+    - '2019-08-09'
+    - 48.0
+    - '2019-09-14 09:07:15.228845'
+    - '2019-09-14 09:07:15.228845'
+    - White
+    - men
+    - Palace Rolls P3
+    - T-Shirt White
+    - 6a9ec77d-7b97-4cdd-8469-f9a16b785046
+    - streetwear
+    - 67
+    - 75
+    - 68
+    - 4
+    - 
+    - "{}"
+    - "{}"
+  - - 1677
+    - Palace Lique T-Shirt Black
+    - ''
+    - Palace
+    - '2019-08-23'
+    - 48.0
+    - '2019-09-14 09:07:15.239384'
+    - '2019-09-14 09:07:15.239384'
+    - Black
+    - men
+    - Palace Lique
+    - T-Shirt Black
+    - 1d3a3f26-b7d1-4f2b-a9a7-1d97d8035c39
+    - streetwear
+    - 80
+    - 89
+    - 81
+    - 4
+    - 
+    - "{}"
+    - "{}"
+  - - 1678
+    - Palace Reign Man T-Shirt White
+    - ''
+    - Palace
+    - '2019-05-03'
+    - 0.0
+    - '2019-09-14 09:07:15.253132'
+    - '2019-09-14 09:07:15.253132'
+    - White
+    - men
+    - Palace Reign Man
+    - T-Shirt White
+    - a472bcac-a394-4e83-95da-6f9228a7d79a
+    - streetwear
+    - 188
+    - 195
+    - 125
+    - 3
+    - 
+    - "{}"
+    - "{}"
+  - - 1679
+    - Palace Jobsworth T-Shirt White
+    - ''
+    - Palace
+    - '2019-04-05'
+    - 48.0
+    - '2019-09-14 09:07:15.256587'
+    - '2019-09-14 09:07:15.256587'
+    - White
+    - men
+    - Palace Jobsworth
+    - T-Shirt White
+    - 48e799d7-cc1d-4a73-83ea-2ff2a2c3d16c
+    - streetwear
+    - 118
+    - 149
+    - 127
+    - 3
+    - 
+    - "{}"
+    - "{}"
+  - - 1680
+    - Palace Jobsworth T-Shirt Grey Marl
+    - ''
+    - Palace
+    - '2019-04-05'
+    - 48.0
+    - '2019-09-14 09:07:15.278838'
+    - '2019-09-14 09:07:15.278838'
+    - Grey Marl
+    - men
+    - Palace Jobsworth
+    - T-Shirt Grey Marl
+    - '04799bfa-040b-4570-b466-eb029e5ceba2'
+    - streetwear
+    - 140
+    - 120
+    - 98
+    - 3
+    - 
+    - "{}"
+    - "{}"
+  - - 1681
+    - Palace Tri-Ternity T-Shirt White
+    - ''
+    - Palace
+    - '2019-05-17'
+    - 48.0
+    - '2019-09-14 09:07:15.312342'
+    - '2019-09-14 09:07:15.312342'
+    - White
+    - men
+    - Palace Tri-Ternity
+    - T-Shirt White
+    - 4a72299e-be0f-4b05-a4f2-c6c52bce3a17
+    - streetwear
+    - 71
+    - 110
+    - 82
+    - 2
+    - 
+    - "{}"
+    - "{}"
+  - - 1682
+    - Palace Jobsworth Hood Black
+    - ''
+    - Palace
+    - '2019-02-22'
+    - 148.0
+    - '2019-09-14 09:07:15.325287'
+    - '2019-09-14 09:07:15.325287'
+    - Black
+    - men
+    - Palace Jobsworth
+    - Hood Black
+    - 60e248e9-93c3-486b-84e8-952ba57524cf
+    - streetwear
+    - 300
+    - 216
+    - 192
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1683
+    - Palace Pal Ice T-Shirt (SS19) Black
+    - ''
+    - Palace
+    - '2019-05-17'
+    - 48.0
+    - '2019-09-14 09:07:15.329017'
+    - '2019-09-14 09:07:15.329017'
+    - Black
+    - men
+    - Palace Pal Ice
+    - T-Shirt (SS19) Black
+    - c69a6c2b-b8e7-4088-9af4-b504e43526f0
+    - streetwear
+    - 88
+    - 90
+    - 112
+    - 2
+    - 
+    - "{}"
+    - "{}"
+  - - 1684
+    - Palace Tri-Ferg Ashtray Silver
+    - ''
+    - Palace
+    - '2019-05-10'
+    - 52.0
+    - '2019-09-14 09:07:15.332042'
+    - '2019-09-14 09:07:15.332042'
+    - Silver
+    - unisex
+    - Palace Tri-Ferg
+    - Ashtray Silver
+    - c2d32f20-c046-4947-b7f1-f4bcdfc64bf2
+    - streetwear
+    - 150
+    - 151
+    - 176
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1685
+    - Palace Deflector Jacket Cobalt Blue Reflective
+    - ''
+    - Palace
+    - '2019-09-13'
+    - 298.0
+    - '2019-09-14 09:07:15.33384'
+    - '2019-09-14 09:07:15.33384'
+    - Cobalt Blue Reflective
+    - men
+    - Palace Deflector
+    - Jacket Cobalt Blue Reflective
+    - 9a18e8a1-2946-4e0f-be12-ffee02e0e000
+    - streetwear
+    - 300
+    - 501
+    - 475
+    - 1
+    - 1
+    - "{}"
+    - "{}"
+  - - 1686
+    - Palace Pallas T-Shirt Black
+    - ''
+    - Palace
+    - '2019-05-17'
+    - 48.0
+    - '2019-09-14 09:07:15.411592'
+    - '2019-09-14 09:07:15.411592'
+    - Black
+    - men
+    - Palace Pallas
+    - T-Shirt Black
+    - 4ed2d8ce-a288-4d78-ba81-6549d006ab7c
+    - streetwear
+    - 100
+    - 78
+    - 78
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1687
+    - Palace LA Dye Hood Orange
+    - ''
+    - Palace
+    - '2019-04-26'
+    - 0.0
+    - '2019-09-14 09:07:15.417849'
+    - '2019-09-14 09:07:15.417849'
+    - Orange
+    - men
+    - Palace LA Dye
+    - Hood Orange
+    - 6e418439-5149-4a79-9e82-bf77d80bf782
+    - streetwear
+    - 149
+    - 170
+    - 200
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1688
+    - A Bathing Ape Bapesta Ronnie Fieg Fiegsta Sand
+    - ''
+    - BAPE
+    - '2016-09-17'
+    - 300.0
+    - '2019-09-14 09:07:15.419005'
+    - '2019-09-14 09:07:15.419005'
+    - Sand
+    - men
+    - A Bathing Ape Bapesta
+    - Ronnie Fieg Fiegsta Sand
+    - 3687c4ef-5ddd-4f81-b5a0-019ed33ae0dd
+    - sneakers
+    - 500
+    - 500
+    - 650
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1689
+    - Palace Safe T Hood Black
+    - ''
+    - Palace
+    - '2019-04-12'
+    - 148.0
+    - '2019-09-14 09:07:15.428537'
+    - '2019-09-14 09:07:15.428537'
+    - Black
+    - men
+    - Palace Safe T
+    - Hood Black
+    - e62638c7-3d59-4418-9a21-030f7892407b
+    - streetwear
+    - 165
+    - 230
+    - 175
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1690
+    - adidas NMD R1 Bape Black Camo
+    - ''
+    - adidas
+    - '2016-11-26'
+    - 150.0
+    - '2019-09-14 09:07:15.429991'
+    - '2019-09-14 09:07:15.429991'
+    - Black/Grey
+    - men
+    - adidas NMD R1
+    - Bape Black Camo
+    - 58e1bdde-0d34-4a82-ba3f-f8e648ed3b57
+    - sneakers
+    - 525
+    - 347
+    - 331
+    - 2
+    - 
+    - "{}"
+    - "{}"
+  - - 1691
+    - BAPE x Sesame Street Milo & Bert & Ernie Tee Black
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 99.0
+    - '2019-09-14 09:07:15.454671'
+    - '2019-09-14 09:07:15.454671'
+    - Black
+    - men
+    - BAPE x Sesame Street Milo & Bert & Ernie
+    - Tee Black
+    - fcac37e7-68b9-4923-9961-4c3b82a1c8e3
+    - streetwear
+    - 0
+    - 0
+    - 250
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1692
+    - BAPE x Sesame Street College Tee Black
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 99.0
+    - '2019-09-14 09:07:15.484444'
+    - '2019-09-14 09:07:15.484444'
+    - Black
+    - men
+    - BAPE x Sesame Street College
+    - Tee Black
+    - f777b03c-680e-4de0-a59c-4028573acecf
+    - streetwear
+    - 50
+    - 0
+    - 250
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1693
+    - BAPE x Sesame Street Milo & Elmo Tee White
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 99.0
+    - '2019-09-14 09:07:15.501288'
+    - '2019-09-14 09:07:15.501288'
+    - White
+    - men
+    - BAPE x Sesame Street Milo & Elmo
+    - Tee White
+    - f415460a-70d5-4af4-aa72-3808e8c978e1
+    - streetwear
+    - 0
+    - 0
+    - 300
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1694
+    - BAPE x Sesame Street Ape Head Tee Black
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 99.0
+    - '2019-09-14 09:07:15.509502'
+    - '2019-09-14 09:07:15.509502'
+    - Black
+    - men
+    - BAPE x Sesame Street Ape Head
+    - Tee Black
+    - e1f037e6-9307-4edb-9616-9d95200adc0c
+    - streetwear
+    - 0
+    - 0
+    - 220
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1695
+    - 'BAPE x Sesame Street Characters Tee #1 Black'
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 99.0
+    - '2019-09-14 09:07:15.511791'
+    - '2019-09-14 09:07:15.511791'
+    - Black
+    - men
+    - BAPE x Sesame Street Characters
+    - 'Tee #1 Black'
+    - c91b0efa-9755-401a-8eda-b4367481ac91
+    - streetwear
+    - 0
+    - 0
+    - 218
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1696
+    - BAPE x Sesame Street Milo & Cookie Monster Tee White
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 99.0
+    - '2019-09-14 09:07:15.513005'
+    - '2019-09-14 09:07:15.513005'
+    - White
+    - men
+    - BAPE x Sesame Street Milo & Cookie Monster
+    - Tee White
+    - d3b17216-c114-4848-9356-008ba09f838d
+    - streetwear
+    - 0
+    - 0
+    - 300
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1697
+    - 'BAPE x Sesame Street Characters Tee #2 Black'
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 99.0
+    - '2019-09-14 09:07:15.543568'
+    - '2019-09-14 09:07:15.543568'
+    - Black
+    - men
+    - BAPE x Sesame Street Characters
+    - 'Tee #2 Black'
+    - 9f687490-966d-4a2d-bb28-b551e722c450
+    - streetwear
+    - 120
+    - 0
+    - 250
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1698
+    - BAPE x Sesame Street Milo & Cookie Monster Tee Black
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 99.0
+    - '2019-09-14 09:07:15.563668'
+    - '2019-09-14 09:07:15.563668'
+    - Black
+    - men
+    - BAPE x Sesame Street Milo & Cookie Monster
+    - Tee Black
+    - 8c29bdc9-3ea1-4b4b-a4db-182430fef63c
+    - streetwear
+    - 0
+    - 0
+    - 220
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1699
+    - BAPE x Sesame Street Milo & Big Bird Tee Black
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 99.0
+    - '2019-09-14 09:07:15.57358'
+    - '2019-09-14 09:07:15.57358'
+    - Black
+    - men
+    - BAPE x Sesame Street Milo & Big Bird
+    - Tee Black
+    - 834c2f56-0eb3-4d5e-9327-257ddfc87d3c
+    - streetwear
+    - 0
+    - 0
+    - 250
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1700
+    - BAPE x Sesame Street Pullover Hoodie Black
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 310.0
+    - '2019-09-14 09:07:15.59782'
+    - '2019-09-14 09:07:15.59782'
+    - Black
+    - men
+    - BAPE x Sesame Street Pullover
+    - Hoodie Black
+    - 81a724af-773c-461c-b379-bd2eb16fb785
+    - streetwear
+    - 150
+    - 0
+    - 399
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1701
+    - BAPE x Sesame Street Plush Toy Set Multi
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 225.0
+    - '2019-09-14 09:07:15.60085'
+    - '2019-09-14 09:07:15.60085'
+    - Multi
+    - unisex
+    - BAPE x Sesame Street Plush
+    - Toy Set Multi
+    - 7dfe9f16-10e8-47f8-b1f5-716def1d1f11
+    - streetwear
+    - 0
+    - 0
+    - 399
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1702
+    - 'BAPE x Sesame Street Characters Tee #1 White'
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 99.0
+    - '2019-09-14 09:07:15.60771'
+    - '2019-09-14 09:07:15.60771'
+    - White
+    - men
+    - BAPE x Sesame Street Characters
+    - 'Tee #1 White'
+    - 6fcabfaf-f4f6-4d63-9e4f-638e83b50f0e
+    - streetwear
+    - 0
+    - 0
+    - 244
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1703
+    - BAPE x Sesame Street Ape Head Tee White
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 99.0
+    - '2019-09-14 09:07:15.624812'
+    - '2019-09-14 09:07:15.624812'
+    - White
+    - men
+    - BAPE x Sesame Street Ape Head
+    - Tee White
+    - 6473705e-52da-4cf2-883b-8388c94338dc
+    - streetwear
+    - 80
+    - 0
+    - 294
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1704
+    - BAPE x Sesame Street ABC Camo Elmo Tote Pink
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 99.0
+    - '2019-09-14 09:07:15.651383'
+    - '2019-09-14 09:07:15.651383'
+    - Pink
+    - unisex
+    - BAPE x Sesame Street ABC Camo Elmo
+    - Tote Pink
+    - 560f5320-bc92-44eb-9654-3858fc33bde5
+    - streetwear
+    - 0
+    - 0
+    - 220
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1705
+    - BAPE x Sesame Street ABC Camo Big Bird Tote Yellow
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 99.0
+    - '2019-09-14 09:07:15.669768'
+    - '2019-09-14 09:07:15.669768'
+    - Yellow
+    - unisex
+    - BAPE x Sesame Street ABC Camo Big Bird
+    - Tote Yellow
+    - 47fc068b-fe24-4e30-b5d2-53f2f9895eb5
+    - streetwear
+    - 0
+    - 0
+    - 300
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1706
+    - BAPE x Sesame Street Milo & Bert & Ernie Tee White
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 99.0
+    - '2019-09-14 09:07:15.671355'
+    - '2019-09-14 09:07:15.671355'
+    - White
+    - men
+    - BAPE x Sesame Street Milo & Bert & Ernie
+    - Tee White
+    - 15d17b73-f81e-4aea-800b-e4af0d6723ce
+    - streetwear
+    - 0
+    - 0
+    - 300
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1707
+    - BAPE x Sesame Street PVC 3P Pouch Set Multi
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 48.0
+    - '2019-09-14 09:07:15.683859'
+    - '2019-09-14 09:07:15.683859'
+    - Multi
+    - unisex
+    - BAPE x Sesame Street PVC 3P
+    - Pouch Set Multi
+    - 054d9215-9978-40ef-adba-a1c72eccbb1a
+    - streetwear
+    - 0
+    - 0
+    - 110
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1708
+    - BAPE x Sesame Street Pullover Hoodie Grey
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 310.0
+    - '2019-09-14 09:07:15.699015'
+    - '2019-09-14 09:07:15.699015'
+    - Grey
+    - men
+    - BAPE x Sesame Street Pullover
+    - Hoodie Grey
+    - '011931c6-97df-45d2-9151-df03cf64350b'
+    - streetwear
+    - 220
+    - 0
+    - 450
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1709
+    - adidas Ultra Boost Mid Ronnie Fieg
+    - ''
+    - adidas
+    - '2016-12-23'
+    - 220.0
+    - '2019-09-14 09:07:15.724875'
+    - '2019-09-14 09:07:15.724875'
+    - White/Multi-Color
+    - men
+    - adidas Ultra Boost Mid
+    - Ronnie Fieg
+    - 9d09da66-d100-45ed-8aac-66fdce76c9ca
+    - sneakers
+    - 390
+    - 410
+    - 240
+    - 3
+    - 
+    - "{}"
+    - "{}"
+  - - 1710
+    - adidas Ultra Boost Mid Kith x Nonnative
+    - ''
+    - adidas
+    - '2017-11-24'
+    - 240.0
+    - '2019-09-14 09:07:15.7284'
+    - '2019-09-14 09:07:15.7284'
+    - Core Black/Core Black/Grey
+    - men
+    - adidas Ultra Boost Mid
+    - Kith x Nonnative
+    - b045ab39-4cfe-4b38-9859-1be7a1ca87ef
+    - sneakers
+    - 250
+    - 224
+    - 135
+    - 3
+    - 
+    - "{}"
+    - "{}"
+  - - 1711
+    - ASICS Gel-Lyte III Ronnie Fieg Militia (Special Box)
+    - ''
+    - Asics
+    - '2016-11-22'
+    - 250.0
+    - '2019-09-14 09:07:15.739263'
+    - '2019-09-14 09:07:15.739263'
+    - Olive/Chocolate/Orange
+    - men
+    - ASICS Gel-Lyte III
+    - Ronnie Fieg Militia (Special Box)
+    - bb17ed16-94a7-47c1-a407-424a279096e6
+    - sneakers
+    - 380
+    - 410
+    - 350
+    - 2
+    - 
+    - "{}"
+    - "{}"
+  - - 1712
+    - LeBron 15 Lifestyle KITH Stained Glass
+    - ''
+    - Nike
+    - '2017-12-30'
+    - 230.0
+    - '2019-09-14 09:07:15.747951'
+    - '2019-09-14 09:07:15.747951'
+    - Multi-Color/Multi-Color
+    - men
+    - LeBron 15 Lifestyle
+    - KITH Stained Glass
+    - 8009a4f4-b702-4bff-bbf6-a50feac9f0da
+    - sneakers
+    - 470
+    - 277
+    - 395
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1713
+    - ASICS Gel-Lyte III Ronnie Fieg Super Green
+    - ''
+    - Asics
+    - '2016-05-21'
+    - 250.0
+    - '2019-09-14 09:07:15.759973'
+    - '2019-09-14 09:07:15.759973'
+    - Grey
+    - men
+    - ASICS Gel-Lyte III
+    - Ronnie Fieg Super Green
+    - 7b8d4e42-081d-4b47-aa54-fcc182711127
+    - sneakers
+    - 750
+    - 486
+    - 400
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1714
+    - ACE 16 PureControl Ultra Boost Kith Flamingos
+    - ''
+    - adidas
+    - '2017-06-02'
+    - 220.0
+    - '2019-09-14 09:07:15.798521'
+    - '2019-09-14 09:07:15.798521'
+    - Clear Granite/Clear Granite/Vapour Pink
+    - men
+    - ACE 16 PureControl Ultra Boost
+    - Kith Flamingos
+    - af93b0be-aed9-4945-8666-c3e77dc7d2e4
+    - sneakers
+    - 237
+    - 200
+    - 253
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1715
+    - LeBron 15 Lifestyle KITH Concrete
+    - ''
+    - Nike
+    - '2017-12-30'
+    - 230.0
+    - '2019-09-14 09:07:15.809261'
+    - '2019-09-14 09:07:15.809261'
+    - Sail/String-White-Black
+    - men
+    - LeBron 15 Lifestyle
+    - KITH Concrete
+    - 707bb02b-1df5-4eae-9a22-3e9530bd2429
+    - sneakers
+    - 300
+    - 250
+    - 250
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1716
+    - LeBron 15 Performance KITH Rose Gold
+    - ''
+    - Nike
+    - '2017-12-30'
+    - 200.0
+    - '2019-09-14 09:07:15.839584'
+    - '2019-09-14 09:07:15.839584'
+    - Multi-Color/Multi-Color
+    - men
+    - LeBron 15 Performance
+    - KITH Rose Gold
+    - 2a237ddf-652d-42f8-b692-aafa32514fc6
+    - sneakers
+    - 450
+    - 469
+    - 395
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1717
+    - Diadora Intrepid Kith From Seoul To Rio
+    - ''
+    - Diadora
+    - '2016-08-20'
+    - 180.0
+    - '2019-09-14 09:07:15.844648'
+    - '2019-09-14 09:07:15.844648'
+    - Sand/Blue/Orange
+    - men
+    - Diadora Intrepid
+    - Kith From Seoul To Rio
+    - 07df0771-591a-4a7f-a6c6-46aa5151d322
+    - sneakers
+    - 385
+    - 385
+    - 450
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1718
+    - ASICS Gel-Lyte III Ronnie Fieg "Homage" (Special Box)
+    - ''
+    - Asics
+    - '2015-12-23'
+    - 325.0
+    - '2019-09-14 09:07:15.859471'
+    - '2019-09-14 09:07:15.859471'
+    - Multi-Color/Multi-Color
+    - men
+    - ASICS Gel-Lyte III
+    - Ronnie Fieg "Homage" (Special Box)
+    - b4a68f7e-86b7-4cd8-a50e-e43c515aceea
+    - sneakers
+    - 580
+    - 663
+    - 625
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1719
+    - adidas Copa Mundial 17 Ultra Boost Kith Cobras
+    - ''
+    - adidas
+    - '2017-06-02'
+    - 220.0
+    - '2019-09-14 09:07:15.866684'
+    - '2019-09-14 09:07:15.866684'
+    - Crystal White/Crystal White/Clear Grey
+    - men
+    - adidas Copa Mundial 17 Ultra Boost
+    - Kith Cobras
+    - 270ea85f-7711-4adc-8f29-0cfeb345cd26
+    - sneakers
+    - 200
+    - 338
+    - 250
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1720
+    - ASICS Gel-Lyte III Ronnie Fieg "Flamingo"
+    - Over a year since his previous GL3 release, Ronnie Fieg brought back his creative
+      expertise on one of his favorite ASICS models with the Ronnie Fieg x Asics Gel-Lyte
+      III "Flamingo." Released in August of 2014, the Flamingo GLIII was an instant
+      standout among his other works. Originally a 1-of-1 sample that he had created
+      for himself back in 2009, at first RF was hesitant to release the Flamingo Gel
+      Lytes to the world because of their untraditional color palette. Yet, after
+      releasing a picture via social media and receiving an overwhelming response
+      from the public, Ronnie finally felt as though it was time to add the Flamingo
+      GEL Lyte 3 to his already extensive ASICS catalog. Inspired by the ashy color
+      of flamingos' feathers, the apron and rear paneling are subtly pink-hued grey.
+      The salmon striping through the mid-foot and the 3M hits on the toe box reflect
+      the colors that flamingos turn after feasting on salmon. The blue lining on
+      the Gel Lyte represents the water in which they prey and was the first time
+      Fieg used thin neoprene material on a collaboration. Released alongside a handful
+      of Japanese French terry apparel pieces, the Flamingo were priced at $150. After
+      instantly selling out both in-store at Kith and online, the Ronnie Fieg x Asics
+      Gel-Lyte III "Flamingo" is one of the most coveted shoes in a long line of successful
+      Fieg collaborations.
+    - Asics
+    - '2013-08-02'
+    - 150.0
+    - '2019-09-14 09:07:15.892032'
+    - '2019-09-14 09:07:15.892032'
+    - Grey/Salmon
+    - men
+    - ASICS Gel-Lyte III
+    - Ronnie Fieg "Flamingo"
+    - 00a549ec-d513-4f4d-afc4-d7b9ec2c5133
+    - sneakers
+    - 537
+    - 445
+    - 661
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1721
+    - Kith Moncler Rochebrune Classic Down Jacket Navy/Red/White
+    - ''
+    - Kith
+    - '2017-12-09'
+    - 1173.0
+    - '2019-09-14 09:07:15.925555'
+    - '2019-09-14 09:07:15.925555'
+    - Navy/Red/White
+    - men
+    - Kith Moncler Rochebrune Classic Down
+    - Jacket Navy/Red/White
+    - dd9b862c-15f1-4bac-81e5-e4afa1e83262
+    - streetwear
+    - 1005
+    - 1850
+    - 3500
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1722
+    - ASICS GT-II Ronnie Fieg "High Risk"
+    - ''
+    - Asics
+    - '2013-02-20'
+    - 145.0
+    - '2019-09-14 09:07:15.934706'
+    - '2019-09-14 09:07:15.934706'
+    - Purple/High Risk Red
+    - men
+    - ASICS GT-II
+    - Ronnie Fieg "High Risk"
+    - ea2ec0f9-4b99-447d-964e-14cca910e98b
+    - sneakers
+    - 250
+    - 325
+    - 395
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1723
+    - Kith Moncler Parrachee Long Down Jacket Navy
+    - ''
+    - Kith
+    - '2017-12-09'
+    - 1760.0
+    - '2019-09-14 09:07:15.936748'
+    - '2019-09-14 09:07:15.936748'
+    - Navy
+    - men
+    - Kith Moncler Parrachee Long Down
+    - Jacket Navy
+    - cd1ae538-f4a0-4f01-9efb-4256a0fa9ed1
+    - streetwear
+    - 700
+    - 2850
+    - 1300
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1724
+    - ASICS Gel-Lyte III Ronnie Fieg "Leatherbacks"
+    - Adorned with a rich, grey suede toe box and nubuck apron, the Ronnie Fieg x
+      Asics Gel-Lyte III "Leather back" were released on November 18th, 2011 as part
+      of the Kith Manhattan Grand Opening. The Leatherbacks were available in 2 different
+      packages, one which retailed for $200, while the other just $130. The first
+      package contained the Leather backs GL3, an American-made Kith x ASICS shirt,
+      and wooden dog tags inside a laser engraved and numbered wooden box, of which
+      only 40 were made. The second package contained only the Leather Back GLIII
+      and was available to those who were not able to purchase the special packaging
+      in-store and to those who made their purchase online. The Leatherback Gel Lytes
+      were a shift in Ronnie's work from using bright color palettes to darker, more
+      robust hues. Shadowing the GEL-Lyte IIIs that came before this, the Salmon Toes,
+      the Leather Backs were almost the mirror opposite with their dark undertones.
+      Using premium leather that was meant to survive the frosty winters in New York,
+      RF selected electric blue accents to breakup the darker tones of the mid and
+      rear panelling almost like neon lights cutting through the city skyline. Even
+      years after their release, the Ronnie Fieg x Asics Gel-Lye III "Leather back"
+      is one of the most heralded releases from Kith and is extremely sough-after
+      by collectors the world over.
+    - Asics
+    - '2011-11-18'
+    - 130.0
+    - '2019-09-14 09:07:15.950878'
+    - '2019-09-14 09:07:15.950878'
+    - Black/Grey-Teal
+    - men
+    - ASICS Gel-Lyte III
+    - Ronnie Fieg "Leatherbacks"
+    - 3f1a76bb-ea1c-4b79-a54c-5be5e07e8b71
+    - sneakers
+    - 700
+    - 741
+    - 700
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1725
+    - ASICS Gel-Lyte III Ronnie Fieg "Mint Leaf"
+    - 'Following his 2010 release of the "Cove" GL3, Ronnie again created a piece
+      that is almost synonymous with his name: the Ronnie Fieg x Asics Gel-Lyte III
+      "Mint Leaf." As a child, RF would visit family in Israel annually, and their
+      family would drink fresh mint-infused tea together. Fieg was in-charge of picking
+      the mint leaves off the branches from his grandmother''s garden, eventually
+      earning himself the nickname "Minty." And although no longer a young boy, those
+      experiences from his childhood impacted him enough to inspire the GEL Lyte 3
+      "Mint Leaf." Using a vibrant green nubuck as the upper apron and rear panel,
+      with a mesh toe and split tongue, the Mint GLIII used his signature monochromatic
+      coloring against a light-grey midsole with darker grey accents. Released in
+      July of 2011, before RF''s store Kith was opened, the Mint GEL-Lyte 3 proved
+      to be Ronnie''s last release at David Z and retailed for $120. In the years
+      following their release, the Ronnie Fieg x Asics Gel-Lyte III "Mint Leaf" proved
+      to withstand the test of time. So much so, that in 2014 RF did another rendition
+      of the colorway set across the ASICS Gel-Lyte V model giving those who had thirsted
+      for the shoe for nearly three years an opportunity to add the colorway to their
+      collections.'
+    - Asics
+    - '2011-07-15'
+    - 120.0
+    - '2019-09-14 09:07:15.966522'
+    - '2019-09-14 09:07:15.966522'
+    - Mint Leaf
+    - men
+    - ASICS Gel-Lyte III
+    - Ronnie Fieg "Mint Leaf"
+    - 3a974e3a-251d-4780-9000-868144e10eb1
+    - sneakers
+    - 550
+    - 600
+    - 999
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1726
+    - Supreme Hearts Dyed S/S Top Pink
+    - ''
+    - Supreme
+    - '2019-09-12'
+    - 68.0
+    - '2019-09-14 09:07:16.1784'
+    - '2019-09-14 09:07:16.1784'
+    - Pink
+    - men
+    - Supreme Hearts Dyed
+    - S/S Top Pink
+    - 844ece62-65d5-4712-a9ca-f807156c5141
+    - streetwear
+    - 111
+    - 105
+    - 107
+    - 20
+    - 1
+    - "{}"
+    - "{}"
+  - - 1727
+    - Nike SB Dunk High Dog Walker
+    - Walk your dog with some fresh kicks and cop the Nike SB Dunk High Dog Walker.
+      This SB Dunk High comes with a green upper plus brown and black accents, red
+      Nike “Swoosh”, white midsole, and a white sole plus brown accents. These sneakers
+      released in April 2019 and retailed for $110. Add a spark to your sneaker rotation
+      and buy these on StockX.
+    - Nike
+    - '2019-04-20'
+    - 110.0
+    - '2019-09-14 20:30:41.479028'
+    - '2019-09-14 20:30:41.479028'
+    - Multi-Color/Multi-Color
+    - men
+    - Nike SB Dunk High
+    - Dog Walker
+    - ed25d1fd-6685-4eff-b5af-f85295d7cd76
+    - sneakers
+    - 413
+    - 266
+    - 263
+    - 11
+    - 
+    - "{}"
+    - "{}"
+  - - 1728
+    - Jordan 5 Retro Michigan (2019)
+    - ''
+    - Jordan
+    - '2019-07-06'
+    - 225.0
+    - '2019-09-14 20:30:41.649173'
+    - '2019-09-14 20:30:41.649173'
+    - Amarillo/College Navy-Amarillo
+    - men
+    - Jordan 5 Retro
+    - Michigan (2019)
+    - 929162cf-6d9b-47c1-a490-08e1e6bedeb0
+    - sneakers
+    - 390
+    - 162
+    - 146
+    - 49
+    - 
+    - "{}"
+    - "{}"
+  - - 1729
+    - FEAR OF GOD ESSENTIALS Sweatpants Black
+    - Jerry Lorenzo's Fear of God line has been dominating the sneaker and streetwear
+      scene lately, with drops selling out almost instantly whenever the LA-based
+      designer comes out with new product. His recent Fear of God Essentials drop
+      was no different. The collection released on July 19th, 2019 and featured a
+      wide variety of gear including tees, shorts, pants, hoodies, bags, and more.
+      These FEAR OF GOD ESSENTIALS Sweatpants in Black released as a part of this
+      Essentials drop, and retailed for $90. Bid today to secure yours.
+    - FEAR OF GOD
+    - '2019-07-19'
+    - 90.0
+    - '2019-09-14 20:30:42.038296'
+    - '2019-09-14 20:30:42.038296'
+    - Black
+    - unisex
+    - FEAR OF GOD ESSENTIALS
+    - Sweatpants Black
+    - 31f40b1f-461c-4793-9966-7b4a9f3c005d
+    - streetwear
+    - 240
+    - 110
+    - 105
+    - 26
+    - 
+    - "{}"
+    - "{}"
+  - - 1730
+    - Supreme x Band Aid Adhesive Bandages (Box of 20) Red
+    - "<b>Please note: StockX requires a sealed and undamaged box for this item. Unsealed
+      boxes or damaged boxes will not be accepted.<b>"
+    - Supreme
+    - '2019-03-07'
+    - 6.0
+    - '2019-09-14 20:30:42.197829'
+    - '2019-09-14 20:30:42.197829'
+    - Red
+    - unisex
+    - Supreme x Band Aid
+    - Adhesive Bandages (Box of 20) Red
+    - 6277b53e-073c-4738-bb0e-e37ea97c1867
+    - streetwear
+    - 10
+    - 15
+    - 15
+    - 23
+    - 
+    - "{}"
+    - "{}"
+  - - 1731
+    - adidas Yeezy 700 Mauve
+    - Yeezy had us on another wave with the OG wave runners, but now he’s bringing
+      us to the sand with the adidas Yeezy 700 Mauve. These sneakers come with a mauve
+      upper with black accents, mauve midsole with light green accents, and gum sole.
+      This shoe released October 2018 and retailed for $300. Before Yandhi drops,
+      cop these on StockX now.
+    - adidas
+    - '2018-10-27'
+    - 300.0
+    - '2019-09-14 20:30:42.374123'
+    - '2019-09-14 20:30:42.374123'
+    - Mauve/Mauve/Mauve
+    - men
+    - adidas Yeezy 700
+    - Mauve
+    - '097e25bc-18bf-4d14-bc1a-47705059ad9c'
+    - sneakers
+    - 415
+    - 325
+    - 310
+    - 73
+    - 
+    - "{}"
+    - "{}"
+  - - 1732
+    - 'BAPE x Sesame Street Characters Tee #2 White'
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 99.0
+    - '2019-09-14 20:30:42.462262'
+    - '2019-09-14 20:30:42.462262'
+    - White
+    - men
+    - BAPE x Sesame Street Characters
+    - 'Tee #2 White'
+    - fe37512d-8b76-447d-858a-6b890e88b5e9
+    - streetwear
+    - 0
+    - 0
+    - 250
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1733
+    - BAPE x Sesame Street Milo & Elmo Tee Black
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 99.0
+    - '2019-09-14 20:30:42.495426'
+    - '2019-09-14 20:30:42.495426'
+    - Black
+    - men
+    - BAPE x Sesame Street Milo & Elmo
+    - Tee Black
+    - e4fd9d62-d1bc-410e-b607-75448fcedf9d
+    - streetwear
+    - 100
+    - 0
+    - 250
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1734
+    - BAPE x Sesame Street Elmo Flat Cushion Red
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 115.0
+    - '2019-09-14 20:30:42.497839'
+    - '2019-09-14 20:30:42.497839'
+    - Red
+    - unisex
+    - BAPE x Sesame Street Elmo
+    - Flat Cushion Red
+    - e115852d-c978-4e7d-bcbd-293fb3f71a72
+    - streetwear
+    - 0
+    - 0
+    - 500
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1735
+    - BAPE x Sesame Street ABC Camo Cookie Monster Tote Blue
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 99.0
+    - '2019-09-14 20:30:42.519143'
+    - '2019-09-14 20:30:42.519143'
+    - Blue
+    - unisex
+    - BAPE x Sesame Street ABC Camo Cookie Monster
+    - Tote Blue
+    - d548d91c-236a-4795-a99e-06c1e63adb4f
+    - streetwear
+    - 0
+    - 0
+    - 280
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1736
+    - BAPE x Sesame Street Big Bird Flat Cushion Yellow
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 115.0
+    - '2019-09-14 20:30:42.59696'
+    - '2019-09-14 20:30:42.59696'
+    - Yellow
+    - unisex
+    - BAPE x Sesame Street Big Bird
+    - Flat Cushion Yellow
+    - b32d5bc8-4224-48d9-9850-5df9747d4beb
+    - streetwear
+    - 0
+    - 0
+    - 498
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1737
+    - BAPE x Sesame Street Cookie Monster Flat Cushion Blue
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 115.0
+    - '2019-09-14 20:30:42.60557'
+    - '2019-09-14 20:30:42.60557'
+    - Blue
+    - unisex
+    - BAPE x Sesame Street Cookie Monster
+    - Flat Cushion Blue
+    - c2cbabaf-1ad2-4741-8b10-2a0d9718ee37
+    - streetwear
+    - 145
+    - 0
+    - 555
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1738
+    - BAPE x Sesame Street ABC Camo Elmo Tee Pink
+    - ''
+    - BAPE
+    - '2019-09-14'
+    - 99.0
+    - '2019-09-14 20:30:42.608255'
+    - '2019-09-14 20:30:42.608255'
+    - Pink
+    - men
+    - BAPE x Sesame Street ABC Camo Elmo
+    - Tee Pink
+    - 86f269c7-ee83-4dcd-a559-96b2c8a22f0b
+    - streetwear
+    - 120
+    - 0
+    - 280
+    - 
+    - 1
+    - "{}"
+    - "{}"
+  - - 1739
+    - Palace Pircle Hood Black Acid Wash
+    - ''
+    - Palace
+    - '2019-09-13'
+    - 148.0
+    - '2019-09-14 20:30:42.768889'
+    - '2019-09-14 20:30:42.768889'
+    - Black Acid Wash
+    - men
+    - Palace Pircle
+    - Hood Black Acid Wash
+    - e3eee006-9223-4a76-8015-d4a96366c5ef
+    - streetwear
+    - 170
+    - 200
+    - 210
+    - 1
+    - 1
+    - "{}"
+    - "{}"
+  - - 1740
+    - Palace Armless Shirt White
+    - ''
+    - Palace
+    - '2019-09-13'
+    - 158.0
+    - '2019-09-14 20:30:42.80343'
+    - '2019-09-14 20:30:42.80343'
+    - White
+    - men
+    - Palace Armless
+    - Shirt White
+    - 1cc17626-3e1e-44b0-847f-ecabb6cea96c
+    - streetwear
+    - 140
+    - 210
+    - 240
+    - 1
+    - 1
+    - "{}"
+    - "{}"
+  - - 1741
+    - Palace LA Opening Tri Ferg T-Shirt Black
+    - ''
+    - Palace
+    - '2019-04-26'
+    - 48.0
+    - '2019-09-14 20:30:42.812875'
+    - '2019-09-14 20:30:42.812875'
+    - Black
+    - men
+    - Palace LA Opening Tri Ferg
+    - T-Shirt Black
+    - '048ad355-df1a-4e8f-a7ac-0c0bb2e1a163'
+    - streetwear
+    - 220
+    - 155
+    - 156
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1742
+    - Asics Gel-Kayano 5 360 Awake NY Silver
+    - ''
+    - Asics
+    - '2019-06-20'
+    - 180.0
+    - '2019-09-14 20:33:03.130213'
+    - '2019-09-14 20:33:03.130213'
+    - Silver/Mint Green
+    - men
+    - Asics Gel-Kayano 5 360
+    - Awake NY Silver
+    - 2759542f-4fc9-46b0-b9e5-28e6d4596ca7
+    - sneakers
+    - 265
+    - 245
+    - 215
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1743
+    - Asics Gel-Kayano 5 360 Awake NY Gold
+    - ''
+    - Asics
+    - '2019-06-20'
+    - 180.0
+    - '2019-09-14 20:33:03.135247'
+    - '2019-09-14 20:33:03.135247'
+    - Gold/Black
+    - men
+    - Asics Gel-Kayano 5 360
+    - Awake NY Gold
+    - 567b537a-2c59-4b4d-8fe7-5f8d8b58970a
+    - sneakers
+    - 187
+    - 250
+    - 150
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1744
+    - Awake Classic Logo Tee Black
+    - ''
+    - Awake
+    - '2019-05-13'
+    - 46.0
+    - '2019-09-14 20:33:03.13647'
+    - '2019-09-14 20:33:03.13647'
+    - Black
+    - men
+    - Awake Classic Logo
+    - Tee Black
+    - d466ab9b-9f80-40b3-9e58-c8c6f2b97219
+    - streetwear
+    - 68
+    - 70
+    - 70
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1745
+    - Air Force 1 High Sheed Think 16 (Rude Awakening)
+    - We can guaransheed that ball don’t lie while wearing these Air Force 1 High
+      Sheed Think 16s on the court. The first drop in Nike’s 2018 "Art of a Champion"
+      campaign, these sneakers celebrate the legendary Rasheed Wallace and his NBA
+      Championship run with the 2003-04 Detroit Pistons. They come in a PE-inspired
+      white and bluejay colorway, sporting a white-based patent leather upper with
+      blue accents and the “Sheed” logo embroidered on the heels. Known as the “Rude
+      Awakening” edition, they draw inspiration from Wallace’s performance in Game
+      4 of the 2004 NBA Finals. Their release date was April of 2018 and they came
+      exclusively in men’s sizes. Those looking for a pair can buy this Nike Air Force
+      1 High Sheed Think 16 online today by placing a Bid on StockX. Got a pair of
+      these AF1’s to sell? List them up on the marketplace now.
+    - Nike
+    - '2018-04-26'
+    - 130.0
+    - '2019-09-14 20:33:03.138571'
+    - '2019-09-14 20:33:03.138571'
+    - White/Bluejay
+    - men
+    - Air Force 1 High
+    - Sheed Think 16 (Rude Awakening)
+    - 26c765e8-90b4-4f9b-95a2-088e0251f9c3
+    - sneakers
+    - 134
+    - 113
+    - 113
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1746
+    - Awake Amy Long Sleeve Tee Blue
+    - ''
+    - Awake
+    - '2019-05-13'
+    - 70.0
+    - '2019-09-14 20:33:03.145493'
+    - '2019-09-14 20:33:03.145493'
+    - Blue
+    - men
+    - Awake Amy Long Sleeve
+    - Tee Blue
+    - 23f38023-9532-40e6-8e22-86251a05952c
+    - streetwear
+    - 100
+    - 99
+    - 299
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1747
+    - Awake x Union Cassette Tee Black
+    - ''
+    - Awake
+    - '2019-07-11'
+    - 42.0
+    - '2019-09-14 20:33:03.201198'
+    - '2019-09-14 20:33:03.201198'
+    - Black
+    - men
+    - Awake x Union Cassette
+    - Tee Black
+    - e5ca4751-a24e-453e-89fa-3790fc19012b
+    - streetwear
+    - 60
+    - 89
+    - 99
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1748
+    - Awake x Procell Tee White
+    - ''
+    - Awake
+    - '2019-05-13'
+    - 50.0
+    - '2019-09-14 20:33:03.290495'
+    - '2019-09-14 20:33:03.290495'
+    - White
+    - men
+    - Awake x Procell
+    - Tee White
+    - ea33e858-4710-4327-96d3-577a429874f7
+    - streetwear
+    - 101
+    - 100
+    - 200
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1749
+    - Awake 3M Logo Tee Green
+    - ''
+    - Awake
+    - '2019-06-25'
+    - 50.0
+    - '2019-09-14 20:33:03.291704'
+    - '2019-09-14 20:33:03.291704'
+    - Green
+    - men
+    - Awake 3M Logo
+    - Tee Green
+    - b0109069-c2ba-40ce-90ba-6df4b217d747
+    - streetwear
+    - 65
+    - 79
+    - 120
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1750
+    - Awake Distorted Logo Hoodie Tie Dye
+    - ''
+    - Awake
+    - '2019-04-03'
+    - 140.0
+    - '2019-09-14 20:33:03.292412'
+    - '2019-09-14 20:33:03.292412'
+    - Tie Dye
+    - men
+    - Awake Distorted Logo
+    - Hoodie Tie Dye
+    - 33d6f672-d9c5-45d0-96f9-f21508f71235
+    - streetwear
+    - 180
+    - 184
+    - 200
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1751
+    - Awake Amy Long Sleeve Tee Purple
+    - ''
+    - Awake
+    - '2019-05-13'
+    - 70.0
+    - '2019-09-14 20:33:03.297754'
+    - '2019-09-14 20:33:03.297754'
+    - Purple
+    - men
+    - Awake Amy Long Sleeve
+    - Tee Purple
+    - 67a85e85-4c9f-49cf-b6b8-12e2bd330c3f
+    - streetwear
+    - 100
+    - 100
+    - 110
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1752
+    - Awake Distorted Logo Tee Black
+    - ''
+    - Awake
+    - '2019-04-03'
+    - 44.0
+    - '2019-09-14 20:33:03.301274'
+    - '2019-09-14 20:33:03.301274'
+    - Black
+    - men
+    - Awake Distorted Logo
+    - Tee Black
+    - 83fa1cdf-4281-438c-bd8b-90eaa86a98b3
+    - streetwear
+    - 65
+    - 40
+    - 90
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1753
+    - Awake Graduation Tee Black
+    - ''
+    - Awake
+    - '2019-04-03'
+    - 44.0
+    - '2019-09-14 20:33:03.347112'
+    - '2019-09-14 20:33:03.347112'
+    - Black
+    - men
+    - Awake Graduation
+    - Tee Black
+    - 4117af0a-427e-4d1e-be42-6ba8b7321753
+    - streetwear
+    - 45
+    - 60
+    - 85
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1754
+    - Awake Silk Flamingo Print Camp Shirt Black
+    - ''
+    - Awake
+    - '2019-05-13'
+    - 160.0
+    - '2019-09-14 20:33:03.358253'
+    - '2019-09-14 20:33:03.358253'
+    - Black
+    - men
+    - Awake Silk Flamingo Print Camp
+    - Shirt Black
+    - 1b0ca9cc-4460-45df-b1e0-927c77d1664f
+    - streetwear
+    - 175
+    - 250
+    - 0
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1755
+    - Awake Silk Flamingo Print Camp Shirt Blue
+    - ''
+    - Awake
+    - '2019-05-13'
+    - 160.0
+    - '2019-09-14 20:33:03.377781'
+    - '2019-09-14 20:33:03.377781'
+    - Blue
+    - men
+    - Awake Silk Flamingo Print Camp
+    - Shirt Blue
+    - fe24282d-d22c-44a3-a5af-55afbc30c2ab
+    - streetwear
+    - 175
+    - 300
+    - 250
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1756
+    - Awake Distorted Logo Tee White
+    - ''
+    - Awake
+    - '2019-04-03'
+    - 44.0
+    - '2019-09-14 20:33:03.382941'
+    - '2019-09-14 20:33:03.382941'
+    - White
+    - men
+    - Awake Distorted Logo
+    - Tee White
+    - 1840b27d-0893-4ae8-ad0e-0f50f0642474
+    - streetwear
+    - 45
+    - 80
+    - 80
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1757
+    - Awake Slapbox With Jesus Tee Black
+    - ''
+    - Awake
+    - '2019-05-13'
+    - 46.0
+    - '2019-09-14 20:33:03.39043'
+    - '2019-09-14 20:33:03.39043'
+    - Black
+    - men
+    - Awake Slapbox With Jesus
+    - Tee Black
+    - e00f8da6-2338-473e-b06a-0788127f05ad
+    - streetwear
+    - 30
+    - 60
+    - 66
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1758
+    - Awake Spring 2019 DSM London Tee White
+    - ''
+    - Awake
+    - '2019-05-13'
+    - 55.0
+    - '2019-09-14 20:33:03.411969'
+    - '2019-09-14 20:33:03.411969'
+    - White
+    - men
+    - Awake Spring 2019 DSM London
+    - Tee White
+    - ab56b54b-b3af-4f43-ba40-2351b8500b55
+    - streetwear
+    - 0
+    - 100
+    - 92
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1759
+    - Awake Amy Long Sleeve Tee Yellow
+    - ''
+    - Awake
+    - '2019-05-13'
+    - 70.0
+    - '2019-09-14 20:33:03.425213'
+    - '2019-09-14 20:33:03.425213'
+    - Yellow
+    - men
+    - Awake Amy Long Sleeve
+    - Tee Yellow
+    - 91a4d555-b76e-4354-91b4-39d053b91f21
+    - streetwear
+    - 100
+    - 130
+    - 90
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1760
+    - Awake Classic Logo Hoodie Mint
+    - ''
+    - Awake
+    - '2019-05-13'
+    - 130.0
+    - '2019-09-14 20:33:03.444563'
+    - '2019-09-14 20:33:03.444563'
+    - Mint
+    - men
+    - Awake Classic Logo
+    - Hoodie Mint
+    - 48dabeeb-8df9-4784-850a-133e6597f0f2
+    - streetwear
+    - 100
+    - 100
+    - 200
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1761
+    - Awake Bulldog Tee Neon Coral
+    - ''
+    - Awake
+    - '2019-05-13'
+    - 46.0
+    - '2019-09-14 20:33:03.465581'
+    - '2019-09-14 20:33:03.465581'
+    - Neon Coral
+    - men
+    - Awake Bulldog
+    - Tee Neon Coral
+    - 194723c5-0b19-493e-aa01-52193466fe6f
+    - streetwear
+    - 25
+    - 50
+    - 0
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1762
+    - Travis Scott Reese's Puffs Spoon Silver
+    - ''
+    - Travis Scott
+    - '2019-06-25'
+    - 10.0
+    - '2019-09-14 20:33:03.670673'
+    - '2019-09-14 20:33:03.670673'
+    - Silver
+    - unisex
+    - Travis Scott Reese's Puffs
+    - Spoon Silver
+    - 800d11cc-082f-478f-ba13-2028ec5e081a
+    - streetwear
+    - 27
+    - 30
+    - 30
+    - 22
+    - 
+    - "{}"
+    - "{}"
+  - - 1763
+    - Travis Scott No Bystanders Tee Black Tie Dye
+    - ''
+    - Travis Scott
+    - ''
+    - 0.0
+    - '2019-09-14 20:33:03.67324'
+    - '2019-09-14 20:33:03.67324'
+    - Black Tie Dye
+    - men
+    - Travis Scott No Bystanders
+    - Tee Black Tie Dye
+    - 3ee08106-4d79-4859-9a2a-06593b2b3c4a
+    - streetwear
+    - 80
+    - 96
+    - 67
+    - 29
+    - 
+    - "{}"
+    - "{}"
+  - - 1764
+    - Travis Scott Reese's Puffs Bowl Multi
+    - ''
+    - Travis Scott
+    - '2019-06-25'
+    - 20.0
+    - '2019-09-14 20:33:03.676351'
+    - '2019-09-14 20:33:03.676351'
+    - Multi
+    - unisex
+    - Travis Scott Reese's Puffs
+    - Bowl Multi
+    - 158500ef-c3f5-47cd-98ba-6a14b94af925
+    - streetwear
+    - 45
+    - 50
+    - 50
+    - 34
+    - 
+    - "{}"
+    - "{}"
+  - - 1765
+    - Travis Scott No Bystanders Tee White
+    - ''
+    - Travis Scott
+    - ''
+    - 0.0
+    - '2019-09-14 20:33:03.677071'
+    - '2019-09-14 20:33:03.677071'
+    - White
+    - men
+    - Travis Scott No Bystanders
+    - Tee White
+    - e6d7df5c-6215-4e82-a5ec-168d72a245fd
+    - streetwear
+    - 57
+    - 51
+    - 60
+    - 16
+    - 
+    - "{}"
+    - "{}"
+  - - 1766
+    - Travis Scott Sicko Mode Tee Washed
+    - ''
+    - Travis Scott
+    - ''
+    - 0.0
+    - '2019-09-14 20:33:03.680297'
+    - '2019-09-14 20:33:03.680297'
+    - Washed
+    - men
+    - Travis Scott Sicko Mode
+    - Tee Washed
+    - 2a9a4ea6-720c-4a0c-ab1f-48492add59da
+    - streetwear
+    - 63
+    - 56
+    - 59
+    - 13
+    - 
+    - "{}"
+    - "{}"
+  - - 1767
+    - Yeezy Season 6 Classic Tee Core
+    - ''
+    - Yeezy
+    - ''
+    - 0.0
+    - '2019-09-14 20:33:03.738304'
+    - '2019-09-14 20:33:03.738304'
+    - Core
+    - men
+    - Yeezy Season 6 Classic
+    - Tee Core
+    - 390bf1f6-ff61-4dae-88ed-4f4aa7284fd5
+    - streetwear
+    - 70
+    - 45
+    - 50
+    - 12
+    - 
+    - "{}"
+    - "{}"
+  - - 1768
+    - Travis Scott Astroworld Wish You Were Here Hoodie Black
+    - Over the summer, Travis Scott released his hit album, Astroworld, along with
+      a week’s worth of limited edition album merch. Releasing new items available
+      for only 24 hours at a time, Travis revamped the artist merch game. This hoodie,
+      featuring an embroidered “ASTROWORLD” on the front and “WISH YOU WERE HERE”
+      printed on the back, was one of the most popular items from the drop cycle.
+      The hoodie retailed for $95 and was released in August. Secure your hoodie by
+      placing a bid today.
+    - Travis Scott
+    - ''
+    - 0.0
+    - '2019-09-14 20:33:03.74228'
+    - '2019-09-14 20:33:03.74228'
+    - Black
+    - men
+    - Travis Scott Astroworld Wish You Were Here
+    - Hoodie Black
+    - 38c57b11-1344-43fb-8d72-a8f912aeb8b7
+    - streetwear
+    - 216
+    - 250
+    - 220
+    - 10
+    - 
+    - "{}"
+    - "{}"
+  - - 1769
+    - Travis Scott Astroworld Tour Tee Black
+    - ''
+    - Travis Scott
+    - ''
+    - 0.0
+    - '2019-09-14 20:33:03.743281'
+    - '2019-09-14 20:33:03.743281'
+    - Black
+    - men
+    - Travis Scott Astroworld Tour
+    - Tee Black
+    - 2bc53aa5-1daa-444c-838f-f23c1ef046ee
+    - streetwear
+    - 83
+    - 65
+    - 69
+    - 10
+    - 
+    - "{}"
+    - "{}"
+  - - 1770
+    - Travis Scott MJ Track Pant Palomino
+    - ''
+    - Travis Scott
+    - '2019-04-30'
+    - 100.0
+    - '2019-09-14 20:33:03.789992'
+    - '2019-09-14 20:33:03.789992'
+    - Palomino
+    - men
+    - Travis Scott MJ Track
+    - Pant Palomino
+    - acb74cc5-a467-4c0e-b190-932da387fae8
+    - streetwear
+    - 288
+    - 250
+    - 150
+    - 8
+    - 
+    - "{}"
+    - "{}"
+  - - 1771
+    - Travis Scott MJ Fleece Short Black
+    - ''
+    - Travis Scott
+    - '2019-04-30'
+    - 105.0
+    - '2019-09-14 20:33:03.827349'
+    - '2019-09-14 20:33:03.827349'
+    - Black
+    - men
+    - Travis Scott MJ Fleece
+    - Short Black
+    - e3dbc252-78fc-4742-9443-09cb1204b695
+    - streetwear
+    - 256
+    - 155
+    - 156
+    - 7
+    - 
+    - "{}"
+    - "{}"
+  - - 1772
+    - Travis Scott MJ 1 Tee Black
+    - ''
+    - Travis Scott
+    - '2019-04-30'
+    - 50.0
+    - '2019-09-14 20:33:03.844507'
+    - '2019-09-14 20:33:03.844507'
+    - Black
+    - men
+    - Travis Scott MJ 1
+    - Tee Black
+    - 38b98661-1952-4bca-8fab-26db2a510cf6
+    - streetwear
+    - 70
+    - 90
+    - 65
+    - 6
+    - 
+    - "{}"
+    - "{}"
+  - - 1773
+    - Travis Scott MJ 2 Tee Black
+    - ''
+    - Travis Scott
+    - '2019-04-30'
+    - 45.0
+    - '2019-09-14 20:33:03.858375'
+    - '2019-09-14 20:33:03.858375'
+    - Black
+    - men
+    - Travis Scott MJ 2
+    - Tee Black
+    - 53c74df4-2e35-472a-b59e-59ea4ee8b4de
+    - streetwear
+    - 48
+    - 54
+    - 48
+    - 5
+    - 
+    - "{}"
+    - "{}"
+  - - 1774
+    - Travis Scott Sicko Mode Hoodie Black
+    - ''
+    - Travis Scott
+    - ''
+    - 0.0
+    - '2019-09-14 20:33:03.859808'
+    - '2019-09-14 20:33:03.859808'
+    - Black
+    - men
+    - Travis Scott Sicko Mode
+    - Hoodie Black
+    - 4d8c7a42-992a-4a43-8c1a-f32f50ee21e5
+    - streetwear
+    - 122
+    - 145
+    - 144
+    - 6
+    - 
+    - "{}"
+    - "{}"
+  - - 1775
+    - Kid Cudi Rose L/S Tee White
+    - ''
+    - Kid Cudi
+    - ''
+    - 0.0
+    - '2019-09-14 20:33:03.881829'
+    - '2019-09-14 20:33:03.881829'
+    - White
+    - men
+    - Kid Cudi Rose
+    - L/S Tee White
+    - 3c5402a0-fb9b-4fcb-a668-cf9c5ffb14e5
+    - streetwear
+    - 86
+    - 76
+    - 89
+    - 5
+    - 
+    - "{}"
+    - "{}"
+  - - 1776
+    - Travis Scott Astroworld Tour Skipping Bear Crewneck Olive
+    - ''
+    - Travis Scott
+    - '2019-03-03'
+    - 0.0
+    - '2019-09-14 20:33:03.88341'
+    - '2019-09-14 20:33:03.88341'
+    - Olive
+    - men
+    - Travis Scott Astroworld Tour Skipping Bear
+    - Crewneck Olive
+    - a2dba53f-e7b4-40eb-94e1-03f72356f681
+    - streetwear
+    - 146
+    - 150
+    - 159
+    - 4
+    - 
+    - "{}"
+    - "{}"
+  - - 1777
+    - Kid Cudi Cleveland Indians All Star Game 59Fifty Fitted Navy
+    - ''
+    - Kid Cudi
+    - '2019-07-07'
+    - 45.0
+    - '2019-09-14 20:33:03.986773'
+    - '2019-09-14 20:33:03.986773'
+    - Navy
+    - men
+    - Kid Cudi Cleveland Indians All Star Game 59Fifty
+    - Fitted Navy
+    - 31dfab5d-4688-4b15-88fe-4e71cb679855
+    - streetwear
+    - 88
+    - 99
+    - 89
+    - 4
+    - 
+    - "{}"
+    - "{}"
+  - - 1778
+    - Travis Scott x Houston Astros 59Fifty Fitted Black
+    - ''
+    - Travis Scott
+    - '2019-04-06'
+    - 40.0
+    - '2019-09-14 20:33:03.988573'
+    - '2019-09-14 20:33:03.988573'
+    - Black
+    - men
+    - Travis Scott x Houston Astros 59Fifty
+    - Fitted Black
+    - c0d79816-7dfe-4498-a466-2f2a284253c8
+    - streetwear
+    - 115
+    - 100
+    - 100
+    - 3
+    - 
+    - "{}"
+    - "{}"
+  - - 1779
+    - Travis Scott x BR x Mitchell & Ness Rockets Tee Black
+    - ''
+    - Travis Scott
+    - '2019-03-26'
+    - 60.0
+    - '2019-09-14 20:33:03.992766'
+    - '2019-09-14 20:33:03.992766'
+    - Black
+    - men
+    - Travis Scott x BR x Mitchell & Ness Rockets
+    - Tee Black
+    - 97235cac-4927-4ef0-89dc-3dbede8a548f
+    - streetwear
+    - 81
+    - 84
+    - 70
+    - 3
+    - 
+    - "{}"
+    - "{}"
+  - - 1780
+    - Travis Scott MJ Fleece Hoodie Black
+    - ''
+    - Travis Scott
+    - '2019-04-30'
+    - 100.0
+    - '2019-09-14 20:33:03.993575'
+    - '2019-09-14 20:33:03.993575'
+    - Black
+    - men
+    - Travis Scott MJ Fleece
+    - Hoodie Black
+    - 6ace6161-1f1e-4cf0-b7fb-a0f6abd2ec1d
+    - streetwear
+    - 215
+    - 200
+    - 199
+    - 3
+    - 
+    - "{}"
+    - "{}"
+  - - 1781
+    - KAWS x Uniqlo Companion Tee (US Sizing) Pink
+    - ''
+    - KAWS
+    - '2019-06-03'
+    - 15.0
+    - '2019-09-14 20:33:04.035528'
+    - '2019-09-14 20:33:04.035528'
+    - Pink
+    - men
+    - KAWS x Uniqlo Companion
+    - Tee (US Sizing) Pink
+    - 17c12ea0-1422-425a-a677-dca1651c5cba
+    - streetwear
+    - 37
+    - 36
+    - 33
+    - 81
+    - 
+    - "{}"
+    - "{}"
+  - - 1782
+    - KAWS x Uniqlo Gone Tee (US Sizing) White
+    - As early as two months before KAWS x Uniqlo UT's final drop together, news that
+      the collaboration was happening seemed to leak. From there, KAWS took to Instagram
+      to announce the collaboration officially via several animated posts of BFFs
+      and Companions holding up different KAWS x Uniqlo shirts. Shortly after the
+      official announcement of the collaboration, KAWS took to Instagram again to
+      announce that this would also be the final collaboration between the artist
+      and Uniqlo. The result was an unprecedented level of hype which resulted in
+      the site crashing and riots in some malls in China. The white Gone Tee features
+      a KAWS Companion figure carrying a BFF figure as depicted in his GONE exhibit.
+      The artist's signature XXs are embroidered on the sleeve of the shirt as well.
+      The KAWS x Uniqlo Flayed Tee dropped on Monday, June 3rd, 2019 and retailed
+      for $15 USD.
+    - KAWS
+    - '2019-06-03'
+    - 15.0
+    - '2019-09-14 20:33:04.039806'
+    - '2019-09-14 20:33:04.039806'
+    - White
+    - men
+    - KAWS x Uniqlo Gone
+    - Tee (US Sizing) White
+    - 68742990-8f0b-43e5-94a9-0f7d889c3185
+    - streetwear
+    - 32
+    - 35
+    - 29
+    - 78
+    - 
+    - "{}"
+    - "{}"
+  - - 1783
+    - KAWS Sesame Street Uniqlo Cookie Monster Plush Toy Blue
+    - ''
+    - KAWS
+    - '2018-11-19'
+    - 40.0
+    - '2019-09-14 20:33:04.060545'
+    - '2019-09-14 20:33:04.060545'
+    - Blue
+    - unisex
+    - KAWS Sesame Street Uniqlo Cookie Monster Plush
+    - Toy Blue
+    - 0bbdb778-2a0c-4667-83b4-3065ca6d0612
+    - streetwear
+    - 60
+    - 60
+    - 73
+    - 4
+    - 
+    - "{}"
+    - "{}"
+  - - 1784
+    - KAWS x Uniqlo Clean Slate Tee (US Sizing) White
+    - As early as two months before KAWS x Uniqlo UT's final drop together, news that
+      the collaboration was happening seemed to leak. From there, KAWS took to Instagram
+      to announce the collaboration officially via several animated posts of BFFs
+      and Companions holding up different KAWS x Uniqlo shirts. Shortly after the
+      official announcement of the collaboration, KAWS took to Instagram again to
+      announce that this would also be the final collaboration between the artist
+      and Uniqlo. The result was an unprecedented level of hype which resulted in
+      the site crashing and riots in some malls in China. The Clean Slate Tee features
+      an illustrated KAWS Clean Slate Figure on a white tee. The artist's signature
+      XXs are embroidered on the sleeve of the shirt as well. The White KAWS x Uniqlo
+      Clean Slate Tee released on Monday, June 3rd, 2019 and retailed for $15 USD.
+    - KAWS
+    - '2019-06-03'
+    - 15.0
+    - '2019-09-14 20:33:04.061458'
+    - '2019-09-14 20:33:04.061458'
+    - White
+    - men
+    - KAWS x Uniqlo Clean Slate
+    - Tee (US Sizing) White
+    - acf3d0d1-76b3-4622-aaaa-c27e4e57fbd9
+    - streetwear
+    - 28
+    - 27
+    - 24
+    - 59
+    - 
+    - "{}"
+    - "{}"
+  - - 1785
+    - KAWS Clean Slate Vinyl Figure Brown
+    - To commemorate the unveiling of his new sculpture at The Modern in Forth Worth,
+      Texas, KAWS released this Clean Slate Companion. The figure was originally released
+      at the museum and on the museum's web shop on December 9th, followed by an online
+      release on KAWSONE on December 12th. This figure carried a retail price of $480
+      and sold out quickly across both releases. Each figure comes housed in a custom
+      box and stands at 14 inches tall. Place a bid today to secure this one-of-a-kind
+      piece of art.
+    - KAWS
+    - '2018-12-09'
+    - 2018.0
+    - '2019-09-14 20:33:04.095853'
+    - '2019-09-14 20:33:04.095853'
+    - Brown
+    - unisex
+    - KAWS Clean Slate Vinyl
+    - Figure Brown
+    - 6c17a4fd-a2ec-45f5-b428-0f271cf2954b
+    - streetwear
+    - 650
+    - 667
+    - 675
+    - 4
+    - 
+    - "{}"
+    - "{}"
+  - - 1786
+    - Jordan 4 Retro Kaws Black
+    - This was the second Air Jordan 4 Retro released, made in collaboration with
+      famed artist, Kaws. Identical to the "Cool Grey" pair just in black, this pair
+      comes in a black, clear and glow colorway. Sporting an all-black premium suede
+      upper with Kaws stitching throughout. Other details include Kaws branding and
+      graphics as well as a full translucent glow-in-the-dark outsole. They came in
+      men's sizing, complete with custom packaging. If you're a Kaws fan and also
+      happen to like the Air Jordan 4, this is another must-have Jordan Brand release
+      for you. Those that have the "Cool Grey" pair also need these "All Blacks" in
+      their rotation as well. If you missed out on the first Air Jordan 4 Retro Kaws
+      and don't want to miss out on these, hit up the marketplace and buy one today.
+      Those that scooped up a pair or two can sell them online now.
+    - Jordan
+    - '2017-11-27'
+    - 350.0
+    - '2019-09-14 20:33:04.101027'
+    - '2019-09-14 20:33:04.101027'
+    - Black/Black-Clear-Glow
+    - men
+    - Jordan 4 Retro
+    - Kaws Black
+    - 530f0566-f79c-4546-8bdd-67d9ca2a47bd
+    - sneakers
+    - 1561
+    - 800
+    - 750
+    - 4
+    - 
+    - "{}"
+    - "{}"
+  - - 1787
+    - Jordan 4 Retro Kaws
+    - ''
+    - Jordan
+    - '2017-03-31'
+    - 350.0
+    - '2019-09-14 20:33:04.113705'
+    - '2019-09-14 20:33:04.113705'
+    - Cool Grey/White
+    - men
+    - Jordan 4 Retro
+    - Kaws
+    - 88312ee1-19dd-4af8-bf5d-4e285bff05d9
+    - sneakers
+    - 2500
+    - 1599
+    - 1490
+    - 3
+    - 
+    - "{}"
+    - "{}"
+  - - 1788
+    - KAWS Clean Slate Vinyl Figure Grey
+    - To commemorate the unveiling of his new sculpture at The Modern in Forth Worth,
+      Texas, KAWS released this Clean Slate Companion. The figure was originally released
+      at the museum and on the museum's web shop on December 9th, followed by an online
+      release on KAWSONE on December 12th. This figure carried a retail price of $480
+      and sold out quickly across both releases. Each figure comes housed in a custom
+      box and stands at 14 inches tall. Place a bid today to secure this one-of-a-kind
+      piece of art.
+    - KAWS
+    - '2018-12-09'
+    - 2018.0
+    - '2019-09-14 20:33:04.114794'
+    - '2019-09-14 20:33:04.114794'
+    - Grey
+    - unisex
+    - KAWS Clean Slate Vinyl
+    - Figure Grey
+    - a91234e5-0e78-46c9-a0b5-5f13c007f71b
+    - streetwear
+    - 605
+    - 625
+    - 625
+    - 3
+    - 
+    - "{}"
+    - "{}"
+  - - 1789
+    - KAWS x Uniqlo x Sesame Street XX Sweatshirt (Japanese Sizing) Gray
+    - ''
+    - KAWS
+    - '2018-11-19'
+    - 30.0
+    - '2019-09-14 20:33:04.115821'
+    - '2019-09-14 20:33:04.115821'
+    - Gray
+    - unisex
+    - KAWS x Uniqlo x Sesame Street XX
+    - Sweatshirt (Japanese Sizing) Gray
+    - 81190d76-aed3-40ad-8af0-5f8d9924021f
+    - streetwear
+    - 60
+    - 80
+    - 75
+    - 3
+    - 
+    - "{}"
+    - "{}"
+  - - 1790
+    - KAWS Clean Slate Vinyl Figure Black
+    - To commemorate the unveiling of his new sculpture at The Modern in Forth Worth,
+      Texas, KAWS released this Clean Slate Companion. The figure was originally released
+      at the museum and on the museum's web shop on December 9th, followed by an online
+      release on KAWSONE on December 12th. This figure carried a retail price of $480
+      and sold out quickly across both releases. Each figure comes housed in a custom
+      box and stands at 14 inches tall. Place a bid today to secure this one-of-a-kind
+      piece of art.
+    - KAWS
+    - '2018-12-09'
+    - 2018.0
+    - '2019-09-14 20:33:04.176327'
+    - '2019-09-14 20:33:04.176327'
+    - Black
+    - unisex
+    - KAWS Clean Slate Vinyl
+    - Figure Black
+    - ebd42c5f-ac05-42d5-ae2c-a828a3ef8014
+    - streetwear
+    - 625
+    - 675
+    - 683
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1791
+    - KAWS x Uniqlo Cloud Tee (Japanese Sizing) Black
+    - ''
+    - KAWS
+    - '2016-05-20'
+    - 15.0
+    - '2019-09-14 20:33:04.179434'
+    - '2019-09-14 20:33:04.179434'
+    - Black
+    - unisex
+    - KAWS x Uniqlo Cloud
+    - Tee (Japanese Sizing) Black
+    - e961cd50-8d6b-4cd1-a567-fc0ae8fc6eac
+    - streetwear
+    - 0
+    - 0
+    - 54
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1792
+    - KAWS Holiday Cards (Box of 12) Red
+    - ''
+    - KAWS
+    - ''
+    - 0.0
+    - '2019-09-14 20:33:04.182326'
+    - '2019-09-14 20:33:04.182326'
+    - Red
+    - unisex
+    - KAWS Holiday Cards
+    - "(Box of 12) Red"
+    - 21c7d129-b0c1-4024-baec-ef9e40cfe089
+    - streetwear
+    - 0
+    - 29
+    - 28
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1793
+    - KAWS x Uniqlo Heart Pocket Tee (Japanese Sizing) Black
+    - ''
+    - KAWS
+    - '2016-05-20'
+    - 15.0
+    - '2019-09-14 20:33:04.185227'
+    - '2019-09-14 20:33:04.185227'
+    - Black
+    - unisex
+    - KAWS x Uniqlo Heart Pocket
+    - Tee (Japanese Sizing) Black
+    - b8367656-7051-4395-8aa3-a3343c71401e
+    - streetwear
+    - 30
+    - 35
+    - 120
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1794
+    - Vans Chukka Boot LX Kaws "The Simpsons" (2007)
+    - ''
+    - Vans
+    - '2007-07-14'
+    - 100.0
+    - '2019-09-14 20:33:04.18752'
+    - '2019-09-14 20:33:04.18752'
+    - True White/Snorkel Blue
+    - men
+    - Vans Chukka Boot LX
+    - Kaws "The Simpsons" (2007)
+    - db168dc9-4d97-45a2-902e-ff5ec29f2b39
+    - sneakers
+    - 551
+    - 1000
+    - 3000
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1795
+    - KAWS x Krooked Green Bendy Skateboard Deck Multi
+    - ''
+    - KAWS
+    - ''
+    - 0.0
+    - '2019-09-14 20:33:04.274607'
+    - '2019-09-14 20:33:04.274607'
+    - Multi
+    - unisex
+    - KAWS x Krooked Green Bendy
+    - Skateboard Deck Multi
+    - bda32677-142f-49b2-a280-6574a0d2f1eb
+    - streetwear
+    - 800
+    - 0
+    - 1900
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1796
+    - KAWS x Uniqlo All Over X Tee (Japanese Sizing) Black
+    - ''
+    - KAWS
+    - '2016-05-20'
+    - 15.0
+    - '2019-09-14 20:33:04.281163'
+    - '2019-09-14 20:33:04.281163'
+    - Black
+    - unisex
+    - KAWS x Uniqlo All Over X
+    - Tee (Japanese Sizing) Black
+    - 9b5b4148-6024-4f69-baa6-78049f5a116d
+    - streetwear
+    - 0
+    - 0
+    - 135
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1797
+    - KAWS x Uniqlo XX Tee (Japanese Sizing) White
+    - ''
+    - KAWS
+    - '2016-05-20'
+    - 15.0
+    - '2019-09-14 20:33:04.284239'
+    - '2019-09-14 20:33:04.284239'
+    - White
+    - unisex
+    - KAWS x Uniqlo XX
+    - Tee (Japanese Sizing) White
+    - a82abc79-16b5-4317-909a-fe68b0e57b58
+    - streetwear
+    - 0
+    - 0
+    - 100
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1798
+    - KAWS x Uniqlo x Sesame Street XX Pocket Tee (Japanese Sizing) White
+    - ''
+    - KAWS
+    - '2018-11-19'
+    - 15.0
+    - '2019-09-14 20:33:04.290174'
+    - '2019-09-14 20:33:04.290174'
+    - White
+    - unisex
+    - KAWS x Uniqlo x Sesame Street XX Pocket
+    - Tee (Japanese Sizing) White
+    - dd7719ce-48e5-4b9d-9566-47688b4e899e
+    - streetwear
+    - 0
+    - 0
+    - 80
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1799
+    - KAWS x Uniqlo Clean Slate Tee (Japanese Sizing) Black
+    - ''
+    - KAWS
+    - '2016-05-20'
+    - 15.0
+    - '2019-09-14 20:33:04.293407'
+    - '2019-09-14 20:33:04.293407'
+    - Black
+    - unisex
+    - KAWS x Uniqlo Clean Slate
+    - Tee (Japanese Sizing) Black
+    - 9d5fb123-6e24-4daf-a961-ac19667af949
+    - streetwear
+    - 0
+    - 0
+    - 105
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1800
+    - Jordan 11 Retro Low Golf White Metallic Gold
+    - ''
+    - Jordan
+    - '2019-08-08'
+    - 200.0
+    - '2019-09-14 20:33:04.342518'
+    - '2019-09-14 20:33:04.342518'
+    - White/Metallic Gold
+    - men
+    - Jordan 11 Retro Low Golf
+    - White Metallic Gold
+    - ae73555a-078c-4568-8ac7-86daa89792be
+    - sneakers
+    - 295
+    - 210
+    - 210
+    - 24
+    - 
+    - "{}"
+    - "{}"
+  - - 1801
+    - KAWS x Uniqlo Clean Slate Tee (Japanese Sizing) Red
+    - ''
+    - KAWS
+    - '2016-05-20'
+    - 15.0
+    - '2019-09-14 20:33:04.34618'
+    - '2019-09-14 20:33:04.34618'
+    - Red
+    - unisex
+    - KAWS x Uniqlo Clean Slate
+    - Tee (Japanese Sizing) Red
+    - 89e1e8b0-3e07-4a54-a3d2-d42e7d3e83fe
+    - streetwear
+    - 15
+    - 0
+    - 105
+    - 
+    - 
+    - "{}"
+    - "{}"
+  - - 1802
+    - Converse One Star Ox Tyler the Creator Golf Le Fleur Jade Lime
+    - ''
+    - Converse
+    - '2018-01-18'
+    - 100.0
+    - '2019-09-14 20:33:04.354124'
+    - '2019-09-14 20:33:04.354124'
+    - Green/White
+    - men
+    - Converse One Star Ox
+    - Tyler the Creator Golf Le Fleur Jade Lime
+    - f930a119-876b-47ec-acff-76b9cd0212af
+    - sneakers
+    - 354
+    - 195
+    - 157
+    - 4
+    - 
+    - "{}"
+    - "{}"
+  - - 1803
+    - Converse One Star Ox Tyler the Creator Golf Le Fleur Purple Green
+    - 'These new two-tone Golf Le Fleur Converse One Stars have those Flower Boy vibes
+      perfect for any Tyler the Creator stan. Similar to the previous Converse One
+      Star x Golf le Fleur collaboration, these shoes are built on suede uppers, accompanied
+      by white rubber midsoles and the signature flower design around the Converse
+      star logo. Coming in a purple and green colorway, these dropped in early June
+      of 2018 via Converse.com, Golfwang.com and other select retailers. If you''re
+      looking for the perfect summer shoe, place a Bid on these today. '
+    - Converse
+    - '2018-06-01'
+    - 100.0
+    - '2019-09-14 20:33:04.361733'
+    - '2019-09-14 20:33:04.361733'
+    - Purple Heart/Jolly Green
+    - men
+    - Converse One Star Ox
+    - Tyler the Creator Golf Le Fleur Purple Green
+    - dcd58684-5e3f-4bc1-bcda-45dcc0e9d57c
+    - sneakers
+    - 205
+    - 113
+    - 113
+    - 4
+    - 
+    - "{}"
+    - "{}"
+  - - 1804
+    - Jordan 11 Retro Low Golf Concord
+    - Even Jordan brings swag to the fairway, so step your cleet game up and purchase
+      the Jordan 11 Retro Low Golf Concord. This AJ 11 Low sports a white upper with
+      black accents, white midsole, and a translucent sole. These sneakers released
+      in February 2019 and retailed for $200. Rack up birdies in style and buy these
+      on StockX today.
+    - Jordan
+    - '2019-02-15'
+    - 220.0
+    - '2019-09-14 20:33:04.371158'
+    - '2019-09-14 20:33:04.371158'
+    - White/Black-Volt
+    - men
+    - Jordan 11 Retro Low Golf
+    - Concord
+    - 0f601255-1a84-4f2b-aa79-299316c16873
+    - sneakers
+    - 460
+    - 540
+    - 253
+    - 3
+    - 
+    - "{}"
+    - "{}"
+  - - 1805
+    - Converse One Star Ox Golf Le Fleur Industrial Pack Black
+    - Shine brighter than the biggest star and purchase the Converse One Star Ox Golf
+      Le Fleur Industrial Pack Black. This One Star Ox Golf Le Fleur sports a black
+      upper with white and grey accents, white Converse star, white midsole, and white
+      sole. These sneakers released in February 2019 and retailed for $110. Channel
+      those Golf Wang vibes and place a Bid on StockX today.
+    - Converse
+    - '2019-02-23'
+    - 110.0
+    - '2019-09-14 20:33:04.398139'
+    - '2019-09-14 20:33:04.398139'
+    - Barely Blue/Black-Egret
+    - men
+    - Converse One Star
+    - Ox Golf Le Fleur Industrial Pack Black
+    - fdcc1c64-01ae-4b17-a6a6-a6930fcaeebf
+    - sneakers
+    - 195
+    - 147
+    - 115
+    - 3
+    - 
+    - "{}"
+    - "{}"
+  - - 1806
+    - Converse One Star Ox Tyler the Creator Golf Le Fleur Geranium Pink
+    - ''
+    - Converse
+    - '2018-01-18'
+    - 100.0
+    - '2019-09-14 20:33:04.414939'
+    - '2019-09-14 20:33:04.414939'
+    - Geranium Pink/White
+    - men
+    - Converse One Star Ox
+    - Tyler the Creator Golf Le Fleur Geranium Pink
+    - 39f59304-e17b-4789-920a-5f3cc6df73ac
+    - sneakers
+    - 170
+    - 159
+    - 131
+    - 3
+    - 
+    - "{}"
+    - "{}"
+  - - 1807
+    - Converse One Star Ox Tyler the Creator Golf Le Fleur Vanilla
+    - ''
+    - Converse
+    - '2017-11-02'
+    - 100.0
+    - '2019-09-14 20:33:04.415896'
+    - '2019-09-14 20:33:04.415896'
+    - Vanilla/White
+    - men
+    - Converse One Star Ox
+    - Tyler the Creator Golf Le Fleur Vanilla
+    - 5a66383e-be64-4130-8449-8b2ffff12508
+    - sneakers
+    - 130
+    - 160
+    - 167
+    - 3
+    - 
+    - "{}"
+    - "{}"
+  - - 1809
+    - Converse One Star Ox Tyler the Creator Golf Le Fleur Jolly Green
+    - ''
+    - Converse
+    - '2017-11-02'
+    - 100.0
+    - '2019-09-14 20:33:04.475743'
+    - '2019-09-14 20:33:04.475743'
+    - Green/White
+    - men
+    - Converse One Star Ox
+    - Tyler the Creator Golf Le Fleur Jolly Green
+    - 8c1b18d0-4555-4723-962c-b3d9c9de1247
+    - sneakers
+    - 150
+    - 204
+    - 155
+    - 2
+    - 
+    - "{}"
+    - "{}"
+  - - 1810
+    - Air Max 1 Golf Sport Red
+    - ''
+    - Nike
+    - '2019-01-30'
+    - 120.0
+    - '2019-09-14 20:33:04.494327'
+    - '2019-09-14 20:33:04.494327'
+    - White/Neutral Grey-Sport Red
+    - men
+    - Air Max 1 Golf
+    - Sport Red
+    - 0aabf682-2dd2-479f-b41c-d8746ec5ab17
+    - sneakers
+    - 110
+    - 90
+    - 99
+    - 2
+    - 
+    - "{}"
+    - "{}"
+  - - 1811
+    - Converse Chuck Taylor All-Star 70s Hi Golf Le Fleur TTC Quilted Velvet
+    - 'Get your golf on in the Converse Chuck Taylor All-Star 70s Hi Golf Le Fleur
+      TTC Quilted Velvet. This Converse comes with a purple upper plus white accents,
+      white midsole, and a white sole. These sneakers released in May 2019 and retailed
+      for $110. Make Tyler proud and cop these on StockX today. '
+    - Converse
+    - '2019-05-17'
+    - 110.0
+    - '2019-09-14 20:33:04.499336'
+    - '2019-09-14 20:33:04.499336'
+    - Tillandsia Purple
+    - men
+    - Converse Chuck Taylor All-Star
+    - 70s Hi Golf Le Fleur TTC Quilted Velvet
+    - 716e11f3-da5d-427c-9ea6-69a0a9ec562e
+    - sneakers
+    - 80
+    - 100
+    - 89
+    - 2
+    - 
+    - "{}"
+    - "{}"
+  - - 1812
+    - GOLF Le Fleur Lacoste Teddy Jacket Green
+    - ''
+    - GOLF
+    - '2019-07-17'
+    - 0.0
+    - '2019-09-14 20:33:04.502395'
+    - '2019-09-14 20:33:04.502395'
+    - Green
+    - men
+    - GOLF Le Fleur Lacoste Teddy
+    - Jacket Green
+    - f2c888ca-9a9d-4c20-b7cc-39f0b098dece
+    - streetwear
+    - 520
+    - 475
+    - 523
+    - 2
+    - 
+    - "{}"
+    - "{}"
+  - - 1813
+    - GOLF Le Fleur Lacoste Track Pant Geode/Plumi
+    - ''
+    - GOLF
+    - '2019-07-17'
+    - 0.0
+    - '2019-09-14 20:33:04.504558'
+    - '2019-09-14 20:33:04.504558'
+    - Geode/Plumi
+    - men
+    - GOLF Le Fleur Lacoste Track
+    - Pant Geode/Plumi
+    - a88a8e62-a8a8-4ae7-8ad8-0424d55791a8
+    - streetwear
+    - 110
+    - 88
+    - 100
+    - 2
+    - 
+    - "{}"
+    - "{}"
+  - - 1814
+    - Nike Golf Tour Premiere White Metallic Cool Grey
+    - ''
+    - Nike
+    - '2017-01-01'
+    - 200.0
+    - '2019-09-14 20:33:04.588586'
+    - '2019-09-14 20:33:04.588586'
+    - White/Metallic Cool Grey-Black
+    - men
+    - Nike Golf Tour Premiere
+    - White Metallic Cool Grey
+    - cdb511f2-d793-4214-91ff-b94156dd2238
+    - sneakers
+    - 140
+    - 166
+    - 150
+    - 2
+    - 
+    - "{}"
+    - "{}"
+  - - 1815
+    - Converse Chuck Taylor All-Star 70s Hi Golf Le Fleur Parchment
+    - ''
+    - Converse
+    - '2018-11-15'
+    - 100.0
+    - '2019-09-14 20:33:04.595575'
+    - '2019-09-14 20:33:04.595575'
+    - Parchment/Egret-Black
+    - men
+    - Converse Chuck Taylor All-Star
+    - 70s Hi Golf Le Fleur Parchment
+    - 94f3a05b-6ef5-4557-8e45-46f76c394d63
+    - sneakers
+    - 204
+    - 181
+    - 240
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1816
+    - Air Max 1 Golf Grass
+    - ''
+    - Nike
+    - '2019-01-30'
+    - 140.0
+    - '2019-09-14 20:33:04.599546'
+    - '2019-09-14 20:33:04.599546'
+    - Grass/Grass-White
+    - men
+    - Air Max 1 Golf
+    - Grass
+    - 58656384-e71c-4908-a223-c82619aae3b6
+    - sneakers
+    - 430
+    - 459
+    - 415
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1817
+    - Jordan 11 Retro Low Golf No Denim Allowed
+    - ''
+    - Jordan
+    - '2019-06-14'
+    - 200.0
+    - '2019-09-14 20:33:04.602571'
+    - '2019-09-14 20:33:04.602571'
+    - Denim/Denim
+    - men
+    - Jordan 11 Retro Low Golf
+    - No Denim Allowed
+    - 97dca18d-6afb-4fc1-a0ca-31a35895490c
+    - sneakers
+    - 385
+    - 344
+    - 320
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1819
+    - Converse One Star Ox Tyler the Creator Golf Le Fleur Bachelor Blue
+    - ''
+    - Converse
+    - '2018-01-18'
+    - 100.0
+    - '2019-09-14 20:33:04.6679'
+    - '2019-09-14 20:33:04.6679'
+    - Blue
+    - men
+    - Converse One Star Ox
+    - Tyler the Creator Golf Le Fleur Bachelor Blue
+    - 90cca23b-6981-4368-affe-39c9710f813a
+    - sneakers
+    - 157
+    - 180
+    - 176
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1820
+    - Converse One Star Ox Tyler the Creator Golf Le Fleur Light Blue Pink
+    - 'These new two-tone Golf Le Fleur Converse One Stars have those Flower Boy vibes
+      perfect for any Tyler the Creator stan. Similar to the previous Converse One
+      Star x Golf le Fleur collaboration, these shoes are built on suede uppers, accompanied
+      by white rubber midsoles and the signature flower design around the Converse
+      star logo. Coming in a light blue and pink colorway, these dropped in early
+      June of 2018 via Converse.com, Golfwang.com and other select retailers. If you''re
+      looking for the perfect summer shoe, place a Bid on these today. '
+    - Converse
+    - '2018-06-01'
+    - 100.0
+    - '2019-09-14 20:33:04.672834'
+    - '2019-09-14 20:33:04.672834'
+    - Plume/Pink Marshmallow-White
+    - men
+    - Converse One Star Ox
+    - Tyler the Creator Golf Le Fleur Light Blue Pink
+    - e9b1ce12-bfa7-454e-9c7d-65c709320f80
+    - sneakers
+    - 230
+    - 195
+    - 250
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1821
+    - Polo Ralph Lauren Snow Beach Pullover Deep Water/Chrome Yellow
+    - ''
+    - Polo Ralph Lauren
+    - '2018-01-25'
+    - 395.0
+    - '2019-09-14 20:33:04.67595'
+    - '2019-09-14 20:33:04.67595'
+    - Deep Water/Chrome Yellow
+    - men
+    - Polo Ralph Lauren Snow Beach
+    - Pullover Deep Water/Chrome Yellow
+    - db221e87-63c2-47de-ba4d-1216a830450c
+    - streetwear
+    - 700
+    - 787
+    - 788
+    - 2
+    - 
+    - "{}"
+    - "{}"
+  - - 1822
+    - Kith x Tommy Hilfiger Chest Stripe Polo White
+    - ''
+    - Kith
+    - '2019-05-24'
+    - 110.0
+    - '2019-09-14 20:33:04.677144'
+    - '2019-09-14 20:33:04.677144'
+    - White
+    - men
+    - Kith x Tommy Hilfiger Chest Stripe
+    - Polo White
+    - 0d445cae-85bd-4758-81d4-715882143573
+    - streetwear
+    - 70
+    - 178
+    - 115
+    - 2
+    - 
+    - "{}"
+    - "{}"
+  - - 1823
+    - Nike Tiger Woods The Nike Polo Black
+    - ''
+    - Nike
+    - '2019-04-14'
+    - 72.0
+    - '2019-09-14 20:33:04.688328'
+    - '2019-09-14 20:33:04.688328'
+    - Black
+    - unisex
+    - Nike Tiger Woods The Nike
+    - Polo Black
+    - f94f8bda-4f19-42da-92eb-4e41f7d88dab
+    - streetwear
+    - 80
+    - 135
+    - 168
+    - 2
+    - 
+    - "{}"
+    - "{}"
+  - - 1824
+    - Palace Ralph Lauren Waffle Pocket Tee French Navy
+    - ''
+    - Palace
+    - '2018-11-09'
+    - 65.0
+    - '2019-09-14 20:33:04.736437'
+    - '2019-09-14 20:33:04.736437'
+    - French Navy
+    - men
+    - Palace Ralph Lauren Waffle Pocket
+    - Tee French Navy
+    - efd90e56-7708-44da-b806-3d4d215e3cf9
+    - streetwear
+    - 89
+    - 95
+    - 100
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1825
+    - Supreme Classic Logo Stripe Polo Mustard
+    - ''
+    - Supreme
+    - '2019-05-02'
+    - 98.0
+    - '2019-09-14 20:33:04.74055'
+    - '2019-09-14 20:33:04.74055'
+    - Mustard
+    - men
+    - Supreme Classic Logo Stripe
+    - Polo Mustard
+    - 131dd36f-1ead-4f57-9c71-3a14a36d4fb2
+    - streetwear
+    - 70
+    - 70
+    - 73
+    - 2
+    - 
+    - "{}"
+    - "{}"
+  - - 1826
+    - Supreme Nike Jacquard Polo Black
+    - ''
+    - Supreme
+    - '2018-09-27'
+    - 124.0
+    - '2019-09-14 20:33:04.744716'
+    - '2019-09-14 20:33:04.744716'
+    - Black
+    - men
+    - Supreme Nike Jacquard
+    - Polo Black
+    - 80a15343-d53b-4bd4-81ea-b5ed7a0fa09d
+    - streetwear
+    - 155
+    - 185
+    - 157
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1827
+    - Supreme S Logo Polo Black
+    - ''
+    - Supreme
+    - '2019-06-20'
+    - 118.0
+    - '2019-09-14 20:33:04.766345'
+    - '2019-09-14 20:33:04.766345'
+    - Black
+    - men
+    - Supreme S Logo
+    - Polo Black
+    - 401ce870-9f02-4881-a80c-6b605362ad3d
+    - streetwear
+    - 169
+    - 159
+    - 123
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1828
+    - Nike x Parra Polo Multi
+    - ''
+    - Nike
+    - '2019-07-26'
+    - 55.0
+    - '2019-09-14 20:33:04.784999'
+    - '2019-09-14 20:33:04.784999'
+    - Multi
+    - men
+    - Nike x Parra
+    - Polo Multi
+    - 6e2df562-95b0-45bc-881e-de67f358a71d
+    - streetwear
+    - 85
+    - 117
+    - 70
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1829
+    - Palace RL 2 Skateboard Deck Navy
+    - ''
+    - Palace
+    - '2018-11-09'
+    - 0.0
+    - '2019-09-14 20:33:04.808346'
+    - '2019-09-14 20:33:04.808346'
+    - Navy
+    - men
+    - Palace RL 2
+    - Skateboard Deck Navy
+    - d8c00731-f681-42b5-9342-1a173d8f6e80
+    - streetwear
+    - 100
+    - 126
+    - 198
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1830
+    - Supreme S Logo Polo Navy
+    - ''
+    - Supreme
+    - '2019-06-20'
+    - 118.0
+    - '2019-09-14 20:33:04.811938'
+    - '2019-09-14 20:33:04.811938'
+    - Navy
+    - men
+    - Supreme S Logo
+    - Polo Navy
+    - eee4d1a0-1132-45a8-843d-55f8ec37d6b3
+    - streetwear
+    - 122
+    - 95
+    - 114
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1831
+    - Palace Ralph Lauren Pieced Rugby French Navy
+    - ''
+    - Palace
+    - '2018-11-09'
+    - 0.0
+    - '2019-09-14 20:33:04.81694'
+    - '2019-09-14 20:33:04.81694'
+    - French Navy
+    - men
+    - Palace Ralph Lauren Pieced
+    - Rugby French Navy
+    - c310cae2-a9ce-4bbf-aa1b-90952d4cb9f4
+    - streetwear
+    - 200
+    - 249
+    - 240
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1832
+    - GOLF Le Fleur Lacoste Polo Shirt Geode/Lychee
+    - ''
+    - GOLF
+    - '2019-07-17'
+    - 0.0
+    - '2019-09-14 20:33:04.839457'
+    - '2019-09-14 20:33:04.839457'
+    - Geode/Lychee
+    - men
+    - GOLF Le Fleur Lacoste Polo
+    - Shirt Geode/Lychee
+    - '0922c60c-bfab-4f05-aed0-2c7cc81b439f'
+    - streetwear
+    - 133
+    - 154
+    - 100
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1833
+    - Supreme Stripe Velour Raglan L/S Polo Blue
+    - ''
+    - Supreme
+    - '2019-03-28'
+    - 118.0
+    - '2019-09-14 20:33:04.840676'
+    - '2019-09-14 20:33:04.840676'
+    - Blue
+    - men
+    - Supreme Stripe Velour Raglan
+    - L/S Polo Blue
+    - 76c59a63-e42e-4d92-b754-d4c271a30193
+    - streetwear
+    - 115
+    - 146
+    - 170
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1834
+    - Polo Ralph Lauren Snow Beach Hooded Rugby Black
+    - ''
+    - Polo Ralph Lauren
+    - '2018-02-01'
+    - 265.0
+    - '2019-09-14 20:33:04.871443'
+    - '2019-09-14 20:33:04.871443'
+    - Black
+    - men
+    - Polo Ralph Lauren Snow Beach Hooded
+    - Rugby Black
+    - c43dbaf5-e49b-4318-b26d-b5dfa6df55bf
+    - streetwear
+    - 250
+    - 175
+    - 180
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1835
+    - Kith x Tommy Hilfiger Chest Stripe Polo Navy
+    - ''
+    - Kith
+    - '2019-05-24'
+    - 110.0
+    - '2019-09-14 20:33:04.885884'
+    - '2019-09-14 20:33:04.885884'
+    - Navy
+    - men
+    - Kith x Tommy Hilfiger Chest Stripe
+    - Polo Navy
+    - bdd554bc-cdab-47de-9902-0cd4ae50f6a6
+    - streetwear
+    - 70
+    - 85
+    - 119
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1836
+    - Palace adidas Off Court Jacquard Polo Black
+    - ''
+    - Palace
+    - '2018-07-03'
+    - 0.0
+    - '2019-09-14 20:33:04.899639'
+    - '2019-09-14 20:33:04.899639'
+    - Black
+    - men
+    - Palace adidas Off Court Jacquard
+    - Polo Black
+    - fce5a4dd-5f93-451c-8992-a317a276a971
+    - streetwear
+    - 50
+    - 65
+    - 0
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1837
+    - BAPE Shark One Point Polo Black
+    - ''
+    - BAPE
+    - '2019-08-17'
+    - 179.0
+    - '2019-09-14 20:33:04.909977'
+    - '2019-09-14 20:33:04.909977'
+    - Black
+    - men
+    - BAPE Shark One Point
+    - Polo Black
+    - 2beb7012-7791-4131-bc74-81d79405e069
+    - streetwear
+    - 200
+    - 120
+    - 215
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1838
+    - Palace My Size Polo Blue
+    - ''
+    - Palace
+    - '2019-08-16'
+    - 108.0
+    - '2019-09-14 20:33:04.923663'
+    - '2019-09-14 20:33:04.923663'
+    - Blue
+    - men
+    - Palace My Size
+    - Polo Blue
+    - 75da6b7b-1e09-497c-b16d-d91f127c2850
+    - streetwear
+    - 75
+    - 71
+    - 0
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1839
+    - Supreme Cable Knit Terry Polo Dark Green
+    - ''
+    - Supreme
+    - '2018-06-14'
+    - 0.0
+    - '2019-09-14 20:33:04.92612'
+    - '2019-09-14 20:33:04.92612'
+    - Dark Green
+    - men
+    - Supreme Cable Knit Terry
+    - Polo Dark Green
+    - 43d53e0b-598e-4ed5-95f3-d926b6d88304
+    - streetwear
+    - 100
+    - 195
+    - 135
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1840
+    - Supreme Polo Crewneck White
+    - ''
+    - Supreme
+    - '2017-08-31'
+    - 128.0
+    - '2019-09-14 20:33:04.94993'
+    - '2019-09-14 20:33:04.94993'
+    - White
+    - men
+    - Supreme Polo
+    - Crewneck White
+    - 4a25c1df-e771-4a71-8647-5ad0708f7081
+    - streetwear
+    - 32
+    - 151
+    - 275
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1841
+    - Puma x TMC MCS Track Jacket Black
+    - ''
+    - Puma
+    - '2019-09-05'
+    - 100.0
+    - '2019-09-14 20:33:04.987057'
+    - '2019-09-14 20:33:04.987057'
+    - Black
+    - men
+    - Puma x TMC MCS
+    - Track Jacket Black
+    - 562309af-b790-47c3-9337-80b555a2c726
+    - streetwear
+    - 185
+    - 140
+    - 185
+    - 29
+    - 1
+    - "{}"
+    - "{}"
+  - - 1842
+    - Puma x TMC Run a Lap Hoodie Red
+    - ''
+    - Puma
+    - '2019-09-05'
+    - 80.0
+    - '2019-09-14 20:33:04.991084'
+    - '2019-09-14 20:33:04.991084'
+    - Red
+    - men
+    - Puma x TMC Run a Lap
+    - Hoodie Red
+    - e82acfbf-cf2d-40ed-a46e-cbf2e47833e7
+    - streetwear
+    - 102
+    - 103
+    - 145
+    - 9
+    - 1
+    - "{}"
+    - "{}"
+  - - 1843
+    - Puma x TMC MCS Track Pants Black
+    - ''
+    - Puma
+    - '2019-09-05'
+    - 90.0
+    - '2019-09-14 20:33:05.00235'
+    - '2019-09-14 20:33:05.00235'
+    - Black
+    - men
+    - Puma x TMC MCS
+    - Track Pants Black
+    - 1830065e-cc31-492e-8995-3b264cb0a6f1
+    - streetwear
+    - 195
+    - 120
+    - 165
+    - 25
+    - 1
+    - "{}"
+    - "{}"
+  - - 1844
+    - Stussy x Cactus Plant Flea Market USA 2019 Tee White
+    - After being previewed several days before the 4th of July, Stussy's collaborative
+      capsule with Cactus Plant Flea Market released to an instant sellout on the
+      US holiday. Maximalist cobranding is impossible to ignore as more than three
+      different Stussy logos can be seen overlapping and in conjunction with several
+      CPFM logos. Coinciding with the holiday it was released on, US Independence
+      Day, "U.S.A." is also featured on the front of the shirt in large print. The
+      Stussy x Cactus Plant Flea Market USA 2019 Tee released on July 4th, 2019 and
+      retailed for $45 USD.
+    - Stussy
+    - '2019-07-04'
+    - 45.0
+    - '2019-09-14 20:33:05.010767'
+    - '2019-09-14 20:33:05.010767'
+    - White
+    - men
+    - Stussy x Cactus Plant Flea Market USA 2019
+    - Tee White
+    - a93bb91c-3098-45a9-8c09-a6d9ec7fb49c
+    - streetwear
+    - 118
+    - 120
+    - 59
+    - 11
+    - 
+    - "{}"
+    - "{}"
+  - - 1845
+    - Puma x TMC Run a Lap Pants Red
+    - ''
+    - Puma
+    - '2019-09-05'
+    - 70.0
+    - '2019-09-14 20:33:05.036239'
+    - '2019-09-14 20:33:05.036239'
+    - Red
+    - men
+    - Puma x TMC Run a Lap
+    - Pants Red
+    - d1c21ed2-38be-420c-91c0-5e5ebba54bab
+    - streetwear
+    - 125
+    - 120
+    - 145
+    - 8
+    - 1
+    - "{}"
+    - "{}"
+  - - 1846
+    - Puma x TMC Marathon Tee White
+    - ''
+    - Puma
+    - '2019-09-05'
+    - 40.0
+    - '2019-09-14 20:33:05.050415'
+    - '2019-09-14 20:33:05.050415'
+    - White
+    - men
+    - Puma x TMC Marathon
+    - Tee White
+    - 057e54f9-52e3-414d-82eb-990bdd7d4059
+    - streetwear
+    - 50
+    - 45
+    - 125
+    - 7
+    - 1
+    - "{}"
+    - "{}"
+  - - 1847
+    - Puma x TMC Hussle Tee Blue
+    - ''
+    - Puma
+    - '2019-09-05'
+    - 40.0
+    - '2019-09-14 20:33:05.06156'
+    - '2019-09-14 20:33:05.06156'
+    - Blue
+    - men
+    - Puma x TMC Hussle
+    - Tee Blue
+    - cde60577-15b7-4dae-bd52-963987c8c13f
+    - streetwear
+    - 45
+    - 60
+    - 55
+    - 6
+    - 1
+    - "{}"
+    - "{}"
+  - - 1848
+    - Puma x TMC Hussle Jacket Black
+    - ''
+    - Puma
+    - '2019-09-05'
+    - 120.0
+    - '2019-09-14 20:33:05.062576'
+    - '2019-09-14 20:33:05.062576'
+    - Black
+    - men
+    - Puma x TMC Hussle
+    - Jacket Black
+    - 82afbd1b-6257-466c-bd7c-a6484b4d995b
+    - streetwear
+    - 150
+    - 155
+    - 185
+    - 2
+    - 1
+    - "{}"
+    - "{}"
+  - - 1849
+    - Puma x TMC Hussle Tee Red
+    - ''
+    - Puma
+    - '2019-09-05'
+    - 40.0
+    - '2019-09-14 20:33:05.070589'
+    - '2019-09-14 20:33:05.070589'
+    - Red
+    - men
+    - Puma x TMC Hussle
+    - Tee Red
+    - 6700aa89-066a-4230-827b-b192dd5402e6
+    - streetwear
+    - 57
+    - 48
+    - 65
+    - 3
+    - 1
+    - "{}"
+    - "{}"
+  - - 1850
+    - Puma x TMC Victory Tee White
+    - ''
+    - Puma
+    - '2019-09-05'
+    - 40.0
+    - '2019-09-14 20:33:05.107752'
+    - '2019-09-14 20:33:05.107752'
+    - White
+    - men
+    - Puma x TMC Victory
+    - Tee White
+    - b5dcd73a-cc59-41c5-aa78-56b6bce4148b
+    - streetwear
+    - 50
+    - 50
+    - 65
+    - 2
+    - 1
+    - "{}"
+    - "{}"
+  - - 1851
+    - Puma x TMC 1 of 1 Tee Black
+    - ''
+    - Puma
+    - '2019-09-05'
+    - 40.0
+    - '2019-09-14 20:33:05.120249'
+    - '2019-09-14 20:33:05.120249'
+    - Black
+    - men
+    - Puma x TMC 1 of 1
+    - Tee Black
+    - d04443d2-199b-4b85-9daf-eea065080d69
+    - streetwear
+    - 52
+    - 60
+    - 65
+    - 2
+    - 1
+    - "{}"
+    - "{}"
+  - - 1852
+    - Puma x TMC Hussle Pants Taos Taupe
+    - ''
+    - Puma
+    - '2019-09-05'
+    - 90.0
+    - '2019-09-14 20:33:05.121429'
+    - '2019-09-14 20:33:05.121429'
+    - Taos Taupe
+    - men
+    - Puma x TMC Hussle
+    - Pants Taos Taupe
+    - 879fb09e-ed44-492b-8d07-4416ae4834a5
+    - streetwear
+    - 75
+    - 125
+    - 700
+    - 2
+    - 1
+    - "{}"
+    - "{}"
+  - - 1853
+    - Puma x TMC Hussle Jacket Taos Taupe
+    - ''
+    - Puma
+    - '2019-09-05'
+    - 120.0
+    - '2019-09-14 20:33:05.123868'
+    - '2019-09-14 20:33:05.123868'
+    - Taos Taupe
+    - men
+    - Puma x TMC Hussle
+    - Jacket Taos Taupe
+    - edd955c4-b139-440d-bec3-1b18ca67ffb8
+    - streetwear
+    - 135
+    - 150
+    - 200
+    - 2
+    - 1
+    - "{}"
+    - "{}"
+  - - 1854
+    - Puma x TMC Hussle Tee Black
+    - ''
+    - Puma
+    - '2019-09-05'
+    - 40.0
+    - '2019-09-14 20:33:05.166539'
+    - '2019-09-14 20:33:05.166539'
+    - Black
+    - men
+    - Puma x TMC Hussle
+    - Tee Black
+    - 771b434f-026c-4dd6-97ba-19a3a90a60f9
+    - streetwear
+    - 56
+    - 65
+    - 65
+    - 1
+    - 1
+    - "{}"
+    - "{}"
+  - - 1855
+    - Sean Wotherspoon x Prince Crewneck Sweatshirt Heather Grey
+    - ''
+    - Sean Wotherspoon
+    - '2019-08-28'
+    - 60.0
+    - '2019-09-14 20:33:05.175589'
+    - '2019-09-14 20:33:05.175589'
+    - Heather Grey
+    - men
+    - Sean Wotherspoon x Prince
+    - Crewneck Sweatshirt Heather Grey
+    - df7a4996-58cc-4dd2-97a4-c2748e556414
+    - streetwear
+    - 65
+    - 110
+    - 0
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1856
+    - Sean Wotherspoon x Prince Game Set Match Mesh Shorts White
+    - ''
+    - Sean Wotherspoon
+    - '2019-08-28'
+    - 50.0
+    - '2019-09-14 20:33:05.187526'
+    - '2019-09-14 20:33:05.187526'
+    - White
+    - men
+    - Sean Wotherspoon x Prince Game Set Match
+    - Mesh Shorts White
+    - 4f9bebc4-e3cc-4a5b-9340-af9abc44717e
+    - streetwear
+    - 55
+    - 50
+    - 85
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1857
+    - Sean Wotherspoon x Prince Reverse Tee White
+    - ''
+    - Sean Wotherspoon
+    - '2019-08-28'
+    - 40.0
+    - '2019-09-14 20:33:05.205261'
+    - '2019-09-14 20:33:05.205261'
+    - White
+    - men
+    - Sean Wotherspoon x Prince Reverse
+    - Tee White
+    - dbaf58dd-08b9-47fc-928d-ca9df1696b11
+    - streetwear
+    - 25
+    - 55
+    - 90
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1858
+    - Sean Wotherspoon x Prince Reverse Tee Grey
+    - ''
+    - Sean Wotherspoon
+    - '2019-08-28'
+    - 40.0
+    - '2019-09-14 20:33:05.222298'
+    - '2019-09-14 20:33:05.222298'
+    - Grey
+    - men
+    - Sean Wotherspoon x Prince Reverse
+    - Tee Grey
+    - 04bb0000-4422-4895-bfe7-fe4083636d10
+    - streetwear
+    - 28
+    - 70
+    - 55
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1859
+    - Sean Wotherspoon x Prince Windbreaker Jacket White
+    - ''
+    - Sean Wotherspoon
+    - '2019-08-28'
+    - 100.0
+    - '2019-09-14 20:33:05.232259'
+    - '2019-09-14 20:33:05.232259'
+    - White
+    - men
+    - Sean Wotherspoon x Prince
+    - Windbreaker Jacket White
+    - c3a817fb-d0ae-4c05-8135-2933f6aec153
+    - streetwear
+    - 65
+    - 110
+    - 299
+    - 1
+    - 
+    - "{}"
+    - "{}"
+  - - 1860
+    - Puma x TMC Crew Socks (2 pk) Black/White
+    - ''
+    - Puma
+    - '2019-09-05'
+    - 18.0
+    - '2019-09-14 20:33:05.236897'
+    - '2019-09-14 20:33:05.236897'
+    - Black/White
+    - men
+    - Puma x TMC
+    - Crew Socks (2 pk) Black/White
+    - 8a83d34e-37e9-4c64-8a7b-22683942b2f8
+    - streetwear
+    - 55
+    - 115
+    - 0
+    - 
+    - 1
+    - "{}"
+    - "{}"
+
+---
+users:
+  columns:
+  - id
+  - username
+  - password_digest
+  - session_token
+  - created_at
+  - updated_at
+  - first_name
+  - last_name
+  - email
+  records: 
+  - - 27
+    - mohito
+    - "$2a$12$uQv7ZE4XUDAjaHSUFnFchOLEVgWUg2i0RGd6lhw/Vvaingnkwi2kG"
+    - pSII7cMmgou6pnYIS1sr8w
+    - '2019-09-14 20:00:49.479317'
+    - '2019-09-14 20:04:09.379286'
+    - Carne
+    - Asada
+    - california@lolitas.com

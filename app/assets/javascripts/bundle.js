@@ -612,7 +612,8 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "side-nav"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/supreme"
+        to: "/supreme",
+        onClick: _util_stockx_api_util__WEBPACK_IMPORTED_MODULE_3__["seedDb"]
       }, "SUPREME")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/bape"
       }, "BAPE")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
@@ -1607,8 +1608,8 @@ var filterSearch = function filterSearch(searchRes) {
       'last_sale': item['last_sale'],
       'lowest_ask': item['lowest_ask'],
       'sales_last_72': item['sales_last_72'],
-      'new_release': item['new_release'] // 'categories': item['categories']
-
+      'new_release': item['new_release'],
+      'categories': item['categories']
     };
     Object(_product_api_util__WEBPACK_IMPORTED_MODULE_0__["createProduct"])(filteredItem);
   }

@@ -35,7 +35,7 @@ const filterSearch = (searchRes) => {      //{{},{},{},{},{}}
             'lowest_ask': item['lowest_ask'],
             'sales_last_72': item['sales_last_72'],
             'new_release': item['new_release'],
-            // 'categories': item['categories']
+            'categories': item['categories']
         })
         createProduct(filteredItem)
     }
