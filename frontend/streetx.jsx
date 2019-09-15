@@ -4,7 +4,7 @@ import configureStore from './store/store';
 import { login , logout } from './actions/session_actions';
 import { requestProducts } from './actions/product_actions';
 import Root from './components/root';
-import { postStockx } from './util/stockx_api_util';
+import { seedDb, postStockx, getPicture, search } from './util/stockx_api_util';
 
 
 
@@ -23,6 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
         store = configureStore();
     }
 
+    window.seedDb = seedDb;
+    window.search = search;
+    window.getPicture = getPicture;
     window.postStockx = postStockx;
     window.requestProducts = requestProducts;
     window.login = login;

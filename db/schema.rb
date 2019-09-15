@@ -38,6 +38,8 @@ ActiveRecord::Schema.define(version: 2019_09_13_233512) do
     t.string "model", default: ""
     t.string "object_identifier", null: false
     t.string "product_category", null: false
+    t.string "image_url"
+    t.string "ticker_symbol"
     t.integer "highest_bid"
     t.integer "last_sale"
     t.integer "lowest_ask"

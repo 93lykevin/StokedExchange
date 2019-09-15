@@ -13,11 +13,11 @@
  *= require_tree .
  *= require_self
  */
-
- body {
-    font-family: 'Roboto', sans-serif;
-    color: #333333
- }
+  
+body {
+font-family: 'Roboto', sans-serif;
+color: #333333
+}
 
 .app-container {
     position: absolute;
@@ -50,3 +50,7 @@
     box-sizing: border-box;
     height: 0px
 }
+
+
+
+

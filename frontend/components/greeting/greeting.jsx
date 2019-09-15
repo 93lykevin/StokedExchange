@@ -14,6 +14,9 @@ class Greeting extends React.Component {
         this.handleDemoLogin = this.handleDemoLogin.bind(this);
     }
 
+    componentDidMount() {
+        this.props.requestProducts();
+    }
     handleDemoLogin(e) {
         e.preventDefault();
         this.props.processForm(this.demoUser);

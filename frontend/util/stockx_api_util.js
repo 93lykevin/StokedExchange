@@ -1,5 +1,25 @@
 import {createProduct} from './product_api_util';
 import ProductIndex from '../components/product/product_index';
+// export const updateItemStockx = (item_identifier) => {
+
+// }
+
+export const search = (search) => (
+    $.ajax({
+        method: 'POST',
+        url: 'http://kevtly.pythonanywhere.com/',
+        data: { search: search }
+    })
+);
+
+export const getPicture = (searching) => { //
+    search(searching).then(data => {
+        let item = data[0];
+        let media = item['media'];
+        let imgUrl = media['imageUrl']
+        return imgUrl;
+    })
+}
 
 export const postStockx = (search) => (
     $.ajax({
@@ -10,12 +30,11 @@ export const postStockx = (search) => (
 );
 
 //filter & create helper method
-const filterSearch = (searchRes) => {      //{{},{},{},{},{}}
-    // let search_res = search_json['responseJSON']; //ARRAY [{},{},{},{},{}]
-    // let filteredSearchResult = [];
+const filterSearch = (searchRes) => {      //[ARRAY OF OBJECTS B/C USED AS .THEN]
     for(let i=0; i < searchRes.length; i++) {
         let item = searchRes[i];
         let getRetailPrice = item['searchable_traits'];
+        let getImageUrl = item['media']
         // debugger;
         let filteredItem = ({
             'title': item['name'],
@@ -35,7 +54,8 @@ const filterSearch = (searchRes) => {      //{{},{},{},{},{}}
             'lowest_ask': item['lowest_ask'],
             'sales_last_72': item['sales_last_72'],
             'new_release': item['new_release'],
-            'categories': item['categories']
+            'categories': item['categories'],
+            'image_url': Object.values(getImageUrl)[2]
         })
         createProduct(filteredItem)
     }

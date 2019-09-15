@@ -6,6 +6,8 @@ class AddManyColumnsToProducts < ActiveRecord::Migration[5.2]
     add_column :products, :model, :string, default: ""
     add_column :products, :object_identifier, :string, null: false
     add_column :products, :product_category, :string, null: false
+    add_column :products, :image_url, :string
+    add_column :products, :ticker_symbol, :string
 
     add_column :products, :highest_bid, :int
     add_column :products, :last_sale, :int
