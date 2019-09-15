@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import ProductShow from './product_show';
-import {requestProduct} from '../../actions/product_actions';
+import {requestProduct, requestProducts} from '../../actions/product_actions';
 
 const mapStateToProps = (state, ownProps) => {
     return({
@@ -11,7 +11,8 @@ const mapStateToProps = (state, ownProps) => {
 )};
 
 const mapDispatchToProps = (dispatch) => ({
-    requestProduct: (id) => dispatch(requestProduct(id))
+    requestProduct: (id) => dispatch(requestProduct(id)),
+    requestProducts: () => dispatch(requestProducts())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductShow)

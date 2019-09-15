@@ -40,6 +40,7 @@ const filterSearch = (searchRes) => {      //[ARRAY OF OBJECTS B/C USED AS .THEN
             'title': item['name'],
             'description': item['description'],
             'brand': item['brand'],
+            'ticker_symbol': item['ticker_symbol'],
             'release_date': item['release_date'],
             'retail_price': Object.values(getRetailPrice)[2],
             'colorway': item['colorway'],
@@ -108,23 +109,3 @@ export const seedDb = () => {
 //searchable_traits: Retail Price: int
 //short_description: string
 //style_itentifier: string
-
-// {
-//     brand: "Nike"
-//     colorway: "Varsity Red/Varsity Red-White-Black"
-//     description: null
-//     gender: "men"
-//     highest_bid: 511
-//     last_sale: 670
-//     lowest_ask: 175
-//     make: "Nike SB Dunk Low"
-//     model: "Supreme Jewel Swoosh Red"
-//     new_release: 1
-//     object_identifier: "5fd70f8d-4a1f-4284-82f7-0fafabb541fa"
-//     product_category: "sneakers"
-//     release_date: "2019-09-14"
-//     retail_price: 110
-//     sales_last_72: 677
-//     style_identifier: "CK3480-600"
-//     title: "Nike SB Dunk Low Supreme Jewel Swoosh Red"
-// }

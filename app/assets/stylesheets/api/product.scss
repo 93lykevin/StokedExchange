@@ -2,3 +2,420 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.product-view *{
+     border: .5px solid rgb(255, 128, 128);
+}
+.product-view {
+    box-sizing: border-box;
+
+    .hidden-xs{
+        height:62px;
+    }
+
+    .product-details-container{
+        width: 1170px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .product-content{
+            box-sizing: border-box;
+            
+            .product-header-block{
+                padding-left: 0;
+                padding-right: 0;
+                min-width: 768px;
+
+                .product-row{
+                    margin-right: -15px;
+                    margin-left: -15px;
+                    height: 107px;
+                    
+                        .product-title { 
+                            width: 100%;
+                            float: left;
+                            padding: 0 20px;
+                            
+                            .title-name{
+                                height: 60px;
+                                margin-top: 20px;
+                                letter-spacing: 0;
+                                font-weight: 700;
+                                font-size: 55px;
+                            }
+
+                            .title-small{
+                                color: #444;
+                                letter-spacing: .3px;
+                                font-size: 18px;
+                                text-transform: uppercase;
+                                display: flex;
+                                margin-top: 5px;
+
+                                .product-condition{
+                                    margin-top: 5px;
+                                    text-transform: capitalize;
+                                    color: #999;
+                                    display: inline;
+
+                                    span{
+                                        font-weight: 700px;
+                                        color: #509e2f;
+                                        text-transform: capitalize;
+                                    }
+                                }
+
+                                .divider-pipe{
+                                    margin-top: 5px;
+                                    padding: 0 10px;
+                                    display: inline;
+                                    font-weight: 600;
+                                }
+
+                                .product-ticker{
+                                    margin-top: 5px;
+                                    text-transform: capitalize;
+                                    color: #999;
+                                    display: inline;
+
+                                    span{
+                                        color: #444;
+                                    }
+                                }
+
+                                .product-auth{
+                                    margin-top: 5px;
+                                    font-weight: 500;
+                                    text-transform: capitalize;
+                                    color: #509E31;
+                                    display: inline;
+                                }
+                        }
+                    }
+                }
+            }
+        }
+
+        .market-summary{
+            height: 103px;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: row;
+        
+            .options{
+                padding-right: 25px;
+                border-right: 1px solid #ccc;
+                margin-bottom: 20px;
+
+                .dropdown{
+                    position: relative;
+                    display: block;
+                    margin-bottom: 15px;
+
+                    
+                    label{
+                        font-size: 18px;
+                        color: #999999;
+                        margin: 0;
+                        white-space: nowrap;
+                    }
+                    
+                    .dropdown-content{
+                        display:none;
+                        position: absolute;
+                        font-size: 30px;
+                        font-weight: 500;
+                        align-items: center;
+                        border: none;
+                        padding: 0;
+                        text-align: left;
+                    }
+                }
+
+                .dropdown:hover .dropdown-content{
+                    display:block;
+                }
+            }
+
+            .last-sale-block{
+                padding: 0 20px;
+                display: flex;
+                -webkit-box-pack: center;
+                justify-content: center;
+                margin-top: 12px;
+
+                .last-sale{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    h3{
+                        letter-spacing: 0;
+                        color: #999;
+                        margin: 0;
+                        font-size: 16px;
+                        white-space: nowrap;
+                    }
+
+                    .sale-value{
+                        letter-spacing: 0;
+                        font-size: 30px;
+                        margin: 0 5px 0 10px;
+                        font-weight: 400;
+                    }
+
+                    .last-sale-value{
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #999;
+                    }
+                }
+
+                .sale-size{
+                    display: flex;
+                    justify-content: center;
+                    font-size: 15px;
+                    align-items: center;
+
+                }
+            }
+
+            .bid-button{
+                padding: 0 20px;
+                display: flex;
+                line-height: 20px;
+                text-size-adjust: 100%;
+                width: 254px;
+                height: 103px;
+                flex-direction: column;
+
+                .inner{
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+                    // flex-grow: 1;
+                    // align-items: stretch;
+
+                    .button-container{
+                        border-bottom: 4px solid #509e2f;
+                        background-color: #509e2f;
+                        min-height: 77px;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        padding: 13px, 7px, 5px;
+                        margin: auto;
+                        border-radius: 5px;
+                        width: 100%;
+
+
+                        .stats{
+                            text-align: center;
+                            font-weight: 500;
+                            height: 55px;
+                            width: 90px;
+                            text-align: center;
+
+                            .stat-value{
+                                font-weight: 400;
+                                text-align: left;
+                                letter-spacing: 0;
+                                margin: 0;
+                                font-size: 30px;
+                                line-height: 1;
+                                color: #ffffff;
+                            }
+
+                            h3{
+                                color: #c6e6c2;
+                                letter-spacing: 0;
+                                margin: 0;
+                                font-weight: 600;
+                                font-size: 18px;
+                                line-height: 1;
+                                height: 25px;
+                                width: 90px;
+                                white-space: nowrap;
+                                text-size-adjust: 100%;
+                            }
+                        
+                        }
+
+                        .divider{
+                            // border-left-color: ;
+                            border-left: 1px solid #348a28;
+                            align-self: stretch;
+                            margin: 8px -18px;
+                        }
+
+                        .title-buy{
+                            text-align: center;
+                            height: 55px;
+                            width: 51px;
+                            text-align: center;
+                            color: #ffffff;
+
+                            h2{
+                                letter-spacing: 0;
+                                margin: 0;
+                                font-weight: 400;
+                                font-size: 30px;
+                                line-height: 1;
+                            }
+
+                            .or-bid{
+                                color: #c6e6c2;
+                                letter-spacing: 0;
+                                margin: 0;
+                                font-weight: 600;
+                                font-size: 18px;
+                                line-height: 1;
+                                height: 25px;
+                                width: 51px;
+                                white-space: nowrap;
+                                text-size-adjust: 100%;
+                            }
+                        }
+                    }
+
+                    #button-container-sell{
+                            border-bottom: 4px solid #ff5a5f;
+                            background-color: #ff5a5f;
+                        }
+
+                        #sell{
+                            color: #FFCFC8
+                        }
+
+                        #divider-sell{
+                            border-left: 1px solid #cc4c4c
+                        }
+                }
+
+                .sale-size{
+                    display: flex;
+                    justify-content: center;
+                    font-size: 15px;
+                    align-items: center;
+                }
+            }
+        }
+
+        .product-image-solo{
+            margin: 25px 0;
+            max-width: 100%;
+            max-height: 100%;
+
+            .image-solo{
+                width: 1117px;
+                height: 743.922px;
+            }
+        }
+
+        .slider{
+            width: 60%;
+            margin: auto;
+            height: 14px;
+            position: relative;
+            padding: 5px 0;
+
+            .slider-rail{
+                height: 5px;
+                border-radius: 6px;
+                width: 100%;
+                background-color: #e9e9e9;
+            }
+        }
+
+        .product-info{
+            margin-top: 20px;
+            display: flex;
+            line-height: 20px;
+            font-size: 14px;    
+
+            .product-details-column{
+                width: 30%;
+                margin-right: 5%;
+                flex-direction: column;
+                justify-content: flex-start;
+                white-space: nowrap;
+                max-width: 100%;
+                text-overflow: ellipsis;
+
+                .detail{
+                    margin-bottom: 10px;
+                    font-size: 15px;
+                    text-transform: uppercase;
+
+                    .span-title{
+                        color: rgb(51, 51, 51);
+                        font-weight: 500;
+                        letter-spacing: 1.2px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+            .product-description{
+                max-height: none;
+                overflow: auto;
+                width: 65%;
+                margin-bottom: 20px;
+                font-size: 14px;
+
+                p{
+                    margin: 0 0 10px;
+                }
+            }
+        }
+    }
+
+    .product-market-summary-wrap{ 
+        margin-top: 5px;
+        background-color: #f5f5f5;
+        height: 110px;
+        font-size: 14px;
+
+        .container{
+            width: 1170px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+
+            .product-market-summary{
+                min-height: 100px;
+                text-align: center;
+
+                ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    flex-direction: row;
+                    min-height: 110px;
+                    margin-bottom: 0;
+
+                    li{
+                        text-align: left;
+                        font-size: 16px;
+                        margin-top: 0;
+                        padding: 0;
+                        font-weight: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .related-products-wrap{
+        margin-bottom: 20px;
+
+        .container{
+            width: 1170px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}

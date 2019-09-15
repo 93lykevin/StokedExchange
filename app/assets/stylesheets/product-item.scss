@@ -11,14 +11,15 @@
 .product-item {
     position: relative;
     width: 20%;
+    max-width: 215px;
     padding: 0 8px 16px;
     box-sizing: border-box;
 
     .product-item-layer {
         border: 1px solid #FAFAFA;
-        height: 240px;
         
         .product-image-div {
+            margin: 16px;
             position: relative;
             padding-top: 58%;
         }
@@ -30,17 +31,19 @@
             display: inline-block;
 
             .product-title {
-                height:40px;
+                height: 38px;
                 font-size: 14px;
+                margin-bottom: 6px;
             }
             
             p {
                 color: rgba(0, 0, 0, 0.5);
-                margin: 10px 0 2px;
+                // margin: 10px 0 2px;
             }
 
             .product-price {
                 font-size: 22px;
+                font-weight: 600;
             }
         }
     }
