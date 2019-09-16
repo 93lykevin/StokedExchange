@@ -1,9 +1,4 @@
 module Api::ProductListingsHelper
-
-    def plh
-        puts "in plh"
-    end
-
     def seedProductListings 
         users = User.all
         products = Product.all
@@ -24,5 +19,4 @@ module Api::ProductListingsHelper
             ProductListing.create!(product_id: product.id, seller_id: users[rand(users.length)].id, selling_price: product.lowest_ask + rand(-10...10), condition: conditions[rand(conditions.length)], size: size[rand(size.length)]) 
         end
     end
-
 end

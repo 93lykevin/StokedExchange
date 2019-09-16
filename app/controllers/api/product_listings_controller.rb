@@ -1,5 +1,6 @@
+# require_relative '../helpers/api/product_listings_helpers'
 class Api::ProductListingsController < ApplicationController
-    include ProductListingsHelper
+    # include ProductListingsHelper
 
     def index
         @product_listings = ProductListing.all

@@ -1,4 +1,4 @@
-require_relative '../helpers/product_listings_helper';
+
 class Api::ProductsController < ApplicationController
     def index
         @products = Product.all
