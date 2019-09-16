@@ -8,28 +8,30 @@ class ProductShow extends React.Component {
     }
 
     componentDidMount() {
-        this.props.requestProduct(this.props.match.params.id);
+        // this.props.requestProduct(this.props.match.params.id);
         this.props.requestProducts();
     }
 
     relatedProducts() {
         let related = [];
         let i = 0;
-        while (related.length < 5) {
-            if (this.props.products !== undefined){
-                debugger;
-                if (this.props.products[i].product_category === "sneakers") {
-                    related.push(this.props.products[i])
+        if (Object.keys(this.props.products).length !== 0) {
+            while (related.length < 5) {
+                let product_values = Object.values(this.props.products);
+                if (product_values[i].product_category === "sneakers") {
+                    related.push(product_values[i])
                 }
+                i++;
             }
-            i++;
         }
+        console.log(related);
         return related;
     }
 
     render() {
         let {title, model,condition, last_sale, lowest_ask, highest_bid, image_url, ticker_symbol, colorway, retail_price, release_date, description} = this.props.product;
         let products = this.props.products;
+        let related = this.relatedProducts();
         return(
             <div className="product-view"> 
                 <div className="">
@@ -46,7 +48,6 @@ class ProductShow extends React.Component {
                                             <div className="product-ticker">Ticker: <span>{ticker_symbol}</span></div>
                                             <span className="divider-pipe">|</span>
                                             <div className="product-auth">100% Authentic</div>
-
                                         </div>
                                     </div>
                                     </div>
@@ -159,11 +160,17 @@ class ProductShow extends React.Component {
                 <div className="related-products-wrap">
                     <div className="container">
                         <div className="related-products">
-                            {Object.values(this.relatedProducts()).map(product => {
-                                <ProductIndexItem 
-                                key={product.id}
-                                product={product} />
-                            })}
+                           
+                            <div className="related-product-banner">RELATED PRODUCTS</div>
+                            <div className="related-products-tile">
+                                {related.map(product => (
+                                    <div className="related-product-item">
+                                        <ProductIndexItem 
+                                        key={product.id}
+                                        product={product} />
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>

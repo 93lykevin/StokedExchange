@@ -2,9 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.product-view *{
-     border: .5px solid rgb(255, 128, 128);
-}
+//this is for designing/testing
+// .product-view *{
+//      border: .5px solid rgb(255, 128, 128);
+// }
 .product-view {
     box-sizing: border-box;
 
@@ -43,6 +44,7 @@
                                 letter-spacing: 0;
                                 font-weight: 700;
                                 font-size: 55px;
+                                white-space: nowrap;
                             }
 
                             .title-small{
@@ -416,6 +418,33 @@
             padding-left: 15px;
             margin-right: auto;
             margin-left: auto;
+
+            .related-products{
+
+                .related-products-banner{
+                    margin-right: -15px;
+                    margin-left: -15px;
+                }
+
+                .related-products-tile{
+                    display: flex;
+                    flex-direction: row;
+                    overflow-x: auto;
+                    margin: 0 -8px;
+
+                    .product-item{
+                        width:100%;
+                    }
+
+                    // .related-product-item{
+                    //     position: relative;
+                    //     max-width: 215px;
+                    //     padding: 0, 8px, 16px;
+                    // }
+                }
+            }
         }
+
+
     }
 }

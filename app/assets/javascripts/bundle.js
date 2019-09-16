@@ -636,9 +636,9 @@ function (_React$Component) {
       }, "PALACE")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/fearofgod"
       }, "FEAR OF GOD")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "offwhite"
+        to: "/offwhite"
       }, "OFF-WHITE")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "nike"
+        to: "/nike"
       }, "NIKE"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "browse-grid"
       }, products.map(function (product) {
@@ -758,7 +758,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "product-item-layer"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "product/".concat(this.props.product.id)
+        to: "/product/".concat(this.props.product.id)
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "product-image-div"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -831,7 +831,7 @@ function (_React$Component) {
   _createClass(ProductShow, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      this.props.requestProduct(this.props.match.params.id);
+      // this.props.requestProduct(this.props.match.params.id);
       this.props.requestProducts();
     }
   }, {
@@ -840,18 +840,19 @@ function (_React$Component) {
       var related = [];
       var i = 0;
 
-      while (related.length < 5) {
-        if (this.props.products !== undefined) {
-          debugger;
+      if (Object.keys(this.props.products).length !== 0) {
+        while (related.length < 5) {
+          var product_values = Object.values(this.props.products);
 
-          if (this.props.products[i].product_category === "sneakers") {
-            related.push(this.props.products[i]);
+          if (product_values[i].product_category === "sneakers") {
+            related.push(product_values[i]);
           }
-        }
 
-        i++;
+          i++;
+        }
       }
 
+      console.log(related);
       return related;
     }
   }, {
@@ -871,6 +872,7 @@ function (_React$Component) {
           release_date = _this$props$product.release_date,
           description = _this$props$product.description;
       var products = this.props.products;
+      var related = this.relatedProducts();
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "product-view"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1011,12 +1013,18 @@ function (_React$Component) {
         className: "container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "related-products"
-      }, Object.values(this.relatedProducts()).map(function (product) {
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_product_index_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "related-product-banner"
+      }, "RELATED PRODUCTS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "related-products-tile"
+      }, related.map(function (product) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "related-product-item"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_product_index_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
           key: product.id,
           product: product
-        });
-      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        }));
+      }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "market-history"
       }));
     }

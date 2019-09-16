@@ -7,7 +7,6 @@ class ProductIndexItem extends React.Component {
     constructor(props) {
         super(props)
     }
-    
 
     componentDidMount() {
         // updateItemStockx()
@@ -17,19 +16,19 @@ class ProductIndexItem extends React.Component {
         return(
             <div className="product-item">
                 <div className="product-item-layer">
-                <Link to={`product/${this.props.product.id}`}>
-                    <div className="product-image-div">
-                        <img src={this.props.product.image_url} className="product-image"/>
-                    </div>
-                    <div className="product-body-div">
-                        <div className="product-title">{this.props.product.title}</div>
-                        <p>Lowest Ask</p>
-                        <div className="product-price">${this.props.product.lowest_ask}</div>
-                    </div>
-                </Link>
+                    <Link to={`/product/${this.props.product.id}`}>
+                        <div className="product-image-div">
+                            <img src={this.props.product.image_url} className="product-image"/>
+                        </div>
+                        <div className="product-body-div">
+                            <div className="product-title">{this.props.product.title}</div>
+                            <p>Lowest Ask</p>
+                            <div className="product-price">${this.props.product.lowest_ask}</div>
+                        </div>
+                    </Link>
                 </div>
             </div>
         )
     }
 }
-export default ProductIndexItem
+export default ProductIndexItem;
