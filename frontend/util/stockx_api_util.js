@@ -35,7 +35,7 @@ const filterSearch = (searchRes) => {      //[ARRAY OF OBJECTS B/C USED AS .THEN
         let item = searchRes[i];
         let getRetailPrice = item['searchable_traits'];
         let getImageUrl = item['media']
-        // debugger;
+        debugger;
         let filteredItem = ({
             'title': item['name'],
             'description': item['description'],
@@ -48,7 +48,6 @@ const filterSearch = (searchRes) => {      //[ARRAY OF OBJECTS B/C USED AS .THEN
             'make': item['make'],
             'model': item['model'],
             'object_identifier': item['objectID'],
-            'style_identifier': item['style_id'],
             'product_category': item['product_category'],
             'highest_bid': item['highest_bid'],
             'last_sale': item['last_sale'],

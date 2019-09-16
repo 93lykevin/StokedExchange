@@ -1935,8 +1935,8 @@ var filterSearch = function filterSearch(searchRes) {
   for (var i = 0; i < searchRes.length; i++) {
     var item = searchRes[i];
     var getRetailPrice = item['searchable_traits'];
-    var getImageUrl = item['media']; // debugger;
-
+    var getImageUrl = item['media'];
+    debugger;
     var filteredItem = {
       'title': item['name'],
       'description': item['description'],
@@ -1949,7 +1949,6 @@ var filterSearch = function filterSearch(searchRes) {
       'make': item['make'],
       'model': item['model'],
       'object_identifier': item['objectID'],
-      'style_identifier': item['style_id'],
       'product_category': item['product_category'],
       'highest_bid': item['highest_bid'],
       'last_sale': item['last_sale'],
