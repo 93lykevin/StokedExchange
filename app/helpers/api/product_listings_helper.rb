@@ -25,6 +25,4 @@ module Api::ProductListingsHelper
         end
     end
 
-
-
 end
