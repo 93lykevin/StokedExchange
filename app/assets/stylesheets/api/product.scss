@@ -421,11 +421,26 @@
 
             .related-products{
 
-                .related-products-banner{
-                    margin-right: -15px;
-                    margin-left: -15px;
-                }
+                .related-products-banner-container{
+                    text-align: center;
 
+                    .related-products-banner{
+                        margin-right: -15px;
+                        margin-left: -15px;
+                        margin-bottom: 0;
+                        top: -16px;
+                        text-transform: uppercase;
+                        letter-spacing: 3px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        background-color: #2e2e2e;
+                        color: #ffffff;
+                        display: inline-block;
+                        padding: 12px 20px;
+                        position: relative;
+                    }
+
+                }
                 .related-products-tile{
                     display: flex;
                     flex-direction: row;
@@ -435,16 +450,8 @@
                     .product-item{
                         width:100%;
                     }
-
-                    // .related-product-item{
-                    //     position: relative;
-                    //     max-width: 215px;
-                    //     padding: 0, 8px, 16px;
-                    // }
                 }
             }
         }
-
-
     }
 }

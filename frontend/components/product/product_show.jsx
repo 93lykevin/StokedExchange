@@ -159,7 +159,12 @@ class ProductShow extends React.Component {
                     <div className="container">
                         <div className="related-products">
                            
-                            <div className="related-product-banner">RELATED PRODUCTS</div>
+                            <div className="related-products-banner-container">
+                                <div className="related-products-banner">
+                                    RELATED PRODUCTS
+                                </div>
+                            </div>
+
                             <div className="related-products-tile">
                                 {related.map(product => (
                                     <div className="related-product-item">
@@ -172,7 +177,14 @@ class ProductShow extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="market-history"></div>
+                <div className="market-history">
+
+
+                </div>
+                
+                <div className="ticker">
+                    <h3>Kevin & Mary & Mohit</h3>
+                </div>
             </div>
         )
     }

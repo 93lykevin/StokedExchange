@@ -44,5 +44,3 @@ export const logout = () => dispatch => (
     APIUtil.logout().then(() => (dispatch(logoutCurrentUser())
     ))
 );
-
-

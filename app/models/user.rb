@@ -5,13 +5,14 @@ class User < ApplicationRecord
     validates :first_name, presence: {message: 'error'};
     validates :last_name, presence: {message: 'error'}
     validates :email, presence: {message: 'error'}
-    validates :password, length: {minimum: 6, allow_nil: true, message: 'error'}
+    validates :password, length: {minimum: 1, allow_nil: true, message: 'error'}
     validates :session_token, presence: true, uniqueness: true
 
     after_initialize :ensure_session_token
     attr_reader :password
 
     has_many :following_lists
+    has_many :product_listings
 
     def self.find_by_credentials(username, password)
         user = User.find_by(username: username)

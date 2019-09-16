@@ -35,7 +35,6 @@ const filterSearch = (searchRes) => {      //[ARRAY OF OBJECTS B/C USED AS .THEN
         let item = searchRes[i];
         let getRetailPrice = item['searchable_traits'];
         let getImageUrl = item['media']
-        debugger
 
         let filteredItem = ({
             'title': item['name'],
@@ -77,6 +76,10 @@ export const seedDb = () => {
     postStockx("Kaws")
     postStockx("GOLF")
     postStockx("Polo")
+    postStockx("watch")
+    postStockx("Rollex")
+    postStockx("Gucci")
+    postStockx("Louis Vuitton")
     postStockx("Miscellaneous")
 }
 

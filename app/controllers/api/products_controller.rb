@@ -11,9 +11,9 @@ class Api::ProductsController < ApplicationController
     def create
         @product = Product.new(product_params)
         if @product.save
-            render 'api/products/show'
+            render 'api/product_listings/show'
         else
-            render json: ["Cannot create new product listing"], status: 401
+            render json: ["Cannot create new product"], status: 401
         end
     end
 

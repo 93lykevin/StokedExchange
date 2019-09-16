@@ -1012,8 +1012,10 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "related-products"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "related-product-banner"
-      }, "RELATED PRODUCTS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "related-products-banner-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "related-products-banner"
+      }, "RELATED PRODUCTS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "related-products-tile"
       }, related.map(function (product) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1024,7 +1026,9 @@ function (_React$Component) {
         }));
       }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "market-history"
-      }));
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "ticker"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Kevin & Mary & Mohit")));
     }
   }]);
 
@@ -1436,7 +1440,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
-  session: _session_errors_reducer__WEBPACK_IMPORTED_MODULE_1__["default"]
+  session: _session_errors_reducer__WEBPACK_IMPORTED_MODULE_1__["default"] // products: productsErrorsReducer,
+  // productListings: productListingsReducer
+
 }));
 
 /***/ }),
@@ -1934,7 +1940,6 @@ var filterSearch = function filterSearch(searchRes) {
     var item = searchRes[i];
     var getRetailPrice = item['searchable_traits'];
     var getImageUrl = item['media'];
-    debugger;
     var filteredItem = {
       'title': item['name'],
       'description': item['description'],
@@ -1975,6 +1980,10 @@ var seedDb = function seedDb() {
   postStockx("Kaws");
   postStockx("GOLF");
   postStockx("Polo");
+  postStockx("watch");
+  postStockx("Rollex");
+  postStockx("Gucci");
+  postStockx("Louis Vuitton");
   postStockx("Miscellaneous");
 }; // export const seedCreate = (search) => {
 //     postStockx(search).then(searchRes => {
