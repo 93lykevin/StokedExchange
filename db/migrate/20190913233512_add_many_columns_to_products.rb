@@ -48,4 +48,3 @@ end
 # //sales_last_72: int
 # # //searchable_traits: Retail Price: int === retail_price
 # # //description: string === desciption
-# //style_id: string

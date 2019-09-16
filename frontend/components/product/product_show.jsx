@@ -12,26 +12,24 @@ class ProductShow extends React.Component {
         this.props.requestProducts();
     }
 
-    relatedProducts() {
+    relatedProducts(category) {
         let related = [];
         let i = 0;
         if (Object.keys(this.props.products).length !== 0) {
             while (related.length < 5) {
                 let product_values = Object.values(this.props.products);
-                if (product_values[i].product_category === "sneakers") {
+                if (product_values[i].product_category === category) {
                     related.push(product_values[i])
                 }
                 i++;
             }
         }
-        console.log(related);
         return related;
     }
 
     render() {
-        let {title, model,condition, last_sale, lowest_ask, highest_bid, image_url, ticker_symbol, colorway, retail_price, release_date, description} = this.props.product;
-        let products = this.props.products;
-        let related = this.relatedProducts();
+        let {title, model,condition, last_sale, lowest_ask, highest_bid, image_url, ticker_symbol, colorway, retail_price, release_date, description, product_category} = this.props.product;
+        let related = this.relatedProducts(product_category);
         return(
             <div className="product-view"> 
                 <div className="">

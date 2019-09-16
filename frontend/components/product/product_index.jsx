@@ -9,7 +9,7 @@ class ProductIndex extends React.Component {
     }
 
     componentDidMount() {
-        seedDb();   //REMOVE THIS LATER. THIS IS JUST FOR TESTING. MOVE THIS TO INDIVIDUAL PRODUCT
+        // seedDb();   //REMOVE THIS LATER. THIS IS JUST FOR TESTING. MOVE THIS TO INDIVIDUAL PRODUCT
         this.props.requestProducts(); 
     }
 

@@ -600,8 +600,7 @@ function (_React$Component) {
   _createClass(ProductIndex, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      Object(_util_stockx_api_util__WEBPACK_IMPORTED_MODULE_3__["seedDb"])(); //REMOVE THIS LATER. THIS IS JUST FOR TESTING. MOVE THIS TO INDIVIDUAL PRODUCT
-
+      // seedDb();   //REMOVE THIS LATER. THIS IS JUST FOR TESTING. MOVE THIS TO INDIVIDUAL PRODUCT
       this.props.requestProducts();
     }
   }, {
@@ -836,7 +835,7 @@ function (_React$Component) {
     }
   }, {
     key: "relatedProducts",
-    value: function relatedProducts() {
+    value: function relatedProducts(category) {
       var related = [];
       var i = 0;
 
@@ -844,7 +843,7 @@ function (_React$Component) {
         while (related.length < 5) {
           var product_values = Object.values(this.props.products);
 
-          if (product_values[i].product_category === "sneakers") {
+          if (product_values[i].product_category === category) {
             related.push(product_values[i]);
           }
 
@@ -852,7 +851,6 @@ function (_React$Component) {
         }
       }
 
-      console.log(related);
       return related;
     }
   }, {
@@ -870,9 +868,9 @@ function (_React$Component) {
           colorway = _this$props$product.colorway,
           retail_price = _this$props$product.retail_price,
           release_date = _this$props$product.release_date,
-          description = _this$props$product.description;
-      var products = this.props.products;
-      var related = this.relatedProducts();
+          description = _this$props$product.description,
+          product_category = _this$props$product.product_category;
+      var related = this.relatedProducts(product_category);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "product-view"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
