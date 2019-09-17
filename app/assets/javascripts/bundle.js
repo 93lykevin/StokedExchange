@@ -1281,6 +1281,7 @@ function (_React$Component) {
     };
     _this.handleInput = _this.handleInput.bind(_assertThisInitialized(_this));
     _this.clearSearch = _this.clearSearch.bind(_assertThisInitialized(_this));
+    _this.handleBlur = _this.handleBlur.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -1301,27 +1302,31 @@ function (_React$Component) {
       });
       console.log(this.state.search_val);
       _util_product_api_util__WEBPACK_IMPORTED_MODULE_1__["searchProducts"](e.currentTarget.value).then(function (searchResults) {
-        // debugger
         return _this2.setState({
           products: Object.values(searchResults)
         });
-      }); //products => this.renderResults(products)
+      });
     }
   }, {
     key: "clearSearch",
-    value: function clearSearch() {
+    value: function clearSearch(e) {
+      e.currentTarget.value = "";
       this.setState({
         products: []
       });
-    } // renderResults(products) {
-    //     return(
-    //     Object.values(products).map(product => {
-    //             <SearchProduct 
-    //             product={product}/>
-    //         }
-    //     ))
-    // }
+    }
+  }, {
+    key: "handleBlur",
+    value: function handleBlur(e) {
+      var _this3 = this;
 
+      e.currentTarget.value = "";
+      setTimeout(function () {
+        _this3.setState({
+          products: []
+        });
+      }, 100);
+    }
   }, {
     key: "render",
     value: function render() {
@@ -1337,6 +1342,7 @@ function (_React$Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         className: "nav-search",
         onChange: this.handleInput,
+        onBlur: this.handleBlur,
         type: "text",
         name: "product",
         autoComplete: "off",

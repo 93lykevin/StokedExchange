@@ -18,6 +18,7 @@ class Greeting extends React.Component {
     componentDidMount() {
         this.props.requestProducts();
     }
+
     handleDemoLogin(e) {
         e.preventDefault();
         this.props.processForm(this.demoUser);
@@ -26,6 +27,8 @@ class Greeting extends React.Component {
     handleToggle(e) {
         this.props.clearErrors();
     }
+
+
 
     navBar() {
         return(

@@ -17,6 +17,7 @@ class SearchBar extends React.Component{
 
         this.handleInput = this.handleInput.bind(this);
         this.clearSearch = this.clearSearch.bind(this);
+        this.handleBlur = this.handleBlur.bind(this);
     }
     
 
@@ -31,26 +32,23 @@ class SearchBar extends React.Component{
 
         ProductAPIUtil.searchProducts(e.currentTarget.value)
             .then(searchResults => {
-                // debugger
                 return(
                 this.setState({products: Object.values(searchResults)}));
             })
-            //products => this.renderResults(products)
     }
 
-    clearSearch() {
-        this.setState({products: []})
+    clearSearch(e) {
+        e.currentTarget.value = "";
+        this.setState({products: []});
     }
 
-    // renderResults(products) {
-    //     return(
-    //     Object.values(products).map(product => {
-    //             <SearchProduct 
-    //             product={product}/>
-    //         }
-    //     ))
-    // }
-
+    handleBlur(e) {
+        e.currentTarget.value = "";
+        setTimeout(() => {
+            this.setState({ products: [] });
+        }, 100)
+    }
+    
     render() {
         let products = this.state.products
         return(
@@ -60,6 +58,7 @@ class SearchBar extends React.Component{
                     <i class="fas fa-search"></i>
                         <input className='nav-search'
                             onChange={this.handleInput}
+                            onBlur={this.handleBlur}
                             type="text"
                             name="product"
                             autoComplete="off"
