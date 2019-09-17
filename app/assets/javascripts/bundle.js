@@ -1164,6 +1164,7 @@ var Root = function Root(_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1184,6 +1185,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var SearchProduct =
 /*#__PURE__*/
 function (_React$Component) {
@@ -1198,7 +1200,8 @@ function (_React$Component) {
   _createClass(SearchProduct, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/product/".concat(this.props.product.id),
         className: "search-result"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "search-result-image",
@@ -1271,8 +1274,8 @@ function (_React$Component) {
       search_val: "",
       products: []
     };
-    _this.handleInput = _this.handleInput.bind(_assertThisInitialized(_this)); // this.renderResults = this.renderResults.bind(this)
-
+    _this.handleInput = _this.handleInput.bind(_assertThisInitialized(_this));
+    _this.clearSearch = _this.clearSearch.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -1298,6 +1301,13 @@ function (_React$Component) {
           products: Object.values(searchResults)
         });
       }); //products => this.renderResults(products)
+    }
+  }, {
+    key: "clearSearch",
+    value: function clearSearch() {
+      this.setState({
+        products: []
+      });
     } // renderResults(products) {
     //     return(
     //     Object.values(products).map(product => {
@@ -1316,7 +1326,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "product-search"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-        className: "simple-form"
+        className: "search-form"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         className: "nav-search",
         onChange: this.handleInput,
@@ -1326,7 +1336,8 @@ function (_React$Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "search-result-ul"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-item"
+        className: "list-item",
+        onClick: this.clearSearch
       }, products.map(function (product) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_search_product__WEBPACK_IMPORTED_MODULE_2__["default"], {
           key: product.id,

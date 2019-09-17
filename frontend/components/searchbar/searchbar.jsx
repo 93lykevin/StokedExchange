@@ -11,7 +11,7 @@ class SearchBar extends React.Component{
                         products: [] };
 
         this.handleInput = this.handleInput.bind(this);
-        // this.renderResults = this.renderResults.bind(this)
+        this.clearSearch = this.clearSearch.bind(this);
     }
 
     handleInput(e) {
@@ -32,6 +32,10 @@ class SearchBar extends React.Component{
             //products => this.renderResults(products)
     }
 
+    clearSearch() {
+        this.setState({products: []})
+    }
+
     // renderResults(products) {
     //     return(
     //     Object.values(products).map(product => {
@@ -46,14 +50,14 @@ class SearchBar extends React.Component{
         return(
             <div className="search-container">
                 <div className='product-search'>
-                    <form className="simple-form">
+                    <form className="search-form">
                         <input className='nav-search'
                             onChange={this.handleInput}
                             type="text"
                             name="product"
                             placeholder='Search for brand, color, etc.'/>
                         <ul className="search-result-ul">
-                            <li className="list-item">
+                            <li className="list-item" onClick={this.clearSearch}>
                                 {products.map(product => (
                                     <SearchProduct
                                         key={product.id}
