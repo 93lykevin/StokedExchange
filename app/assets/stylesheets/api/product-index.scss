@@ -64,9 +64,6 @@
     width: 1170px;
 }
 
-
-
-
 .side-nav-container {
     width: 16.6667%;
 }
@@ -92,6 +89,7 @@
     background: #252525;
     bottom: 0;
     left: 0;
+    z-index: 99;
 }
 .ticker h3 {
     font-size: 3em;

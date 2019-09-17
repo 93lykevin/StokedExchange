@@ -411,6 +411,7 @@
 
     .related-products-wrap{
         margin-bottom: 20px;
+        border-top: 1px solid #cecece;
 
         .container{
             width: 1170px;
@@ -453,5 +454,11 @@
                 }
             }
         }
+    }
+
+    .market-history-wrap{
+        height: 565px;
+        border-top: 1px solid #cecece;
+
     }
 }

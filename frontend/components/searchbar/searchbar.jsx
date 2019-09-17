@@ -43,10 +43,10 @@ class SearchBar extends React.Component{
     }
 
     handleBlur(e) {
-        e.currentTarget.value = "";
+        e.target.value = "";
         setTimeout(() => {
             this.setState({ products: [] });
-        }, 100)
+        }, 150)
     }
     
     render() {

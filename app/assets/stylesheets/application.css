@@ -41,7 +41,7 @@ color: #333333
 
 .main-container {
     position: relative;
-    height: 91vh;
+    /* height: 91vh; */
     margin-top: 90px;
     box-sizing: border-box;
 }
@@ -51,6 +51,14 @@ color: #333333
     height: 0px
 }
 
+.footer-container{
+    width: 100%;
+    min-height: 378px;
+    background-size: cover;
+    background-color: rgb(61, 61, 61);
+    position: relative;
+    bottom: 50px;
 
+}
 
 

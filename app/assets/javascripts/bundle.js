@@ -303,7 +303,7 @@ var App = function App() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "site-header"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: ""
+    className: "header-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_greeting_greeting_container__WEBPACK_IMPORTED_MODULE_3__["default"], null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "main-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_util_route_util__WEBPACK_IMPORTED_MODULE_8__["AuthRoute"], {
@@ -353,7 +353,11 @@ var App = function App() {
     exact: true,
     path: "/nike",
     component: _product_product_index_container__WEBPACK_IMPORTED_MODULE_6__["default"]
-  }))));
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "footer-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "footer-content"
+  }, "insert footer here")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
@@ -956,7 +960,7 @@ function (_React$Component) {
         className: "sale-value"
       }, "$", last_sale), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "last-sale-value"
-      }, "0  (0%)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, last_sale - lowest_ask, " (", Math.floor(retail_price / last_sale), "%)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "sale-size"
       }, "View All Sales"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "bid-button"
@@ -1044,7 +1048,7 @@ function (_React$Component) {
         className: "container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "product-market-summary"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "52 WEEK HIGH $", " | LOW $"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "TRADE RANGE (12 MOS.) $", " - $"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "VOLATILITY ", "%"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "52 WEEK HIGH $", lowest_ask + Math.floor(Math.random() * 20), " | LOW $", highest_bid + Math.floor(Math.random() * -20)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "TRADE RANGE (12 MOS.) $", highest_bid + Math.floor(Math.random() * -20), " - $", lowest_ask + Math.floor(Math.random() * 20)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "VOLATILITY ", (Math.random() * 100).toFixed(1), "%"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "related-products-wrap"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container"
@@ -1064,8 +1068,8 @@ function (_React$Component) {
           product: product
         }));
       }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "market-history"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "market-history-wrap"
+      }, "insert market history graphs and data here"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "ticker"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Kevin & Mary & Mohit")));
     }
@@ -1320,12 +1324,12 @@ function (_React$Component) {
     value: function handleBlur(e) {
       var _this3 = this;
 
-      e.currentTarget.value = "";
+      e.target.value = "";
       setTimeout(function () {
         _this3.setState({
           products: []
         });
-      }, 100);
+      }, 150);
     }
   }, {
     key: "render",

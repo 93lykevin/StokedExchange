@@ -28,8 +28,6 @@ class Greeting extends React.Component {
         this.props.clearErrors();
     }
 
-
-
     navBar() {
         return(
         <div className="nav-bar-container">

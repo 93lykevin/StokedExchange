@@ -11,7 +11,7 @@ const App = () => (
     <div className="app-container">
         <div className="site-header">
             <span></span>
-            <div className="">
+            <div className="header-container">
                 <GreetingContainer />
             </div>
         </div>
@@ -32,6 +32,11 @@ const App = () => (
                 <Route exact path="/nike" component={ProductIndexContainer}/>
                 {/* <Redirect to="/" /> */}
             </Switch>
+        </div>
+        <div className="footer-container">
+            <div className="footer-content">
+                insert footer here
+            </div>
         </div>
     </div>
 )

@@ -74,7 +74,7 @@ class ProductShow extends React.Component {
                                     <div className="last-sale">
                                         <h3>Last Sale</h3>
                                         <div className="sale-value">${last_sale}</div>
-                                        <div className="last-sale-value">0  (0%)</div>
+                                        <div className="last-sale-value">{last_sale - lowest_ask} ({Math.floor((retail_price / last_sale))}%)</div>
                                     </div>
                                     <div className="sale-size">View All Sales</div>
                                 </div>
@@ -147,9 +147,9 @@ class ProductShow extends React.Component {
                     <div className="container">
                         <div className="product-market-summary">
                             <ul>
-                                <li>52 WEEK HIGH ${} | LOW ${}</li>
-                                <li>TRADE RANGE (12 MOS.) ${} - ${}</li>
-                                <li>VOLATILITY {}%</li>
+                                <li>52 WEEK HIGH ${lowest_ask + Math.floor(Math.random() * 20)} | LOW ${highest_bid + Math.floor(Math.random() * -20)}</li>
+                                <li>TRADE RANGE (12 MOS.) ${highest_bid + Math.floor(Math.random() * -20)} - ${lowest_ask + Math. floor((Math.random() * 20))}</li>
+                                <li>VOLATILITY {(Math.random() *100).toFixed(1)}%</li>
                             </ul>
                         </div>
                     </div>
@@ -177,9 +177,8 @@ class ProductShow extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="market-history">
-
-
+                <div className="market-history-wrap">
+                    insert market history graphs and data here
                 </div>
                 
                 <div className="ticker">
