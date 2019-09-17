@@ -2,15 +2,27 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import ProductIndexItem from "./product_index_item";
 import {seedDb}  from '../../util/stockx_api_util';
+import Pagination from "react-js-pagination";
 
 class ProductIndex extends React.Component {
     constructor(props){
         super(props)
+
+        this.state = {
+            activePage: 25
+        };
+
+        this.handlePageChange = this.handlePageChange.bind(this)
     }
 
     componentDidMount() {
         // seedDb();   //REMOVE THIS LATER. THIS IS JUST FOR TESTING. MOVE THIS TO INDIVIDUAL PRODUCT
         this.props.requestProducts(); 
+    }
+
+    handlePageChange(pageNumber) {
+        console.log(`active page is ${pageNumber}`);
+        this.setState({activePage: pageNumber})
     }
 
     render() {
@@ -52,10 +64,20 @@ class ProductIndex extends React.Component {
                         ))}
                     </div>
                 </div>
+
+                {/* <div className="pagination">
+                    <Pagination
+                        activePage={this.state.activePage}
+                        itemsCountPerPage={10}
+                        totalItemsCount={20}
+                        onChange={this.handlePageChange}
+                    />
+                </div> */}
+
                 <div className="ticker">
                     <h3>Kevin & Mary & Mohit</h3>
                 </div>
-            </div>
+            </div>  
         )
     }
 }

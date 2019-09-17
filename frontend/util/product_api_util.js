@@ -15,7 +15,6 @@ export const fetchProduct = (id) => {
 }
 
 export const createProduct = (product) => {
-    // debugger
     return (
         $.ajax({
             method: 'POST',
@@ -39,3 +38,13 @@ export const deleteProduct = (id) => (
         url: `api/products/${id}`
     })
 )
+
+export const searchProducts = query => {
+    return(
+        $.ajax({
+            method: 'GET',
+            url: 'api/products/search',
+            data: { query }
+        })
+    )
+}

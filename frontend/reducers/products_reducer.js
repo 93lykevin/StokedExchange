@@ -1,7 +1,8 @@
 import { 
     RECEIVE_ALL_PRODUCTS,
     RECEIVE_PRODUCT,
-    DELETE_PRODUCT 
+    DELETE_PRODUCT,
+    RECEIVE_SEARCH
 }  from '../actions/product_actions'
 import merge from 'lodash/merge';
 
@@ -20,6 +21,8 @@ const productsReducer = (state={}, action) => {
         case DELETE_PRODUCT:
             delete newState[action.product.id];
             return newState;
+        case RECEIVE_SEARCH:
+            return action.results
         default:
             return state;
     }

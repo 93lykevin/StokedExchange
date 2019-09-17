@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SearchBarContainer from '../searchbar/searchbar_container';
     
 class Greeting extends React.Component {
     constructor(props){
@@ -32,6 +33,9 @@ class Greeting extends React.Component {
             <div className='nav-bar-main'>
                 <div className="logo-nav">
                     <Link to="/"><img src={window.streetxURL} alt="logo" className="logo"/></Link>
+                </div>
+                <div className="searchbar">
+                    <SearchBarContainer />
                 </div>
                 <div className="nav-bar-list-div">
                     {this.Welcome()}

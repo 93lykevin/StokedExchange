@@ -4,6 +4,7 @@ export const RECEIVE_PRODUCT = 'RECEIVE_PRODUCT';
 export const CREATE_PRODUCT = 'CREATE_PRODUCT';
 export const UPDATE_PRODUCT = 'UPDATE_PRODUCT';
 export const DELETE_PRODUCT = 'DELETE_PRODUCT';
+export const RECEIVE_SEARCH = 'RECEIVE_SEARCH';
 
 //REGULAR ACTION CREATORS
 const receiveAllProducts = (products) => ({
@@ -19,6 +20,11 @@ const receiveProduct = (product) => ({
 const removeProduct = (productId) => ({
     type: DELETE_PRODUCT,
     productId
+})
+
+const receiveSearch = (results) => ({
+    type: RECEIVE_SEARCH,
+    results
 })
 
 
@@ -41,4 +47,8 @@ export const updateProduct = (product) => dispatch => {
 
 export const deleteProduct = (id) => dispatch => {
     ProductAPIUtil.deleteProduct(id).then(productId => dispatch(removeProduct(productId)))
+}
+
+export const searchProducts = query => dispatch => {
+    ProductAPIUtil.searchProducts(query).then(results => dispatch(receiveSearch(results)))
 }
