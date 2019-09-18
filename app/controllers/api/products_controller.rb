@@ -38,7 +38,7 @@ class Api::ProductsController < ApplicationController
 
     def search
         query = params[:query].downcase
-
+        
         if params[:query].present?
             @products = Product.where('LOWER(brand) ~ :query OR LOWER(title) ~ :query OR LOWER(colorway) ~ :query OR LOWER(object_identifier) ~ :query OR LOWER(product_category) ~ :query', query: query).limit(5)
         else

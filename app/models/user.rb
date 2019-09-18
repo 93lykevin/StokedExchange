@@ -11,8 +11,13 @@ class User < ApplicationRecord
     after_initialize :ensure_session_token
     attr_reader :password
 
-    has_many :following_lists
-    has_many :product_listings
+    has_many :following_lists,
+    foreign_key: :user_id,
+    class_name: :FollowingList
+
+    has_many :product_listings,
+    foreign_key: :seller_id,
+    class_name: :ProductListing
 
     def self.find_by_credentials(username, password)
         user = User.find_by(username: username)

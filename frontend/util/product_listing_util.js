@@ -12,13 +12,16 @@ export const fetchProductListing = (id) => (
     })
 )
 
-export const createProductListing = (product_listing) => (
-    $.ajax({
-        method: 'POST',
-        url: 'api/product_listings',
-        data: {product_listing}
-    })
-)
+export const createProductListing = (product_listing) => {
+    return(
+        $.ajax({
+            method: 'POST',
+            url: 'api/product_listings',
+            data: {product_listing}
+        })
+    )
+}
+
 
 export const updateProductListing = (product_listing) => (
     $.ajax({

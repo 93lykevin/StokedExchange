@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductIndexItem from './product_index_item';
+import { Link } from 'react-router-dom';
 import { throws } from 'assert';
 
 class ProductShow extends React.Component {
@@ -82,7 +83,7 @@ class ProductShow extends React.Component {
 
                             <div className="bid-button">
                                 <div className="inner">
-                                    <div className="button-container">
+                                    <Link to={`/buy/${this.props.product.id}`}className="button-container">
                                         <div className="stats">
                                             <div className="stat-value">${lowest_ask}</div>
                                             <h3>Lowest Ask</h3>
@@ -92,7 +93,7 @@ class ProductShow extends React.Component {
                                             <h2>Buy</h2>
                                             <div className="or-bid">or Bid</div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </div>
 
                                 <div className="sale-size">
@@ -104,7 +105,7 @@ class ProductShow extends React.Component {
 
                             <div className="bid-button">
                                 <div className="inner">
-                                    <div className="button-container" id="button-container-sell">
+                                    <Link to={`/sell/${this.props.product.id}`} className="button-container" id="button-container-sell">
                                         <div className="stats">
                                             <div className="stat-value">${highest_bid}</div>
                                             <h3 id="sell">Highest Bid</h3>
@@ -114,7 +115,7 @@ class ProductShow extends React.Component {
                                             <h2>Sell</h2>
                                             <div className="or-bid" id="sell">or Ask</div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </div>
 
                                 <div className="sale-size">

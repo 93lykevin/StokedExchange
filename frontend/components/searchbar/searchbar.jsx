@@ -28,8 +28,6 @@ class SearchBar extends React.Component{
         }
         this.setState({ search_val: e.currentTarget.value });
 
-        console.log(this.state.search_val);
-
         ProductAPIUtil.searchProducts(e.currentTarget.value)
             .then(searchResults => {
                 return(
@@ -55,7 +53,7 @@ class SearchBar extends React.Component{
             <div className="search-container">
                 <div className='product-search'>
                     <form className="search-form">
-                    <i class="fas fa-search"></i>
+                    <i className="fas fa-search"></i>
                         <input className='nav-search'
                             onChange={this.handleInput}
                             onBlur={this.handleBlur}

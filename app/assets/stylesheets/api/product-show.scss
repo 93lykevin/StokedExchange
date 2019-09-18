@@ -206,7 +206,7 @@
                         display: flex;
                         justify-content: space-around;
                         align-items: center;
-                        padding: 13px, 7px, 5px;
+                        padding: 13px 7px 5px;
                         margin: auto;
                         border-radius: 5px;
                         width: 100%;
@@ -445,6 +445,7 @@
                 .related-products-tile{
                     display: flex;
                     flex-direction: row;
+                    justify-content: center;
                     overflow-x: auto;
                     margin: 0 -8px;
 

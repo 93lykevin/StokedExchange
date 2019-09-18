@@ -1,5 +1,5 @@
 class ProductListing < ApplicationRecord
-    validates :product_id, :seller_id, :selling_price, :condition, :size,  presence: true
+    validates :selling_price, :condition, :size,  presence: true
     
     belongs_to :seller,
     foreign_key: :seller_id,
