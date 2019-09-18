@@ -1,10 +1,10 @@
 import * as ProdListUtil from '../util/product_listing_util';
-export const RECEIVE_ALL_LISTINGS = 'RECEIVE_LIALL_STINGS';
+export const RECEIVE_ALL_LISTINGS = 'RECEIVE_ALL_LISTINGS';
 export const RECEIVE_LISTING = 'RECEIVE_LISTING';
 export const DELETE_LISTING = 'DELETE_LISTING';
 
-const receiveAllistings = (listings) => ({
-    type: RECEIVE_LALL_ISTINGS,
+const receiveAllListings = (listings) => ({
+    type: RECEIVE_ALL_ISTINGS,
     listings
 })
 
@@ -18,22 +18,22 @@ const removeListing = (listingId) => ({
     listingId
 })
 
-export const requestListings = () => dispatch => {
-    ProdListUtil.requestListings().then((listings) => dispatch(receiveAllistings(listings)))
+export const fetchProductListings = () => dispatch => {
+    ProdListUtil.fetchProductListings().then((listings) => dispatch(receiveAllListings(listings)))
 }
 
-export const requestListing = (id) => dispatch => {
-    ProdListUtil.requestListing(id).then(listing => dispatch(receiveListing(listing)))
+export const fetchProductListing = (id) => dispatch => {
+    ProdListUtil.fetchProductListing(id).then(listing => dispatch(receiveListing(listing)))
 }
 
-export const createListing = (listing) =>  dispatch => {
-    ProdListUtil.createListing(listing).then(listing => dispatch(receiveListing(listing)))
+export const createProductListing = (listing) =>  dispatch => {
+    ProdListUtil.createProductListing(listing).then(listing => dispatch(receiveListing(listing)))
 }
 
-export const updateListing = (listing) => dispatch => {
-    ProdListUtil.updateListing(listing).then(listing => dispatch(receiveListing(listing)))
+export const updateProductListing = (listing) => dispatch => {
+    ProdListUtil.updateProductListing(listing).then(listing => dispatch(receiveListing(listing)))
 }
 
-export const deleteListing = (id) => dispatch => { 
-    ProdListUtil.deleteListing(id).then(listingId => dispatch(removeListing(listingId)))
+export const deleteProductListing = (id) => dispatch => { 
+    ProdListUtil.deleteProductListing(id).then(listingId => dispatch(removeListing(listingId)))
 }

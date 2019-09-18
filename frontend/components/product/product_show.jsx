@@ -168,11 +168,9 @@ class ProductShow extends React.Component {
 
                             <div className="related-products-tile">
                                 {related.map(product => (
-                                    <div className="related-product-item">
-                                        <ProductIndexItem 
-                                        key={product.id}
-                                        product={product} />
-                                    </div>
+                                    <ProductIndexItem 
+                                    key={product.id}
+                                    product={product} />
                                 ))}
                             </div>
                         </div>

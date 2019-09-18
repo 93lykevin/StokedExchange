@@ -7,6 +7,7 @@ import SignupFormContainer from './session_form/signup_form_container';
 import ProductIndexContainer from './product/product_index_container';
 import ProductShowContainer from './product/product_show_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
+import SellFormContainer from './product_listing/sell_form_container';
 const App = () => (
     <div className="app-container">
         <div className="site-header">
@@ -20,7 +21,8 @@ const App = () => (
             <Switch>
                 <AuthRoute exact path="/login" component={LoginFormContainer}/>
                 <AuthRoute exact path="/signup" component={SignupFormContainer}/>
-                <AuthRoute exact path="/sell" component={SignupFormContainer}/>
+                <ProtectedRoute exact path="/sell" component={SignupFormContainer}/>
+                <ProtectedRoute exact path="/sell/:id" component={SellFormContainer}/>
                 <Route exact path="/index" component={ProductIndexContainer} />
                 <Route path="/product/:id" component={ProductShowContainer} />
                 <Route exact path="/supreme" component={ProductIndexContainer}/>

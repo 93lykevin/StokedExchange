@@ -16,7 +16,7 @@ class Greeting extends React.Component {
     }
 
     componentDidMount() {
-        this.props.requestProducts();
+        // this.props.requestProducts();
     }
 
     handleDemoLogin(e) {

@@ -22,7 +22,6 @@ export const createProductListing = (product_listing) => {
     )
 }
 
-
 export const updateProductListing = (product_listing) => (
     $.ajax({
         method: 'PATCH',

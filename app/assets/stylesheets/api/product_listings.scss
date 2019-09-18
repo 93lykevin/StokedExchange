@@ -1,3 +1,75 @@
 // Place all the styles related to the api/product_listings controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.split-pane{
+
+    .split{
+        min-height: calc(100vh - 90px);
+        display: flex;
+        justify-content: center;
+        flex-flow: row nowrap;
+
+        .pane.sixty-from-product {
+            width: 60%;
+
+            .buy-sell-header{ //==buy-sell-header
+
+                .pane-header{
+                    text-align: center;
+                    padding: 30px 0 0;
+                    
+                    h1{
+                        font-weight: 600;
+                        font-size: 28px;
+                        letter-spacing: 0;
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+                    }
+                    
+                    .market-summary{
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                        text-align: center;
+                    }
+
+                    .buy-sell-image-container{
+                        width: 80%;
+                        margin: auto;
+                        padding-top: 30px;
+
+                        img{
+                            max-width: 100%;
+                            vertical-align: middle;
+                            border: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .fourty-create-listing-form{
+            width: 40%;
+        }
+    }
+
+}
+
+.grey{
+    color: rgb(51, 51, 51);
+    font-size: 16px;
+    text-align: center;
+}
+
+.bold{
+    color: rgb(51, 51, 51);
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.pane{
+    padding: 0 30px 100px;
+
+}

@@ -1,19 +1,20 @@
-//BUY LISTING SHALL BE EXTRA
 import React from 'react';
-import { conenct } from 'react-router-dom';
+import { connect } from 'react-redux';
 import { createProductListing } from '../../util/product_listing_util';
 import ProductListingForm from './product_listing_form';
+// import { clearErrors } from '../../actions/product_listing_actions';
 
 const mapStateToProps = (state, ownProps) => {
-    return({
+    return ({
         errors: errors.product_listings,
+        userId: state.session.currentUser.id,
         product: state.entities.products[ownProps.match.params.id],
         formType: 'buy'
     })
 }
 
 const mapDispatchToProps = dispatch => ({
-    processForm: listing => dispatch(createProductListing(listing)) //change for BUY
+    // processForm: productListing => dispatch(createProductListing(productListing)) //change for BUY
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductListingForm);
