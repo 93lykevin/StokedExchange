@@ -11,6 +11,7 @@ import SellFormContainer from './product_listing/sell_form_container';
 import BuyFormContainer from './product_listing/buy_form_container';
 import SplashContainer from './splash/splash_container';
 import SellListingContainer from './product_listing/sell_listings_container';
+// import BuyListingContainer from './product_listing/buy_listings_container';
 
 const App = () => (
     <div className="app-container">
@@ -29,6 +30,7 @@ const App = () => (
                 <ProtectedRoute exact path="/sell/:id" component={SellFormContainer}/>
                 <ProtectedRoute exact path="/selling/" component={SellListingContainer}/>
                 <ProtectedRoute exact path="/buy/:id" component={BuyFormContainer}/>
+                {/* <ProtectedRoute exact path="/buying/" component={BuyListingContainer}/> */}
                 <Route path="/product/:id" component={ProductShowContainer} />
                 <Route exact path="/index" component={ProductIndexContainer} />
                 <Route path="/" component={SplashContainer} />

@@ -1,9 +1,9 @@
-export const fetchProductListings = () => {
+export const fetchProductListings = () => (
     $.ajax({
         method: 'GET',
         url: 'api/product_listings'
     })
-}
+)
 
 export const fetchProductListing = (id) => (
     $.ajax({

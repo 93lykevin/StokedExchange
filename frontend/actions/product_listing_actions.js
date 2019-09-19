@@ -5,7 +5,7 @@ export const DELETE_LISTING = 'DELETE_LISTING';
 export const RECEIVE_BUY_LISTING = 'RECEIVE_BUY_LISTING';
 
 const receiveAllListings = (listings) => ({
-    type: RECEIVE_ALL_ISTINGS,
+    type: RECEIVE_ALL_LISTINGS,
     listings
 })
 
@@ -25,7 +25,7 @@ const receiveBuyListing = (buyListing) => ({
 })
 
 export const fetchProductListings = () => dispatch => {
-    ProdListUtil.fetchProductListings().then((listings) => dispatch(receiveAllListings(listings)))
+    ProdListUtil.fetchProductListings().then(listings => dispatch(receiveAllListings(listings)))
 }
 
 export const fetchProductListing = (id) => dispatch => {

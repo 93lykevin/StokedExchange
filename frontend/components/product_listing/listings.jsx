@@ -1,4 +1,5 @@
 import React from 'react';
+import ListingItem from './listing_item';
 
 class Listings extends React.Component{
     constructor(props){
@@ -6,11 +7,10 @@ class Listings extends React.Component{
     }
 
     componentDidMount(){
-        this.props.fetchProductListings;
+        this.props.fetchProductListings();
     }
 
-    render(){
-
+    render() {
         return(
             <div className="dashboard-container">
                 <div className="dashboard-sidebar"></div>
@@ -34,21 +34,38 @@ class Listings extends React.Component{
                                     </div>
 
                                     <div className="portfolio-table">
-                                        <div className="portfolio-header"></div>
-                                        <div className="portfolio-items">
-                                            INSERT LISTING_ITEMS HERE
-                                        </div>
+                                        <table className="table">
+                                            <thead>
+                                                <tr className="portfolio-header">
+                                                    <th className="item"></th>
+                                                    <th className="bid-price"></th>
+                                                    <th className="highest-bid"></th>
+                                                    <th className="lowest-ask"></th>
+                                                    <th className="expires"></th>
+                                                    <th className="update-destroy"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="portfolio-items">
+                                                {Object.values(this.props.listings).map(listing => (
+                                                    <ListingItem 
+                                                    key={listing.id}
+                                                    listing={listing}/>
+                                                ))}
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
         )
     }
+}
+
+Listings.defaultProps = {
+    listings: {}
 }
 
 export default Listings

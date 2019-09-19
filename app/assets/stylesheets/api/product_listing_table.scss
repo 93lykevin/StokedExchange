@@ -55,14 +55,40 @@
                         .portfolio-table{
                             margin-bottom: 50px;
 
-                            .portfolio-header{
+                            .table{
+                                table-layout: fixed;
                                 width: 100%;
-                                margin-bottom: 10px;
                                 color: #4a4a4a;
-                            }
+                                border-collapse: collapse;
+                                border-spacing: 0;
 
-                            .portfolio-items{
-                                
+                                thead{
+                                    .portfolio-header{
+                                        display: table-header-group;
+                                        vertical-align: middle;
+                                        border-color: inherit;
+                                        cursor: pointer;
+                                        background-color: #fff;
+                                        display: table-row;
+
+                                        th{
+                                            border-top: 0;
+                                            cursor: pointer;
+                                            border-bottom-color: #e5e7ea;
+                                            border-right: 1px solid #e5e7ea;
+                                            padding: 3px 8px;
+                                            font-size: 12px;
+                                            vertical-align: bottom;
+                                            border-bottom-color: 2px solid #ddd;
+                                        }
+                                    }
+                                }
+
+                                .portfolio-items{
+                                    display: table-row-group;
+                                    vertical-align: middle;
+                                    border-color: inherit;
+                                }
                             }
                         }
                     }

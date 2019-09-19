@@ -5,16 +5,19 @@ class Api::ProductListingsController < ApplicationController
     before_action :require_login, only: [:index, :create, :update, :destroy]
     
     def index
+        @current_user = current_user;
         @product_listings = ProductListing.all
         render 'api/product_listings/index'
     end
 
     def show
+        @current_user = current_user
         @product_listing = ProductListing.find(params[:id])
         render 'api/product_listings/show'
     end
 
     def create
+        @current_user = current_user;
         @product_listing = current_user.product_listings.new(product_listing_params);   
         if @product_listing.save!
             # @product = Product.find(product_listing.product_id)
@@ -26,6 +29,7 @@ class Api::ProductListingsController < ApplicationController
     end
 
     def update
+        @current_user = current_user;
         @product_listing = current_user.product_listing.find(params[:id])
         if @product_listing.update(product_listing_params)
             render 'api/product_listings/show'
@@ -35,6 +39,7 @@ class Api::ProductListingsController < ApplicationController
     end
 
     def destroy
+        @current_user = current_user;
         @product_listing = current_user.product_listing.find(params[:id])
         if @product_listing.destroy
             render 'api/product_listings/show'
