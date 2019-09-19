@@ -2,9 +2,8 @@
 class Api::ProductListingsController < ApplicationController
     # include ProductListingsHelper
     
-    before_action :require_login, only: [:create, :update, :destroy]
+    before_action :require_login, only: [:index, :create, :update, :destroy]
     
-    # can I show an index of product listings? no? it's just my regular products index
     def index
         @product_listings = ProductListing.all
         render 'api/product_listings/index'
@@ -16,11 +15,11 @@ class Api::ProductListingsController < ApplicationController
     end
 
     def create
-        product_listing = current_user.product_listings.new(product_listing_params);   
-        if product_listing.save!
-            # redirect_to
-            @product = Product.find(product_listing.product_id)
-            render 'api/products/show/'
+        @product_listing = current_user.product_listings.new(product_listing_params);   
+        if @product_listing.save!
+            # @product = Product.find(product_listing.product_id)
+            # render 'api/products/show/'
+            render 'api/product_listings/show/'
         else
             render json: ['Cannot create new product listing'], status: 422
         end
@@ -45,6 +44,6 @@ class Api::ProductListingsController < ApplicationController
     end
     
     def product_listing_params
-        params.require(:product_listing).permit(:product_id, :price, :condition, :size)
+        params.require(:product_listing).permit(:seller_id, :product_id, :price, :condition, :size)
     end
 end

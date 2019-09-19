@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { requestProducts } from '../../actions/product_actions';
-import splash from './product_index';
+import Splash from './splash';
 
 const mapStateToProps = (state, ownProps) => {
-    return ({
+    return({
         products: Object.keys(state.entities.products).map(
             id => state.entities.products[id]
         )

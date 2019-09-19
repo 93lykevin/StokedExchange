@@ -2,6 +2,9 @@ import React from 'react';
 import SizeButton from './size-button';
 import {withRouter, Redirect} from 'react-router-dom';
 
+//BUY product listing can't specify which exact listing to buy. 
+//It will place a bid and then will query the database and remove the listing with the lowest price 
+//that matches the productID 
 class ProductListingForm extends React.Component {
     constructor(props){
         super(props)

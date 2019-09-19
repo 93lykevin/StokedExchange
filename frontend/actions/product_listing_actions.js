@@ -2,6 +2,7 @@ import * as ProdListUtil from '../util/product_listing_util';
 export const RECEIVE_ALL_LISTINGS = 'RECEIVE_ALL_LISTINGS';
 export const RECEIVE_LISTING = 'RECEIVE_LISTING';
 export const DELETE_LISTING = 'DELETE_LISTING';
+export const RECEIVE_BUY_LISTING = 'RECEIVE_BUY_LISTING';
 
 const receiveAllListings = (listings) => ({
     type: RECEIVE_ALL_ISTINGS,
@@ -18,6 +19,11 @@ const removeListing = (listingId) => ({
     listingId
 })
 
+const receiveBuyListing = (buyListing) => ({
+    type: RECEIVE_BUY_LISTING,
+    buyListing
+})
+
 export const fetchProductListings = () => dispatch => {
     ProdListUtil.fetchProductListings().then((listings) => dispatch(receiveAllListings(listings)))
 }
@@ -31,6 +37,10 @@ export const createProductListing = (listing) =>  dispatch => {
     ProdListUtil.createProductListing(listing).then(listing => dispatch(receiveListing(listing)))
     )
 }
+
+// export const createBuyListing = (buyListing) => dispatch => (
+//     ProdListUtil.createBuyProductListing(buyListing).then(buyListing => dispatch(receiveBuyListing(buyListing)))
+// )
 
 export const updateProductListing = (listing) => dispatch => {
     ProdListUtil.updateProductListing(listing).then(listing => dispatch(receiveListing(listing)))

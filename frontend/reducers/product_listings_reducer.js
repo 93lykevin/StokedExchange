@@ -1,6 +1,7 @@
 import {
     RECEIVE_ALL_LISTINGS,
     RECEIVE_LISTING,
+    RECEIVE_BUY_LISTING,
     DELETE_LISTING
 } from '../actions/product_listing_actions'
 import merge from 'lodash/merge';

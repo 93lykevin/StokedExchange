@@ -9,6 +9,8 @@ import ProductShowContainer from './product/product_show_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import SellFormContainer from './product_listing/sell_form_container';
 import BuyFormContainer from './product_listing/buy_form_container';
+import SplashContainer from './splash/splash_container';
+import SellListingContainer from './product_listing/sell_listings_container';
 
 const App = () => (
     <div className="app-container">
@@ -21,21 +23,17 @@ const App = () => (
 
         <div className="main-container">
             <Switch>
-                <AuthRoute exact path="/login" component={LoginFormContainer}/>
-                <AuthRoute exact path="/signup" component={SignupFormContainer}/>
+                <AuthRoute exact path="/login" component={LoginFormContainer} />
+                <AuthRoute exact path="/signup" component={SignupFormContainer} />
                 <ProtectedRoute exact path="/sell" component={SignupFormContainer}/>
                 <ProtectedRoute exact path="/sell/:id" component={SellFormContainer}/>
+                <ProtectedRoute exact path="/selling/" component={SellListingContainer}/>
                 <ProtectedRoute exact path="/buy/:id" component={BuyFormContainer}/>
-                <Route exact path="/index" component={ProductIndexContainer} />
                 <Route path="/product/:id" component={ProductShowContainer} />
-                <Route exact path="/supreme" component={ProductIndexContainer}/>
-                <Route exact path="/bape" component={ProductIndexContainer}/>
-                <Route exact path="/kith" component={ProductIndexContainer}/>
-                <Route exact path="/palace" component={ProductIndexContainer}/>
-                <Route exact path="/fearofgod" component={ProductIndexContainer}/>
-                <Route exact path="/offwhite" component={ProductIndexContainer}/>
-                <Route exact path="/nike" component={ProductIndexContainer}/>
-                {/* <Redirect to="/" /> */}
+                <Route exact path="/index" component={ProductIndexContainer} />
+                <Route path="/" component={SplashContainer} />
+               
+                <Redirect to="/"/>
             </Switch>
         </div>
         {/* <div className="footer-container">

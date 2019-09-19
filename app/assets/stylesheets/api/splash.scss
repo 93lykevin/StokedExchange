@@ -1,0 +1,202 @@
+.splash{
+    padding-top: 0;
+    min-height: 100%;
+    position: relative;
+    
+    .splash-header{
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #000;
+        text-align: center;
+
+        margin-top: 0px;
+        padding-top: 91px;
+
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+
+
+        .splash-jumbo{
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding-top: 30px;
+            margin-top: 20px;
+
+            .splash-little{
+                letter-spacing: 3px;
+                margin-bottom: 9px;
+            }
+
+            .splash-big{
+                font-weight: 700;
+                letter-spacing: 2px;
+                margin: auto;
+                width: 98%;
+                font-size: 50px;
+            }
+
+            .splash-search-container{
+                margin: auto;
+                max-width: 980px;
+                padding-left: 15px;
+                padding-right: 15px;
+                width: 1170px;
+
+                .splash-search-wrapper{
+                    line-height: 20px;
+                    height: 60px;
+                    margin: 10px auto 15px;
+                    
+                    .splash-search-control{
+                        width: 90%;
+                        margin-left: 5%;
+
+                        .splash-row{
+                            display: flex;
+                            justify-content: space-between;
+
+                            .splash-searchbar{
+                                position: relative;
+                                flex-grow: 1;
+                                margin-right: 20px;
+                            }
+                            
+                            .splash-search-browseall{
+                                margin: 0;
+                                border-radius: 5px;
+                                border: none;
+                                font-size: 22px;
+                                letter-spacing: 2px;
+                                height: 50px;
+                                background: #509e2f;
+                                background-color: #509e2f;
+                                padding: 10px 15px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .splash-categories{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: auto;
+        font-weight: 400;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 25px;
+        // width: 50%;
+        
+        div{
+        font-size: 26px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        color: white;
+        cursor: pointer;
+        margin: 10px 25px 0px;
+        border-bottom: 4px solid transparent;
+        }
+    }
+    
+    .splash-banner{
+        position: relative;
+        height: 190px;
+        overflow: hidden;
+        border-bottom: 1px solid rgb(206, 206, 206);
+    }
+
+    .splash-center{
+        width: 1170px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .popular-brands-header{
+            margin-top: 24px;
+            width: 100%;
+            font-size: 22px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 16px;
+        }
+
+        .popular-brands-row{
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            margin: 0px -8px;
+
+            .popular-brands-image{
+                width: 25%;
+                display: inline-block;
+                padding: 0px 8px;
+            }
+        }
+
+        .popular-items{
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            margin: 0px -8px;
+
+            .popular-items-row{
+                display: flex;
+                padding: 0px 8px;
+            }
+        }
+
+        .browse-button-div{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .browse-button{
+                cursor: pointer;
+                display: inline-block;
+                background-color: rgb(80, 158, 47);
+                color: white;
+                font-family: proxima-nova, sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center;
+                padding: 25px 30px 22px;
+                margin: 45px auto;
+                border-radius: 4px;
+            }
+        }
+
+        .new-releases-container{
+            display: flex;
+            flex-flow: row wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+
+            .new-releases-column{
+                width: 33%;
+                border-bottom: 1px solid #ececec;
+                padding: 0;
+                float: left;
+            }
+
+            .new-releases-items{
+                width: 66.66667%;
+                float: left;
+            }
+        }
+    }
+    
+}
