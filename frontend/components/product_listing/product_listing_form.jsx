@@ -8,7 +8,13 @@ class ProductListingForm extends React.Component {
 
         this.apparelSizes = ['XS', 'S', 'M', 'L', 'XL'];
         this.sneakerSizes = ['4', '4.5', '5', '5.5', '6', '6.5', '7', '7.5', '8', '8.5', '9', '9.5', '10', '10.5', '11', '11.5', '12', '12.5', '13', '14', '15', '16', '17', '18'];
-        this.state = { size: "", }
+
+        this.state = { 
+            size: "",
+            product_id: this.props.match.params.id,
+            price: 0,
+            condition: "NEW"
+        }
         
         this.handleSelectSize = this.handleSelectSize.bind(this);
         this.handleCancel = this.handleCancel.bind(this);
@@ -31,8 +37,15 @@ class ProductListingForm extends React.Component {
 
     handleCreate(e) {
         e.preventDefault();
+        const productListing = Object.assign({}, this.state);
+        this.props.processForm(productListing);
+        this.props.history.push(`/product/${productListing.product_id}`);
+    }
 
-        this.props.processForm(productListing)
+    update(field) {
+        return e => this.setState({
+            [field]: e.currentTarget.value
+        });
     }
 
     selectSize() {
@@ -80,7 +93,8 @@ class ProductListingForm extends React.Component {
                     <div className="price-input-container">
                         <div className="price-input">
                             <div className="price-input-decoration">$</div>
-                            <input type="text" className="enter-price" placeholder="Enter Amount"/>
+                            <input type="text" className="enter-price" placeholder="Enter Amount"
+                                onChange={this.update('price')}/>
                         </div>
                     </div>
 

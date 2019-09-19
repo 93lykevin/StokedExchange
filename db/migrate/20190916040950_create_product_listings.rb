@@ -3,7 +3,7 @@ class CreateProductListings < ActiveRecord::Migration[5.2]
     create_table :product_listings do |t|
       t.integer :product_id, null: false
       t.integer :seller_id, null: false
-      t.integer :selling_price, null: false
+      t.integer :price, null: false
       t.string :condition, null: false
       t.string :size, null: false
       t.timestamps

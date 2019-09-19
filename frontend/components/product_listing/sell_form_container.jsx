@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { createProductListing } from '../../util/product_listing_util';
+import { createProductListing } from '../../actions/product_listing_actions';
 import ProductListingForm from './product_listing_form';
 import { requestProduct } from '../../actions/product_actions';
 // import { clearErrors } from '../../actions/product_listing_actions';

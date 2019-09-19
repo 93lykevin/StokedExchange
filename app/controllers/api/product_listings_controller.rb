@@ -11,15 +11,16 @@ class Api::ProductListingsController < ApplicationController
     end
 
     def show
-        debugger
         @product_listing = ProductListing.find(params[:id])
         render 'api/product_listings/show'
     end
 
     def create
-        @product_listing = current_user.product_listings.new(product_listing_params);   
-        if @product_listing.save!
-            render 'api/product_listings/show'
+        product_listing = current_user.product_listings.new(product_listing_params);   
+        if product_listing.save!
+            # redirect_to
+            @product = Product.find(product_listing.product_id)
+            render 'api/products/show/'
         else
             render json: ['Cannot create new product listing'], status: 422
         end
@@ -44,6 +45,6 @@ class Api::ProductListingsController < ApplicationController
     end
     
     def product_listing_params
-        params.require(:product_listing).permit(:product_id, :selling_price, :condition, :size)
+        params.require(:product_listing).permit(:product_id, :price, :condition, :size)
     end
 end

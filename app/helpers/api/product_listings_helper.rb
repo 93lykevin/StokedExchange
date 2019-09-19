@@ -17,7 +17,7 @@ module Api::ProductListingsHelper
                     size = 'NA'
                 end
                 
-            ProductListing.create!(product_id: product.id, seller_id: users[rand(users.length)].id, selling_price: product.lowest_ask + rand(-10...10), condition: conditions[rand(conditions.length)], size: size[rand(size.length)]) 
+            ProductListing.create!(product_id: product.id, seller_id: users[rand(users.length)].id, price: product.lowest_ask + rand(-10...10), condition: conditions[rand(conditions.length)], size: size[rand(size.length)]) 
         end
     end
 end

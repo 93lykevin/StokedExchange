@@ -27,7 +27,9 @@ export const fetchProductListing = (id) => dispatch => {
 }
 
 export const createProductListing = (listing) =>  dispatch => {
+    return(
     ProdListUtil.createProductListing(listing).then(listing => dispatch(receiveListing(listing)))
+    )
 }
 
 export const updateProductListing = (listing) => dispatch => {
