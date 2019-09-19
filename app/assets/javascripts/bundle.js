@@ -370,6 +370,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _product_product_show_container__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./product/product_show_container */ "./frontend/components/product/product_show_container.jsx");
 /* harmony import */ var _util_route_util__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../util/route_util */ "./frontend/util/route_util.jsx");
 /* harmony import */ var _product_listing_sell_form_container__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./product_listing/sell_form_container */ "./frontend/components/product_listing/sell_form_container.jsx");
+/* harmony import */ var _product_listing_buy_form_container__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./product_listing/buy_form_container */ "./frontend/components/product_listing/buy_form_container.jsx");
+
 
 
 
@@ -406,6 +408,10 @@ var App = function App() {
     exact: true,
     path: "/sell/:id",
     component: _product_listing_sell_form_container__WEBPACK_IMPORTED_MODULE_9__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_util_route_util__WEBPACK_IMPORTED_MODULE_8__["ProtectedRoute"], {
+    exact: true,
+    path: "/buy/:id",
+    component: _product_listing_buy_form_container__WEBPACK_IMPORTED_MODULE_10__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     exact: true,
     path: "/index",
@@ -441,11 +447,7 @@ var App = function App() {
     exact: true,
     path: "/nike",
     component: _product_product_index_container__WEBPACK_IMPORTED_MODULE_6__["default"]
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-content"
-  }, "insert footer here")));
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
@@ -610,7 +612,7 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 ;
-/* harmony default export */ __webpack_exports__["default"] = (Greeting);
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(Greeting));
 
 /***/ }),
 
@@ -873,13 +875,14 @@ function (_React$Component) {
     _classCallCheck(this, ProductIndexItem);
 
     return _possibleConstructorReturn(this, _getPrototypeOf(ProductIndexItem).call(this, props));
-  }
+  } //I would want to make an API request to stockX to update the attributes every time a product mounts
+  //However, I have not figured out a way to fetch a particular product yet.
+  // componentDidMount() {
+  // updateItemStockx()
+  // }
+
 
   _createClass(ProductIndexItem, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {// updateItemStockx()
-    }
-  }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1127,7 +1130,7 @@ function (_React$Component) {
         className: "detail"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "span-title"
-      }, "RETAIL PRICE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, retail_price)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "RETAIL PRICE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "$", retail_price)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "detail"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "span-title"
@@ -1216,6 +1219,52 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 
 /***/ }),
 
+/***/ "./frontend/components/product_listing/buy_form_container.jsx":
+/*!********************************************************************!*\
+  !*** ./frontend/components/product_listing/buy_form_container.jsx ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _util_product_listing_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../util/product_listing_util */ "./frontend/util/product_listing_util.js");
+/* harmony import */ var _product_listing_form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./product_listing_form */ "./frontend/components/product_listing/product_listing_form.jsx");
+/* harmony import */ var _actions_product_actions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../actions/product_actions */ "./frontend/actions/product_actions.js");
+
+
+
+
+
+
+var mapStateToProps = function mapStateToProps(state, ownProps) {
+  return {
+    product: state.entities.products[ownProps.match.params.id],
+    productListings: state.entities.productListings,
+    errors: state.errors.product_listings,
+    userId: state.session.id,
+    formType: 'buy'
+  };
+};
+
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+  return {
+    requestProduct: function requestProduct(id) {
+      return dispatch(Object(_actions_product_actions__WEBPACK_IMPORTED_MODULE_4__["requestProduct"])(id));
+    },
+    processForm: function processForm(productListing) {
+      return dispatch(Object(_util_product_listing_util__WEBPACK_IMPORTED_MODULE_2__["createProductListing"])(productListing));
+    }
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps, mapDispatchToProps)(_product_listing_form__WEBPACK_IMPORTED_MODULE_3__["default"]));
+
+/***/ }),
+
 /***/ "./frontend/components/product_listing/product_listing_form.jsx":
 /*!**********************************************************************!*\
   !*** ./frontend/components/product_listing/product_listing_form.jsx ***!
@@ -1227,6 +1276,8 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _size_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./size-button */ "./frontend/components/product_listing/size-button.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1237,13 +1288,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
 
 
 
@@ -1253,15 +1306,130 @@ function (_React$Component) {
   _inherits(ProductListingForm, _React$Component);
 
   function ProductListingForm(props) {
+    var _this;
+
     _classCallCheck(this, ProductListingForm);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(ProductListingForm).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(ProductListingForm).call(this, props));
+    _this.apparelSizes = ['XS', 'S', 'M', 'L', 'XL'];
+    _this.sneakerSizes = ['4', '4.5', '5', '5.5', '6', '6.5', '7', '7.5', '8', '8.5', '9', '9.5', '10', '10.5', '11', '11.5', '12', '12.5', '13', '14', '15', '16', '17', '18'];
+    _this.state = {
+      size: ""
+    };
+    _this.handleSelectSize = _this.handleSelectSize.bind(_assertThisInitialized(_this));
+    _this.handleCancel = _this.handleCancel.bind(_assertThisInitialized(_this));
+    _this.handleCreate = _this.handleCreate.bind(_assertThisInitialized(_this));
+    return _this;
   }
 
   _createClass(ProductListingForm, [{
     key: "componentDidMount",
     value: function componentDidMount() {
       this.props.requestProduct(this.props.match.params.id);
+    }
+  }, {
+    key: "handleSelectSize",
+    value: function handleSelectSize(size) {
+      return this.setState({
+        size: size
+      });
+    }
+  }, {
+    key: "handleCancel",
+    value: function handleCancel() {
+      this.props.history.push('/');
+    }
+  }, {
+    key: "handleCreate",
+    value: function handleCreate(e) {
+      e.preventDefault();
+      this.props.processForm(productListing);
+    }
+  }, {
+    key: "selectSize",
+    value: function selectSize() {
+      var _this2 = this;
+
+      var product = this.props.product;
+      var sizes = product.product_category === 'sneakers' ? this.sneakerSizes : this.apparelSizes;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "select-size-grid"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "select-size-title"
+      }, "Select Size"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "select-size-subtitle"
+      }, "U.S ", product.gender, "'s Sizes | Highest Bids"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "grid-tiles"
+      }, sizes.map(function (size, i) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_size_button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+          key: i,
+          size: size,
+          handleSelectSize: _this2.handleSelectSize.bind(_this2)
+        });
+      })));
+    }
+  }, {
+    key: "selectPay",
+    value: function selectPay() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+        className: "pay",
+        onSubmit: this.handleCreate
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "back-to-sizes"
+      }, "Clear size state here", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "buy-sell-size"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "size-details"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "",
+        alt: ""
+      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "pay-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "ask-or-sell-switch-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "pay-or-sell-switches"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "pay-switch"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "sell-switch"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "price-input-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "price-input"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "price-input-decoration"
+      }, "$"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "text",
+        className: "enter-price",
+        placeholder: "Enter Amount"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "multi-order-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "item-row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Discount Code"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "text",
+        className: "discount-code-input",
+        placeholder: "Add Discount +"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "item-row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Total Payout"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "total-payout"
+      }, "--")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "pay-settings"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "expiration-setting"
+      }, "Ask Expiration: 30Days"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "payout-method"
+      }, "Please Add Payout Method")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "product-listing-buttons"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "product-listing-button cancel",
+        onClick: this.handleCancel
+      }, "Cancel"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        className: "product-listing-button submit",
+        type: "submit"
+      })));
     }
   }, {
     key: "render",
@@ -1300,15 +1468,7 @@ function (_React$Component) {
         className: "buy-sell-image"
       }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "fourty-create-listing-form pane"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "select-size-grid"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "select-size-title"
-      }, "Select Size"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "select-size-subtitle"
-      }, "U.S ", product.gender, "'s Sizes | Highest Bids"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "grid-tiles"
-      }))))));
+      }, this.state.size === "" ? this.selectSize() : this.selectPay()))));
     }
   }]);
 
@@ -1318,7 +1478,7 @@ function (_React$Component) {
 ProductListingForm.defaultProps = {
   product: {}
 };
-/* harmony default export */ __webpack_exports__["default"] = (ProductListingForm);
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["withRouter"])(ProductListingForm));
 
 /***/ }),
 
@@ -1346,6 +1506,7 @@ __webpack_require__.r(__webpack_exports__);
 var mapStateToProps = function mapStateToProps(state, ownProps) {
   return {
     product: state.entities.products[ownProps.match.params.id],
+    productListings: state.entities.productListings,
     errors: state.errors.product_listings,
     userId: state.session.id,
     formType: 'sell'
@@ -1364,6 +1525,80 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps, mapDispatchToProps)(_product_listing_form__WEBPACK_IMPORTED_MODULE_3__["default"]));
+
+/***/ }),
+
+/***/ "./frontend/components/product_listing/size-button.jsx":
+/*!*************************************************************!*\
+  !*** ./frontend/components/product_listing/size-button.jsx ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var SizeButton =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(SizeButton, _React$Component);
+
+  function SizeButton(props) {
+    var _this;
+
+    _classCallCheck(this, SizeButton);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(SizeButton).call(this, props));
+    _this.sendBackSize = _this.sendBackSize.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(SizeButton, [{
+    key: "sendBackSize",
+    value: function sendBackSize() {
+      this.props.handleSelectSize(this.props.size);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "button-container",
+        onClick: this.sendBackSize
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "button-inner"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "size-value"
+      }, this.props.size), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "money-value"
+      })));
+    }
+  }]);
+
+  return SizeButton;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (SizeButton);
 
 /***/ }),
 

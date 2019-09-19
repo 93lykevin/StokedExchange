@@ -51,10 +51,195 @@
 
         .fourty-create-listing-form{
             width: 40%;
-        }
-    }
+            background-color: #fafafa;
+            min-width: 500px;
+            padding: 0 5% 100px;
 
+            .select-size-grid{
+                padding-top: 30px;
+
+                .select-size-title{
+                    font-size: 28px;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    padding-bottom: 16px;
+                    margin: 0px;
+                }
+
+                .select-size-subtitle{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-bottom: 13px;
+                    height: 40px;
+                }
+
+                .grid-tiles{
+                    display: flex;
+                    align-items: center;
+                    flex-flow: row wrap;
+                    
+                    .button-container{
+                        width: 23%;
+                        height: 70px;
+                        margin: 4px;
+                        font-size: 16px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                        
+                        .button-inner{
+                            background-color: #FFFFFF;
+                            height: 70px;
+                            width: 94px;
+                            border: 1px solid #E5E7EA;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-flow:column;
+                            cursor: pointer;
+                            overflow: hidden;
+
+                        }
+                        
+                        :hover{
+                            background-color: #FCECEC;
+                        }
+                    }
+                }
+            }
+            .pay{
+                .back-to-sizes{
+                    margin-top: 30px;
+                    padding: 20px;
+                    background: #fff;
+                    border: 1px solid #E5E7EA;
+                    display: flex;
+                    justify-content: space-between;
+                    cursor: pointer;
+                }
+        
+                .pay-container{
+                    background: #fff;
+                    border-radius: 4px;
+                    padding-top: 30px;
+                    margin-top: 30px;
+
+                    .ask-or-sell-switch-container{
+                        padding: 0 30px;
+                        margin-bottom: 40px;
+
+                        .pay-or-sell-switches{
+                            display: flex;
+                            height: 55px;
+                            background: #fafafa;
+                            border-radius: 30px;
+                            border: 1px solid #e5e7e5;
+                        }
+
+                    }
+
+                    .price-input-container{
+                        padding: 0 30px;
+
+                        .price-input{
+                            display: flex;
+                            height: 60px;
+                            background: #fff;
+                            font-size: 30px;
+                            
+                            .price-input-decoration{
+                                display: flex;
+                                align-items: center;
+                                height: 100%;
+                                margin-right: 6px;
+                                font-size: 36px;
+                                font-weight: 600;
+                                color: #000;
+                            }
+
+                            .enter-price{
+                                height: 100%;
+                                width: 100%;
+                                font-size: 30px;
+                                line-height: 60px;
+                                padding: 0 20px;
+                                border: 1px solid #e5e7e5;
+                            }
+                        }
+                    }
+
+                    .multi-order-container{
+                        margin-top: 30px;
+                        padding: 0 30px 15px;
+                        background-color: #fff;
+                    }
+
+                    .item-row{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 15px 0;
+                        font-size: 16px;
+                        font-weight: 500;
+
+                        .discount-code-input{
+                            text-align: right;
+                        }
+                    }
+        
+                }
+
+                .pay-settings{
+                    margin-top: 30px;
+
+                    .expiration-setting{
+                        padding: 10px 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        font-size: 18px;
+                    }
+
+                    .payout-method{
+                        padding: 10px 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        font-size: 18px;
+                    }
+
+                }
+        
+            }
+        }
+
+        .product-listing-buttons{
+            min-width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+
+            .product-listing-button{ 
+                background: #fff;
+                color: #000;
+                padding: 12px 18px;
+                min-width: 100;
+                border: 1px solid #e5e7e5;
+                border-radius: 4px;
+            }
+        }
+
+    }
 }
+
+
+
+
 
 .grey{
     color: rgb(51, 51, 51);

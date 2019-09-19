@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import SearchBarContainer from '../searchbar/searchbar_container';
     
 class Greeting extends React.Component {
@@ -87,5 +87,4 @@ class Greeting extends React.Component {
         )
     }
 };
-
-export default Greeting
+export default withRouter(Greeting)

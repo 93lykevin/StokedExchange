@@ -24,7 +24,6 @@ export const clearErrors = () => ({
     type: CLEAR_ERRORS,
 })
 
-
 //Thunk action creators
 export const signup = formUser => dispatch => (
     APIUtil.signup(formUser).then(user => (dispatch(receiveCurrentUser(user))

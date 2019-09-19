@@ -6,6 +6,7 @@
     width: 100%;
     flex-flow: row wrap;
     justify-content: space-around;
+    margin-top: 40px;
 }
 
 .product-item {
@@ -147,9 +148,13 @@
 }
 
 .title-left-text {
-    margin-left: calc((100vw - 1170px)/2);
-    h1 {
-        font-weight: 500;
+    margin-left: calc((100vw - 1110px)/2);
+    margin-top:1%;
+    font-weight: 500;
+
+    h4{
+        font-weight: 400;
+        font-size: 13px;
     }
 }
 
@@ -164,5 +169,5 @@
 
 
 .title-container h1{
-    font-size: 40px;
+    font-size: 33px;
 }

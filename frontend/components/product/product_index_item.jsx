@@ -8,9 +8,12 @@ class ProductIndexItem extends React.Component {
         super(props)
     }
 
-    componentDidMount() {
+
+    //I would want to make an API request to stockX to update the attributes every time a product mounts
+    //However, I have not figured out a way to fetch a particular product yet.
+    // componentDidMount() {
         // updateItemStockx()
-    }
+    // }
     
     render() {
         return(

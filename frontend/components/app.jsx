@@ -8,12 +8,14 @@ import ProductIndexContainer from './product/product_index_container';
 import ProductShowContainer from './product/product_show_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import SellFormContainer from './product_listing/sell_form_container';
+import BuyFormContainer from './product_listing/buy_form_container';
+
 const App = () => (
     <div className="app-container">
         <div className="site-header">
             <span></span>
             <div className="header-container">
-                <GreetingContainer />
+                <GreetingContainer/>
             </div>
         </div>
 
@@ -23,6 +25,7 @@ const App = () => (
                 <AuthRoute exact path="/signup" component={SignupFormContainer}/>
                 <ProtectedRoute exact path="/sell" component={SignupFormContainer}/>
                 <ProtectedRoute exact path="/sell/:id" component={SellFormContainer}/>
+                <ProtectedRoute exact path="/buy/:id" component={BuyFormContainer}/>
                 <Route exact path="/index" component={ProductIndexContainer} />
                 <Route path="/product/:id" component={ProductShowContainer} />
                 <Route exact path="/supreme" component={ProductIndexContainer}/>
@@ -35,11 +38,11 @@ const App = () => (
                 {/* <Redirect to="/" /> */}
             </Switch>
         </div>
-        <div className="footer-container">
+        {/* <div className="footer-container">
             <div className="footer-content">
                 insert footer here
             </div>
-        </div>
+        </div> */}
     </div>
 )
 

@@ -8,6 +8,7 @@ import { requestProduct } from '../../actions/product_actions';
 const mapStateToProps = (state, ownProps) => {
     return ({
         product: state.entities.products[ownProps.match.params.id],
+        productListings: state.entities.productListings,
         errors: state.errors.product_listings,
         userId: state.session.id,
         formType: 'sell'

@@ -136,7 +136,7 @@ class ProductShow extends React.Component {
                             <div className="product-details-column">
                                 <div className="detail"><span className="span-title">STYLE</span><span>{model}</span></div>
                                 <div className="detail"><span className="span-title">COLORWAY</span><span>{colorway}</span></div>
-                                <div className="detail"><span className="span-title">RETAIL PRICE</span><span>{retail_price}</span></div>
+                                <div className="detail"><span className="span-title">RETAIL PRICE</span><span>${retail_price}</span></div>
                                 <div className="detail"><span className="span-title">RELEASE DATE</span><span>{release_date}</span></div>
                             </div> 
                             <div className="product-description"><p>{description}</p></div>
