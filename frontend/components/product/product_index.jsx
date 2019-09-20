@@ -76,7 +76,7 @@ class ProductIndex extends React.Component {
                 </div> */}
 
                 <div className="ticker">
-                    <h3>Kevin & Mary & Mohit</h3>
+                    <h3>Kevin</h3>
                 </div>
             </div>  
         )

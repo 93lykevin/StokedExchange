@@ -777,7 +777,7 @@ function (_React$Component) {
         });
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "ticker"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Kevin & Mary & Mohit")));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Kevin")));
     }
   }]);
 
