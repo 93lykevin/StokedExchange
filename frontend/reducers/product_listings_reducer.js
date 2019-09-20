@@ -12,7 +12,7 @@ const listingsReducer = (state = {}, action) => {
     let newState = merge({}, state);
     switch (action.type) {
         case RECEIVE_ALL_LISTINGS:
-            newState = action.listings
+            newState = Object.assign({}, newState, action.listings)
             return newState
         case RECEIVE_LISTING:
             const newListing = { [action.listing.id]: action.listing }

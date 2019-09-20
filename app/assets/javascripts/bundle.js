@@ -245,14 +245,14 @@ var receiveBuyListing = function receiveBuyListing(buyListing) {
 
 var fetchProductListings = function fetchProductListings() {
   return function (dispatch) {
-    _util_product_listing_util__WEBPACK_IMPORTED_MODULE_0__["fetchProductListings"]().then(function (listings) {
+    return _util_product_listing_util__WEBPACK_IMPORTED_MODULE_0__["fetchProductListings"]().then(function (listings) {
       return dispatch(receiveAllListings(listings));
     });
   };
 };
 var fetchProductListing = function fetchProductListing(id) {
   return function (dispatch) {
-    _util_product_listing_util__WEBPACK_IMPORTED_MODULE_0__["fetchProductListing"](id).then(function (listing) {
+    return _util_product_listing_util__WEBPACK_IMPORTED_MODULE_0__["fetchProductListing"](id).then(function (listing) {
       return dispatch(receiveListing(listing));
     });
   };
@@ -384,7 +384,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _product_listing_sell_form_container__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./product_listing/sell_form_container */ "./frontend/components/product_listing/sell_form_container.jsx");
 /* harmony import */ var _product_listing_buy_form_container__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./product_listing/buy_form_container */ "./frontend/components/product_listing/buy_form_container.jsx");
 /* harmony import */ var _splash_splash_container__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./splash/splash_container */ "./frontend/components/splash/splash_container.jsx");
-/* harmony import */ var _product_listing_sell_listings_container__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./product_listing/sell_listings_container */ "./frontend/components/product_listing/sell_listings_container.jsx");
+/* harmony import */ var _product_listing_listings_sell_container__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./product_listing/listings_sell_container */ "./frontend/components/product_listing/listings_sell_container.jsx");
 
 
 
@@ -427,7 +427,7 @@ var App = function App() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_util_route_util__WEBPACK_IMPORTED_MODULE_8__["ProtectedRoute"], {
     exact: true,
     path: "/selling/",
-    component: _product_listing_sell_listings_container__WEBPACK_IMPORTED_MODULE_12__["default"]
+    component: _product_listing_listings_sell_container__WEBPACK_IMPORTED_MODULE_12__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_util_route_util__WEBPACK_IMPORTED_MODULE_8__["ProtectedRoute"], {
     exact: true,
     path: "/buy/:id",
@@ -1387,13 +1387,13 @@ function (_React$Component) {
 
   _createClass(Listings, [{
     key: "componentDidMount",
-    value: function componentDidMount() {
-      this.props.fetchProductListings();
+    value: function componentDidMount() {// need to make actions for receiving only current user's stuff
+      // this.props.fetchProductListings();
+      // this.props.requestProducts();
     }
   }, {
     key: "render",
     value: function render() {
-      debugger;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "dashboard-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1437,7 +1437,8 @@ function (_React$Component) {
       }, Object.values(this.props.listings).map(function (listing) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_listing_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
           key: listing.id,
-          listing: listing
+          listing: listing,
+          product: products[listing.product_id]
         });
       }))))))))));
     }
@@ -1447,9 +1448,55 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 Listings.defaultProps = {
-  listings: {}
+  user: {},
+  listings: {},
+  products: {}
 };
 /* harmony default export */ __webpack_exports__["default"] = (Listings);
+
+/***/ }),
+
+/***/ "./frontend/components/product_listing/listings_sell_container.jsx":
+/*!*************************************************************************!*\
+  !*** ./frontend/components/product_listing/listings_sell_container.jsx ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _actions_product_listing_actions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../actions/product_listing_actions */ "./frontend/actions/product_listing_actions.js");
+/* harmony import */ var _actions_product_actions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../actions/product_actions */ "./frontend/actions/product_actions.js");
+/* harmony import */ var _listings__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./listings */ "./frontend/components/product_listing/listings.jsx");
+
+
+
+
+
+
+var mapStateToProps = function mapStateToProps(state) {
+  return {
+    user: state.entities.users[state.session.id],
+    listings: state.entities.users[state.session.id].productListings,
+    products: state.entities.users[state.session.id].products
+  };
+};
+
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+  return {
+    fetchProductListings: function fetchProductListings() {
+      return dispatch(Object(_actions_product_listing_actions__WEBPACK_IMPORTED_MODULE_2__["fetchProductListings"])());
+    },
+    requestProducts: function requestProducts() {
+      return dispatch(Object(_actions_product_actions__WEBPACK_IMPORTED_MODULE_3__["requestProducts"])());
+    }
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps, mapDispatchToProps)(_listings__WEBPACK_IMPORTED_MODULE_4__["default"]));
 
 /***/ }),
 
@@ -1732,46 +1779,6 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps, mapDispatchToProps)(_product_listing_form__WEBPACK_IMPORTED_MODULE_3__["default"]));
-
-/***/ }),
-
-/***/ "./frontend/components/product_listing/sell_listings_container.jsx":
-/*!*************************************************************************!*\
-  !*** ./frontend/components/product_listing/sell_listings_container.jsx ***!
-  \*************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _actions_product_listing_actions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../actions/product_listing_actions */ "./frontend/actions/product_listing_actions.js");
-/* harmony import */ var _listings__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./listings */ "./frontend/components/product_listing/listings.jsx");
-
-
-
-
-
-var mapStateToProps = function mapStateToProps(state) {
-  // debugger
-  return {
-    user: state.entities.users[state.session.id],
-    listings: state.entities.users[state.session.id].product_listings,
-    products: state.entities.users[state.session.id].products
-  };
-};
-
-var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-  return {
-    fetchProductListings: function fetchProductListings() {
-      return dispatch(Object(_actions_product_listing_actions__WEBPACK_IMPORTED_MODULE_2__["fetchProductListings"])());
-    }
-  };
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps, mapDispatchToProps)(_listings__WEBPACK_IMPORTED_MODULE_3__["default"]));
 
 /***/ }),
 
@@ -2481,9 +2488,9 @@ function (_React$Component) {
       if (Object.keys(this.props.products).length !== 0) {
         five.push(this.props.products[1]);
         five.push(this.props.products[13]);
-        five.push(this.props.products[113]);
-        five.push(this.props.products[213]);
-        five.push(this.props.products[313]);
+        five.push(this.props.products[23]);
+        five.push(this.props.products[33]);
+        five.push(this.props.products[43]);
       }
 
       return five;
@@ -2494,11 +2501,11 @@ function (_React$Component) {
       var five = [];
 
       if (Object.keys(this.props.products).length !== 0) {
-        five.push(this.props.products[3]);
-        five.push(this.props.products[31]);
-        five.push(this.props.products[311]);
-        five.push(this.props.products[312]);
-        five.push(this.props.products[131]);
+        five.push(this.props.products[53]);
+        five.push(this.props.products[63]);
+        five.push(this.props.products[73]);
+        five.push(this.props.products[83]);
+        five.push(this.props.products[93]);
       }
 
       return five;
@@ -2509,11 +2516,11 @@ function (_React$Component) {
       var five = [];
 
       if (Object.keys(this.props.products).length !== 0) {
-        five.push(this.props.products[19]);
-        five.push(this.props.products[91]);
-        five.push(this.props.products[119]);
-        five.push(this.props.products[199]);
-        five.push(this.props.products[299]);
+        five.push(this.props.products[14]);
+        five.push(this.props.products[25]);
+        five.push(this.props.products[36]);
+        five.push(this.props.products[47]);
+        five.push(this.props.products[57]);
       }
 
       return five;
@@ -2732,7 +2739,7 @@ var listingsReducer = function listingsReducer() {
 
   switch (action.type) {
     case _actions_product_listing_actions__WEBPACK_IMPORTED_MODULE_0__["RECEIVE_ALL_LISTINGS"]:
-      newState = action.listings;
+      newState = Object.assign({}, newState, action.listings);
       return newState;
 
     case _actions_product_listing_actions__WEBPACK_IMPORTED_MODULE_0__["RECEIVE_LISTING"]:

@@ -7,11 +7,12 @@ class Listings extends React.Component{
     }
 
     componentDidMount(){
-        this.props.fetchProductListings();
+        // need to make actions for receiving only current user's stuff
+        // this.props.fetchProductListings();
+        // this.props.requestProducts();
     }
 
     render() {
-        debugger
         return(
             <div className="dashboard-container">
                 <div className="dashboard-sidebar"></div>
@@ -50,7 +51,8 @@ class Listings extends React.Component{
                                                 {Object.values(this.props.listings).map(listing => (
                                                     <ListingItem 
                                                     key={listing.id}
-                                                    listing={listing}/>
+                                                    listing={listing}
+                                                    product={products[listing.product_id]}/>
                                                 ))}
                                             </tbody>
                                         </table>
@@ -66,7 +68,9 @@ class Listings extends React.Component{
 }
 
 Listings.defaultProps = {
-    listings: {}
+    user: {},
+    listings: {},
+    products: {}
 }
 
 export default Listings

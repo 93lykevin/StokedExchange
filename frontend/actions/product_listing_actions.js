@@ -24,13 +24,13 @@ const receiveBuyListing = (buyListing) => ({
     buyListing
 })
 
-export const fetchProductListings = () => dispatch => {
+export const fetchProductListings = () => dispatch => (
     ProdListUtil.fetchProductListings().then(listings => dispatch(receiveAllListings(listings)))
-}
+)
 
-export const fetchProductListing = (id) => dispatch => {
+export const fetchProductListing = (id) => dispatch => (
     ProdListUtil.fetchProductListing(id).then(listing => dispatch(receiveListing(listing)))
-}
+)
 
 export const createProductListing = (listing) =>  dispatch => {
     return(

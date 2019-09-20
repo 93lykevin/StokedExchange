@@ -16,9 +16,9 @@ class Splash extends React.Component {
         if(Object.keys(this.props.products).length !== 0) {
             five.push(this.props.products[1])
             five.push(this.props.products[13])
-            five.push(this.props.products[113])
-            five.push(this.props.products[213])
-            five.push(this.props.products[313])
+            five.push(this.props.products[23])
+            five.push(this.props.products[33])
+            five.push(this.props.products[43])
         }
         return five;
     }
@@ -26,11 +26,11 @@ class Splash extends React.Component {
     fiveProductsTwo() {
         let five = [];
         if (Object.keys(this.props.products).length !== 0) {
-            five.push(this.props.products[3])
-            five.push(this.props.products[31])
-            five.push(this.props.products[311])
-            five.push(this.props.products[312])
-            five.push(this.props.products[131])
+            five.push(this.props.products[53])
+            five.push(this.props.products[63])
+            five.push(this.props.products[73])
+            five.push(this.props.products[83])
+            five.push(this.props.products[93])
         }
         return five;
     }
@@ -38,11 +38,11 @@ class Splash extends React.Component {
     fiveProductsThree() {
         let five = [];
         if (Object.keys(this.props.products).length !== 0) {
-            five.push(this.props.products[19])
-            five.push(this.props.products[91])
-            five.push(this.props.products[119])
-            five.push(this.props.products[199])
-            five.push(this.props.products[299])
+            five.push(this.props.products[14])
+            five.push(this.props.products[25])
+            five.push(this.props.products[36])
+            five.push(this.props.products[47])
+            five.push(this.props.products[57])
         }
         return five;
     }
