@@ -34,8 +34,10 @@ User's can view products, place Bids on products they wish to purchase, and plac
     + Flask is a micro web framework written in Python. I chose Flask for my project because it is the most simple Python web framework to use. 
     + I chose Pythonanywhere to host my Flask app because it is also very simple to set up a website which hosts and executes the SDK.
     + I also used PostgreSQL as my database for this web app.
-    
+
 ```
+The AJAX call I used to send an POST request to my Flask webapp which then makes a POST request to StockX and finally returning back to my StreetX webapp.
+
 export const postStockx = (search) => (
     $.ajax({
         method: 'POST',
@@ -45,7 +47,7 @@ export const postStockx = (search) => (
 );
 
 //filter & create helper method
-const filterSearch = (searchRes) => {      //[ARRAY OF OBJECTS B/C USED AS .THEN]
+const filterSearch = (searchRes) => {  
     for(let i=0; i < searchRes.length; i++) {
         let item = searchRes[i];
         let getRetailPrice = item['searchable_traits'];
@@ -75,6 +77,26 @@ const filterSearch = (searchRes) => {      //[ARRAY OF OBJECTS B/C USED AS .THEN
         createProduct(filteredItem)
     }
 }
+```
+
+```
+Each button gets passed a callback that changes its parent's state triggering the next form to be displayed
+
+handleSelectSize(size) { 
+    return(
+        this.setState({ size: size })
+    )
+}
+
+<div className="grid-tiles">
+                {sizes.map((size, i) => (
+                    <SizeButton
+                    key={i}
+                    size={size}
+                    handleSelectSize={this.handleSelectSize.bind(this)}/>
+                ))}
+</div>
+
 ```
 
 
