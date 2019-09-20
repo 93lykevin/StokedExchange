@@ -1,6 +1,6 @@
-.dashboard-container *{
-    border: .5px solid black;
-}
+// .dashboard-container *{
+//     border: .5px solid black;
+// }
 .dashboard-container{
     padding-left: 250px;
     min-width: 992px;
@@ -37,6 +37,15 @@
                 margin-bottom: 0;
                 margin-top: 0;
                 list-style: none;
+                display: flex;
+                justify-content: flex-start;
+                    
+                div{
+                    padding: 20px;
+                    font-weight: 600;
+                    font-size: 18px;
+
+                }
             }
 
             .tab-content{
@@ -63,10 +72,12 @@
                                 border-spacing: 0;
 
                                 thead{
+                                    display: table-header-group;
+                                    vertical-align: middle;
+                                    border-color: inherit;
+                                    
                                     .portfolio-header{
-                                        display: table-header-group;
-                                        vertical-align: middle;
-                                        border-color: inherit;
+                                        height: 30px;
                                         cursor: pointer;
                                         background-color: #fff;
                                         display: table-row;
@@ -75,21 +86,90 @@
                                             border-top: 0;
                                             cursor: pointer;
                                             border-bottom-color: #e5e7ea;
+                                            text-align: initial;
                                             border-right: 1px solid #e5e7ea;
                                             padding: 3px 8px;
-                                            font-size: 12px;
+                                            font-size: 15px;
                                             vertical-align: bottom;
                                             border-bottom-color: 2px solid #ddd;
+
+                                        }
+                                        
+                                        .update-destroy{
+                                            border-right: none;
+
                                         }
                                     }
                                 }
 
-                                .portfolio-items{
+                                tbody{
                                     display: table-row-group;
                                     vertical-align: middle;
                                     border-color: inherit;
+
+                                    .listing-details{
+                                        padding-left: 5px;
+                                        border-top: 1px solid #e5e7ea;
+                                        border-right: 1px solid #e5e7ea;
+                                        // padding: 5px;
+
+                                        .title{
+                                            font-weight: 700;
+                                            font-size: 14px;
+                                        }
+                                        
+                                        .color{
+                                            font-weight: 400;
+                                            font-size: 13px;
+                                        }
+
+                                        .size{
+                                            font-weight: 400;
+                                            font-size: 12px;
+                                        }
+
+                                    }
+
+                                    .listing-bid-price{
+                                        padding-left: 5px;
+                                        border-top: 1px solid #e5e7ea;
+                                        border-right: 1px solid #e5e7ea;
+                                    }
+
+                                    .listing-bid-price-red{
+                                        padding-left: 5px;
+                                        border-top: 1px solid #e5e7ea;
+                                        border-right: 1px solid #e5e7ea;
+                                        color: #ff5a5f;
+                                    }
+
+                                    .listing-highest-bid{
+                                        padding-left: 5px;
+                                        border-top: 1px solid #e5e7ea;
+                                        border-right: 1px solid #e5e7ea;
+                                    }
+                                    
+                                    .listing-lowest-ask{
+                                        padding-left: 5px;
+                                        border-top: 1px solid #e5e7ea;
+                                        border-right: 1px solid #e5e7ea;
+                                    }
+                                    
+                                    .listing-expires{
+                                        padding-left: 5px;
+                                        border-top: 1px solid #e5e7ea;
+                                        border-right: 1px solid #e5e7ea;
+                                    }
+
+                                    .listing-options{
+                                        padding-left: 5px;
+                                        border-top: 1px solid #e5e7ea;
+                                    }
                                 }
+
+                                
                             }
+                                   
                         }
                     }
                 }

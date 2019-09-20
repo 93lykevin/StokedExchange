@@ -1275,6 +1275,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _actions_product_listing_actions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../actions/product_listing_actions */ "./frontend/actions/product_listing_actions.js");
+/* harmony import */ var _util_product_api_util__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../util/product_api_util */ "./frontend/util/product_api_util.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1296,6 +1298,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
+
 var ListingItem =
 /*#__PURE__*/
 function (_React$Component) {
@@ -1310,28 +1314,39 @@ function (_React$Component) {
   _createClass(ListingItem, [{
     key: "render",
     value: function render() {
-      debugger;
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+      var _this = this;
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
         className: "listing-item"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "listing-details"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/product/".concat(this.props.listing.product_id)
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, this.props.product.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, this.props.product.size))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-        className: "listing-bid-price"
-      }, this.props.listing.price), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title"
+      }, this.props.product.make), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "color"
+      }, this.props.product.colorway), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "size"
+      }, this.props.listing.size))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: this.props.listing.price >= this.props.product.highest_bid ? "listing-bid-price" : "listing-bid-price-red"
+      }, "$", this.props.listing.price), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "listing-highest-bid"
-      }, this.props.product.highest_bid), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      }, "$", this.props.product.highest_bid), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "listing-lowest-ask"
-      }, this.props.product.lowest_ask), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      }, "$", this.props.product.lowest_ask), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "listing-expires"
-      }, this.props.product), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      }, "N/A"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "listing-options"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "options"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/buy/".concat(this.props.product.id)
-      }, "Buy"))));
+      }, "Buy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        onClick: function onClick() {
+          return Object(_actions_product_listing_actions__WEBPACK_IMPORTED_MODULE_2__["deleteProductListing"])(_this.props.listing.id);
+        }
+      }, "Remove")))));
     }
   }]);
 
@@ -1354,6 +1369,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _listing_item__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./listing_item */ "./frontend/components/product_listing/listing_item.jsx");
+/* harmony import */ var _actions_product_listing_actions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../actions/product_listing_actions */ "./frontend/actions/product_listing_actions.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1364,13 +1380,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -1381,9 +1398,13 @@ function (_React$Component) {
   _inherits(Listings, _React$Component);
 
   function Listings(props) {
+    var _this;
+
     _classCallCheck(this, Listings);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Listings).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Listings).call(this, props));
+    _this.handleDelete = _this.handleDelete.bind(_assertThisInitialized(_this));
+    return _this;
   }
 
   _createClass(Listings, [{
@@ -1393,11 +1414,15 @@ function (_React$Component) {
       // this.props.requestProducts();
     }
   }, {
+    key: "handleDelete",
+    value: function handleDelete(id) {
+      Object(_actions_product_listing_actions__WEBPACK_IMPORTED_MODULE_2__["deleteProductListing"])(id);
+    }
+  }, {
     key: "render",
     value: function render() {
-      var _this = this;
+      var _this2 = this;
 
-      debugger;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "dashboard-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1426,25 +1451,26 @@ function (_React$Component) {
         className: "portfolio-header"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
         className: "item"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+      }, "Item"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
         className: "bid-price"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+      }, "Bid Price"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
         className: "highest-bid"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+      }, "Highest Bid"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
         className: "lowest-ask"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+      }, "Lowest Ask"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
         className: "expires"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+      }, "Expires"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
         className: "update-destroy"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", {
-        className: "portfolio-items"
-      }, Object.values(this.props.user.productListings).map(function (listing) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_listing_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }))), Object.values(this.props.user.productListings).map(function (listing) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", {
+          className: "portfolio-items"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_listing_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
           key: listing.id,
           listing: listing,
-          product: _this.props.user.products[listing.product_id]
-        });
-      }))))))))));
+          product: _this2.props.user.products[listing.product_id],
+          handleDelete: _this2.handleDelete
+        }));
+      })))))))));
     }
   }]);
 

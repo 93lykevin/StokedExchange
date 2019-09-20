@@ -1,9 +1,11 @@
 import React from 'react';
 import ListingItem from './listing_item';
+import { deleteProductListing } from '../../actions/product_listing_actions';
 
 class Listings extends React.Component{
     constructor(props){
         super(props)
+        this.handleDelete = this.handleDelete.bind(this);
     }
 
     componentDidMount(){
@@ -12,8 +14,12 @@ class Listings extends React.Component{
         // this.props.requestProducts();
     }
 
+    handleDelete(id) {
+        deleteProductListing(id)
+    }
+
+
     render() {
-        debugger
         return(
             <div className="dashboard-container">
                 <div className="dashboard-sidebar"></div>
@@ -40,22 +46,23 @@ class Listings extends React.Component{
                                         <table className="table">
                                             <thead>
                                                 <tr className="portfolio-header">
-                                                    <th className="item"></th>
-                                                    <th className="bid-price"></th>
-                                                    <th className="highest-bid"></th>
-                                                    <th className="lowest-ask"></th>
-                                                    <th className="expires"></th>
+                                                    <th className="item">Item</th>
+                                                    <th className="bid-price">Bid Price</th>
+                                                    <th className="highest-bid">Highest Bid</th>
+                                                    <th className="lowest-ask">Lowest Ask</th>
+                                                    <th className="expires">Expires</th>
                                                     <th className="update-destroy"></th>
                                                 </tr>
                                             </thead>
-                                            <tbody className="portfolio-items">
-                                                {Object.values(this.props.user.productListings).map(listing => (
+                                            {Object.values(this.props.user.productListings).map(listing => (
+                                                <tbody className="portfolio-items">
                                                     <ListingItem 
                                                     key={listing.id}
                                                     listing={listing}
-                                                    product={this.props.user.products[listing.product_id]}/>
-                                                ))}
-                                            </tbody>
+                                                    product={this.props.user.products[listing.product_id]}
+                                                    handleDelete={this.handleDelete}/>
+                                                </tbody>
+                                            ))}
                                         </table>
                                     </div>
                                 </div>
