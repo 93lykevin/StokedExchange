@@ -1309,6 +1309,7 @@ function (_React$Component) {
   _createClass(ListingItem, [{
     key: "render",
     value: function render() {
+      debugger;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
         className: "listing-item"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
@@ -1430,14 +1431,7 @@ function (_React$Component) {
         className: "expires"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
         className: "update-destroy"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", {
-        className: "portfolio-items"
-      }, Object.values(this.props.listings).map(function (listing) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_listing_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
-          key: listing.id,
-          listing: listing
-        });
-      }))))))))));
+      })))))))))));
     }
   }]);
 
