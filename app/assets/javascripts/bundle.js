@@ -1320,11 +1320,11 @@ function (_React$Component) {
         className: "listing-bid-price"
       }, this.props.listing.price), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "listing-highest-bid"
-      }, this.props.listing.product.highest_bid), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      }, this.props.product.highest_bid), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "listing-lowest-ask"
-      }, this.props.listing.product.lowest_ask), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      }, this.props.product.lowest_ask), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "listing-expires"
-      }, this.props.listing.product), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      }, this.props.product), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "listing-options"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "options"
@@ -1393,6 +1393,7 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
+      debugger;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "dashboard-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1431,7 +1432,14 @@ function (_React$Component) {
         className: "expires"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
         className: "update-destroy"
-      })))))))))));
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", {
+        className: "portfolio-items"
+      }, Object.values(this.props.listings).map(function (listing) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_listing_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
+          key: listing.id,
+          listing: listing
+        });
+      }))))))))));
     }
   }]);
 
@@ -1747,8 +1755,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var mapStateToProps = function mapStateToProps(state) {
+  // debugger
   return {
-    listings: state.entities.users[state.session.id].product_listings
+    user: state.entities.users[state.session.id],
+    listings: state.entities.users[state.session.id].product_listings,
+    products: state.entities.users[state.session.id].products
   };
 };
 

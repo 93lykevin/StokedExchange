@@ -19,6 +19,10 @@ class User < ApplicationRecord
     foreign_key: :seller_id,
     class_name: :ProductListing
 
+    has_many :products,
+    through: :product_listings,
+    source: :product
+
     def self.find_by_credentials(username, password)
         user = User.find_by(username: username)
         return user if user && BCrypt::Password.new(user.password_digest).is_password?(password)

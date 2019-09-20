@@ -5,6 +5,8 @@ class Product < ApplicationRecord
     validates :object_identifier, presence: true, uniqueness: true
     validates :product_category, presence: true
 
-    has_many :product_listings
+    has_many :product_listings,
+    foreign_key: :product_id,
+    class_name: :ProductListing
     
 end

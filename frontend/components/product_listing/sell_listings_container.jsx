@@ -4,8 +4,11 @@ import { fetchProductListings } from '../../actions/product_listing_actions';
 import Listings from './listings';
 
 const mapStateToProps = state => {
+    // debugger
     return({
-        listings: state.entities.users[state.session.id].product_listings
+        user: state.entities.users[state.session.id],
+        listings: state.entities.users[state.session.id].product_listings,
+        products: state.entities.users[state.session.id].products
     }
 )}
 

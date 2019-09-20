@@ -11,6 +11,7 @@ class Listings extends React.Component{
     }
 
     render() {
+        debugger
         return(
             <div className="dashboard-container">
                 <div className="dashboard-sidebar"></div>
@@ -45,13 +46,13 @@ class Listings extends React.Component{
                                                     <th className="update-destroy"></th>
                                                 </tr>
                                             </thead>
-                                            {/* <tbody className="portfolio-items">
+                                            <tbody className="portfolio-items">
                                                 {Object.values(this.props.listings).map(listing => (
                                                     <ListingItem 
                                                     key={listing.id}
                                                     listing={listing}/>
                                                 ))}
-                                            </tbody> */}
+                                            </tbody>
                                         </table>
                                     </div>
                                 </div>

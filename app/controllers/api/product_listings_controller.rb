@@ -49,6 +49,6 @@ class Api::ProductListingsController < ApplicationController
     end
     
     def product_listing_params
-        params.require(:product_listing).permit(:seller_id, :product_id, :price, :condition, :size)
+        params.require(:product_listing).permit(:id, :seller_id, :product_id, :price, :condition, :size)
     end
 end
