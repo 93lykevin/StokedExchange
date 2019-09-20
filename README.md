@@ -1,24 +1,13 @@
-# README
+# StreetX
+#### A StockX clone built on React/Redux, Ruby on Rails, Python Flask, and hosted on Heroku
+### Live Site: https://streetx.herokuapp.com
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+StreetX is an e-commerce website that acts like a stock exchange. User's can view products, place Bids on products they wish to purchase, and place Asks on products they wish to sell. When a Bid and an Ask match, an exchange is completed. Users can search for products through the search bar or browse all pruducts with current prices.
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Key Features
+    + Fetches live data from the StockX website
+        + Uses an Unofficial StockX SDK written by Kelvin Fichter (https://pypi.org/project/stockx-py-sdk/)
+    + Products
+    + Listings
+    + Search
