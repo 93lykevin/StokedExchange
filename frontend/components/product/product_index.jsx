@@ -45,7 +45,8 @@ class ProductIndex extends React.Component {
                     <div className="side-nav-container">
                         <div className="side-nav">
                             <ul>
-                            <li><Link to="/supreme" onClick={seedDb}>SUPREME</Link></li>
+                            <li onClick={seedDb}>SEED</li>
+                            <li><Link to="/supreme" >SUPREME</Link></li>
                             <li><Link to="/bape">BAPE</Link></li>
                             <li><Link to="/kith">KITH</Link></li>
                             <li><Link to="/palace">PALACE</Link></li>

@@ -7,7 +7,6 @@ class ListingItem extends React.Component{
     }
 
     render(){
-        debugger
         return(
         <tr className="listing-item">
             
