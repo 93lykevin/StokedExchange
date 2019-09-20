@@ -18,6 +18,8 @@
         margin-right: auto;
         margin-left: auto;
 
+        // background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), image-url('bigbanner.jpg');
+        background-image: image-url('streetwear-bg.jpg');
 
         .splash-jumbo{
             color: #fff;
@@ -112,6 +114,12 @@
         height: 190px;
         overflow: hidden;
         border-bottom: 1px solid rgb(206, 206, 206);
+
+        .img-banner{
+            height:100%;
+            width: 100%;
+
+        }
     }
 
     .splash-center{
@@ -142,8 +150,16 @@
 
             .popular-brands-image{
                 width: 25%;
+                height: 190px;
                 display: inline-block;
                 padding: 0px 8px;
+                
+                .img-cover{
+                    object-fit: contain;
+                    height:100%;
+                    width: 100%;
+                }
+                
             }
         }
 

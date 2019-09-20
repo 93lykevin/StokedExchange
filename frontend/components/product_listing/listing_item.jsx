@@ -7,13 +7,14 @@ class ListingItem extends React.Component{
     }
 
     render(){
+        debugger
         return(
         <tr className="listing-item">
             
             <td className="listing-details">
-                <Link to={`/product/${this.props.listing.product.id}`}>
-                    <span>{this.props.listing.product.title}</span>
-                    <span>{this.props.listing.product.size}</span>
+                <Link to={`/product/${this.props.listing.product_id}`}>
+                    <span>{this.props.product.title}</span>
+                    <span>{this.props.product.size}</span>
                 </Link>
             </td>
 
@@ -27,7 +28,7 @@ class ListingItem extends React.Component{
 
             <td className="listing-options">
                 <div className="options">
-                    <Link to={`/buy/${this.props.listing.product.id}`}>Buy</Link>
+                    <Link to={`/buy/${this.props.product.id}`}>Buy</Link>
                 </div>
             </td>
         </tr>

@@ -13,6 +13,7 @@ class Listings extends React.Component{
     }
 
     render() {
+        debugger
         return(
             <div className="dashboard-container">
                 <div className="dashboard-sidebar"></div>
@@ -48,11 +49,11 @@ class Listings extends React.Component{
                                                 </tr>
                                             </thead>
                                             <tbody className="portfolio-items">
-                                                {Object.values(this.props.listings).map(listing => (
+                                                {Object.values(this.props.user.productListings).map(listing => (
                                                     <ListingItem 
                                                     key={listing.id}
                                                     listing={listing}
-                                                    product={products[listing.product_id]}/>
+                                                    product={this.props.user.products[listing.product_id]}/>
                                                 ))}
                                             </tbody>
                                         </table>

@@ -1310,13 +1310,14 @@ function (_React$Component) {
   _createClass(ListingItem, [{
     key: "render",
     value: function render() {
+      debugger;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
         className: "listing-item"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "listing-details"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/product/".concat(this.props.listing.product.id)
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, this.props.listing.product.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, this.props.listing.product.size))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        to: "/product/".concat(this.props.listing.product_id)
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, this.props.product.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, this.props.product.size))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "listing-bid-price"
       }, this.props.listing.price), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "listing-highest-bid"
@@ -1329,7 +1330,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "options"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/buy/".concat(this.props.listing.product.id)
+        to: "/buy/".concat(this.props.product.id)
       }, "Buy"))));
     }
   }]);
@@ -1394,6 +1395,9 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
+      var _this = this;
+
+      debugger;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "dashboard-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1434,11 +1438,11 @@ function (_React$Component) {
         className: "update-destroy"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", {
         className: "portfolio-items"
-      }, Object.values(this.props.listings).map(function (listing) {
+      }, Object.values(this.props.user.productListings).map(function (listing) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_listing_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
           key: listing.id,
           listing: listing,
-          product: products[listing.product_id]
+          product: _this.props.user.products[listing.product_id]
         });
       }))))))))));
     }
@@ -1479,9 +1483,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var mapStateToProps = function mapStateToProps(state) {
   return {
-    user: state.entities.users[state.session.id],
-    listings: state.entities.users[state.session.id].productListings,
-    products: state.entities.users[state.session.id].products
+    user: state.entities.users[state.session.id] // listings: state.entities.users[state.session.id].productListings,
+    // products: state.entities.users[state.session.id].products
+
   };
 };
 
@@ -2555,7 +2559,10 @@ function (_React$Component) {
         className: "splash-categories"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "SNEAKERS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "STREETWEAR"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "HANDBAGS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "WATCHES")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "splash-banner"
-      }, "INSERT IMAGE HERE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: window.banner,
+        className: "img-banner"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "splash-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "popular-brands-header"
@@ -2563,13 +2570,25 @@ function (_React$Component) {
         className: "popular-brands-row"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "popular-brands-image"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "popular-brands-image"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "popular-brands-image"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "popular-brands-image"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: window.supreme,
+        className: "img-cover"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "popular-brands-image"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: window.offWhite,
+        className: "img-cover"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "popular-brands-image"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: window.bape,
+        className: "img-cover"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "popular-brands-image"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: window.balenciaga,
+        className: "img-cover"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "popular-brands-header"
       }, "Most Popular"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "popular-items"

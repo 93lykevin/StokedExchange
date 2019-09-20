@@ -76,16 +76,16 @@ class Splash extends React.Component {
                     </div>
                 </div>
 
-                <div className="splash-banner">INSERT IMAGE HERE</div>
+                <div className="splash-banner"><img src={window.banner} className="img-banner" /></div>
 
                 <div className="splash-center">
                     <div className="popular-brands-header">Popular Brands</div>
 
                     <div className="popular-brands-row">
-                        <div className="popular-brands-image"></div>
-                        <div className="popular-brands-image"></div>
-                        <div className="popular-brands-image"></div>
-                        <div className="popular-brands-image"></div>
+                        <div className="popular-brands-image"><img src={window.supreme} className="img-cover"/></div>
+                        <div className="popular-brands-image"><img src={window.offWhite} className="img-cover"/></div>
+                        <div className="popular-brands-image"><img src={window.bape} className="img-cover"/></div>
+                        <div className="popular-brands-image"><img src={window.balenciaga} className="img-cover"/></div>
                     </div>
 
                     <div className="popular-brands-header">Most Popular</div>

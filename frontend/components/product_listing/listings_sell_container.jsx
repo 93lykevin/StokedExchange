@@ -7,8 +7,8 @@ import Listings from './listings';
 const mapStateToProps = state => {
     return({
         user: state.entities.users[state.session.id],
-        listings: state.entities.users[state.session.id].productListings,
-        products: state.entities.users[state.session.id].products
+        // listings: state.entities.users[state.session.id].productListings,
+        // products: state.entities.users[state.session.id].products
     }
 )}
 
