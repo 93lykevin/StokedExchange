@@ -1,3 +1,4 @@
+//Make this page show items that belong to a category
 import React from 'react';
 import { Link } from 'react-router-dom'
 import ProductIndexItem from "./product_index_item";

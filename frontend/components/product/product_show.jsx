@@ -181,7 +181,7 @@ class ProductShow extends React.Component {
                 </div>
                 
                 <div className="ticker">
-                    <h3>Kevin & Mary & Mohit</h3>
+                    <h3>Welcome To StreetX</h3>
                 </div>
             </div>
         )

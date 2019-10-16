@@ -3,17 +3,17 @@ import { Link, withRouter } from 'react-router-dom';
 import SearchBarContainer from '../searchbar/searchbar_container';
     
 class Greeting extends React.Component {
-    constructor(props){
-        super(props);
+  constructor(props){
+    super(props);
 
-        this.demoUser = {
-            username: 'mohito',
-            password: 'burrito',
-        };
+    this.demoUser = {
+      username: 'mohito',
+      password: 'burrito'
+    };
 
-        this.handleToggle = this.handleToggle.bind(this);
-        this.handleDemoLogin = this.handleDemoLogin.bind(this);
-    }
+    this.handleToggle = this.handleToggle.bind(this);
+    this.handleDemoLogin = this.handleDemoLogin.bind(this);
+  }
 
     componentDidMount() {
         // this.props.requestProducts();
@@ -63,18 +63,19 @@ class Greeting extends React.Component {
     }
 
     personalGreeting() {
-        return (
-            <nav className="nav-bar-list" >
-                <ul className="nav-bar-list-ul">
-                    <li><Link to="/index">Browse</Link></li>
-                    <li><Link to="/selling">Portfolio</Link></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Account</a></li>
-                    <li><button className="header-button" onClick={this.props.logout}>Log Out</button></li>
-                    <li className='sell-button'><Link to="/sell">Sell</Link></li>
-                </ul>
-            </nav>
-        );
+      return (
+        <nav className="nav-bar-list" >
+          <ul className="nav-bar-list-ul">
+            <li><Link to="/index">Browse</Link></li>
+            <li><Link to="/selling">Portfolio</Link></li>
+            <li><a href="#">About</a></li>
+            <li><a href="https://www.linkedin.com/in/93lykevin/">LinkedIn</a></li>
+            <li><a href="https://github.com/93lykevin/">Github</a></li>
+            <li><button className="header-button" onClick={this.props.logout}>Log Out</button></li>
+            <li className='sell-button'><Link to="/sell">Sell</Link></li>
+          </ul>
+        </nav>
+      );
     }
 
     Welcome() {

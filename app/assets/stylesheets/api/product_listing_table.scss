@@ -162,8 +162,13 @@
                                     }
 
                                     .listing-options{
-                                        padding-left: 5px;
-                                        border-top: 1px solid #e5e7ea;
+                                      padding-left: 5px;
+                                      border-top: 1px solid #e5e7ea;
+
+                                      .options {
+                                        display: flex;
+                                        justify-content: space-around;
+                                      }
                                     }
                                 }
 

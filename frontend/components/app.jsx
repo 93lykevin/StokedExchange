@@ -28,7 +28,7 @@ const App = () => (
                 <AuthRoute exact path="/signup" component={SignupFormContainer} />
                 <ProtectedRoute exact path="/sell" component={SignupFormContainer}/>
                 <ProtectedRoute exact path="/sell/:id" component={SellFormContainer}/>
-                <ProtectedRoute exact path="/selling/" component={ListingSellContainer}/>
+                <ProtectedRoute exact path="/selling" component={ListingSellContainer}/>
                 <ProtectedRoute exact path="/buy/:id" component={BuyFormContainer}/>
                 {/* <ProtectedRoute exact path="/buying/" component={BuyListingContainer}/> */}
                 <Route path="/product/:id" component={ProductShowContainer} />
