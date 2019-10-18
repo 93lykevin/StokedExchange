@@ -154,7 +154,7 @@ class ProductListingForm extends React.Component {
               </div>
             </div>
             <div className="fourty-create-listing-form pane">
-                {this.state.size === "" ? this.selectSize() : this.selectPay()}
+              {this.state.size === "" ? this.selectSize() : this.selectPay()}
             </div>
           </div>
         </div>

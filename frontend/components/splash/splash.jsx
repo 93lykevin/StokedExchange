@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ProductIndexItem from '../product/product_index_item';
+import Ticker from '../ticker/ticker';
 
 class Splash extends React.Component {
     constructor(props){
@@ -134,7 +135,7 @@ class Splash extends React.Component {
                     </div>
                 </div>
 
-                <div className="splash-ticker"></div>
+                <Ticker/>
             </div>
         )
     }

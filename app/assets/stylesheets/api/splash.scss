@@ -86,27 +86,27 @@
         }
     }
 
-    .splash-categories{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        margin: auto;
-        font-weight: 400;
-        color: #fff;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 25px;
-        // width: 50%;
-        
-        div{
-        font-size: 26px;
-        letter-spacing: 2px;
-        font-weight: 600;
-        color: white;
-        margin: 10px 25px 0px;
-        border-bottom: 4px solid transparent;
-        }
+  .splash-categories{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    // width: 50%;
+    
+    div{
+    font-size: 26px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: white;
+    margin: 10px 25px 0px;
+    border-bottom: 4px solid transparent;
     }
+  }
     
     .splash-banner{
         position: relative;
