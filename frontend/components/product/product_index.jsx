@@ -48,9 +48,6 @@ class ProductIndex extends React.Component {
         <div className="products-index-container">
           <ProductSideNav/>
           {/* not sure where to put this. I think I need to separate out side nav */}
-
-
-          
           <div className="browse-grid">
             {products.map(product => (
               <ProductIndexItem 
