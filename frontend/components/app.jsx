@@ -43,7 +43,10 @@ const App = () => (
         
         <Redirect to="/"/>
       </Switch>
-    <Footer/>
+    </div>
+    
+    <div className="site-footer">
+      <Footer/>
     </div>
   </div>
 )

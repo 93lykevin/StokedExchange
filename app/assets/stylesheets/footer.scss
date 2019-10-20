@@ -1,20 +1,26 @@
 .footer-container {
-  height: 50px;
+  height: 40px;
   background-color: rgb(61,61,61);
   color: white;
   font-size: 25px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
-  bottom: 50px;
+  // bottom: 50px;
+  bottom: 0px;
   left: 0;
   width: 100%;
-
+  
+  .copyright {
+    margin-left: 30px;
+    font-size: 20px;
+  }
   .personal-links{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 30px;
 
     a{
       margin: 0 10px;

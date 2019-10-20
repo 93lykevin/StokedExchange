@@ -52,7 +52,7 @@ class Greeting extends React.Component {
                 <ul className="nav-bar-list-ul">
                     <li><Link to="/index">Browse</Link></li>
                     <li><Link to="/selling">Portfolio</Link></li>
-                    <li><a href="#">About</a></li>
+                    {/* <li><a href="#">About</a></li> */}
                     <li><Link to="/login" onClick={this.handleToggle}>Login</Link></li>
                     <li><Link to="/signup" onClick={this.handleToggle}>Sign Up</Link></li>
                     <li><button onClick={this.handleDemoLogin}>Demo</button></li>
@@ -68,9 +68,9 @@ class Greeting extends React.Component {
           <ul className="nav-bar-list-ul">
             <li><Link to="/index">Browse</Link></li>
             <li><Link to="/selling">Portfolio</Link></li>
-            <li><a href="#">About</a></li>
-            <li><a href="https://www.linkedin.com/in/93lykevin/">LinkedIn</a></li>
-            <li><a href="https://github.com/93lykevin/">Github</a></li>
+            {/* <li><a href="#">About</a></li> */}
+            {/* <li><a href="https://www.linkedin.com/in/93lykevin/">LinkedIn</a></li> */}
+            {/* <li><a href="https://github.com/93lykevin/">Github</a></li> */}
             <li><button className="header-button" onClick={this.props.logout}>Log Out</button></li>
             <li className='sell-button'><Link to="/sell">Sell</Link></li>
           </ul>

@@ -5,9 +5,11 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
+    <link rel=”shortcut icon” href=”%PUBLIC_URL%/favicon.ico”>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-    
+
     <script type="text/javascript">
       window.streetxURL = "<%= image_url('StreetX.png') %>";
       window.supremeURL = "<%= image_url('supreme.jpg') %>";
@@ -18,7 +20,6 @@
       window.banner = "<%=image_url('banner.png') %>";
       window.bigbanner = "<%=image_url('bigbanner.jpg') %>";
       window.streetwear = "<%=image_url('streetwear-bg.jpg') %>";
-      
     </script>
 
     <%= javascript_include_tag 'application' %>

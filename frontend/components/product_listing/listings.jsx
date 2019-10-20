@@ -28,9 +28,9 @@ class Listings extends React.Component{
 
           <div className="listing-tabs">
             <div className="tab-list">
-              <div>Current</div>
+              {/* <div>Current</div>
               <div>Pending</div>
-              <div>History</div>
+              <div>History</div> */}
             </div>
 
             <div className="tab-content">

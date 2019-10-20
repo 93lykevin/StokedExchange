@@ -6,8 +6,6 @@ import { requestProducts } from './actions/product_actions';
 import Root from './components/root';
 import { seedDb, postStockx, getPicture, search } from './util/stockx_api_util';
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
     let store;
     if (window.currentUser) {
