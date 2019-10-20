@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import ProductIndexItem from "./product_index_item";
 import ProductSideNav from './product_side_nav';
 import Ticker from '../ticker/ticker';
+import Footer from '../footer/footer';
 import {seedDb}  from '../../util/stockx_api_util';
 import Pagination from "react-js-pagination";
 // require("bootstrap/less/bootstrap.less");
@@ -57,14 +58,6 @@ class ProductIndex extends React.Component {
           </div>
         </div>
 
-        {/* <div className="pagination">
-            <Pagination
-                activePage={this.state.activePage}
-                itemsCountPerPage={10}
-                totalItemsCount={20}
-                onChange={this.handlePageChange}
-            />
-        </div> */}
         <Pagination 
           activePage={this.state.activePage}
           itemsCountPerPage={50}
@@ -73,7 +66,6 @@ class ProductIndex extends React.Component {
           onChange={this.handlePageChange}
         />
 
-        <Ticker/>
       </div>  
     )
   }

@@ -6,7 +6,6 @@ import ListingItem from './listing_item';
 class Listings extends React.Component{
   constructor(props){
     super(props)
-
     this.handleDelete = this.handleDelete.bind(this)
   }
 
@@ -19,6 +18,7 @@ class Listings extends React.Component{
   }
 
   render() {
+    // debugger
     return(
       <div className="dashboard-container">
         <div className="dashboard-sidebar"></div>

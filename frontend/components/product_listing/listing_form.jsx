@@ -1,5 +1,5 @@
 import React from 'react';
-import SizeButton from './size-button';
+import SizeButton from './size_button';
 import {withRouter, Redirect} from 'react-router-dom';
 
 //BUY product listing can't specify which exact listing to buy. 
@@ -16,11 +16,21 @@ class ProductListingForm extends React.Component {
                         '11.5', '12', '12.5', '13', '14', 
                         '15', '16', '17', '18'];
 
-    this.state = { 
-      size: "",
-      product_id: this.props.match.params.id,
-      price: 0,
-      condition: "NEW"
+    if (this.props.formType === 'update') {
+      this.state = {
+        id: this.props.listing.id,
+        size: this.props.listing.size || "",
+        product_id: this.props.productId,
+        price: this.props.listing.price || 0,
+        condition: "NEW"
+      }
+    } else {
+      this.state = {
+        size: "",
+        product_id: this.props.match.params.id,
+        price: 0,
+        condition: "NEW"
+      }
     }
       
     this.handleSelectSize = this.handleSelectSize.bind(this);
@@ -29,7 +39,11 @@ class ProductListingForm extends React.Component {
   }
 
   componentDidMount() {
-    this.props.requestProduct(this.props.match.params.id);
+    if (this.props.formType === 'sell' || this.props.formType === 'buy') {
+      this.props.requestProduct(this.props.match.params.id);
+    } else {
+      this.props.requestProduct(this.props.productId)
+    }
   }
   
   handleSelectSize(size) { 
@@ -46,7 +60,11 @@ class ProductListingForm extends React.Component {
     e.preventDefault();
     const productListing = Object.assign({}, this.state);
     this.props.processForm(productListing);
-    this.props.history.push(`/product/${productListing.product_id}`);
+    if (this.props.formType === 'update') {
+      this.props.history.push(`/selling`);
+    } else {
+      this.props.history.push(`/product/${productListing.product_id}`);
+    }
   }
 
   update(field) {
@@ -69,10 +87,6 @@ class ProductListingForm extends React.Component {
           size={size}
           handleSelectSize={this.handleSelectSize.bind(this)}/>
         ))}
-        {/* Render a button for EACH size. Each button will have the lowest price for that size */}
-        {/* How will I get the lowest price for a given size? */}
-        {/* I have to filter through my product_listings to find all items of the current size, and then
-                            send down the lowest price I find... */}
       </div>
     </div>
   )}
@@ -80,8 +94,8 @@ class ProductListingForm extends React.Component {
   selectPay() {
     return(
       <form className="pay" onSubmit={this.handleCreate}>
-        <div className="back-to-sizes">
-          Clear size state here
+        <div className="back-to-sizes" onClick={() => this.setState({size: ""})}>
+            Back To Sizes
           <div className="buy-sell-size">
             <div className="size-details">
               <img src="" alt=""/>
@@ -100,7 +114,7 @@ class ProductListingForm extends React.Component {
             <div className="price-input-container">
               <div className="price-input">
                 <div className="price-input-decoration">$</div>
-                <input type="text" className="enter-price" placeholder="Enter Amount" onChange={this.update('price')}/>
+                <input type="text" className="enter-price" placeholder={"Enter Amount"} onChange={this.update('price')}/>
               </div>
             </div>
 
@@ -167,4 +181,4 @@ ProductListingForm.defaultProps = {
   product: {}
 }
 
-export default withRouter(ProductListingForm)
+export default ProductListingForm

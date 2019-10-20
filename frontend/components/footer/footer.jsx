@@ -1,11 +1,17 @@
 import React from 'react'
+import Ticker from '../ticker/ticker'
 
-const Footer = () => {(
-    <div className="footer-container">
-        <div className="footer-nav"></div>
-        <div className="footer-image"></div>
-        <div className="footer-ticker"></div>
-    </div>
-)};
-
-export default Footer;
+export default class Footer extends React.Component {
+  render() {
+    return(
+      <div className="footer-container">
+        <div className="personal-links">
+          <a href="https://www.linkedin.com/in/93lykevin/"><i className="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/93lykevin/"><i className="fab fa-github"></i></a>
+          <a href="https://github.com/93lykevin/"><i className="fas fa-user"></i></a>
+        </div>
+        <Ticker/>
+      </div>
+    )
+  }
+}

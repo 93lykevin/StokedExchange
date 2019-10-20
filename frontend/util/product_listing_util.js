@@ -30,13 +30,14 @@ export const createProductListing = (product_listing) => {
   )
 }
 
-export const updateProductListing = (product_listing) => (
-  $.ajax({
-    method: 'PATCH',
-    url: `api/product_listings/${product_listing.id}`,
-    data: {product_listing}
-  })
-)
+export const updateProductListing = (product_listing) => {
+  return(
+    $.ajax({
+      method: 'PATCH',
+      url: `api/product_listings/${product_listing.id}`,
+      data: {product_listing}
+    })
+)}
 
 export const deleteProductListing = (id) => {
   // debugger //Hit, but it isn't sending my ajax call correctly

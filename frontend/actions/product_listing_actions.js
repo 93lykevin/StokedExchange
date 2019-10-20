@@ -46,9 +46,10 @@ export const createBuyListing = (buyListing) => dispatch => (
     ProdListUtil.createBuyProductListing(buyListing).then(buyListing => dispatch(receiveBuyListing(buyListing)))
 )
 
-export const updateProductListing = (listing) => dispatch => (
-  ProdListUtil.updateProductListing(listing).then(listing => dispatch(receiveListing(listing)))
-)
+export const updateProductListing = (listing) => dispatch => {
+  return(
+    ProdListUtil.updateProductListing(listing).then(listing => dispatch(receiveListing(listing)))
+)}
 
 export const deleteProductListing = (id) => dispatch => {
   // debugger //Hit
