@@ -1,0 +1,135 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.browse-grid{
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.product-item {
+  position: relative;
+  width: 20%;
+  max-width: 215px;
+  padding: 0 8px 16px;
+  box-sizing: border-box;
+
+  .product-item-layer {
+    border: 1px solid #FAFAFA;
+    
+    :hover {
+      .product-body-div {
+        background-color: #ECECEC;
+      }
+    }
+    
+    .product-image-div {
+      margin: 16px;
+      position: relative;
+      padding-top: 58%;
+    }
+    .product-body-div {
+      background-color: rgb(250, 250, 250);
+      text-align: left;
+      padding: 16px;
+      font-size: 14px;
+      display: inline-block;
+
+      .product-title {
+        height: 38px;
+        font-size: 14px;
+        margin-bottom: 6px;
+      }
+      
+      p {
+        color: rgba(0, 0, 0, 0.5);
+        // margin: 10px 0 2px;
+      }
+
+      .product-price {
+        font-size: 22px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+
+.product-image { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.products-index-container {
+  display: flex;
+  margin: auto;
+  width: 1170px;
+}
+
+.side-nav-container {
+  width: 16.6667%;
+}
+
+.side-nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0 5px;
+  align-content: flex-start;
+
+  ul > li {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 20px 0;
+
+    :hover{
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  background-color: #ECECEC;
+}
+
+.title-container{
+  height: 170px;
+}
+
+.title-left {
+  width: 66.6667%;
+  color: #333333;
+}
+
+.title-left-text {
+  margin-left: calc((100vw - 1110px)/2);
+  margin-top:1%;
+  font-weight: 500;
+
+  h4{
+    font-weight: 400;
+      font-size: 13px;
+  }
+}
+
+.title-right {
+  width: 33.3333%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), image-url('sauce.jpeg');
+  background-position: 50% 40%;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+
+.title-container h1{
+  font-size: 33px;
+}

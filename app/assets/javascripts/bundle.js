@@ -460,6 +460,9 @@ var App = function App() {
     path: "/index",
     component: _product_product_index_container__WEBPACK_IMPORTED_MODULE_9__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+    path: "/:category",
+    component: _product_product_index_container__WEBPACK_IMPORTED_MODULE_9__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     path: "/",
     component: _splash_splash_container__WEBPACK_IMPORTED_MODULE_4__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Redirect"], {
@@ -665,7 +668,7 @@ function (_React$Component) {
       }, "Demo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "sell-button"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/sell"
+        to: "/selling"
       }, "Sell"))));
     }
   }, {
@@ -685,7 +688,7 @@ function (_React$Component) {
       }, "Log Out")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "sell-button"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/sell"
+        to: "/selling"
       }, "Sell"))));
     }
   }, {
@@ -794,6 +797,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 // todo: 1. separate out side and header. they should be their own thing...
 //       2. Add pagination into the browse grid. then the page should be good
+//       3. Refactor so it can handle specific categories
 
 
 
@@ -818,6 +822,7 @@ function (_React$Component) {
       activePage: 1
     };
     _this.handlePageChange = _this.handlePageChange.bind(_assertThisInitialized(_this));
+    _this.productsMap = _this.productsMap.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -836,6 +841,29 @@ function (_React$Component) {
       });
     }
   }, {
+    key: "productsMap",
+    value: function productsMap(products) {
+      if (this.props.match.url.slice(1) === 'index') {
+        return products.map(function (product) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_product_index_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
+            key: product.id,
+            product: product
+          });
+        });
+      } else {
+        var brand = this.props.match.url.slice(1);
+        var selected = products.filter(function (product) {
+          return product.brand.toLowerCase() === brand.toLowerCase();
+        });
+        return selected.map(function (product) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_product_index_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
+            key: product.id,
+            product: product
+          });
+        });
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
       var products = this.props.products;
@@ -847,18 +875,13 @@ function (_React$Component) {
         className: "title-left"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "title-left-text"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "STREETWEAR"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Supreme, BAPE, Kith, Palace, Fear of God, KAWS, OFF-WHITE, & more. No lines, no bots, and always authentic. ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Shop all the best streetwear right here on StreetX."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "STREETWEAR"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Supreme, BAPE, Kith, Palace, Fear of God, KAWS, OFF-WHITE, & more. No lines, no bots, always authentic. ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Shop all the best streetwear right here on StreetX."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "title-right"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "products-index-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_product_side_nav__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "browse-grid"
-      }, products.map(function (product) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_product_index_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
-          key: product.id,
-          product: product
-        });
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_js_pagination__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      }, this.productsMap(products))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_js_pagination__WEBPACK_IMPORTED_MODULE_7___default.a, {
         activePage: this.state.activePage,
         itemsCountPerPage: 50,
         totalItemsCount: products.length,
@@ -1160,16 +1183,14 @@ function (_React$Component) {
         className: "sale-size"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "all-asks"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: ""
-      }, "View All Asks")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "bid-button"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "inner"
+        className: "inner",
+        id: "button-container-sell"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "/sell/".concat(this.props.product.id),
-        className: "button-container",
-        id: "button-container-sell"
+        className: "button-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "stats"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1188,9 +1209,7 @@ function (_React$Component) {
         className: "sale-size"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "all-asks"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: ""
-      }, "View All Bids"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "product-image-solo"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: image_url,
@@ -1245,8 +1264,6 @@ function (_React$Component) {
           product: product
         });
       }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "market-history-wrap"
-      }, "insert market history graphs and data here"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "ticker"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Welcome To StreetX")));
     }
@@ -1359,6 +1376,8 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         onClick: seedDb
       }, "SEED"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/index"
+      }, "ALL")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/supreme"
       }, "SUPREME")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/bape"
@@ -1367,10 +1386,10 @@ function (_React$Component) {
       }, "KITH")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/palace"
       }, "PALACE")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/fearofgod"
-      }, "FEAR OF GOD")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/offwhite"
-      }, "OFF-WHITE")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/gucci"
+      }, "GUCCI")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/jordan"
+      }, "JORDAN")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/nike"
       }, "NIKE")))));
     }
@@ -38371,7 +38390,7 @@ function warning(message) {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

@@ -56,7 +56,7 @@ class Greeting extends React.Component {
                     <li><Link to="/login" onClick={this.handleToggle}>Login</Link></li>
                     <li><Link to="/signup" onClick={this.handleToggle}>Sign Up</Link></li>
                     <li><button onClick={this.handleDemoLogin}>Demo</button></li>
-                    <li className='sell-button'><Link to="/sell">Sell</Link></li>
+                    <li className='sell-button'><Link to="/selling">Sell</Link></li>
                 </ul>
             </nav>
         );
@@ -72,7 +72,7 @@ class Greeting extends React.Component {
             {/* <li><a href="https://www.linkedin.com/in/93lykevin/">LinkedIn</a></li> */}
             {/* <li><a href="https://github.com/93lykevin/">Github</a></li> */}
             <li><button className="header-button" onClick={this.props.logout}>Log Out</button></li>
-            <li className='sell-button'><Link to="/sell">Sell</Link></li>
+            <li className='sell-button'><Link to="/selling">Sell</Link></li>
           </ul>
         </nav>
       );

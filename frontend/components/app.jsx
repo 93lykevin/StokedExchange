@@ -39,6 +39,7 @@ const App = () => (
         {/* <ProtectedRoute exact path="/buying/" component={ListingBuyContainer}/> */}
         <Route path="/product/:id" component={ProductShowContainer} />
         <Route exact path="/index" component={ProductIndexContainer} />
+        <Route path="/:category" component={ProductIndexContainer} />
         <Route path="/" component={SplashContainer} />
         
         <Redirect to="/"/>

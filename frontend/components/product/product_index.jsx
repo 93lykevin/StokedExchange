@@ -1,5 +1,6 @@
 // todo: 1. separate out side and header. they should be their own thing...
 //       2. Add pagination into the browse grid. then the page should be good
+//       3. Refactor so it can handle specific categories
 import React from 'react';
 import { Link } from 'react-router-dom'
 import ProductIndexItem from "./product_index_item";
@@ -18,6 +19,7 @@ class ProductIndex extends React.Component {
       activePage: 1
     };
     this.handlePageChange = this.handlePageChange.bind(this)
+    this.productsMap = this.productsMap.bind(this);
   }
 
   componentDidMount() {
@@ -30,6 +32,28 @@ class ProductIndex extends React.Component {
     this.setState({activePage: pageNumber})
   }
 
+  productsMap(products) {
+    if (this.props.match.url.slice(1) === 'index') {
+      return(
+        products.map(product => (
+          <ProductIndexItem 
+            key={product.id}
+            product={product} />
+          ))
+      )
+    } else {
+      const brand = this.props.match.url.slice(1)
+      let selected = products.filter(product =>  product.brand.toLowerCase() === brand.toLowerCase() )
+      return(
+        selected.map(product => (
+          <ProductIndexItem
+          key={product.id}
+          product={product} />
+        ))
+      )
+    }
+  }
+
   render() {
     let products = this.props.products;
     return(
@@ -39,7 +63,7 @@ class ProductIndex extends React.Component {
               <div className="title-left-text">
                 <h1>STREETWEAR</h1>
                 <h4>
-                  Supreme, BAPE, Kith, Palace, Fear of God, KAWS, OFF-WHITE, & more. No lines, no bots, and always authentic. <br/>
+                  Supreme, BAPE, Kith, Palace, Fear of God, KAWS, OFF-WHITE, & more. No lines, no bots, always authentic. <br/>
                   Shop all the best streetwear right here on StreetX.
                 </h4>
               </div>
@@ -50,11 +74,12 @@ class ProductIndex extends React.Component {
           <ProductSideNav/>
           {/* not sure where to put this. I think I need to separate out side nav */}
           <div className="browse-grid">
-            {products.map(product => (
+            {this.productsMap(products)}
+            {/* {products.map(product => (
               <ProductIndexItem 
               key={product.id}
               product={product} />
-            ))}
+            ))} */}
           </div>
         </div>
 
@@ -65,7 +90,6 @@ class ProductIndex extends React.Component {
           pageRangeDisplayed={5}
           onChange={this.handlePageChange}
         />
-
       </div>  
     )
   }
