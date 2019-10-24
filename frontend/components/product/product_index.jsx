@@ -33,7 +33,9 @@ class ProductIndex extends React.Component {
   }
 
   productsMap(products) {
-    if (this.props.match.url.slice(1) === 'index') {
+    const category = this.props.match.url.slice(1);
+    let selected;
+    if (category === 'index') {
       return(
         products.map(product => (
           <ProductIndexItem 
@@ -41,9 +43,18 @@ class ProductIndex extends React.Component {
             product={product} />
           ))
       )
+    } else if (ProductIndex.clothingType.includes(category)) {
+      selected = products.filter(product => product.product_category.toLowerCase() === category.toLowerCase())
+      return (
+        selected.map(product => (
+          <ProductIndexItem
+          key={product.id}
+          product={product}
+          />
+        ))
+      )
     } else {
-      const brand = this.props.match.url.slice(1)
-      let selected = products.filter(product =>  product.brand.toLowerCase() === brand.toLowerCase() )
+      selected = products.filter(product =>  product.brand.toLowerCase() === category.toLowerCase() )
       return(
         selected.map(product => (
           <ProductIndexItem
@@ -94,5 +105,7 @@ class ProductIndex extends React.Component {
     )
   }
 }
+
+ProductIndex.clothingType = ['sneakers', 'streetwear', 'handbags', 'watches'];
 
 export default ProductIndex;

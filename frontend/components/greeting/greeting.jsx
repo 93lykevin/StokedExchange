@@ -16,12 +16,12 @@ class Greeting extends React.Component {
   }
 
     componentDidMount() {
-        // this.props.requestProducts();
+      // this.props.requestProducts();
     }
 
     handleDemoLogin(e) {
-        e.preventDefault();
-        this.props.processForm(this.demoUser);
+      e.preventDefault();
+      this.props.processForm(this.demoUser);
     }
 
     handleToggle(e) {
@@ -29,37 +29,37 @@ class Greeting extends React.Component {
     }
 
     navBar() {
-        return(
-        <div className="nav-bar-container">
-            <div className='nav-bar-main'>
-                <div className="logo-nav">
-                    <Link to="/"><img src={window.streetxURL} alt="logo" className="logo"/></Link>
-                </div>
-                <div className="searchbar">
-                    <SearchBarContainer />
-                </div>
-                <div className="nav-bar-list-div">
-                    {this.Welcome()}
-                </div>
-            </div>
+      return(
+      <div className="nav-bar-container">
+        <div className='nav-bar-main'>
+          <div className="logo-nav">
+            <Link to="/"><img src={window.streetxURL} alt="logo" className="logo"/></Link>
+          </div>
+          <div className="searchbar">
+            <SearchBarContainer />
+          </div>
+          <div className="nav-bar-list-div">
+            {this.Welcome()}
+          </div>
         </div>
-       )
+      </div>
+      )
     };
 
     sessionLinks() {
-        return (
-            <nav className="nav-bar-list" >
-                <ul className="nav-bar-list-ul">
-                    <li><Link to="/index">Browse</Link></li>
-                    <li><Link to="/selling">Portfolio</Link></li>
-                    {/* <li><a href="#">About</a></li> */}
-                    <li><Link to="/login" onClick={this.handleToggle}>Login</Link></li>
-                    <li><Link to="/signup" onClick={this.handleToggle}>Sign Up</Link></li>
-                    <li><button onClick={this.handleDemoLogin}>Demo</button></li>
-                    <li className='sell-button'><Link to="/selling">Sell</Link></li>
-                </ul>
-            </nav>
-        );
+      return (
+        <nav className="nav-bar-list" >
+          <ul className="nav-bar-list-ul">
+            <li><Link to="/index">Browse</Link></li>
+            <li><Link to="/selling">Portfolio</Link></li>
+            {/* <li><a href="#">About</a></li> */}
+            <li><Link to="/login" onClick={this.handleToggle}>Login</Link></li>
+            <li><Link to="/signup" onClick={this.handleToggle}>Sign Up</Link></li>
+            <li><button onClick={this.handleDemoLogin}>Demo</button></li>
+            <li className='sell-button'><Link to="/selling">Sell</Link></li>
+          </ul>
+        </nav>
+      );
     }
 
     personalGreeting() {
@@ -79,13 +79,13 @@ class Greeting extends React.Component {
     }
 
     Welcome() {
-        return this.props.currentUser ? this.personalGreeting() : this.sessionLinks();
+      return this.props.currentUser ? this.personalGreeting() : this.sessionLinks();
     }
 
     render() {
-        return(
-            this.navBar()
-        )
+      return(
+        this.navBar()
+      )
     }
 };
 export default withRouter(Greeting)

@@ -289,7 +289,6 @@ var updateProductListing = function updateProductListing(listing) {
 };
 var deleteProductListing = function deleteProductListing(id) {
   return function (dispatch) {
-    // debugger //Hit
     return _util_product_listing_util__WEBPACK_IMPORTED_MODULE_0__["deleteProductListing"](id).then(function (listing) {
       return dispatch(removeListing(listing.id));
     });
@@ -444,6 +443,10 @@ var App = function App() {
     exact: true,
     path: "/selling",
     component: _product_listing_listings_index_sell_container__WEBPACK_IMPORTED_MODULE_14__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_util_route_util__WEBPACK_IMPORTED_MODULE_3__["ProtectedRoute"], {
+    exact: true,
+    path: "/buying/",
+    component: _product_listing_listings_index_buy_container__WEBPACK_IMPORTED_MODULE_15__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_util_route_util__WEBPACK_IMPORTED_MODULE_3__["ProtectedRoute"], {
     exact: true,
     path: "/buy/:id",
@@ -843,17 +846,29 @@ function (_React$Component) {
   }, {
     key: "productsMap",
     value: function productsMap(products) {
-      if (this.props.match.url.slice(1) === 'index') {
+      var category = this.props.match.url.slice(1);
+      var selected;
+
+      if (category === 'index') {
         return products.map(function (product) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_product_index_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
             key: product.id,
             product: product
           });
         });
+      } else if (ProductIndex.clothingType.includes(category)) {
+        selected = products.filter(function (product) {
+          return product.product_category.toLowerCase() === category.toLowerCase();
+        });
+        return selected.map(function (product) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_product_index_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
+            key: product.id,
+            product: product
+          });
+        });
       } else {
-        var brand = this.props.match.url.slice(1);
-        var selected = products.filter(function (product) {
-          return product.brand.toLowerCase() === brand.toLowerCase();
+        selected = products.filter(function (product) {
+          return product.brand.toLowerCase() === category.toLowerCase();
         });
         return selected.map(function (product) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_product_index_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -894,6 +909,7 @@ function (_React$Component) {
   return ProductIndex;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
+ProductIndex.clothingType = ['sneakers', 'streetwear', 'handbags', 'watches'];
 /* harmony default export */ __webpack_exports__["default"] = (ProductIndex);
 
 /***/ }),
@@ -1506,8 +1522,10 @@ function (_React$Component) {
       var productListing = Object.assign({}, this.state);
       this.props.processForm(productListing);
 
-      if (this.props.formType === 'update') {
+      if (this.props.formType === 'sell') {
         this.props.history.push("/selling");
+      } else if (this.props.formType === "buy") {
+        this.props.history.push('/buying');
       } else {
         this.props.history.push("/product/".concat(productListing.product_id));
       }
@@ -1855,7 +1873,6 @@ function (_React$Component) {
     value: function render() {
       var _this = this;
 
-      // debugger
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
         className: "listing-item"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
@@ -1981,7 +1998,6 @@ function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      // debugger
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "dashboard-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -2916,7 +2932,13 @@ function (_React$Component) {
         className: "splash-searchbar"
       }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "splash-categories"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "SNEAKERS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "STREETWEAR"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "HANDBAGS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "WATCHES")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/sneakers"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "SNEAKERS")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/streetwear"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "STREETWEAR")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "handbags"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "HANDBAGS"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "splash-banner"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: window.banner,
@@ -3170,7 +3192,7 @@ var listingsReducer = function listingsReducer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   var action = arguments.length > 1 ? arguments[1] : undefined;
   Object.freeze(state);
-  var newState = lodash_merge__WEBPACK_IMPORTED_MODULE_1___default()({}, state); // debugger //NO hit
+  var newState = lodash_merge__WEBPACK_IMPORTED_MODULE_1___default()({}, state);
 
   switch (action.type) {
     case _actions_product_listing_actions__WEBPACK_IMPORTED_MODULE_0__["RECEIVE_ALL_LISTINGS"]:
@@ -3184,7 +3206,6 @@ var listingsReducer = function listingsReducer() {
       return newState;
 
     case _actions_product_listing_actions__WEBPACK_IMPORTED_MODULE_0__["DELETE_LISTING"]:
-      // debugger //Hit
       delete newState[action.listingId];
       return newState;
 
@@ -3515,6 +3536,9 @@ var createProduct = function createProduct(product) {
     url: "api/products",
     data: {
       product: product
+    },
+    error: function error(err) {
+      console.log("Unable to create product");
     }
   });
 };
@@ -3601,7 +3625,6 @@ var updateProductListing = function updateProductListing(product_listing) {
   });
 };
 var deleteProductListing = function deleteProductListing(id) {
-  // debugger //Hit, but it isn't sending my ajax call correctly
   return $.ajax({
     method: 'DELETE',
     url: "api/product_listings/".concat(id)
@@ -3776,6 +3799,7 @@ var filterSearch = function filterSearch(searchRes) {
     var item = searchRes[i];
     var getRetailPrice = item['searchable_traits'];
     var getImageUrl = item['media'];
+    var categories = item['categories'].join(" ").split(" ");
     var filteredItem = {
       'title': item['name'],
       'description': item['description'],
@@ -3794,7 +3818,7 @@ var filterSearch = function filterSearch(searchRes) {
       'lowest_ask': item['lowest_ask'],
       'sales_last_72': item['sales_last_72'],
       'new_release': item['new_release'],
-      'categories': item['categories'],
+      'categories': categories,
       'image_url': Object.values(getImageUrl)[2]
     };
     Object(_product_api_util__WEBPACK_IMPORTED_MODULE_0__["createProduct"])(filteredItem);
@@ -3802,6 +3826,7 @@ var filterSearch = function filterSearch(searchRes) {
 };
 
 var seedDb = function seedDb() {
+  postStockx("Apple");
   postStockx("Supreme");
   postStockx("Adidas");
   postStockx("Off White");
@@ -3820,7 +3845,9 @@ var seedDb = function seedDb() {
   postStockx("Rollex");
   postStockx("Gucci");
   postStockx("Louis Vuitton");
-  postStockx("Miscellaneous");
+  postStockx("Miscellaneous"); // postStockx("G-Shock") 
+  // postStockx("Casio") 
+  // postStockx("Rolex") 
 }; // export const seedCreate = (search) => {
 //     postStockx(search).then(searchRes => {
 //         filterSearch(searchRes).then(filterArr => {

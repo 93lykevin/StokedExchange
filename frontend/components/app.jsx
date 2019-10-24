@@ -34,9 +34,9 @@ const App = () => (
         {/* <ProtectedRoute exact path="/sell" component={SignupFormContainer}/> */}
         <ProtectedRoute exact path="/sell/:id" component={ListingSellFormContainer}/>
         <ProtectedRoute exact path="/selling" component={ListingIndexSellContainer}/>
+        <ProtectedRoute exact path="/buying/" component={ListingIndexBuyContainer}/>
         <ProtectedRoute exact path="/buy/:id" component={ListingBuyFormContainer}/>
         <ProtectedRoute exact path="/edit/:listingId" component={ListingEditFormContainer}/> 
-        {/* <ProtectedRoute exact path="/buying/" component={ListingBuyContainer}/> */}
         <Route path="/product/:id" component={ProductShowContainer} />
         <Route exact path="/index" component={ProductIndexContainer} />
         <Route path="/:category" component={ProductIndexContainer} />

@@ -52,7 +52,6 @@ export const updateProductListing = (listing) => dispatch => {
 )}
 
 export const deleteProductListing = (id) => dispatch => {
-  // debugger //Hit
   return(
     ProdListUtil.deleteProductListing(id).then(listing => dispatch(removeListing(listing.id)))
   )

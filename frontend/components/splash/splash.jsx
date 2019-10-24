@@ -71,10 +71,10 @@ class Splash extends React.Component {
           </div>
 
           <div className="splash-categories">
-            <div>SNEAKERS</div>
-            <div>STREETWEAR</div>
-            <div>HANDBAGS</div>
-            <div>WATCHES</div>
+            <Link to="/sneakers"><div>SNEAKERS</div></Link>
+            <Link to="/streetwear"><div>STREETWEAR</div></Link>
+            <Link to="handbags"><div>HANDBAGS</div></Link>
+            {/* <Link to="watches"><div>WATCHES</div></Link> */}
           </div>
         </div>
         </div>

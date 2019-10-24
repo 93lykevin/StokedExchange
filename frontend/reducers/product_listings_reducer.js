@@ -10,7 +10,6 @@ import merge from 'lodash/merge';
 const listingsReducer = (state = {}, action) => {
   Object.freeze(state);
   let newState = merge({}, state);
-  // debugger //NO hit
   switch (action.type) {
     case RECEIVE_ALL_LISTINGS:
       newState = Object.assign({}, newState, action.listings)
@@ -20,7 +19,6 @@ const listingsReducer = (state = {}, action) => {
       newState = merge(newState, newListing)
       return newState;
     case DELETE_LISTING:
-      // debugger //Hit
       delete newState[action.listingId];
       return newState;
     default:

@@ -7,7 +7,6 @@ class ListingItem extends React.Component{
   }
 
   render(){
-    // debugger
     return(
       <React.Fragment>
         <tr className="listing-item">

@@ -40,7 +40,6 @@ export const updateProductListing = (product_listing) => {
 )}
 
 export const deleteProductListing = (id) => {
-  // debugger //Hit, but it isn't sending my ajax call correctly
   return $.ajax({
     method: 'DELETE',
     url: `api/product_listings/${id}`

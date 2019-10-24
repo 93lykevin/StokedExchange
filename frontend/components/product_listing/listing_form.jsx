@@ -60,9 +60,11 @@ class ProductListingForm extends React.Component {
     e.preventDefault();
     const productListing = Object.assign({}, this.state);
     this.props.processForm(productListing);
-    if (this.props.formType === 'update') {
+    if (this.props.formType === 'sell') {
       this.props.history.push(`/selling`);
-    } else {
+    } else if (this.props.formType === "buy") {
+      this.props.history.push('/buying')
+    }else {
       this.props.history.push(`/product/${productListing.product_id}`);
     }
   }
