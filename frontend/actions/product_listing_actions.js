@@ -38,17 +38,13 @@ export const fetchProductListing = (id) => dispatch => (
 
 export const createProductListing = (listing) =>  dispatch => {
   return(
-  ProdListUtil.createProductListing(listing).then(listing => dispatch(receiveListing(listing)))
+  ProdListUtil.createProductListing(listing).then(listings => dispatch(receiveAllListings(listings)))
   )
 }
 
-export const createBuyListing = (buyListing) => dispatch => (
-    ProdListUtil.createBuyProductListing(buyListing).then(buyListing => dispatch(receiveBuyListing(buyListing)))
-)
-
 export const updateProductListing = (listing) => dispatch => {
   return(
-    ProdListUtil.updateProductListing(listing).then(listing => dispatch(receiveListing(listing)))
+    ProdListUtil.updateProductListing(listing).then(listings => dispatch(receiveAllListings(listings)))
 )}
 
 export const deleteProductListing = (id) => dispatch => {

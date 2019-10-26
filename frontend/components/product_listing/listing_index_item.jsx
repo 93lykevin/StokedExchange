@@ -7,6 +7,7 @@ class ListingItem extends React.Component{
   }
 
   render(){
+    const buyOrSell = this.props.listing.listing_type === "selling" ? "Buy" : "Sell"
     return(
       <React.Fragment>
         <tr className="listing-item">
@@ -25,14 +26,20 @@ class ListingItem extends React.Component{
           <td className="listing-expires">30 Days</td>
           <td className="listing-options">
             <div className="options">
-              <button><Link to={`/buy/${this.props.product.id}`}><i className="fas fa-credit-card"></i></Link></button>
+              <button>
+                <Link to={`/${buyOrSell.toLocaleLowerCase()}/${this.props.product.id}`}>{buyOrSell}</Link>
+              </button>
               <br/>
               <button><Link to={{
                 pathname: `/edit/${this.props.listing.id}`,
-                state: { listingId: this.props.listing.id,
+                state: {
                         productId: this.props.listing.product_id,
+                        listingType: this.props.listing.listing_type,
+                        listingId: this.props.listing.id,
                         size: this.props.listing.size,
-                        price: this.props.listing.price }
+                        price: this.props.listing.price,
+                        id: this.props.listing.id
+                      }
               }}>
                 <i className="fas fa-pencil-alt"></i></Link></button>
               <br/>

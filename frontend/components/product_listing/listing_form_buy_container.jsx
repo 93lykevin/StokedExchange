@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { createBuyListing } from '../../actions/product_listing_actions';
+import { createProductListing } from '../../actions/product_listing_actions';
 import ListingForm from './listing_form';
 import { requestProduct } from '../../actions/product_actions';
 
@@ -10,13 +10,13 @@ const mapStateToProps = (state, ownProps) => {
     productListings: state.entities.productListings,
     errors: state.errors.product_listings,
     userId: state.session.id,
-    formType: 'buy'
+    listingType: 'buying'
   })
 }
 
 const mapDispatchToProps = dispatch => ({
   requestProduct: (id) => dispatch(requestProduct(id)),
-  processForm: (productListing) => dispatch(createBuyListing(productListing))
+  processForm: productListing => dispatch(createProductListing(productListing))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ListingForm);

@@ -16,31 +16,32 @@ class ProductListingForm extends React.Component {
                         '11.5', '12', '12.5', '13', '14', 
                         '15', '16', '17', '18'];
 
-    if (this.props.formType === 'update') {
+    if (this.props.match.path === "/edit/:listingId"){
       this.state = {
-        id: this.props.listing.id,
-        size: this.props.listing.size || "",
-        product_id: this.props.productId,
-        price: this.props.listing.price || 0,
-        condition: "NEW"
+        size: this.props.location.state.size || "",
+        product_id: this.props.location.state.productId || this.props.match.params.id || this.props.productId,
+        price: this.props.location.state.price || 0,
+        condition: "NEW",
+        listing_type: this.props.location.state.listingType || this.props.listingType || "",
+        id: this.props.location.state.id
       }
     } else {
       this.state = {
         size: "",
         product_id: this.props.match.params.id,
         price: 0,
-        condition: "NEW"
+        condition: "NEW",
+        listing_type: this.props.listingType
       }
     }
-      
     this.handleSelectSize = this.handleSelectSize.bind(this);
     this.handleCancel = this.handleCancel.bind(this);
-    this.handleCreate = this.handleCreate.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   componentDidMount() {
-    if (this.props.formType === 'sell' || this.props.formType === 'buy') {
-      this.props.requestProduct(this.props.match.params.id);
+    if (this.props.listingType === 'selling' || this.props.listingType === 'buying') {
+      this.props.requestProduct(this.state.product_id);
     } else {
       this.props.requestProduct(this.props.productId)
     }
@@ -56,15 +57,15 @@ class ProductListingForm extends React.Component {
     this.props.history.push('/')
   }
 
-  handleCreate(e) {
+  handleSubmit(e) {
     e.preventDefault();
     const productListing = Object.assign({}, this.state);
     this.props.processForm(productListing);
-    if (this.props.formType === 'sell') {
+    if (this.props.listingType === 'selling') {
       this.props.history.push(`/selling`);
-    } else if (this.props.formType === "buy") {
+    } else if (this.props.listingType === "buying") {
       this.props.history.push('/buying')
-    }else {
+    } else {
       this.props.history.push(`/product/${productListing.product_id}`);
     }
   }
@@ -95,7 +96,7 @@ class ProductListingForm extends React.Component {
 
   selectPay() {
     return(
-      <form className="pay" onSubmit={this.handleCreate}>
+      <form className="pay" onSubmit={this.handleSubmit}>
         <div className="back-to-sizes" onClick={() => this.setState({size: ""})}>
             Back To Sizes
           <div className="buy-sell-size">

@@ -8,7 +8,7 @@ const mapStateToProps = state => {
   return({
     user: state.entities.users[state.session.id],
     listings: state.entities.productListings, //this is my current user's listings
-    // products: state.entities.users[state.session.id].products
+    listingType: "selling"
   }
 )}
 

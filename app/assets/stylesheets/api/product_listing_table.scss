@@ -30,6 +30,14 @@
         .listing-tabs{
             min-height: 235px;
 
+            .tab-options {
+              display: flex;
+
+              :hover {
+                text-decoration: underline;
+              }
+            }
+
             .tab-list{
                 border-color: #e5e7ea;
                 border-bottom: 1px solid #ddd;

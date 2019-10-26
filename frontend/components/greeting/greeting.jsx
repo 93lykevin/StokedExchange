@@ -51,7 +51,7 @@ class Greeting extends React.Component {
         <nav className="nav-bar-list" >
           <ul className="nav-bar-list-ul">
             <li><Link to="/index">Browse</Link></li>
-            <li><Link to="/selling">Portfolio</Link></li>
+            <li><Link to="/buying">Portfolio</Link></li>
             {/* <li><a href="#">About</a></li> */}
             <li><Link to="/login" onClick={this.handleToggle}>Login</Link></li>
             <li><Link to="/signup" onClick={this.handleToggle}>Sign Up</Link></li>
@@ -67,7 +67,7 @@ class Greeting extends React.Component {
         <nav className="nav-bar-list" >
           <ul className="nav-bar-list-ul">
             <li><Link to="/index">Browse</Link></li>
-            <li><Link to="/selling">Portfolio</Link></li>
+            <li><Link to="/buying">Portfolio</Link></li>
             {/* <li><a href="#">About</a></li> */}
             {/* <li><a href="https://www.linkedin.com/in/93lykevin/">LinkedIn</a></li> */}
             {/* <li><a href="https://github.com/93lykevin/">Github</a></li> */}

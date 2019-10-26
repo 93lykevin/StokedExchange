@@ -45,13 +45,3 @@ export const deleteProductListing = (id) => {
     url: `api/product_listings/${id}`
   })
 }
-
-export const createBuyProductListing = (product_listing) => {
-  return(
-    $.ajax({
-      method: 'POST',
-      url: 'api/product_listings',
-      data: {product_listing}
-    })
-  )
-}

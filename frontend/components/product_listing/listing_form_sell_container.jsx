@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { createProductListing } from '../../actions/product_listing_actions';
 import ListingForm from './listing_form';
 import { requestProduct } from '../../actions/product_actions';
-// import { clearErrors } from '../../actions/product_listing_actions';
 
 const mapStateToProps = (state, ownProps) => {
   return ({
@@ -11,7 +10,7 @@ const mapStateToProps = (state, ownProps) => {
     productListings: state.entities.productListings,
     errors: state.errors.product_listings,
     userId: state.session.id,
-    formType: 'sell'
+    listingType: 'selling'
   })
 }
 

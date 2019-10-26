@@ -1,8 +1,7 @@
 import React from 'react';
-import ListingItem from './listing_item';
-
-
-//I made 
+import ListingItem from './listing_index_item';
+import { Link } from 'react-router-dom';
+ 
 class Listings extends React.Component{
   constructor(props){
     super(props)
@@ -27,9 +26,10 @@ class Listings extends React.Component{
 
           <div className="listing-tabs">
             <div className="tab-list">
-              {/* <div>Current</div>
-              <div>Pending</div>
-              <div>History</div> */}
+              <div className="tab-options">
+                <Link to="/buying"><div>Buying</div></Link>
+                <Link to="/selling"><div>Selling</div></Link>
+              </div>
             </div>
 
             <div className="tab-content">
@@ -52,14 +52,19 @@ class Listings extends React.Component{
                           <th className="update-destroy">Buy/Edit/Remove</th>
                         </tr>
                       </thead>
-                      {Object.values(this.props.listings).map(listing => (
-                        <tbody className="portfolio-items" key={listing.id}>
-                          <ListingItem 
-                          listing={listing}
-                          product={this.props.user.products[listing.product_id]}
-                          handleDelete={this.handleDelete}/>
-                        </tbody>
-                      ))}
+                      { 
+                        Object.values(this.props.listings).map(listing => {
+                          if (listing.listing_type === this.props.listingType) {
+                            return(
+                              <tbody className="portfolio-items" key={listing.id}>
+                                <ListingItem 
+                                listing={listing}
+                                product={this.props.user.products[listing.product_id]}
+                                handleDelete={this.handleDelete}/>
+                              </tbody>
+                            )
+                        }}) 
+                      }
                     </table>
                   </div>
                 </div>

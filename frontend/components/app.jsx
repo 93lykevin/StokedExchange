@@ -12,9 +12,9 @@ import SignupFormContainer from './session_form/signup_form_container';
 import ProductIndexContainer from './product/product_index_container';
 import ProductShowContainer from './product/product_show_container';
 
-import ListingSellFormContainer from './product_listing/listing_form_sell_container';
-import ListingBuyFormContainer from './product_listing/listing_form_buy_container';
-import ListingEditFormContainer from './product_listing/listing_form_edit_container';
+import ListingFormSellContainer from './product_listing/listing_form_sell_container';
+import ListingFormBuyContainer from './product_listing/listing_form_buy_container';
+import ListingFormEditContainer from './product_listing/listing_form_edit_container';
 import ListingIndexSellContainer from './product_listing/listings_index_sell_container';
 import ListingIndexBuyContainer from './product_listing/listings_index_buy_container';
 
@@ -32,11 +32,11 @@ const App = () => (
         <AuthRoute exact path="/login" component={LoginFormContainer} />
         <AuthRoute exact path="/signup" component={SignupFormContainer} />
         {/* <ProtectedRoute exact path="/sell" component={SignupFormContainer}/> */}
-        <ProtectedRoute exact path="/sell/:id" component={ListingSellFormContainer}/>
+        <ProtectedRoute exact path="/sell/:id" component={ListingFormSellContainer}/>
         <ProtectedRoute exact path="/selling" component={ListingIndexSellContainer}/>
+        <ProtectedRoute exact path="/buy/:id" component={ListingFormBuyContainer}/>
         <ProtectedRoute exact path="/buying/" component={ListingIndexBuyContainer}/>
-        <ProtectedRoute exact path="/buy/:id" component={ListingBuyFormContainer}/>
-        <ProtectedRoute exact path="/edit/:listingId" component={ListingEditFormContainer}/> 
+        <ProtectedRoute exact path="/edit/:listingId" component={ListingFormEditContainer}/> 
         <Route path="/product/:id" component={ProductShowContainer} />
         <Route exact path="/index" component={ProductIndexContainer} />
         <Route path="/:category" component={ProductIndexContainer} />

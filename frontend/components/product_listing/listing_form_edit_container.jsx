@@ -12,7 +12,7 @@ const mapStateToProps = (state, ownProps) => {
     productListings: state.entities.productListings,
     productId: ownProps.location.state.productId,
     errors: state.errors.product_listings,
-    formType: 'update'
+    listingType: ownProps.location.state.listingType
   }) 
 }
 
