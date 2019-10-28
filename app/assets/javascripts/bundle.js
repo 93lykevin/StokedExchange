@@ -888,13 +888,7 @@ function (_React$Component) {
         className: "products-index-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_product_side_nav__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "browse-grid"
-      }, this.productsMap(products))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_js_pagination__WEBPACK_IMPORTED_MODULE_7___default.a, {
-        activePage: this.state.activePage,
-        itemsCountPerPage: 50,
-        totalItemsCount: products.length,
-        pageRangeDisplayed: 5,
-        onChange: this.handlePageChange
-      }));
+      }, this.productsMap(products))));
     }
   }]);
 
@@ -1561,71 +1555,79 @@ function (_React$Component) {
     value: function selectPay() {
       var _this4 = this;
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-        className: "pay",
-        onSubmit: this.handleSubmit
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "back-to-sizes",
-        onClick: function onClick() {
-          return _this4.setState({
-            size: ""
-          });
-        }
-      }, "Back To Sizes", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "buy-sell-size"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "size-details"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "",
-        alt: ""
-      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pay-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "ask-or-sell-switch-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pay-or-sell-switches"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pay-switch"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "sell-switch"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "price-input-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "price-input"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "price-input-decoration"
-      }, "$"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "text",
-        className: "enter-price",
-        placeholder: "Enter Amount",
-        onChange: this.update('price')
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "multi-order-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "item-row"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Discount Code"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "text",
-        className: "discount-code-input",
-        placeholder: "Add Discount +"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "item-row"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Total Payout"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "total-payout"
-      }, "--")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pay-settings"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "expiration-setting"
-      }, "Ask Expiration: 30Days"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "payout-method"
-      }, "Please Add Payout Method")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "product-listing-buttons"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "product-listing-button cancel",
-        onClick: this.handleCancel
-      }, "Cancel"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        className: "product-listing-button submit",
-        type: "submit"
-      })));
+      var tax = (this.state.price * 0.095).toFixed(2);
+      return (// <form className="pay" onSubmit={(e) => this.handleSubmit(e)}>
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "back-to-sizes",
+          onClick: function onClick() {
+            return _this4.setState({
+              size: ""
+            });
+          }
+        }, "Back To Sizes", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "buy-sell-size"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "size-details"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: "",
+          alt: ""
+        })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "pay-container"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "ask-or-sell-switch-container"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "pay-or-sell-switches"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "pay-switch"
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "sell-switch"
+        }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "price-input-container"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "price-input"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "price-input-decoration"
+        }, "$"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          type: "number",
+          className: "enter-price",
+          placeholder: "Enter Amount",
+          onChange: this.update('price')
+        }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "multi-order-container"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "item-row"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Shipping"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "$13.95")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "item-row"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Sales Tax (9.5%)"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, (this.state.price * 0.095).toFixed(2))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "item-row"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Discount Code"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          type: "text",
+          className: "discount-code-input",
+          placeholder: "Add Discount +"
+        }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "item-row"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Total Payout"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "total-payout"
+        }, "$", this.state.price)))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "pay-settings"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "expiration-setting"
+        }, "Ask Expiration: 30Days"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "payout-method"
+        }, "Please Add Payout Method")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "product-listing-buttons"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          className: "product-listing-button cancel",
+          onClick: this.handleCancel
+        }, "Cancel"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          className: "product-listing-button submit",
+          type: "submit",
+          value: "Submit"
+        })))
+      );
+      {
+        /* </form> */
+      }
     }
   }, {
     key: "render",
@@ -1664,7 +1666,10 @@ function (_React$Component) {
         className: "buy-sell-image"
       }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "fourty-create-listing-form pane"
-      }, this.state.size === "" ? this.selectSize() : this.selectPay()))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+        className: "pay",
+        onSubmit: this.handleSubmit
+      }, this.state.size === "" ? this.selectSize() : this.selectPay())))));
     }
   }]);
 
@@ -1892,7 +1897,9 @@ function (_React$Component) {
         className: "listing-options"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "options"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "buy-or-sell-button"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/".concat(buyOrSell.toLocaleLowerCase(), "/").concat(this.props.product.id)
       }, buyOrSell)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: {

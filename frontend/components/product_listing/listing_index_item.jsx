@@ -26,7 +26,7 @@ class ListingItem extends React.Component{
           <td className="listing-expires">30 Days</td>
           <td className="listing-options">
             <div className="options">
-              <button>
+              <button className="buy-or-sell-button">
                 <Link to={`/${buyOrSell.toLocaleLowerCase()}/${this.props.product.id}`}>{buyOrSell}</Link>
               </button>
               <br/>

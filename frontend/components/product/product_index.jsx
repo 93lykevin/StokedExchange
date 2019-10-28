@@ -94,13 +94,13 @@ class ProductIndex extends React.Component {
           </div>
         </div>
 
-        <Pagination 
+        {/* <Pagination 
           activePage={this.state.activePage}
           itemsCountPerPage={50}
           totalItemsCount={products.length}
           pageRangeDisplayed={5}
           onChange={this.handlePageChange}
-        />
+        /> */}
       </div>  
     )
   }

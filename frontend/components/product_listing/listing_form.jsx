@@ -95,8 +95,11 @@ class ProductListingForm extends React.Component {
   )}
 
   selectPay() {
+    let tax = (this.state.price * 0.095).toFixed(2)
+
     return(
-      <form className="pay" onSubmit={this.handleSubmit}>
+      // <form className="pay" onSubmit={(e) => this.handleSubmit(e)}>
+      <div>
         <div className="back-to-sizes" onClick={() => this.setState({size: ""})}>
             Back To Sizes
           <div className="buy-sell-size">
@@ -117,12 +120,24 @@ class ProductListingForm extends React.Component {
             <div className="price-input-container">
               <div className="price-input">
                 <div className="price-input-decoration">$</div>
-                <input type="text" className="enter-price" placeholder={"Enter Amount"} onChange={this.update('price')}/>
+                <input type="number" className="enter-price" placeholder="Enter Amount" onChange={this.update('price')}/>
               </div>
             </div>
 
           <div className="multi-order-container">
             <div>
+              <div className="item-row">
+                <div>Shipping</div>
+                <div>
+                  $13.95
+                </div>
+              </div>
+              <div className="item-row">
+                <div>Sales Tax (9.5%)</div>
+                <div>
+                  {(this.state.price * 0.095).toFixed(2)}
+                </div>
+              </div>
               <div className="item-row">
                 <div>Discount Code</div>
                 <div>
@@ -132,22 +147,25 @@ class ProductListingForm extends React.Component {
               <div className="item-row">
                 <div>Total Payout</div>
                 <div>
-                  <span className="total-payout">--</span>
+                  <span className="total-payout">${this.state.price}</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div className="pay-settings">
           <div className="expiration-setting">Ask Expiration: 30Days</div>
           <div className="payout-method">Please Add Payout Method</div>
         </div>
+
         <div className="product-listing-buttons">
           <button className="product-listing-button cancel" onClick={this.handleCancel}>Cancel</button>
-          <input className="product-listing-button submit" type="submit"/>
+          <input className="product-listing-button submit" type="submit" value="Submit"/>
         </div>
-      </form>
-    )
+        </div>
+      )
+      {/* </form> */}
   }
 
   render() {
@@ -171,7 +189,9 @@ class ProductListingForm extends React.Component {
               </div>
             </div>
             <div className="fourty-create-listing-form pane">
-              {this.state.size === "" ? this.selectSize() : this.selectPay()}
+              <form className="pay" onSubmit={this.handleSubmit}>
+                {this.state.size === "" ? this.selectSize() : this.selectPay()}
+              </form>
             </div>
           </div>
         </div>
