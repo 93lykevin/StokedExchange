@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const preloadedState= {
         session: {id: window.currentUser.id},
         entities: {
-            users: { [window.currentUser.id]: window.currentUser }
+          users: { [window.currentUser.id]: window.currentUser }
         }
       };
     store = configureStore(preloadedState);
@@ -22,14 +22,16 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   window.seedDb = seedDb;
-  window.search = search;
-  window.getPicture = getPicture;
-  window.postStockx = postStockx;
-  window.requestProducts = requestProducts;
-  window.login = login;
-  window.store = store;
-  window.getState = store.getState;
-  window.dispatch = store.dispatch;
+  // window.search = search;
+  // window.getPicture = getPicture;
+  // window.postStockx = postStockx;
+  // window.requestProducts = requestProducts;
+  // window.login = login;
+  // window.store = store;
+  // window.getState = store.getState;
+  // window.dispatch = store.dispatch;
+
+  window.scrollTo(0, 0)
 
   const root = document.getElementById("root");
   ReactDOM.render(<Root store={store}/>, root);
