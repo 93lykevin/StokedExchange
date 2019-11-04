@@ -160,7 +160,7 @@ class ProductListingForm extends React.Component {
         </div>
 
         <div className="product-listing-buttons">
-          <button className="product-listing-button cancel" onClick={this.handleCancel}>Cancel</button>
+          <button className="product-listing-button cancel" type="button" onClick={this.handleCancel}>Cancel</button>
           <input className="product-listing-button submit" type="submit" value="Submit"/>
         </div>
         </div>
