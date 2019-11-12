@@ -120,7 +120,7 @@ class SessionForm extends React.Component {
             <div className="login-form-container">
                 <form onSubmit={this.handleSubmit} className="login-form-box">
                     <div className="welcome-to-streetx">
-                        <h3>Welcome to StreetX!</h3>
+                      <div className="copyright"><i className="far fa-copyright"></i>&nbsp;StreetX by Kevin Ly</div>
                     </div>
 
                     <div className="access-toggle">

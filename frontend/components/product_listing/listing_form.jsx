@@ -132,12 +132,13 @@ class ProductListingForm extends React.Component {
                   $13.95
                 </div>
               </div>
-              <div className="item-row">
+              {/* <div className="item-row">
                 <div>Sales Tax (9.5%)</div>
                 <div>
+                  {tax}
                   {(this.state.price * 0.095).toFixed(2)}
                 </div>
-              </div>
+              </div> */}
               <div className="item-row">
                 <div>Discount Code</div>
                 <div>
@@ -147,7 +148,7 @@ class ProductListingForm extends React.Component {
               <div className="item-row">
                 <div>Total Payout</div>
                 <div>
-                  <span className="total-payout">${this.state.price}</span>
+                  <span className="total-payout">${parseInt(this.state.price) + 13.95 || 0}</span>
                 </div>
               </div>
             </div>

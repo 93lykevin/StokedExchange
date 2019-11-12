@@ -1267,7 +1267,11 @@ function (_React$Component) {
         });
       }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "ticker"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Welcome To StreetX")));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "copyright"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "far fa-copyright"
+      }), "\xA0StreetX by Kevin Ly")));
     }
   }]);
 
@@ -1596,8 +1600,6 @@ function (_React$Component) {
           className: "item-row"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Shipping"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "$13.95")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "item-row"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Sales Tax (9.5%)"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, (this.state.price * 0.095).toFixed(2))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "item-row"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Discount Code"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
           type: "text",
           className: "discount-code-input",
@@ -1606,7 +1608,7 @@ function (_React$Component) {
           className: "item-row"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Total Payout"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: "total-payout"
-        }, "$", this.state.price)))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        }, "$", parseInt(this.state.price) + 13.95 || 0)))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "pay-settings"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "expiration-setting"
@@ -2801,7 +2803,11 @@ function (_React$Component) {
         className: "login-form-box"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "welcome-to-streetx"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Welcome to StreetX!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "copyright"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "far fa-copyright"
+      }), "\xA0StreetX by Kevin Ly")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "access-toggle"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/login",
@@ -3192,7 +3198,11 @@ function (_React$Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "ticker"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Welcome To StreetX"));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "copyright"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "far fa-copyright"
+      }), "\xA0StreetX by Kevin Ly"));
     }
   }]);
 

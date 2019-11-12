@@ -4,7 +4,7 @@ export default class Ticker extends React.Component {
   render() {
     return(
       <div className="ticker">
-        <h3>Welcome To StreetX</h3>
+        <div className="copyright"><i className="far fa-copyright"></i>&nbsp;StreetX by Kevin Ly</div>
       </div>
     )
   }
