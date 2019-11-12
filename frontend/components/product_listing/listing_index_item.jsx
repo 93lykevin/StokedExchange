@@ -13,21 +13,21 @@ class ListingItem extends React.Component{
         <tr className="listing-item">
           <td className="listing-details">
             <Link to={`/product/${this.props.listing.product_id}`}>
-              <span className="title">{this.props.product.make}</span>
+              <span className="title">{this.props.listing.product.make}</span>
               <br/>
-              <span className="color">{this.props.product.colorway}</span>
+              <span className="color">{this.props.listing.product.colorway}</span>
               <br/>
               <span className="size">{this.props.listing.size}</span>
             </Link>
           </td>
-          <td className={ this.props.listing.price >= this.props.product.highest_bid ? "listing-bid-price" : "listing-bid-price-red"}>${this.props.listing.price}</td>
-          <td className="listing-highest-bid">${this.props.product.highest_bid}</td>
-          <td className="listing-lowest-ask">${this.props.product.lowest_ask}</td>
+          <td className={ this.props.listing.price >= this.props.listing.product.highest_bid ? "listing-bid-price" : "listing-bid-price-red"}>${this.props.listing.price}</td>
+          <td className="listing-highest-bid">${this.props.listing.product.highest_bid}</td>
+          <td className="listing-lowest-ask">${this.props.listing.product.lowest_ask}</td>
           <td className="listing-expires">30 Days</td>
           <td className="listing-options">
             <div className="options">
               <button className="buy-or-sell-button">
-                <Link to={`/${buyOrSell.toLocaleLowerCase()}/${this.props.product.id}`}>{buyOrSell}</Link>
+                <Link to={`/${buyOrSell.toLocaleLowerCase()}/${this.props.listing.product.id}`}>{buyOrSell}</Link>
               </button>
               <br/>
               <button><Link to={{

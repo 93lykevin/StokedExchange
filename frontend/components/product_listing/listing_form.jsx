@@ -23,7 +23,7 @@ class ProductListingForm extends React.Component {
         price: this.props.location.state.price || 0,
         condition: "NEW",
         listing_type: this.props.location.state.listingType || this.props.listingType || "",
-        id: this.props.location.state.id
+        id: this.props.location.state.id,
       }
     } else {
       this.state = {
@@ -111,12 +111,11 @@ class ProductListingForm extends React.Component {
 
         <div className="pay-container">
             <div className="ask-or-sell-switch-container">
-                <div className="pay-or-sell-switches">
+                {/* <div className="pay-or-sell-switches">
                     <div className="pay-switch"></div>
                     <div className="sell-switch"></div>
-                </div>
+                </div> */}
             </div>
-
             <div className="price-input-container">
               <div className="price-input">
                 <div className="price-input-decoration">$</div>

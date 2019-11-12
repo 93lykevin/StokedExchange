@@ -1577,13 +1577,7 @@ function (_React$Component) {
           className: "pay-container"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "ask-or-sell-switch-container"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "pay-or-sell-switches"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "pay-switch"
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "sell-switch"
-        }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "price-input-container"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "price-input"
@@ -1882,17 +1876,17 @@ function (_React$Component) {
         to: "/product/".concat(this.props.listing.product_id)
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "title"
-      }, this.props.product.make), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, this.props.listing.product.make), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "color"
-      }, this.props.product.colorway), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, this.props.listing.product.colorway), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "size"
       }, this.props.listing.size))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-        className: this.props.listing.price >= this.props.product.highest_bid ? "listing-bid-price" : "listing-bid-price-red"
+        className: this.props.listing.price >= this.props.listing.product.highest_bid ? "listing-bid-price" : "listing-bid-price-red"
       }, "$", this.props.listing.price), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "listing-highest-bid"
-      }, "$", this.props.product.highest_bid), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      }, "$", this.props.listing.product.highest_bid), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "listing-lowest-ask"
-      }, "$", this.props.product.lowest_ask), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      }, "$", this.props.listing.product.lowest_ask), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "listing-expires"
       }, "30 Days"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "listing-options"
@@ -1901,7 +1895,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "buy-or-sell-button"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/".concat(buyOrSell.toLocaleLowerCase(), "/").concat(this.props.product.id)
+        to: "/".concat(buyOrSell.toLocaleLowerCase(), "/").concat(this.props.listing.product.id)
       }, buyOrSell)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: {
           pathname: "/edit/".concat(this.props.listing.id),
