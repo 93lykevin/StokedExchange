@@ -1,7 +1,7 @@
 # StreetX
 #### A StockX clone built on React/Redux, Ruby on Rails, Python Flask, and hosted on Heroku
 ### Live Site: https://streetx.herokuapp.com
-
+![Welcome](/readme_media/Welcome.png)
 StreetX is an e-commerce website that acts like a stock exchange. It is inspired by StockX. The current website was built in 2 weeks and new features and improvements will be added in the near future.
 
 User's can view products, place Bids on products they wish to purchase, and place Asks on products they wish to sell. When a Bid and an Ask match, an exchange is completed. Users can search for products through the search bar or browse all pruducts with current prices.
@@ -9,10 +9,12 @@ User's can view products, place Bids on products they wish to purchase, and plac
 
 ## Key Features
 + Products
+![Index](/readme_media/Index.png)
     + View all product listings available on the site.
     + Products shown are all real products from StockX.com which have had their details extracted from the StockX database.
 + Listings
-    + Currently can only create a sell listing. Will add the rest of CRUD and mimic for bid listing.
+![Portfolio](readme_media/Portfolio.png)
+    + Create Buy and Sell listings for products you want to purchase or sell.
     + Can view your own listings through your account page.
 + Search
     + Search for products through the search bar by querying the database and matching the parameters through multiple traits
@@ -27,7 +29,7 @@ User's can view products, place Bids on products they wish to purchase, and plac
 ## Technologies
 + React/Redux
     + Frontend is composed of entirely React and Redux to handle changes in views that react to changes in the state of the application. 
-    + Redux states are set up to handle 
+    + Redux states are set up to allocate proper state to React components as necessary.
 + Ruby on Rails
     + Backend is managed by Ruby on Rails using a PostgreSQL database.
 + Flask, Pythonanywhere, & Unofficial StockX SDK
@@ -99,9 +101,43 @@ handleSelectSize(size) {
 
 ```
 
+```
+Displays different types of products based on the filter from the URL.
 
+productsMap(products) {
+    const category = this.props.match.url.slice(1);
+    let selected;
+    if (category === 'index') {
+      return(
+        products.map(product => (
+          <ProductIndexItem 
+            key={product.id}
+            product={product} />
+          ))
+      )
+    } else if (ProductIndex.clothingType.includes(category)) {
+      selected = products.filter(product => product.product_category.toLowerCase() === category.toLowerCase())
+      return (
+        selected.map(product => (
+          <ProductIndexItem
+          key={product.id}
+          product={product}
+          />
+        ))
+      )
+    } else {
+      selected = products.filter(product =>  product.brand.toLowerCase() === category.toLowerCase() )
+      return(
+        selected.map(product => (
+          <ProductIndexItem
+          key={product.id}
+          product={product} />
+        ))
+      )
+    }
+  }
+```
 ## Future Additions
-+ Finish CRUD for bid/sell.
 + Portfolios which shows a user's complete transaction history.
 + Following Lists which allows users to track specific items and get notifications when prices drop.
-+ Data visualization graphs for individual products.
++ Data visualization graphs for individual products using D3.
