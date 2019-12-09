@@ -109,12 +109,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "searchProducts", function() { return searchProducts; });
 /* harmony import */ var _util_product_api_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util/product_api_util */ "./frontend/util/product_api_util.js");
 
-var RECEIVE_ALL_PRODUCTS = 'RECEIVE_ALL_PRODUCTS';
-var RECEIVE_PRODUCT = 'RECEIVE_PRODUCT';
-var CREATE_PRODUCT = 'CREATE_PRODUCT';
-var UPDATE_PRODUCT = 'UPDATE_PRODUCT';
-var DELETE_PRODUCT = 'DELETE_PRODUCT';
-var RECEIVE_SEARCH = 'RECEIVE_SEARCH'; //REGULAR ACTION CREATORS
+var RECEIVE_ALL_PRODUCTS = "RECEIVE_ALL_PRODUCTS";
+var RECEIVE_PRODUCT = "RECEIVE_PRODUCT";
+var CREATE_PRODUCT = "CREATE_PRODUCT";
+var UPDATE_PRODUCT = "UPDATE_PRODUCT";
+var DELETE_PRODUCT = "DELETE_PRODUCT";
+var RECEIVE_SEARCH = "RECEIVE_SEARCH"; //REGULAR ACTION CREATORS
 
 var receiveAllProducts = function receiveAllProducts(products) {
   return {
@@ -211,10 +211,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deleteProductListing", function() { return deleteProductListing; });
 /* harmony import */ var _util_product_listing_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util/product_listing_util */ "./frontend/util/product_listing_util.js");
 
-var RECEIVE_ALL_LISTINGS = 'RECEIVE_ALL_LISTINGS';
-var RECEIVE_LISTING = 'RECEIVE_LISTING';
-var DELETE_LISTING = 'DELETE_LISTING';
-var RECEIVE_BUY_LISTING = 'RECEIVE_BUY_LISTING';
+var RECEIVE_ALL_LISTINGS = "RECEIVE_ALL_LISTINGS";
+var RECEIVE_LISTING = "RECEIVE_LISTING";
+var DELETE_LISTING = "DELETE_LISTING";
+var RECEIVE_BUY_LISTING = "RECEIVE_BUY_LISTING";
 
 var receiveAllListings = function receiveAllListings(listings) {
   return {
@@ -308,10 +308,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logout", function() { return logout; });
 /* harmony import */ var _util_session_api_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util/session_api_util */ "./frontend/util/session_api_util.js");
 
-var RECEIVE_CURRENT_USER = 'RECEIVE_CURRENT_USER';
-var LOGOUT_CURRENT_USER = 'LOGOUT_CURRENT_USER';
-var RECEIVE_SESSION_ERRORS = 'RECEIVE_SESSION_ERRORS';
-var CLEAR_ERRORS = 'CLEAR_ERRORS'; //Regular action creators
+var RECEIVE_CURRENT_USER = "RECEIVE_CURRENT_USER";
+var LOGOUT_CURRENT_USER = "LOGOUT_CURRENT_USER";
+var RECEIVE_SESSION_ERRORS = "RECEIVE_SESSION_ERRORS";
+var CLEAR_ERRORS = "CLEAR_ERRORS"; //Regular action creators
 
 var receiveCurrentUser = function receiveCurrentUser(currentUser) {
   return {
@@ -535,10 +535,6 @@ function (_React$Component) {
         href: "https://github.com/93lykevin/"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fab fa-github"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "https://github.com/93lykevin/"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fas fa-user"
       }))));
     }
   }]);
@@ -597,8 +593,8 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Greeting).call(this, props));
     _this.demoUser = {
-      username: 'mohito',
-      password: 'burrito'
+      username: "mohito",
+      password: "burrito"
     };
     _this.handleToggle = _this.handleToggle.bind(_assertThisInitialized(_this));
     _this.handleDemoLogin = _this.handleDemoLogin.bind(_assertThisInitialized(_this));
@@ -701,7 +697,6 @@ function (_React$Component) {
   return Greeting;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-;
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(Greeting));
 
 /***/ }),

@@ -1,14 +1,14 @@
-import React from 'react';
-import ListingItem from './listing_index_item';
-import { Link } from 'react-router-dom';
- 
-class Listings extends React.Component{
-  constructor(props){
-    super(props)
-    this.handleDelete = this.handleDelete.bind(this)
+import React from "react";
+import ListingItem from "./listing_index_item";
+import { Link } from "react-router-dom";
+
+class Listings extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleDelete = this.handleDelete.bind(this);
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.props.fetchUserProductListings(this.props.user.id);
   }
 
@@ -17,18 +17,22 @@ class Listings extends React.Component{
   }
 
   render() {
-    return(
+    return (
       <div className="dashboard-container">
         <div className="dashboard-sidebar"></div>
-        
+
         <div className="dashboard-grid">
           <div className="stats"></div>
 
           <div className="listing-tabs">
             <div className="tab-list">
               <div className="tab-options">
-                <Link to="/buying"><div>Buying</div></Link>
-                <Link to="/selling"><div>Selling</div></Link>
+                <Link to="/buying">
+                  <div>Buying</div>
+                </Link>
+                <Link to="/selling">
+                  <div>Selling</div>
+                </Link>
               </div>
             </div>
 
@@ -52,19 +56,21 @@ class Listings extends React.Component{
                           <th className="update-destroy">Buy/Edit/Remove</th>
                         </tr>
                       </thead>
-                      { 
-                        Object.values(this.props.listings).map(listing => {
-                          if (listing.listing_type === this.props.listingType) {
-                            return(
-                              <tbody className="portfolio-items" key={listing.id}>
-                                <ListingItem 
+                      {Object.values(this.props.listings).map(listing => {
+                        if (listing.listing_type === this.props.listingType) {
+                          return (
+                            <tbody className="portfolio-items" key={listing.id}>
+                              <ListingItem
                                 listing={listing}
-                                product={this.props.user.products[listing.product_id]}
-                                handleDelete={this.handleDelete}/>
-                              </tbody>
-                            )
-                        }}) 
-                      }
+                                product={
+                                  this.props.user.products[listing.product_id]
+                                }
+                                handleDelete={this.handleDelete}
+                              />
+                            </tbody>
+                          );
+                        }
+                      })}
                     </table>
                   </div>
                 </div>
@@ -73,7 +79,7 @@ class Listings extends React.Component{
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
@@ -81,6 +87,6 @@ Listings.defaultProps = {
   user: {},
   listings: {},
   products: {}
-}
+};
 
-export default Listings
+export default Listings;

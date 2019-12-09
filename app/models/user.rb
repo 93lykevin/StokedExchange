@@ -23,6 +23,8 @@ class User < ApplicationRecord
     through: :product_listings,
     source: :product
 
+    has_one_attached :photo
+
     def self.find_by_credentials(username, password)
         user = User.find_by(username: username)
         return user if user && BCrypt::Password.new(user.password_digest).is_password?(password)

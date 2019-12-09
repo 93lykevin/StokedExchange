@@ -1,4 +1,7 @@
 json.extract! user, :id, :username, :first_name, :last_name, :email#, :product_listings, :products
+
+json.photoUrl url_for(user.photo)
+
 json.productListings do 
     user.product_listings.each do |listing|
         json.set! listing.id do
