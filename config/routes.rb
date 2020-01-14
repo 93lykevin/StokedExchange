@@ -6,8 +6,8 @@ Rails.application.routes.draw do
     resources :products, only: [:index, :show, :create, :update, :destroy] do
       get "search", on: :collection
     end
-    
     resources :product_listings, only: [:index, :show, :create, :update, :destroy]
+    resources :follows, only: [:index, :show, :create, :update, :destroy]
   end
 
   root "static_pages#root"
