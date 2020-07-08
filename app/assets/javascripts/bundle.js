@@ -2467,7 +2467,7 @@ function (_React$Component) {
     value: function handleInput(e) {
       var _this2 = this;
 
-      if (e.currentTarget.value === '') {
+      if (e.currentTarget.value === "") {
         this.setState({
           products: []
         });
@@ -3664,14 +3664,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deleteProductListing", function() { return deleteProductListing; });
 var fetchProductListings = function fetchProductListings() {
   return $.ajax({
-    method: 'GET',
-    url: 'api/product_listings'
+    method: "GET",
+    url: "api/product_listings"
   });
 };
 var fetchUserProductListings = function fetchUserProductListings(user_id) {
   return $.ajax({
-    method: 'GET',
-    url: 'api/product_listings',
+    method: "GET",
+    url: "api/product_listings",
     data: {
       user_id: user_id
     }
@@ -3679,14 +3679,14 @@ var fetchUserProductListings = function fetchUserProductListings(user_id) {
 };
 var fetchProductListing = function fetchProductListing(id) {
   return $.ajax({
-    method: 'GET',
+    method: "GET",
     url: "api/product_listing/".concat(id)
   });
 };
 var createProductListing = function createProductListing(product_listing) {
   return $.ajax({
-    method: 'POST',
-    url: 'api/product_listings',
+    method: "POST",
+    url: "api/product_listings",
     data: {
       product_listing: product_listing
     }
@@ -3694,7 +3694,7 @@ var createProductListing = function createProductListing(product_listing) {
 };
 var updateProductListing = function updateProductListing(product_listing) {
   return $.ajax({
-    method: 'PATCH',
+    method: "PATCH",
     url: "api/product_listings/".concat(product_listing.id),
     data: {
       product_listing: product_listing
@@ -3703,7 +3703,7 @@ var updateProductListing = function updateProductListing(product_listing) {
 };
 var deleteProductListing = function deleteProductListing(id) {
   return $.ajax({
-    method: 'DELETE',
+    method: "DELETE",
     url: "api/product_listings/".concat(id)
   });
 };
@@ -38485,7 +38485,7 @@ function warning(message) {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
+/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
